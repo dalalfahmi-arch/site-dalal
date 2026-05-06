@@ -421,11 +421,11 @@ a.topbar__info:hover { color: #C5A36A; }
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center right;
+  background-position: center center;
   background-repeat: no-repeat;
   z-index: 0;
-  /* Fallback color if image not loaded yet */
   background-color: #1A2332;
+  will-change: transform;
 }
 
 .hero-overlay {
@@ -864,6 +864,8 @@ a.topbar__info:hover { color: #C5A36A; }
   border-radius: var(--radius-card);
   overflow: hidden;
   position: relative;
+  min-height: 420px;
+  background: #1A2332;
 }
 .about-image-wrapper::before {
   content: '';
@@ -876,7 +878,10 @@ a.topbar__info:hover { color: #C5A36A; }
 }
 .about-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  object-position: center top;
   border-radius: var(--radius-card);
   display: block;
   box-shadow: 0 16px 60px rgba(26,35,50,0.18);
@@ -936,6 +941,44 @@ a.topbar__info:hover { color: #C5A36A; }
   line-height: 1.5;
 }
 
+/* Credential cards (replaces stat numbers) */
+.credential-card {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  height: 100%;
+  transition: var(--transition);
+}
+.credential-card:hover {
+  border-color: rgba(197,163,106,0.35);
+  box-shadow: 0 8px 32px rgba(26,35,50,0.08);
+  transform: translateY(-3px);
+}
+.credential-icon {
+  width: 56px; height: 56px;
+  background: rgba(197,163,106,0.1);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1.25rem;
+  font-size: 1.3rem;
+  color: var(--color-accent);
+}
+.credential-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+.credential-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
 .proof-badges {
   display: flex; flex-wrap: wrap;
   justify-content: center; gap: 1rem;
@@ -948,8 +991,8 @@ a.topbar__info:hover { color: #C5A36A; }
   padding: 0.5rem 1.25rem;
   font-size: 0.85rem; color: var(--color-text);
 }
-.proof-badge i { color: var(--color-primary); font-size: 0.9rem; }
-.proof-badge strong { color: var(--color-dark); }
+.proof-badge i { color: var(--color-accent); font-size: 0.9rem; }
+.proof-badge strong { color: var(--color-dark); font-weight: 500; }
 
 
 /* ══════════════════════════════════════════════════════════
