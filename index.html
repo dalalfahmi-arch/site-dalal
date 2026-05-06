@@ -7,7 +7,7 @@
   <meta name="description" content="J'aide les clubs sportifs, PME et cabinets à structurer leur communication digitale et éditoriale pour renforcer leur positionnement et attirer partenaires, clients et opportunités." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -36,9 +36,9 @@
 ═══════════════════════════════════════════════════════ -->
 <div class="topbar d-none d-lg-block">
   <div class="container d-flex align-items-center justify-content-between">
-    <span class="topbar__msg">
+    <span class="topbar__msg" data-i18n="topbar-msg">
       <i class="fa-solid fa-clock me-2"></i>Économisez votre temps et vos efforts précieux consacrés à la recherche d'une solution.
-      <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20planifier%20une%20session%20strat%C3%A9gique." target="_blank" rel="noopener" class="topbar__cta-link">Contactez-nous dès maintenant →</a>
+      <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20planifier%20une%20session%20strat%C3%A9gique." target="_blank" rel="noopener" class="topbar__cta-link" data-i18n="topbar-cta">Contactez-nous dès maintenant →</a>
     </span>
     <div class="topbar__contact d-flex align-items-center gap-4">
       <a href="tel:+212695199559" class="topbar__info">
@@ -67,14 +67,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-        <li class="nav-item"><a class="nav-link active" href="#hero">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="#methodology">Méthode</a></li>
-        <li class="nav-item"><a class="nav-link" href="#offres">Offres</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#hero" data-i18n="nav-home">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#methodology" data-i18n="nav-method">Méthode</a></li>
+        <li class="nav-item"><a class="nav-link" href="#offres" data-i18n="nav-offers">Offres</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav-about">À propos</a></li>
         <li class="nav-item ms-lg-3">
           <a class="btn btn-nav-cta btn-nav-cta--accent" href="#diagnostic">
             <i class="fa-solid fa-magnifying-glass-chart me-2"></i>Diagnostic gratuit
           </a>
+        </li>
+        <li class="nav-item ms-lg-2 d-flex align-items-center">
+          <div class="lang-toggle" role="group" aria-label="Langue">
+            <button class="lang-btn active" data-lang="fr" onclick="switchLang('fr')">FR</button>
+            <button class="lang-btn" data-lang="ar" onclick="switchLang('ar')">AR</button>
+          </div>
         </li>
       </ul>
     </div>
@@ -91,20 +97,21 @@
   <div class="container hero-content-wrap">
     <div class="row align-items-center">
       <div class="col-lg-6 col-xl-5" data-aos="fade-right">
-        <span class="hero-badge">Clubs sportifs · PME marocaines · Cabinets &amp; institutions</span>
-        <h1 class="hero-title">L'influence ne se décrète pas, <span class="text-accent">elle se structure</span>.</h1>
-        <p class="hero-lead">Conseil stratégique en communication digitale et éditoriale pour les organisations d'exception. Transformez votre expertise en autorité reconnue.</p>
+        <span class="hero-badge" data-i18n="hero-badge">Clubs sportifs · PME marocaines · Cabinets &amp; institutions</span>
+        <h1 class="hero-title" data-i18n="hero-title">L'influence ne se décrète pas, <span class="text-accent">elle se structure</span>.</h1>
+        <p class="hero-lead" data-i18n="hero-lead">Conseil stratégique en communication digitale et éditoriale pour les organisations d'exception. Transformez votre expertise en autorité reconnue.</p>
         <div class="hero-actions mt-4 d-flex flex-wrap gap-3">
           <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20planifier%20une%20session%20strat%C3%A9gique."
-             class="btn btn-accent-hero" target="_blank" rel="noopener">
+             class="btn btn-accent-hero" target="_blank" rel="noopener" data-i18n="hero-cta1">
             <i class="fa-brands fa-whatsapp me-2"></i>Planifier une session stratégique
           </a>
-          <a href="#methodology" class="btn btn-ghost-hero">Découvrir l'approche</a>
+          <a href="#methodology" class="btn btn-ghost-hero" data-i18n="hero-cta2">Découvrir l'approche</a>
         </div>
         <div class="hero-trust mt-5">
-          <span class="hero-trust__item"><i class="fa-solid fa-check-circle me-2"></i>Fondatrice Neybras Family</span>
-          <span class="hero-trust__item"><i class="fa-solid fa-check-circle me-2"></i>Fondatrice Neybras Magazine</span>
-          <span class="hero-trust__item"><i class="fa-solid fa-check-circle me-2"></i>10+ ans d'expertise éditoriale</span>
+          <span class="hero-trust__item" data-i18n="trust-1"><i class="fa-solid fa-pen-nib me-2"></i>Expertise éditoriale</span>
+          <span class="hero-trust__item" data-i18n="trust-2"><i class="fa-solid fa-newspaper me-2"></i>Médias fondés</span>
+          <span class="hero-trust__item" data-i18n="trust-3"><i class="fa-solid fa-star me-2"></i>Accompagnement premium</span>
+          <span class="hero-trust__item" data-i18n="trust-4"><i class="fa-solid fa-language me-2"></i>Approche bilingue</span>
         </div>
       </div>
     </div>
@@ -124,9 +131,9 @@
 
     <div class="row justify-content-center text-center mb-5">
       <div class="col-lg-7" data-aos="fade-up">
-        <p class="section-label">Comprendre avant d'agir</p>
-        <h2 class="section-title">Trois signaux d'alerte</h2>
-        <p class="section-sub mt-2">Derrière chaque organisation qui communique sans convertir, l'un de ces patterns est à l'œuvre.</p>
+        <p class="section-label" data-i18n="prob-label">Comprendre avant d'agir</p>
+        <h2 class="section-title" data-i18n="prob-title">Trois signaux d'alerte</h2>
+        <p class="section-sub mt-2" data-i18n="prob-sub">Derrière chaque organisation qui communique sans convertir, l'un de ces patterns est à l'œuvre.</p>
       </div>
     </div>
 
@@ -136,11 +143,11 @@
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="problem-card">
           <div class="problem-number">01</div>
-          <h3 class="problem-title">Visibilité sans Influence</h3>
-          <p class="problem-impact">
+          <h3 class="problem-title" data-i18n="prob1-title">Visibilité sans Influence</h3>
+          <p class="problem-impact" data-i18n="prob1-impact">
             <strong>Le problème :</strong> Vous communiquez, mais votre message ne mobilise pas les décideurs qui comptent. Présence active, mais positionnement flou — vos audiences ne savent pas exactement ce que vous apportez.
           </p>
-          <p class="problem-consequence">
+          <p class="problem-consequence" data-i18n="prob1-cons">
             <strong>La conséquence :</strong> Vous investissez en visibilité sans bâtir d'autorité durable.
           </p>
         </div>
@@ -150,11 +157,11 @@
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
         <div class="problem-card problem-card--highlight">
           <div class="problem-number">02</div>
-          <h3 class="problem-title">Déficit d'Incarnation</h3>
-          <p class="problem-impact">
+          <h3 class="problem-title" data-i18n="prob2-title">Déficit d'Incarnation</h3>
+          <p class="problem-impact" data-i18n="prob2-impact">
             <strong>Le problème :</strong> Votre expertise inspire le respect, mais votre image numérique ne porte pas cette stature. Un décalage entre votre niveau réel et votre présence perçue crée de la méfiance là où il devrait y avoir de la confiance.
           </p>
-          <p class="problem-consequence">
+          <p class="problem-consequence" data-i18n="prob2-cons">
             <strong>La conséquence :</strong> Des opportunités qualifiées vous échappent, faute d'une identité éditoriale cohérente.
           </p>
         </div>
@@ -164,11 +171,11 @@
       <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
         <div class="problem-card">
           <div class="problem-number">03</div>
-          <h3 class="problem-title">Dispersion de Valeur</h3>
-          <p class="problem-impact">
+          <h3 class="problem-title" data-i18n="prob3-title">Dispersion de Valeur</h3>
+          <p class="problem-impact" data-i18n="prob3-impact">
             <strong>Le problème :</strong> Sans direction stratégique, votre capital de marque s'érode au lieu de s'imposer. Chaque prise de parole isolée dilue votre message au lieu de renforcer votre position.
           </p>
-          <p class="problem-consequence">
+          <p class="problem-consequence" data-i18n="prob3-cons">
             <strong>La conséquence :</strong> Vous êtes actif, visible — mais pas encore choisi.
           </p>
         </div>
@@ -179,7 +186,7 @@
     <!-- Conclusion + CTA -->
     <div class="row justify-content-center mt-5" data-aos="fade-up">
       <div class="col-lg-8 text-center">
-        <p class="problems-conclusion">
+        <p class="problems-conclusion" data-i18n="prob-conclusion">
           Le problème n'est pas l'effort. C'est <strong>l'absence d'architecture stratégique.</strong>
         </p>
         <a href="#diagnostic" class="btn btn-hero-primary mt-4">
@@ -201,9 +208,9 @@
 
     <div class="row justify-content-center text-center mb-5">
       <div class="col-lg-7" data-aos="fade-up">
-        <p class="section-label">L'approche Neybras</p>
-        <h2 class="section-title">Une méthode en 4 temps</h2>
-        <p class="section-desc">
+        <p class="section-label" data-i18n="meth-label">L'approche Neybras</p>
+        <h2 class="section-title" data-i18n="meth-title">Une méthode en 4 temps</h2>
+        <p class="section-desc" data-i18n="meth-sub">
           De la clarté stratégique au déploiement — chaque étape est conçue pour produire des résultats mesurables.
         </p>
       </div>
@@ -214,16 +221,16 @@
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
         <div class="method-step">
           <div class="method-step__number">01</div>
-          <h3 class="method-step__title">Diagnostic</h3>
+          <h3 class="method-step__title" data-i18n="step1-title">Diagnostic</h3>
           <div class="method-step__meta">
-            <span><i class="fa-regular fa-clock me-1"></i>Séance initiale</span>
+            <span data-i18n="step1-meta"><i class="fa-regular fa-clock me-1"></i>Séance initiale</span>
           </div>
-          <p class="method-step__objective">
+          <p class="method-step__objective" data-i18n="step1-obj">
             <strong>Objectif :</strong> Identifier votre position réelle, vos angles morts et vos leviers prioritaires.
           </p>
           <div class="method-step__result">
             <i class="fa-solid fa-check"></i>
-            Une lecture claire de votre situation et une feuille de route actionnable.
+            <span data-i18n="step1-res">Une lecture claire de votre situation et une feuille de route actionnable.</span>
           </div>
         </div>
       </div>
@@ -231,16 +238,16 @@
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
         <div class="method-step">
           <div class="method-step__number">02</div>
-          <h3 class="method-step__title">Architecture</h3>
+          <h3 class="method-step__title" data-i18n="step2-title">Architecture</h3>
           <div class="method-step__meta">
-            <span><i class="fa-regular fa-clock me-1"></i>3 à 4 semaines</span>
+            <span data-i18n="step2-meta"><i class="fa-regular fa-clock me-1"></i>3 à 4 semaines</span>
           </div>
-          <p class="method-step__objective">
+          <p class="method-step__objective" data-i18n="step2-obj">
             <strong>Objectif :</strong> Construire la ligne éditoriale, les piliers de message et la charte de communication.
           </p>
           <div class="method-step__result">
             <i class="fa-solid fa-check"></i>
-            Un socle stratégique solide sur lequel chaque prise de parole s'appuie.
+            <span data-i18n="step2-res">Un socle stratégique solide sur lequel chaque prise de parole s'appuie.</span>
           </div>
         </div>
       </div>
@@ -248,16 +255,16 @@
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
         <div class="method-step">
           <div class="method-step__number">03</div>
-          <h3 class="method-step__title">Déploiement</h3>
+          <h3 class="method-step__title" data-i18n="step3-title">Déploiement</h3>
           <div class="method-step__meta">
-            <span><i class="fa-regular fa-clock me-1"></i>En continu</span>
+            <span data-i18n="step3-meta"><i class="fa-regular fa-clock me-1"></i>En continu</span>
           </div>
-          <p class="method-step__objective">
+          <p class="method-step__objective" data-i18n="step3-obj">
             <strong>Objectif :</strong> Activer la stratégie sur vos canaux prioritaires avec cohérence et régularité.
           </p>
           <div class="method-step__result">
             <i class="fa-solid fa-check"></i>
-            Une présence qui construit votre autorité à chaque publication.
+            <span data-i18n="step3-res">Une présence qui construit votre autorité à chaque publication.</span>
           </div>
         </div>
       </div>
@@ -265,16 +272,16 @@
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
         <div class="method-step method-step--last">
           <div class="method-step__number">04</div>
-          <h3 class="method-step__title">Optimisation</h3>
+          <h3 class="method-step__title" data-i18n="step4-title">Optimisation</h3>
           <div class="method-step__meta">
-            <span><i class="fa-regular fa-clock me-1"></i>Mensuel</span>
+            <span data-i18n="step4-meta"><i class="fa-regular fa-clock me-1"></i>Mensuel</span>
           </div>
-          <p class="method-step__objective">
+          <p class="method-step__objective" data-i18n="step4-obj">
             <strong>Objectif :</strong> Analyser les performances, ajuster les axes, renforcer ce qui fonctionne.
           </p>
           <div class="method-step__result">
             <i class="fa-solid fa-check"></i>
-            Une stratégie vivante, alignée sur vos objectifs à chaque étape.
+            <span data-i18n="step4-res">Une stratégie vivante, alignée sur vos objectifs à chaque étape.</span>
           </div>
         </div>
       </div>
@@ -300,19 +307,19 @@
 <section id="offres" class="section-offres py-6">
   <div class="container">
     <div class="section-header text-center mb-5" data-aos="fade-up">
-      <span class="section-label">Ce que je propose</span>
-      <h2 class="section-title">Trois niveaux d'accompagnement</h2>
-      <p class="section-sub">Du diagnostic ponctuel à l'accompagnement stratégique mensuel.</p>
+      <span class="section-label" data-i18n="off-label">Ce que je propose</span>
+      <h2 class="section-title" data-i18n="off-title">Trois niveaux d'accompagnement</h2>
+      <p class="section-sub" data-i18n="off-sub">Du diagnostic ponctuel à l'accompagnement stratégique mensuel.</p>
     </div>
     <ul class="nav nav-pills offres-tabs justify-content-center mb-5" id="offresTabs" role="tablist" data-aos="fade-up">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="tab-diag" data-bs-toggle="pill" data-bs-target="#pane-diag" type="button" role="tab"><i class="fa-solid fa-magnifying-glass-chart me-2"></i>Diagnostic</button>
+        <button class="nav-link active" id="tab-diag" data-bs-toggle="pill" data-bs-target="#pane-diag" type="button" role="tab" data-i18n="tab1"><i class="fa-solid fa-magnifying-glass-chart me-2"></i>Diagnostic</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab-struct" data-bs-toggle="pill" data-bs-target="#pane-struct" type="button" role="tab"><i class="fa-solid fa-layer-group me-2"></i>Structuration</button>
+        <button class="nav-link" id="tab-struct" data-bs-toggle="pill" data-bs-target="#pane-struct" type="button" role="tab" data-i18n="tab2"><i class="fa-solid fa-layer-group me-2"></i>Structuration</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab-accomp" data-bs-toggle="pill" data-bs-target="#pane-accomp" type="button" role="tab"><i class="fa-solid fa-rocket me-2"></i>Accompagnement</button>
+        <button class="nav-link" id="tab-accomp" data-bs-toggle="pill" data-bs-target="#pane-accomp" type="button" role="tab" data-i18n="tab3"><i class="fa-solid fa-rocket me-2"></i>Accompagnement</button>
       </li>
     </ul>
     <div class="tab-content" id="offresTabContent">
@@ -325,8 +332,8 @@
             </div>
           </div>
           <div class="col-lg-7" data-aos="fade-left">
-            <h3 class="offre-title">Diagnostic Stratégique</h3>
-            <p class="offre-for"><i class="fa-solid fa-user-check me-2"></i>Pour : dirigeants, clubs et organisations souhaitant une lecture objective de leur communication.</p>
+            <h3 class="offre-title" data-i18n="off1-title">Diagnostic Stratégique</h3>
+            <p class="offre-for" data-i18n="off1-for"><i class="fa-solid fa-user-check me-2"></i>Pour : dirigeants, clubs et organisations souhaitant une lecture objective de leur communication.</p>
             <ul class="offre-list">
               <li><i class="fa-solid fa-check me-2"></i>Audit structuré de votre communication actuelle</li>
               <li><i class="fa-solid fa-check me-2"></i>Identification des angles morts et opportunités</li>
@@ -348,8 +355,8 @@
             </div>
           </div>
           <div class="col-lg-7" data-aos="fade-left">
-            <h3 class="offre-title">Structuration Éditoriale</h3>
-            <p class="offre-for"><i class="fa-solid fa-user-check me-2"></i>Pour : marques et organisations prêtes à construire une présence éditoriale cohérente et durable.</p>
+            <h3 class="offre-title" data-i18n="off2-title">Structuration Éditoriale</h3>
+            <p class="offre-for" data-i18n="off2-for"><i class="fa-solid fa-user-check me-2"></i>Pour : marques et organisations prêtes à construire une présence éditoriale cohérente et durable.</p>
             <ul class="offre-list">
               <li><i class="fa-solid fa-check me-2"></i>Positionnement de marque et message central</li>
               <li><i class="fa-solid fa-check me-2"></i>Ligne éditoriale et piliers de communication</li>
@@ -372,8 +379,8 @@
             </div>
           </div>
           <div class="col-lg-7" data-aos="fade-left">
-            <h3 class="offre-title">Accompagnement de Positionnement</h3>
-            <p class="offre-for"><i class="fa-solid fa-user-check me-2"></i>Pour : organisations qui veulent déléguer le pilotage stratégique de leur présence éditoriale.</p>
+            <h3 class="offre-title" data-i18n="off3-title">Accompagnement de Positionnement</h3>
+            <p class="offre-for" data-i18n="off3-for"><i class="fa-solid fa-user-check me-2"></i>Pour : organisations qui veulent déléguer le pilotage stratégique de leur présence éditoriale.</p>
             <ul class="offre-list">
               <li><i class="fa-solid fa-check me-2"></i>Pilotage mensuel de la stratégie éditoriale</li>
               <li><i class="fa-solid fa-check me-2"></i>Supervision de la production de contenus</li>
@@ -405,8 +412,8 @@
       </div>
 
       <div class="col-lg-7" data-aos="fade-left">
-        <p class="section-label">La consultante</p>
-        <h2 class="section-title">Pourquoi travailler avec Dalal Fahmi</h2>
+        <p class="section-label" data-i18n="about-label">La consultante</p>
+        <h2 class="section-title" data-i18n="about-title">Pourquoi travailler avec Dalal Fahmi</h2>
 
         <div class="about-points">
 
@@ -415,8 +422,8 @@
               <i class="fa-solid fa-magnifying-glass-chart"></i>
             </div>
             <div>
-              <h4>L'œil de l'éditrice</h4>
-              <p>J'accorde à chaque marque le même niveau d'exigence qu'à une publication de prestige. Chaque mot, chaque support, chaque prise de parole sert une ligne claire.</p>
+              <h4 data-i18n="abt1-title">L'œil de l'éditrice</h4>
+              <p data-i18n="abt1-desc">J'accorde à chaque marque le même niveau d'exigence qu'à une publication de prestige. Chaque mot, chaque support, chaque prise de parole sert une ligne claire.</p>
             </div>
           </div>
 
@@ -425,8 +432,8 @@
               <i class="fa-solid fa-map-location-dot"></i>
             </div>
             <div>
-              <h4>Expertise Terrain Maroc</h4>
-              <p>Une connaissance intime des codes du marché marocain, entre exigences locales et ambitions internationales. Ce qui fonctionne ici, pas seulement ce qui s'enseigne ailleurs.</p>
+              <h4 data-i18n="abt2-title">Expertise Terrain Maroc</h4>
+              <p data-i18n="abt2-desc">Une connaissance intime des codes du marché marocain, entre exigences locales et ambitions internationales. Ce qui fonctionne ici, pas seulement ce qui s'enseigne ailleurs.</p>
             </div>
           </div>
 
@@ -435,8 +442,8 @@
               <i class="fa-solid fa-chart-line"></i>
             </div>
             <div>
-              <h4>Approche Bilingue</h4>
-              <p>Un accompagnement stratégique en français et en arabe, pour bâtir une influence cohérente sur vos deux sphères d'audience.</p>
+              <h4 data-i18n="abt3-title">Approche Bilingue</h4>
+              <p data-i18n="abt3-desc">Un accompagnement stratégique en français et en arabe, pour bâtir une influence cohérente sur vos deux sphères d'audience.</p>
             </div>
           </div>
 
@@ -461,8 +468,8 @@
 
     <div class="row justify-content-center text-center mb-5">
       <div class="col-lg-6" data-aos="fade-up">
-        <p class="section-label">L'expertise en chiffres</p>
-        <h2 class="section-title">Une expertise d'éditrice au service de votre stratégie</h2>
+        <p class="section-label" data-i18n="proof-label">L'expertise en chiffres</p>
+        <h2 class="section-title" data-i18n="proof-title">Une expertise d'éditrice au service de votre stratégie</h2>
       </div>
     </div>
 
@@ -472,28 +479,28 @@
       <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
         <div class="proof-stat">
           <span class="proof-stat__number">10+</span>
-          <span class="proof-stat__label">ans — stratégie éditoriale, direction de publication et contenus à haute valeur ajoutée</span>
+          <span class="proof-stat__label" data-i18n="stat1-lbl">ans — stratégie éditoriale, direction de publication et contenus à haute valeur ajoutée</span>
         </div>
       </div>
 
       <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
         <div class="proof-stat">
           <span class="proof-stat__number">2</span>
-          <span class="proof-stat__label">médias fondés — Neybras Family &amp; Neybras Magazine, plateformes de référence fiscale, juridique et éducative au Maroc</span>
+          <span class="proof-stat__label" data-i18n="stat2-lbl">médias fondés — Neybras Family &amp; Neybras Magazine, plateformes de référence fiscale, juridique et éducative au Maroc</span>
         </div>
       </div>
 
       <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
         <div class="proof-stat">
           <span class="proof-stat__number">✦</span>
-          <span class="proof-stat__label">Expertise sectorielle — clubs sportifs, institutions et monde des affaires, acquise par une production éditoriale rigoureuse</span>
+          <span class="proof-stat__label" data-i18n="stat3-lbl">Expertise sectorielle — clubs sportifs, institutions et monde des affaires, acquise par une production éditoriale rigoureuse</span>
         </div>
       </div>
 
       <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
         <div class="proof-stat">
           <span class="proof-stat__number">FR·AR</span>
-          <span class="proof-stat__label">Double culture linguistique — pilotage éditorial en français et en arabe pour une influence cohérente sur vos deux sphères d'audience</span>
+          <span class="proof-stat__label" data-i18n="stat4-lbl">Double culture linguistique — pilotage éditorial en français et en arabe pour une influence cohérente sur vos deux sphères d'audience</span>
         </div>
       </div>
 
@@ -536,9 +543,9 @@
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center" data-aos="fade-up">
 
-        <p class="section-label">Première étape</p>
-        <h2 class="diagnostic-title">Session de Clarification Stratégique</h2>
-        <p class="diagnostic-subtitle">
+        <p class="section-label" data-i18n="diag-label">Première étape</p>
+        <h2 class="diagnostic-title" data-i18n="diag-title">Session de Clarification Stratégique</h2>
+        <p class="diagnostic-subtitle" data-i18n="diag-sub">
           Une évaluation structurée pour clarifier votre positionnement et vos priorités de communication — avant d'investir.
         </p>
 
@@ -546,15 +553,15 @@
         <div class="diagnostic-deliverables">
           <div class="deliverable">
             <i class="fa-solid fa-check-circle"></i>
-            <span>Lecture critique de votre position actuelle</span>
+            <span data-i18n="deliv1">Lecture critique de votre position actuelle</span>
           </div>
           <div class="deliverable">
             <i class="fa-solid fa-check-circle"></i>
-            <span>Identification des angles morts de votre communication</span>
+            <span data-i18n="deliv2">Identification des angles morts de votre communication</span>
           </div>
           <div class="deliverable">
             <i class="fa-solid fa-check-circle"></i>
-            <span>Définition des leviers prioritaires de votre visibilité stratégique</span>
+            <span data-i18n="deliv3">Définition des leviers prioritaires de votre visibilité stratégique</span>
           </div>
         </div>
 
@@ -570,7 +577,7 @@
           </a>
         </div>
 
-        <p class="diagnostic-note mt-4">
+        <p class="diagnostic-note mt-4" data-i18n="diag-note">
           Entretien offert · Réponse sous 24h · Sans engagement
         </p>
 
