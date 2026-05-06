@@ -816,6 +816,14 @@ a.topbar__info:hover { color: #C5A36A; }
   position: relative;
 }
 .offre-visual--diag   { background: linear-gradient(135deg, #1A2332, #2a3a52); }
+.offre-visual--photo  { padding: 0; overflow: hidden; }
+.offre-visual--photo .offre-photo {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: inherit;
+}
 .offre-visual--struct { background: linear-gradient(135deg, #2a3a52, #1A2332); }
 .offre-visual--accomp { background: linear-gradient(135deg, #1A2332, #C5A36A 160%); }
 
