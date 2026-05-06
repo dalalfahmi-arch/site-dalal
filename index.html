@@ -42,7 +42,7 @@
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
         <li class="nav-item"><a class="nav-link active" href="#hero">Accueil</a></li>
         <li class="nav-item"><a class="nav-link" href="#methodology">Méthode</a></li>
-        <li class="nav-item"><a class="nav-link" href="#offers">Offres</a></li>
+        <li class="nav-item"><a class="nav-link" href="#offres">Offres</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
         <li class="nav-item ms-lg-3">
           <a class="btn btn-nav-cta" href="#diagnostic">Demander un diagnostic</a>
@@ -54,66 +54,77 @@
 
 
 <!-- ═══════════════════════════════════════════════════════
-     SECTION 1 — HERO
-     Objectif : 5 secondes pour comprendre qui, pour qui, pourquoi, quoi faire
+     SECTION 1 — HERO SLIDER
 ═══════════════════════════════════════════════════════ -->
-<section id="hero" class="hero-section">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <div class="col-lg-8 hero-content" data-aos="fade-up" data-aos-duration="700">
-
-        <!-- Cibles -->
-        <div class="hero-targets mb-4">
-          <span class="target-pill">Clubs sportifs</span>
-          <span class="target-pill">PME marocaines</span>
-          <span class="target-pill">Cabinets & organisations</span>
-        </div>
-
-        <!-- Titre principal -->
-        <h1 class="hero-title">
-          Une communication structurée ne fait pas que vous rendre visible.<br>
-          <em>Elle vous rend crédible et choisi.</em>
-        </h1>
-
-        <!-- Sous-titre -->
-        <p class="hero-subtitle">
-          J'aide les clubs sportifs, PME et cabinets à structurer leur communication digitale et éditoriale pour renforcer leur positionnement et attirer partenaires, clients et opportunités.
-        </p>
-
-        <!-- Signature -->
-        <div class="hero-signature">
-          <div class="signature-line"></div>
-          <div>
-            <strong>Dalal Fahmi</strong>
-            <span>Stratégie éditoriale & digitale · Fondatrice Neybras Family & Neybras Magazine</span>
+<section id="hero" class="hero-slider p-0">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5500">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="hero-slide hero-slide--1">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-7" data-aos="fade-right">
+                <span class="hero-badge">Clubs sportifs · PME · Cabinets</span>
+                <h1 class="hero-title">Une communication <span class="text-accent">structurée</span><br>vous rend crédible et choisi.</h1>
+                <p class="hero-lead">Neybras by Dalal Fahmi — stratégie digitale &amp; éditoriale pour les organisations qui veulent convertir.</p>
+                <div class="hero-actions mt-4">
+                  <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20faire%20un%20point%20sur%20notre%20communication." class="btn btn-primary-custom me-3" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp me-2"></i>Diagnostic gratuit</a>
+                  <a href="#offres" class="btn btn-outline-custom">Voir les offres</a>
+                </div>
+              </div>
+              <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+                <img src="images/portrait.jpg" alt="Dalal Fahmi — Neybras" class="hero-portrait img-fluid" />
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- CTAs -->
-        <div class="hero-ctas d-flex flex-wrap gap-3">
-          <a href="#diagnostic" class="btn btn-hero-primary">
-            Demander un diagnostic stratégique
-            <i class="fa-solid fa-arrow-right ms-2"></i>
-          </a>
-          <a href="#methodology" class="btn btn-hero-outline">
-            Voir la méthode
-          </a>
-          <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20faire%20un%20point%20sur%20notre%20communication%20et%20voir%20si%20un%20diagnostic%20est%20pertinent."
-             class="btn btn-whatsapp" target="_blank" rel="noopener">
-            <i class="fa-brands fa-whatsapp me-2"></i>Discuter sur WhatsApp
-          </a>
-        </div>
-
       </div>
-
-      <div class="col-lg-4 col-md-5 d-none d-md-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-duration="700">
-        <img src="images/portrait.jpg" alt="Dalal Fahmi — Neybras" class="hero-portrait img-fluid" />
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide hero-slide--2">
+          <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+              <div class="col-lg-8" data-aos="fade-up">
+                <span class="hero-badge">PME marocaines</span>
+                <h1 class="hero-title">Votre message mérite<br>d'être <span class="text-accent">entendu</span>.</h1>
+                <p class="hero-lead">Structurez votre présence digitale pour attirer les bons partenaires et accélérer votre croissance.</p>
+                <div class="hero-actions mt-4">
+                  <a href="#diagnostic" class="btn btn-primary-custom me-3">Demander un diagnostic</a>
+                  <a href="#methodology" class="btn btn-outline-custom">Notre méthode</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="hero-slide hero-slide--3">
+          <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+              <div class="col-lg-8" data-aos="fade-up">
+                <span class="hero-badge">Cabinets &amp; organisations</span>
+                <h1 class="hero-title">Du contenu qui <span class="text-accent">génère</span><br>de la confiance.</h1>
+                <p class="hero-lead">Éditorial stratégique, identité de marque, déploiement multicanal — tout ce qu'il faut pour être choisi avant même le premier rendez-vous.</p>
+                <div class="hero-actions mt-4">
+                  <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20faire%20un%20point%20sur%20notre%20communication." class="btn btn-primary-custom me-3" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp me-2"></i>Discutons-en</a>
+                  <a href="#proofs" class="btn btn-outline-custom">Voir les résultats</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
   </div>
-  <div class="hero-bg-accent" aria-hidden="true"></div>
 </section>
 
 
@@ -287,7 +298,7 @@
         <p class="method-conclusion">
           "Une stratégie ne commence pas par publier, mais par comprendre."
         </p>
-        <a href="#offers" class="btn btn-hero-outline mt-4">Voir les offres</a>
+        <a href="#offres" class="btn btn-hero-outline mt-4">Voir les offres</a>
       </div>
     </div>
 
@@ -296,146 +307,98 @@
 
 
 <!-- ═══════════════════════════════════════════════════════
-     SECTION 4 — OFFRES
+     SECTION 4 — OFFRES (Tabs)
 ═══════════════════════════════════════════════════════ -->
-<section id="offers" class="section-offers section-padding">
+<section id="offres" class="section-offres py-6">
   <div class="container">
-
-    <div class="row justify-content-center text-center mb-5">
-      <div class="col-lg-7" data-aos="fade-up">
-        <p class="section-label">Les prestations</p>
-        <h2 class="section-title">Choisissez le niveau d'accompagnement qui correspond à votre situation</h2>
-        <p class="section-desc">Chaque mission commence par un échange de 30 minutes offert, sans engagement.</p>
+    <div class="section-header text-center mb-5" data-aos="fade-up">
+      <span class="section-label">Ce que je propose</span>
+      <h2 class="section-title">Trois niveaux d'accompagnement</h2>
+      <p class="section-sub">Du diagnostic ponctuel à l'accompagnement stratégique mensuel.</p>
+    </div>
+    <ul class="nav nav-pills offres-tabs justify-content-center mb-5" id="offresTabs" role="tablist" data-aos="fade-up">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab-diag" data-bs-toggle="pill" data-bs-target="#pane-diag" type="button" role="tab"><i class="fa-solid fa-magnifying-glass-chart me-2"></i>Diagnostic</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-struct" data-bs-toggle="pill" data-bs-target="#pane-struct" type="button" role="tab"><i class="fa-solid fa-layer-group me-2"></i>Structuration</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-accomp" data-bs-toggle="pill" data-bs-target="#pane-accomp" type="button" role="tab"><i class="fa-solid fa-rocket me-2"></i>Accompagnement</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="offresTabContent">
+      <div class="tab-pane fade show active" id="pane-diag" role="tabpanel">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="offre-visual offre-visual--diag">
+              <div class="offre-icon-wrap"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+              <div class="offre-tag">Séance unique</div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <h3 class="offre-title">Diagnostic stratégique</h3>
+            <p class="offre-for"><i class="fa-solid fa-user-check me-2"></i>Pour qui : clubs sportifs, PME, cabinets souhaitant un état des lieux objectif</p>
+            <ul class="offre-list">
+              <li><i class="fa-solid fa-check me-2"></i>Audit de votre communication actuelle</li>
+              <li><i class="fa-solid fa-check me-2"></i>Identification des gaps stratégiques</li>
+              <li><i class="fa-solid fa-check me-2"></i>Rapport de recommandations actionnable</li>
+              <li><i class="fa-solid fa-check me-2"></i>Feuille de route priorisée</li>
+            </ul>
+            <div class="offre-result"><i class="fa-solid fa-chart-line me-2"></i>Résultat : une vision claire et un plan d'action concret en main</div>
+            <div class="offre-price">Sur devis</div>
+            <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20le%20diagnostic%20strat%C3%A9gique." class="btn btn-primary-custom mt-3" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp me-2"></i>Demander un diagnostic</a>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pane-struct" role="tabpanel">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="offre-visual offre-visual--struct">
+              <div class="offre-icon-wrap"><i class="fa-solid fa-layer-group"></i></div>
+              <div class="offre-tag offre-tag--featured">Le plus demandé</div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <h3 class="offre-title">Structuration éditoriale</h3>
+            <p class="offre-for"><i class="fa-solid fa-user-check me-2"></i>Pour qui : organisations prêtes à construire une présence cohérente et durable</p>
+            <ul class="offre-list">
+              <li><i class="fa-solid fa-check me-2"></i>Positionnement de marque &amp; message clé</li>
+              <li><i class="fa-solid fa-check me-2"></i>Charte éditoriale complète</li>
+              <li><i class="fa-solid fa-check me-2"></i>Calendrier de contenu sur 3 mois</li>
+              <li><i class="fa-solid fa-check me-2"></i>Templates LinkedIn &amp; réseaux sociaux</li>
+              <li><i class="fa-solid fa-check me-2"></i>Formation de l'équipe interne</li>
+            </ul>
+            <div class="offre-result"><i class="fa-solid fa-chart-line me-2"></i>Résultat : une communication unifiée qui convertit sur tous vos canaux</div>
+            <div class="offre-price">Sur devis</div>
+            <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20la%20structuration%20%C3%A9ditoriale." class="btn btn-primary-custom mt-3" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp me-2"></i>Commencer la structuration</a>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pane-accomp" role="tabpanel">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="offre-visual offre-visual--accomp">
+              <div class="offre-icon-wrap"><i class="fa-solid fa-rocket"></i></div>
+              <div class="offre-tag">Mensuel reconductible</div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <h3 class="offre-title">Accompagnement continu</h3>
+            <p class="offre-for"><i class="fa-solid fa-user-check me-2"></i>Pour qui : organisations qui veulent déléguer leur stratégie éditoriale sur la durée</p>
+            <ul class="offre-list">
+              <li><i class="fa-solid fa-check me-2"></i>Pilotage mensuel de la stratégie de contenu</li>
+              <li><i class="fa-solid fa-check me-2"></i>Production &amp; publication de contenus</li>
+              <li><i class="fa-solid fa-check me-2"></i>Reporting mensuel &amp; ajustements</li>
+              <li><i class="fa-solid fa-check me-2"></i>Accès prioritaire &amp; réponse sous 24h</li>
+            </ul>
+            <div class="offre-result"><i class="fa-solid fa-chart-line me-2"></i>Résultat : une présence digitale qui travaille pour vous, chaque mois</div>
+            <div class="offre-price">Sur devis</div>
+            <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l%27accompagnement%20mensuel." class="btn btn-primary-custom mt-3" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp me-2"></i>Démarrer l'accompagnement</a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="row g-4 align-items-start">
-
-      <!-- Offre 1 — Diagnostic -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="offer-card" id="essentiel">
-          <div class="offer-card__header">
-            <p class="offer-card__tag">Pour commencer</p>
-            <h3 class="offer-card__name">Diagnostic stratégique</h3>
-            <p class="offer-card__desc">Pour les structures qui veulent comprendre où elles en sont avant d'agir.</p>
-          </div>
-
-          <div class="offer-card__for">
-            <p class="offer-for-label">Pour qui :</p>
-            <p>Club sportif, PME ou cabinet souhaitant clarifier son positionnement et identifier ses priorités communication.</p>
-          </div>
-
-          <div class="offer-card__what">
-            <p class="offer-what-label">Ce que ça analyse :</p>
-            <ul>
-              <li>Positionnement actuel vs. perçu</li>
-              <li>Cohérence des messages sur vos canaux</li>
-              <li>Forces inexploitées et angles morts</li>
-              <li>Opportunités de différenciation</li>
-            </ul>
-          </div>
-
-          <div class="offer-card__result">
-            <i class="fa-solid fa-bullseye"></i>
-            Rapport complet + session de restitution 2h + feuille de route prioritaire
-          </div>
-
-          <div class="offer-card__price">
-            <span class="price-amount">Sur devis</span>
-            <span class="price-mention">HT · forfait fixe</span>
-          </div>
-
-          <a href="#diagnostic" class="btn btn-outline-offer w-100">Réserver mon diagnostic</a>
-        </div>
-      </div>
-
-      <!-- Offre 2 — Structuration (featured) -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="offer-card offer-card--featured" id="strategique">
-          <div class="offer-card__badge">La plus choisie</div>
-          <div class="offer-card__header">
-            <p class="offer-card__tag">Pour se structurer</p>
-            <h3 class="offer-card__name">Structuration éditoriale</h3>
-            <p class="offer-card__desc">Pour les organisations qui ont besoin d'une base solide pour communiquer avec cohérence.</p>
-          </div>
-
-          <div class="offer-card__for">
-            <p class="offer-for-label">Pour qui :</p>
-            <p>Clubs sportifs en développement, PME en phase de croissance, cabinets qui veulent professionnaliser leur image.</p>
-          </div>
-
-          <div class="offer-card__what">
-            <p class="offer-what-label">Livrables concrets :</p>
-            <ul>
-              <li>Diagnostic stratégique inclus</li>
-              <li>Charte éditoriale complète</li>
-              <li>Messages-clés par cible et canal</li>
-              <li>Plan de contenus sur 3 mois</li>
-              <li>6 contenus pilotes produits</li>
-            </ul>
-          </div>
-
-          <div class="offer-card__result">
-            <i class="fa-solid fa-bullseye"></i>
-            Une communication cohérente, incarnée et opérationnelle en 6 semaines
-          </div>
-
-          <div class="offer-card__price">
-            <span class="price-amount">Sur devis</span>
-            <span class="price-mention">HT · 4 à 6 semaines</span>
-          </div>
-
-          <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l%27offre%20de%20structuration%20%C3%A9ditoriale."
-             class="btn btn-primary-offer w-100" target="_blank" rel="noopener">
-            <i class="fa-brands fa-whatsapp me-2"></i>Demander un devis
-          </a>
-        </div>
-      </div>
-
-      <!-- Offre 3 — Accompagnement continu -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="offer-card" id="premium">
-          <div class="offer-card__header">
-            <p class="offer-card__tag">Partenariat long terme</p>
-            <h3 class="offer-card__name">Accompagnement continu</h3>
-            <p class="offer-card__desc">Pour les structures qui veulent un pilotage stratégique régulier et des résultats durables.</p>
-          </div>
-
-          <div class="offer-card__for">
-            <p class="offer-for-label">Ce que ça inclut :</p>
-            <p>Pilotage stratégique mensuel, suivi des performances, ajustements en temps réel, production de contenus prioritaires.</p>
-          </div>
-
-          <div class="offer-card__what">
-            <p class="offer-what-label">Chaque mois :</p>
-            <ul>
-              <li>Session de pilotage stratégique</li>
-              <li>Reporting + analyse des résultats</li>
-              <li>Mise à jour de la stratégie éditoriale</li>
-              <li>Production de contenus clés</li>
-              <li>Accès prioritaire & réactivité</li>
-            </ul>
-          </div>
-
-          <div class="offer-card__result">
-            <i class="fa-solid fa-bullseye"></i>
-            Une communication qui progresse et génère des résultats mesurables chaque mois
-          </div>
-
-          <div class="offer-card__price">
-            <span class="price-amount">Sur devis</span>
-            <span class="price-mention">selon périmètre · engagement 3 mois min.</span>
-          </div>
-
-          <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20voudrais%20en%20savoir%20plus%20sur%20l%27accompagnement%20continu."
-             class="btn btn-outline-offer w-100" target="_blank" rel="noopener">
-            <i class="fa-brands fa-whatsapp me-2"></i>Échanger
-          </a>
-        </div>
-      </div>
-
-    </div>
-
   </div>
 </section>
 
@@ -653,7 +616,7 @@
           <ul class="footer-links">
             <li><a href="#hero">Accueil</a></li>
             <li><a href="#methodology">Méthode</a></li>
-            <li><a href="#offers">Offres</a></li>
+            <li><a href="#offres">Offres</a></li>
             <li><a href="#about">À propos</a></li>
             <li><a href="#diagnostic">Diagnostic</a></li>
           </ul>
