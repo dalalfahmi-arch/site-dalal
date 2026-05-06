@@ -7,7 +7,7 @@
   <meta name="description" content="J'aide les clubs sportifs, PME et cabinets à structurer leur communication digitale et éditoriale pour renforcer leur positionnement et attirer partenaires, clients et opportunités." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Noto+Kufi+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -23,6 +23,33 @@
   <i class="fa-brands fa-whatsapp"></i>
 </a>
 
+<!-- Bouton flottant latéral -->
+<a href="mailto:dalal.fahmi@neybras.com?subject=Demande%20d%27information%20-%20Neybras"
+   class="side-float" aria-label="Envoyer un message">
+  <i class="fa-solid fa-envelope"></i>
+  <span class="side-float__text">Profitez de notre service — Envoyez un message</span>
+</a>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     TOP BAR
+═══════════════════════════════════════════════════════ -->
+<div class="topbar d-none d-lg-block">
+  <div class="container d-flex align-items-center justify-content-between">
+    <span class="topbar__msg">
+      <i class="fa-solid fa-clock me-2"></i>Économisez votre temps et vos efforts précieux consacrés à la recherche d'une solution.
+      <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20planifier%20une%20session%20strat%C3%A9gique." target="_blank" rel="noopener" class="topbar__cta-link">Contactez-nous dès maintenant →</a>
+    </span>
+    <div class="topbar__contact d-flex align-items-center gap-4">
+      <a href="tel:+212695199559" class="topbar__info">
+        <i class="fa-solid fa-phone me-1"></i>+212 6 95 19 95 59
+      </a>
+      <span class="topbar__info">
+        <i class="fa-solid fa-location-dot me-1"></i>Casablanca · Bouskoura
+      </span>
+    </div>
+  </div>
+</div>
 
 <!-- ═══════════════════════════════════════════════════════
      NAVIGATION
@@ -45,7 +72,9 @@
         <li class="nav-item"><a class="nav-link" href="#offres">Offres</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
         <li class="nav-item ms-lg-3">
-          <a class="btn btn-nav-cta" href="#diagnostic">Demander un diagnostic</a>
+          <a class="btn btn-nav-cta btn-nav-cta--accent" href="#diagnostic">
+            <i class="fa-solid fa-magnifying-glass-chart me-2"></i>Diagnostic gratuit
+          </a>
         </li>
       </ul>
     </div>
@@ -54,77 +83,35 @@
 
 
 <!-- ═══════════════════════════════════════════════════════
-     SECTION 1 — HERO SLIDER
+     SECTION 1 — HERO PLEIN ÉCRAN
 ═══════════════════════════════════════════════════════ -->
-<section id="hero" class="hero-slider p-0">
-  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5500">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-    </div>
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="hero-slide hero-slide--1">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-7" data-aos="fade-right">
-                <span class="hero-badge">Clubs sportifs · PME marocaines · Cabinets &amp; institutions</span>
-                <h1 class="hero-title">L'influence ne se décrète pas, <span class="text-accent">elle se structure</span>.</h1>
-                <p class="hero-lead">Conseil stratégique en communication digitale et éditoriale pour les organisations d'exception. Transformez votre expertise en autorité reconnue.</p>
-                <div class="hero-actions mt-4">
-                  <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20faire%20un%20point%20sur%20notre%20communication." class="btn btn-primary-custom me-3" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp me-2"></i>Planifier une session stratégique</a>
-                  <a href="#offres" class="btn btn-outline-custom">Découvrir l'approche</a>
-                </div>
-              </div>
-              <div class="col-lg-5 d-none d-lg-flex justify-content-center">
-                <img src="images/portrait.jpg" alt="Dalal Fahmi — Neybras" class="hero-portrait img-fluid" />
-              </div>
-            </div>
-          </div>
+<section id="hero" class="hero-fullscreen">
+  <div class="hero-bg-image" style="background-image: url('images/hero-desk.jpg');"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content-wrap">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-xl-5" data-aos="fade-right">
+        <span class="hero-badge">Clubs sportifs · PME marocaines · Cabinets &amp; institutions</span>
+        <h1 class="hero-title">L'influence ne se décrète pas, <span class="text-accent">elle se structure</span>.</h1>
+        <p class="hero-lead">Conseil stratégique en communication digitale et éditoriale pour les organisations d'exception. Transformez votre expertise en autorité reconnue.</p>
+        <div class="hero-actions mt-4 d-flex flex-wrap gap-3">
+          <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20planifier%20une%20session%20strat%C3%A9gique."
+             class="btn btn-accent-hero" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp me-2"></i>Planifier une session stratégique
+          </a>
+          <a href="#methodology" class="btn btn-ghost-hero">Découvrir l'approche</a>
         </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="hero-slide hero-slide--2">
-          <div class="container">
-            <div class="row align-items-center justify-content-center text-center">
-              <div class="col-lg-8" data-aos="fade-up">
-                <span class="hero-badge">PME marocaines</span>
-                <h1 class="hero-title">Votre expertise mérite une <span class="text-accent">voix à sa hauteur</span>.</h1>
-                <p class="hero-lead">Sans architecture éditoriale, votre capital de marque s'érode au lieu de s'imposer. Structurons ensemble votre influence.</p>
-                <div class="hero-actions mt-4">
-                  <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20faire%20un%20point%20sur%20notre%20communication." class="btn btn-primary-custom me-3" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp me-2"></i>Planifier une session</a>
-                  <a href="#methodology" class="btn btn-outline-custom">Notre méthode</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="hero-slide hero-slide--3">
-          <div class="container">
-            <div class="row align-items-center justify-content-center text-center">
-              <div class="col-lg-8" data-aos="fade-up">
-                <span class="hero-badge">Cabinets &amp; institutions</span>
-                <h1 class="hero-title">Du contenu qui <span class="text-accent">positionne</span>, pas seulement qui publie.</h1>
-                <p class="hero-lead">Éditorial stratégique, identité d'autorité, déploiement cohérent — pour être reconnu avant même le premier rendez-vous.</p>
-                <div class="hero-actions mt-4">
-                  <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20faire%20un%20point%20sur%20notre%20communication." class="btn btn-primary-custom me-3" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp me-2"></i>Discutons-en</a>
-                  <a href="#proofs" class="btn btn-outline-custom">Voir les résultats</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="hero-trust mt-5">
+          <span class="hero-trust__item"><i class="fa-solid fa-check-circle me-2"></i>Fondatrice Neybras Family</span>
+          <span class="hero-trust__item"><i class="fa-solid fa-check-circle me-2"></i>Fondatrice Neybras Magazine</span>
+          <span class="hero-trust__item"><i class="fa-solid fa-check-circle me-2"></i>10+ ans d'expertise éditoriale</span>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
   </div>
+  <a href="#problems" class="hero-scroll-cue" aria-label="Défiler vers le bas">
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
 </section>
 
 
@@ -139,6 +126,7 @@
       <div class="col-lg-7" data-aos="fade-up">
         <p class="section-label">Comprendre avant d'agir</p>
         <h2 class="section-title">Trois signaux d'alerte</h2>
+        <p class="section-sub mt-2">Derrière chaque organisation qui communique sans convertir, l'un de ces patterns est à l'œuvre.</p>
       </div>
     </div>
 
@@ -411,15 +399,8 @@
     <div class="row align-items-center g-5">
 
       <div class="col-lg-5" data-aos="fade-right">
-        <!--
-          [PHOTO] — Décommenter quand la photo est prête
-          <div class="about-image-wrapper">
-            <img src="images/portrait.jpg" alt="Dalal Fahmi" class="about-image" />
-          </div>
-        -->
-        <div class="about-image-placeholder">
-          <span>Photo Dalal Fahmi</span>
-          <span class="about-placeholder-hint">Remplacer par images/portrait.jpg</span>
+        <div class="about-image-wrapper">
+          <img src="images/portrait.jpg" alt="Dalal Fahmi — Neybras" class="about-image" />
         </div>
       </div>
 
@@ -480,8 +461,8 @@
 
     <div class="row justify-content-center text-center mb-5">
       <div class="col-lg-6" data-aos="fade-up">
-        <p class="section-label">En chiffres</p>
-        <h2 class="section-title">Une expérience terrain, pas théorique</h2>
+        <p class="section-label">L'expertise en chiffres</p>
+        <h2 class="section-title">Une expertise d'éditrice au service de votre stratégie</h2>
       </div>
     </div>
 
@@ -491,28 +472,28 @@
       <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
         <div class="proof-stat">
           <span class="proof-stat__number">10+</span>
-          <span class="proof-stat__label">ans d'expérience en stratégie éditoriale & digitale</span>
+          <span class="proof-stat__label">ans — stratégie éditoriale, direction de publication et contenus à haute valeur ajoutée</span>
         </div>
       </div>
 
       <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
         <div class="proof-stat">
           <span class="proof-stat__number">2</span>
-          <span class="proof-stat__label">médias fondés et pilotés (Neybras Family & Neybras Magazine)</span>
+          <span class="proof-stat__label">médias fondés — Neybras Family &amp; Neybras Magazine, plateformes de référence fiscale, juridique et éducative au Maroc</span>
         </div>
       </div>
 
       <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
         <div class="proof-stat">
-          <span class="proof-stat__number">40+</span>
-          <span class="proof-stat__label">organisations accompagnées au Maroc</span>
+          <span class="proof-stat__number">✦</span>
+          <span class="proof-stat__label">Expertise sectorielle — clubs sportifs, institutions et monde des affaires, acquise par une production éditoriale rigoureuse</span>
         </div>
       </div>
 
       <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
         <div class="proof-stat">
-          <span class="proof-stat__number">3</span>
-          <span class="proof-stat__label">secteurs couverts : sport, business, institutionnel</span>
+          <span class="proof-stat__number">FR·AR</span>
+          <span class="proof-stat__label">Double culture linguistique — pilotage éditorial en français et en arabe pour une influence cohérente sur vos deux sphères d'audience</span>
         </div>
       </div>
 
@@ -532,11 +513,11 @@
           </div>
           <div class="proof-badge">
             <i class="fa-solid fa-futbol"></i>
-            <span>Spécialiste <strong>clubs sportifs marocains</strong></span>
+            <span>Spécialiste <strong>contenus clubs sportifs</strong></span>
           </div>
           <div class="proof-badge">
-            <i class="fa-solid fa-globe"></i>
-            <span>Communication <strong>bilingue FR / AR</strong></span>
+            <i class="fa-solid fa-building"></i>
+            <span>Expertise <strong>Institutions &amp; PME</strong></span>
           </div>
         </div>
       </div>
@@ -602,6 +583,22 @@
 <!-- ═══════════════════════════════════════════════════════
      FOOTER
 ═══════════════════════════════════════════════════════ -->
+<!-- Footer media brand bar -->
+<div class="footer-media-bar">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center gap-4">
+      <span class="footer-media-label">Écosystème Neybras</span>
+      <a href="https://www.neybras-family.com/" class="footer-media-link" target="_blank" rel="noopener">
+        <i class="fa-solid fa-newspaper me-2"></i>Neybras Family
+      </a>
+      <span class="footer-media-divider">·</span>
+      <a href="https://www.neybras-magazine.com/" class="footer-media-link" target="_blank" rel="noopener">
+        <i class="fa-solid fa-book-open me-2"></i>Neybras Magazine
+      </a>
+    </div>
+  </div>
+</div>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">
@@ -624,8 +621,8 @@
         <div class="col-6 col-lg-2">
           <h5 class="footer-heading">Médias</h5>
           <ul class="footer-links">
-            <li><a href="#" target="_blank" rel="noopener">Neybras Family</a></li>
-            <li><a href="#" target="_blank" rel="noopener">Neybras Magazine</a></li>
+            <li><a href="https://www.neybras-family.com/" target="_blank" rel="noopener">Neybras Family</a></li>
+            <li><a href="https://www.neybras-magazine.com/" target="_blank" rel="noopener">Neybras Magazine</a></li>
           </ul>
         </div>
         <div class="col-lg-3">
