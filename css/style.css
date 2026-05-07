@@ -1257,3 +1257,31 @@ body.lang-ar {
 @media (max-width: 991.98px) {
   [dir="rtl"] #navbarNav { direction: rtl; text-align: right; }
 }
+
+
+/* ══════════════════════════════════════════════════════════
+   LIEN DÉCOUVERTE — Audit Signature
+══════════════════════════════════════════════════════════ */
+.btn-link-discover {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+.btn-link-discover i {
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+}
+.btn-link-discover:hover {
+  color: var(--color-primary);
+  gap: 0.55rem;
+}
+.btn-link-discover:hover i {
+  transform: translateX(3px);
+}

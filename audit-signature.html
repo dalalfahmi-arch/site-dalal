@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="L'Audit Signature Neybras : diagnostic stratégique exclusif pour clubs sportifs, PME et cabinets d'experts au Maroc. De la visibilité à l'autorité. 3,500 MAD HT.">
+    <title>L'Audit Signature — Neybras by Dalal Fahmi</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --color-abyss: #1A2332;
+            --color-gold: #C5A36A;
+            --color-ivory: #F0EDE6;
+            --color-anthracite: #3A3A3A;
+            --color-white: #FFFFFF;
+            --font-display: 'Cormorant Garamond', serif;
+            --font-body: 'DM Sans', sans-serif;
+            --font-mono: 'DM Mono', monospace;
+            --section-padding: clamp(4rem, 10vw, 8rem);
+            --container-max: 1200px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-anthracite);
+            background: var(--color-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ── NAV ── */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1.5rem 3rem;
+            border-bottom: 1px solid rgba(197, 163, 106, 0.2);
+        }
+
+        .nav-container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-abyss);
+            text-decoration: none;
+            line-height: 1.2;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 0.72rem;
+            font-family: var(--font-body);
+            font-weight: 400;
+            color: var(--color-gold);
+            letter-spacing: 0.05em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--color-anthracite);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover { color: var(--color-gold); }
+
+        .nav-cta {
+            background: var(--color-gold) !important;
+            color: var(--color-abyss) !important;
+            padding: 0.6rem 1.4rem;
+            border-radius: 4px;
+            font-weight: 600 !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--color-abyss) !important;
+            color: var(--color-gold) !important;
+        }
+
+        /* ── HERO ── */
+        .hero {
+            background: linear-gradient(135deg, var(--color-abyss) 0%, #2A3A52 100%);
+            color: var(--color-ivory);
+            padding: calc(var(--section-padding) + 5rem) 3rem var(--section-padding);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0;
+            width: 50%; height: 100%;
+            background: radial-gradient(circle at top right, rgba(197, 163, 106, 0.15), transparent 60%);
+        }
+
+        .hero-content {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-label {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 300;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 strong { font-weight: 700; color: var(--color-gold); }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.35rem);
+            line-height: 1.6;
+            max-width: 800px;
+            margin-bottom: 3rem;
+            color: rgba(240, 237, 230, 0.85);
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: var(--color-gold);
+            color: var(--color-abyss);
+            padding: 1.2rem 3rem;
+            font-weight: 600;
+            font-size: 1.05rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(197, 163, 106, 0.3);
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(197, 163, 106, 0.4);
+            color: var(--color-abyss);
+        }
+
+        /* ── SECTIONS ── */
+        section { padding: var(--section-padding) 3rem; }
+
+        .container { max-width: var(--container-max); margin: 0 auto; }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 600;
+            color: var(--color-abyss);
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--color-anthracite);
+            margin-bottom: 3rem;
+            opacity: 0.8;
+        }
+
+        /* ── PROBLÈMES ── */
+        .problem-section { background: var(--color-ivory); }
+
+        .problem-intro {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            max-width: 800px;
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .problem-card {
+            background: var(--color-white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(197, 163, 106, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .problem-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(26, 35, 50, 0.08);
+        }
+
+        .problem-number {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--color-gold);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .problem-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            color: var(--color-abyss);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .problem-card p { color: var(--color-anthracite); line-height: 1.7; margin-bottom: 1rem; }
+
+        .problem-card .consequence {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(197, 163, 106, 0.2);
+            font-weight: 500;
+            color: var(--color-abyss);
+        }
+
+        /* ── CONTENU ── */
+        .content-section { background: var(--color-white); }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .content-item { position: relative; padding-left: 3rem; }
+
+        .content-item::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0.5rem;
+            width: 2rem; height: 2px;
+            background: var(--color-gold);
+        }
+
+        .content-item h3 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            color: var(--color-abyss);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .content-item p { color: var(--color-anthracite); line-height: 1.7; }
+
+        .deliverable {
+            background: linear-gradient(135deg, var(--color-abyss) 0%, #2A3A52 100%);
+            color: var(--color-ivory);
+            padding: 4rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+
+        .deliverable h3 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .deliverable h4 { font-size: 1.4rem; margin-bottom: 2rem; font-weight: 400; }
+
+        .deliverable ul { list-style: none; margin-top: 2rem; }
+
+        .deliverable ul li {
+            padding-left: 2rem;
+            position: relative;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .deliverable ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--color-gold);
+            font-weight: 600;
+        }
+
+        /* ── TIMELINE ── */
+        .methodology-section { background: var(--color-ivory); }
+
+        .timeline { position: relative; padding: 3rem 0; }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50px; top: 0; bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--color-gold), rgba(197, 163, 106, 0.2));
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 120px;
+            margin-bottom: 4rem;
+        }
+
+        .timeline-number {
+            position: absolute;
+            left: 0; top: 0;
+            width: 100px; height: 100px;
+            background: var(--color-gold);
+            color: var(--color-abyss);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-mono);
+            font-size: 1.2rem;
+            font-weight: 600;
+            box-shadow: 0 8px 24px rgba(197, 163, 106, 0.3);
+        }
+
+        .timeline-item h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--color-abyss);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .timeline-duration {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .timeline-item p { color: var(--color-anthracite); line-height: 1.7; margin-bottom: 0.5rem; }
+
+        /* ── COMPARATIF ── */
+        .comparatif-section { background: var(--color-white); }
+
+        .comparison-table {
+            width: 100%;
+            max-width: 900px;
+            margin: 3rem auto;
+            border-collapse: collapse;
+            box-shadow: 0 8px 32px rgba(26, 35, 50, 0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .comparison-table thead { background: var(--color-abyss); color: var(--color-ivory); }
+
+        .comparison-table th {
+            padding: 1.5rem;
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .comparison-table th:first-child { width: 40%; }
+        .comparison-table th.highlight { background: var(--color-gold); color: var(--color-abyss); }
+
+        .comparison-table tbody tr { border-bottom: 1px solid rgba(197, 163, 106, 0.2); }
+        .comparison-table tbody tr:hover { background: var(--color-ivory); }
+
+        .comparison-table td { padding: 1.5rem; vertical-align: top; }
+        .comparison-table td:first-child { font-weight: 600; color: var(--color-abyss); }
+
+        .comparison-table .check { color: #4CAF50; font-weight: 700; font-size: 1.2rem; }
+        .comparison-table .cross { color: #E57373; font-weight: 700; font-size: 1.2rem; }
+        .comparison-table .highlight-cell { background: rgba(197, 163, 106, 0.1); font-weight: 600; }
+
+        /* ── TÉMOIGNAGES ── */
+        .testimonials-section { background: var(--color-ivory); }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--color-white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--color-gold);
+            box-shadow: 0 4px 16px rgba(26, 35, 50, 0.05);
+        }
+
+        .testimonial-quote {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--color-anthracite);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(197, 163, 106, 0.2);
+        }
+
+        .testimonial-avatar {
+            width: 50px; height: 50px;
+            border-radius: 50%;
+            background: var(--color-gold);
+            color: var(--color-abyss);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .testimonial-info strong { display: block; color: var(--color-abyss); font-weight: 600; margin-bottom: 0.25rem; }
+        .testimonial-info span { font-size: 0.9rem; color: var(--color-gold); }
+
+        /* ── EXPERTISE ── */
+        .expertise-section { background: var(--color-white); }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .expertise-content h3 {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            color: var(--color-abyss);
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .expertise-highlight {
+            background: var(--color-ivory);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .expertise-highlight h4 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .expertise-highlight p { color: var(--color-anthracite); line-height: 1.7; }
+
+        .expertise-conclusion {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--color-gold);
+        }
+
+        .expertise-conclusion strong { color: var(--color-abyss); font-size: 1.1rem; }
+
+        .expertise-image {
+            width: 100%;
+            height: 560px;
+            border-radius: 12px;
+            overflow: hidden;
+            position: sticky;
+            top: 6rem;
+        }
+
+        .expertise-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+
+        .expertise-image-inner {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26,35,50,0.88) 0%, rgba(26,35,50,0.15) 60%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        /* ── TARIFS ── */
+        .pricing-section { background: var(--color-abyss); color: var(--color-ivory); }
+
+        .pricing-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid var(--color-gold);
+            border-radius: 12px;
+            padding: 4rem;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .pricing-box h3 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .pricing-box p { font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem; }
+
+        .pricing-details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(197, 163, 106, 0.3);
+            border-bottom: 1px solid rgba(197, 163, 106, 0.3);
+        }
+
+        .pricing-detail { text-align: center; }
+
+        .pricing-detail strong {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .pricing-detail span { font-size: 1.4rem; font-weight: 600; }
+
+        .pricing-cta {
+            display: inline-block;
+            background: var(--color-gold);
+            color: var(--color-abyss);
+            padding: 1.2rem 3rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .pricing-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(197, 163, 106, 0.4);
+            color: var(--color-abyss);
+        }
+
+        .pricing-note { margin-top: 2rem; font-size: 0.92rem; opacity: 0.75; }
+
+        /* ── FAQ ── */
+        .faq-section { background: var(--color-ivory); }
+        .faq-list { max-width: 800px; margin: 0 auto; }
+
+        .faq-item {
+            background: var(--color-white);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--color-gold);
+        }
+
+        .faq-item h4 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            color: var(--color-abyss);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .faq-item p { color: var(--color-anthracite); line-height: 1.7; }
+
+        /* ── FORMULAIRE ── */
+        .contact-form-section { background: var(--color-white); }
+
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: var(--color-ivory);
+            padding: 3rem;
+            border-radius: 12px;
+            border: 2px solid var(--color-gold);
+        }
+
+        .form-intro { text-align: center; margin-bottom: 2rem; }
+
+        .form-intro h3 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--color-abyss);
+            margin-bottom: 1rem;
+        }
+
+        .form-intro p { color: var(--color-anthracite); }
+
+        .contact-form { display: grid; gap: 1.5rem; }
+
+        .form-group { display: flex; flex-direction: column; }
+
+        .form-group label { font-weight: 600; color: var(--color-abyss); margin-bottom: 0.5rem; font-size: 0.95rem; }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            padding: 1rem;
+            border: 1px solid rgba(197, 163, 106, 0.3);
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            background: var(--color-white);
+            color: var(--color-anthracite);
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus { outline: none; border-color: var(--color-gold); }
+
+        .form-group textarea { min-height: 150px; resize: vertical; }
+
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+
+        .form-submit {
+            background: var(--color-abyss);
+            color: var(--color-ivory);
+            padding: 1.2rem;
+            border: none;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover { background: var(--color-gold); color: var(--color-abyss); transform: translateY(-2px); }
+
+        .form-note { text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: var(--color-anthracite); opacity: 0.8; }
+
+        /* ── FOOTER ── */
+        footer { background: var(--color-abyss); color: var(--color-ivory); padding: 4rem 3rem 2rem; }
+
+        .footer-content {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h5 { font-family: var(--font-display); font-size: 1.2rem; color: var(--color-gold); margin-bottom: 1.5rem; }
+        .footer-section ul { list-style: none; }
+        .footer-section ul li { margin-bottom: 0.8rem; }
+
+        .footer-section a { color: var(--color-ivory); text-decoration: none; opacity: 0.8; transition: opacity 0.3s ease; font-size: 0.95rem; }
+        .footer-section a:hover { opacity: 1; color: var(--color-gold); }
+
+        .footer-bottom {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(197, 163, 106, 0.2);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            nav { padding: 1rem 1.5rem; }
+            .nav-links { display: none; }
+            .hero, section { padding-left: 1.5rem; padding-right: 1.5rem; }
+            .expertise-grid { grid-template-columns: 1fr; }
+            .expertise-image { height: 420px; position: static; }
+            .timeline::before { left: 20px; }
+            .timeline-item { padding-left: 80px; }
+            .timeline-number { width: 60px; height: 60px; font-size: 1rem; }
+            .pricing-details { grid-template-columns: 1fr; gap: 1.5rem; }
+            .form-grid { grid-template-columns: 1fr; }
+            .form-container { padding: 2rem 1.5rem; }
+            .comparison-table { font-size: 0.85rem; }
+            .comparison-table th, .comparison-table td { padding: 1rem; }
+            .deliverable { padding: 2.5rem 1.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                Neybras
+                <span>by Dalal Fahmi</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#methodology">Méthode</a></li>
+                <li><a href="index.html#offres">Offres</a></li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="#contact" class="nav-cta">Réserver l'Audit</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-label">L'Audit qui change tout</div>
+            <h1>Votre communication manque de <strong>structure stratégique</strong> ?</h1>
+            <p class="hero-subtitle">Découvrez l'Audit Signature : un diagnostic manuel et sur-mesure pour clubs sportifs, PME et cabinets qui veulent enfin être perçus à la hauteur de leur expertise.</p>
+
+            <div style="background: rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px; margin: 2rem 0 3rem; border-left: 4px solid var(--color-gold); max-width: 680px;">
+                <p style="font-size: 1.05rem; margin-bottom: 1.25rem; color: var(--color-ivory); font-weight: 500;">Contrairement à un audit automatisé ou standardisé, chaque Audit Signature est réalisé manuellement et inclut :</p>
+                <ul style="list-style: none; padding: 0; display: grid; gap: 0.6rem;">
+                    <li style="padding-left: 1.75rem; position: relative; color: rgba(240,237,230,0.9);">
+                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 0.25rem; color: var(--color-gold); font-size: 0.82rem;"></i>
+                        Analyse stratégique approfondie
+                    </li>
+                    <li style="padding-left: 1.75rem; position: relative; color: rgba(240,237,230,0.9);">
+                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 0.25rem; color: var(--color-gold); font-size: 0.82rem;"></i>
+                        Benchmarking sectoriel (Maroc & international)
+                    </li>
+                    <li style="padding-left: 1.75rem; position: relative; color: rgba(240,237,230,0.9);">
+                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 0.25rem; color: var(--color-gold); font-size: 0.82rem;"></i>
+                        Lecture éditoriale bilingue (français & arabe)
+                    </li>
+                    <li style="padding-left: 1.75rem; position: relative; color: rgba(240,237,230,0.9);">
+                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 0.25rem; color: var(--color-gold); font-size: 0.82rem;"></i>
+                        Restitution personnalisée (90 min en direct)
+                    </li>
+                </ul>
+            </div>
+
+            <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20r%C3%A9server%20l%27Audit%20Signature." class="hero-cta">
+                <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem;"></i>
+                Réserver mon Audit Stratégique →
+            </a>
+        </div>
+    </section>
+
+    <!-- PROBLÈMES -->
+    <section class="problem-section">
+        <div class="container">
+            <h2 class="section-title">Pourquoi l'effort ne suffit plus</h2>
+            <p class="problem-intro">La plupart des organisations communiquent, mais peu dominent leur sujet. Sans une architecture claire, votre expertise est diluée. Vous publiez, vous investissez du temps et du budget, mais la stature que vous méritez ne se construit pas.</p>
+            <p class="problem-intro"><strong>L'Audit Signature identifie les trois failles majeures qui freinent votre rayonnement :</strong></p>
+
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <span class="problem-number">FAILLE 01</span>
+                    <h3>Le Décalage de Stature</h3>
+                    <p><strong>Le problème :</strong> Votre niveau réel est supérieur à votre image perçue. Vos prospects ne mesurent pas la profondeur de votre expertise parce que votre écosystème digital ne parle pas votre langue d'excellence.</p>
+                    <p class="consequence"><strong>La conséquence :</strong> Vous investissez en visibilité sans bâtir d'autorité durable.</p>
+                </div>
+
+                <div class="problem-card">
+                    <span class="problem-number">FAILLE 02</span>
+                    <h3>La Dispersion Narrative</h3>
+                    <p><strong>Le problème :</strong> Votre message se perd dans la masse faute de piliers éditoriaux solides. Vous communiquez, mais sans cohérence stratégique — ce qui crée du bruit, pas de l'autorité.</p>
+                    <p class="consequence"><strong>La conséquence :</strong> Des opportunités qualifiées vous échappent, faute d'une identité éditoriale cohérente.</p>
+                </div>
+
+                <div class="problem-card">
+                    <span class="problem-number">FAILLE 03</span>
+                    <h3>L'Angle Mort Stratégique</h3>
+                    <p><strong>Le problème :</strong> Des opportunités de croissance existent dans votre marché, mais vous ne les voyez pas encore. Sans direction stratégique, votre capital de marque s'érode au lieu de s'imposer.</p>
+                    <p class="consequence"><strong>La conséquence :</strong> Vous êtes actif, visible — mais pas encore choisi.</p>
+                </div>
+            </div>
+
+            <p style="text-align: center; font-size: 1.2rem; margin-top: 4rem; font-weight: 600;">
+                Le problème n'est pas l'effort. C'est <strong style="color: var(--color-gold);">l'absence d'architecture stratégique.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTENU -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Une lecture sans complaisance de votre écosystème</h2>
+            <p class="section-subtitle">L'Audit Signature est un diagnostic à 360° de votre présence, votre discours et votre positionnement.</p>
+
+            <div class="content-grid">
+                <div class="content-item">
+                    <h3>1. Audit de l'Empreinte Numérique</h3>
+                    <p>Analyse critique de vos canaux actuels : site web, réseaux sociaux, supports de communication. Nous évaluons ce qui fonctionne, ce qui freine, et ce qui vous différencie (ou non) de vos concurrents directs.</p>
+                </div>
+                <div class="content-item">
+                    <h3>2. Diagnostic de Résonance Éditoriale</h3>
+                    <p>Cohérence de votre discours en français et en arabe. Votre message porte-t-il dans les deux langues ? Parlez-vous à vos audiences cibles avec le ton, le registre et les codes qui créent la confiance ?</p>
+                </div>
+                <div class="content-item">
+                    <h3>3. Analyse de Positionnement Sectoriel</h3>
+                    <p>Benchmarking face aux standards du luxe et de l'excellence. Où vous situez-vous par rapport aux acteurs de référence de votre secteur — au Maroc et à l'international ?</p>
+                </div>
+                <div class="content-item">
+                    <h3>4. Cartographie des Territoires d'Influence</h3>
+                    <p>Identification des espaces éditoriaux, thématiques et narratifs que vous pourriez occuper pour asseoir votre autorité et vous distinguer durablement.</p>
+                </div>
+            </div>
+
+            <div class="deliverable">
+                <h3>LE LIVRABLE</h3>
+                <h4>Votre Roadmap de Positionnement d'Élite</h4>
+                <p>Un rapport stratégique complet et actionnable de 15 à 25 pages comprenant :</p>
+                <ul>
+                    <li>Diagnostic de votre empreinte actuelle (forces, faiblesses, opportunités)</li>
+                    <li>Recommandations priorisées par impact et faisabilité</li>
+                    <li>Plan d'action éditorial et digital sur 6 mois</li>
+                    <li>Exemples concrets de contenus différenciants adaptés à votre secteur</li>
+                    <li>Grille d'évaluation pour mesurer vos progrès</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- MÉTHODOLOGIE -->
+    <section class="methodology-section">
+        <div class="container">
+            <h2 class="section-title">4 étapes pour passer de la confusion à la clarté stratégique</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">01</div>
+                    <h3>Immersion</h3>
+                    <span class="timeline-duration">Semaine 1</span>
+                    <p><strong>Objectif :</strong> Comprendre votre contexte, vos ambitions et vos contraintes.</p>
+                    <p>Entretiens stratégiques avec les décideurs clés, collecte de vos supports existants, analyse de votre historique de communication et de votre écosystème concurrentiel.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">02</div>
+                    <h3>Analyse</h3>
+                    <span class="timeline-duration">Semaine 2</span>
+                    <p><strong>Objectif :</strong> Décortiquer chaque dimension de votre présence.</p>
+                    <p>Audit technique de vos plateformes, audit sémantique de votre discours, benchmarking sectoriel, identification des gaps de positionnement et des opportunités inexploitées.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">03</div>
+                    <h3>Diagnostic</h3>
+                    <span class="timeline-duration">Semaine 2–3</span>
+                    <p><strong>Objectif :</strong> Formuler une lecture stratégique claire.</p>
+                    <p>Identification des leviers de différenciation, définition de vos piliers éditoriaux, cartographie de vos territoires d'influence prioritaires, construction de votre feuille de route.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">04</div>
+                    <h3>Livraison</h3>
+                    <span class="timeline-duration">Semaine 3</span>
+                    <p><strong>Objectif :</strong> Vous remettre un plan d'action concret et actionnable.</p>
+                    <p>Présentation de votre Roadmap de Positionnement d'Élite lors d'une session stratégique de 90 minutes. Vous repartez avec un plan d'action clair, séquencé et priorisé.</p>
+                </div>
+            </div>
+
+            <p style="text-align: center; font-size: 1.1rem; margin-top: 3rem; font-weight: 600;">
+                <strong>Durée totale :</strong> 2 à 3 semaines entre le lancement et la restitution.
+            </p>
+        </div>
+    </section>
+
+    <!-- COMPARATIF -->
+    <section class="comparatif-section">
+        <div class="container">
+            <h2 class="section-title">L'Audit Signature vs. autres audits de communication</h2>
+            <p class="section-subtitle">Ce qui distingue notre approche des audits génériques</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Critère</th>
+                        <th>Audits génériques</th>
+                        <th class="highlight">L'Audit Signature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Approche</td>
+                        <td>Check-list standardisée, applicable à tous les secteurs</td>
+                        <td class="highlight-cell">Diagnostic sur-mesure adapté aux codes de votre secteur (sport, conseil, PME)</td>
+                    </tr>
+                    <tr>
+                        <td>Analyse éditoriale bilingue</td>
+                        <td class="cross">✗</td>
+                        <td class="highlight-cell check">✓</td>
+                    </tr>
+                    <tr>
+                        <td>Benchmark international</td>
+                        <td>Limité au Maroc ou absent</td>
+                        <td class="highlight-cell">Comparaison avec les standards d'excellence internationaux</td>
+                    </tr>
+                    <tr>
+                        <td>Livrables</td>
+                        <td>Rapport PDF statique, souvent technique et difficilement exploitable</td>
+                        <td class="highlight-cell">Roadmap actionnable avec exemples concrets et plan priorisé</td>
+                    </tr>
+                    <tr>
+                        <td>Expertise sectorielle</td>
+                        <td>Consultants généralistes</td>
+                        <td class="highlight-cell">Éditrice spécialisée avec 10 ans d'expérience médias premium</td>
+                    </tr>
+                    <tr>
+                        <td>Session de restitution</td>
+                        <td>30–45 min par email ou visio basique</td>
+                        <td class="highlight-cell">90 min de session stratégique dédiée</td>
+                    </tr>
+                    <tr>
+                        <td>Perspective éditoriale</td>
+                        <td class="cross">✗ (Focus technique/marketing uniquement)</td>
+                        <td class="highlight-cell check">✓ (Regard éditorial + stratégique)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- TÉMOIGNAGES -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Ils ont fait le choix de la clarté</h2>
+            <p class="section-subtitle">Ce qu'ils disent de l'Audit Signature</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"On savait qu'on avait un problème de communication, mais on ne savait pas par où commencer. L'audit nous a montré exactement ce qui ne marchait pas — et surtout ce qu'on devait faire en priorité. Six mois après, on reçoit enfin des demandes d'inscription qui correspondent à ce qu'on propose vraiment."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">KM</div>
+                        <div class="testimonial-info">
+                            <strong>Karim M.</strong>
+                            <span>Directeur — Académie sportive, Casablanca</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"On avait des supports partout — site, brochures, réseaux — mais rien ne se parlait. L'audit nous a fait réaliser qu'on changeait de discours d'un support à l'autre. Dalal nous a aidés à remettre de la cohérence. Aujourd'hui, nos partenaires nous prennent plus au sérieux."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SA</div>
+                        <div class="testimonial-info">
+                            <strong>Sofia A.</strong>
+                            <span>Associée — Cabinet de conseil RH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Ce qui m'a frappé : Dalal a mis le doigt sur des choses qu'on cherchait à comprendre depuis deux ans. Le rapport était concret, pas rempli de formules toutes faites. Chaque recommandation était pensée pour notre situation. Un investissement que je referais les yeux fermés."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">YB</div>
+                        <div class="testimonial-info">
+                            <strong>Youssef B.</strong>
+                            <span>CEO — PME Tech & Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section class="expertise-section">
+        <div class="container">
+            <h2 class="section-title">Références & univers</h2>
+            <p class="section-subtitle">Une expertise forgée dans l'édition premium et le conseil stratégique</p>
+
+            <div class="expertise-grid">
+                <div class="expertise-content">
+                    <h3>Pourquoi me faire confiance ?</h3>
+
+                    <div class="expertise-highlight">
+                        <h4>Expérience éditoriale prouvée</h4>
+                        <p>Fondatrice et Directrice de publication de deux médias de référence au Maroc : <strong>Neybras Magazine</strong> (B2B : droit, finance, tech pour décideurs) et <strong>Neybras Family</strong> (B2C premium : éducation, orientation, finances personnelles pour familles CSP+).</p>
+                        <p style="margin-top: 1rem; font-size: 0.92rem; opacity: 0.9;"><strong>Preuve concrète :</strong> 4 volumes print de Neybras Magazine (Oct 2025 – Mars 2026), 3 000 exemplaires par édition distribués auprès de décideurs juridiques et financiers. Vol. 001 de Neybras Family lancé en avril 2026.</p>
+                    </div>
+
+                    <div class="expertise-highlight">
+                        <h4>Secteurs étudiés & maîtrisés</h4>
+                        <p><strong>Clubs sportifs & académies :</strong> Connaissance approfondie des enjeux de positionnement face aux standards internationaux (opportunité Coupe du Monde 2030).</p>
+                        <p style="margin-top: 0.5rem;"><strong>PME & startups :</strong> Accompagnement de structures en croissance cherchant à structurer leur communication pour attirer partenaires et investisseurs.</p>
+                        <p style="margin-top: 0.5rem;"><strong>Cabinets de conseil :</strong> Expertise en positionnement premium et communication B2B exigeante.</p>
+                    </div>
+
+                    <div class="expertise-highlight">
+                        <h4>Compétence bilingue réelle</h4>
+                        <p>Capacité démontrée à produire et analyser des contenus éditoriaux de haut niveau en <strong>français et en arabe</strong> — un atout rare sur le marché marocain du conseil en communication.</p>
+                    </div>
+
+                    <div class="expertise-highlight">
+                        <h4>Crédibilité institutionnelle</h4>
+                        <p>Partenariat avec le <strong>Château de Chenonceau</strong> (France) intégré à Neybras Family — signal de reconnaissance internationale et de capacité à porter des collaborations de prestige.</p>
+                        <p style="margin-top: 0.5rem;">Publications juridiques et fiscales commandées à des experts de référence pour Neybras Magazine (gouvernance d'entreprise, arbitrage international, sécurité juridique pour investisseurs).</p>
+                    </div>
+
+                    <div class="expertise-conclusion">
+                        <p><strong>Ce que cela signifie pour vous :</strong> Un regard éditorial formé à l'exigence du média de prestige, appliqué à la structuration de votre communication avec la rigueur d'une consultante terrain.</p>
+                    </div>
+                </div>
+
+                <div class="expertise-image" style="position: relative;">
+                    <img src="images/portrait.jpg.png" alt="Dalal Fahmi — Consultante stratégie éditoriale et digitale, Neybras">
+                    <div class="expertise-image-inner">
+                        <div style="font-family: var(--font-display); font-size: 1.8rem; color: var(--color-gold); margin-bottom: 0.5rem;">Dalal Fahmi</div>
+                        <div style="font-size: 0.9rem; color: var(--color-ivory); margin-bottom: 1.5rem; opacity: 0.9; line-height: 1.5;">Consultante en Stratégie Digitale & Éditoriale<br>Fondatrice Neybras Publishing</div>
+                        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center;">
+                            <a href="https://www.neybras-magazine.com" target="_blank" style="background: rgba(197,163,106,0.2); color: var(--color-gold); padding: 0.6rem 1.2rem; border-radius: 4px; text-decoration: none; font-size: 0.85rem; border: 1px solid var(--color-gold);">Neybras Magazine →</a>
+                            <a href="https://www.neybras-family.com" target="_blank" style="background: rgba(197,163,106,0.2); color: var(--color-gold); padding: 0.6rem 1.2rem; border-radius: 4px; text-decoration: none; font-size: 0.85rem; border: 1px solid var(--color-gold);">Neybras Family →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem; padding: 2.5rem; background: var(--color-ivory); border-radius: 8px; border-left: 4px solid var(--color-gold);">
+                <h4 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--color-abyss); margin-bottom: 1.5rem;">Preuves tangibles</h4>
+                <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem; list-style: none;">
+                    <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                        <span style="color: var(--color-gold); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;">→</span>
+                        <span><strong>4 volumes print</strong> Neybras Magazine publiés (Oct 2025 – Mars 2026)</span>
+                    </li>
+                    <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                        <span style="color: var(--color-gold); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;">→</span>
+                        <span><strong>3 000 exemplaires</strong> distribués par édition</span>
+                    </li>
+                    <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                        <span style="color: var(--color-gold); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;">→</span>
+                        <span><strong>2 sites web</strong> éditoriaux opérationnels (Ghost CMS)</span>
+                    </li>
+                    <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                        <span style="color: var(--color-gold); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;">→</span>
+                        <span><strong>Partenariat Château de Chenonceau</strong> (France)</span>
+                    </li>
+                    <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                        <span style="color: var(--color-gold); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;">→</span>
+                        <span><strong>10 ans d'expérience</strong> en direction éditoriale</span>
+                    </li>
+                    <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                        <span style="color: var(--color-gold); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;">→</span>
+                        <span><strong>Expertise bilingue</strong> français/arabe démontrée</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARIFS -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-box">
+                <h3>Prêt à structurer votre influence ?</h3>
+                <p>L'Audit Signature est le premier pas vers une présence digitale et éditoriale qui travaille pour vous — pas contre vous.</p>
+                <p>Vous ne cherchez pas plus de visibilité. Vous cherchez la <strong>bonne visibilité</strong> : celle qui construit l'autorité, attire les bons clients et positionne votre organisation comme référence dans votre secteur.</p>
+
+                <div class="pricing-details">
+                    <div class="pricing-detail">
+                        <strong>Diagnostic découverte</strong>
+                        <span>Gratuit 30 min</span>
+                    </div>
+                    <div class="pricing-detail">
+                        <strong>Audit stratégique premium</strong>
+                        <span>3 500 MAD</span>
+                    </div>
+                    <div class="pricing-detail">
+                        <strong>Accompagnement mensuel</strong>
+                        <span>à partir de 6 000 MAD/mois</span>
+                    </div>
+                </div>
+
+                <a href="#contact" class="pricing-cta">Réserver mon Audit Signature →</a>
+
+                <p class="pricing-note">L'Audit Signature inclut : Roadmap de Positionnement d'Élite (15–25 pages) + Session de restitution stratégique (90 min)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Questions fréquentes</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4>L'audit est-il adapté aux petites structures ?</h4>
+                    <p>Absolument. L'Audit Signature est conçu pour être actionnable quel que soit votre budget. Les recommandations sont priorisées en fonction de l'impact et de la faisabilité, avec des solutions adaptées aux PME et structures en croissance.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Quelle est la différence avec un audit SEO ou technique ?</h4>
+                    <p>Un audit SEO analyse votre référencement Google. Un audit technique évalue vos outils. L'Audit Signature analyse votre <strong>positionnement stratégique</strong> : comment votre organisation est perçue, comment votre discours porte (ou non), et quels territoires d'influence vous devriez occuper.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Combien de temps dois-je consacrer à l'audit ?</h4>
+                    <p>Environ 3 à 4 heures au total : 1h30 d'entretien initial, 30 min de validation intermédiaire, et 90 min de session de restitution. Nous gérons toute l'analyse en autonomie.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>L'audit inclut-il des recommandations techniques (site web, réseaux sociaux) ?</h4>
+                    <p>Oui, mais toujours dans une perspective stratégique. Nous identifions les freins techniques qui impactent votre crédibilité, mais l'accent est mis sur le <strong>positionnement, le discours et la cohérence éditoriale</strong> plutôt que sur les aspects purement IT.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Puis-je commander uniquement l'audit sans aller plus loin ?</h4>
+                    <p>Bien sûr. L'Audit Signature est un livrable autonome et complet. Beaucoup de clients l'utilisent comme feuille de route interne et implémentent les recommandations avec leurs équipes. D'autres choisissent ensuite un accompagnement stratégique mensuel pour accélérer la mise en œuvre.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>L'analyse bilingue français/arabe est-elle obligatoire ?</h4>
+                    <p>Non. Si votre communication se fait uniquement en français, l'audit se concentre sur cette langue. L'analyse bilingue est activée uniquement si vous communiquez déjà (ou prévoyez de communiquer) en arabe auprès de vos audiences.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Que se passe-t-il après la restitution de l'audit ?</h4>
+                    <p>Vous repartez avec votre Roadmap et pouvez l'implémenter en interne. Si vous souhaitez un accompagnement, trois options s'offrent à vous : <strong>Structuration Éditoriale</strong> (construction de votre ligne éditoriale complète), <strong>Accompagnement de Positionnement</strong> (pilotage mensuel), ou des missions ponctuelles sur-mesure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-intro">
+                    <h3>Réserver votre Audit Signature</h3>
+                    <p>Remplissez ce formulaire ou contactez-nous directement par WhatsApp. Réponse sous 24h.</p>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/mgoppdpg" method="POST">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nom">Nom complet *</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fonction">Fonction *</label>
+                            <input type="text" id="fonction" name="fonction" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="organisation">Organisation *</label>
+                        <input type="text" id="organisation" name="organisation" placeholder="Nom de votre club, PME, cabinet ou académie" required>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Téléphone *</label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="+212 6XX XX XX XX" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="secteur">Secteur d'activité *</label>
+                        <select id="secteur" name="secteur" required>
+                            <option value="">-- Sélectionnez votre secteur --</option>
+                            <option value="Club sportif">Club sportif / Académie</option>
+                            <option value="PME">PME (services, tech, industrie)</option>
+                            <option value="Cabinet conseil">Cabinet de conseil</option>
+                            <option value="Cabinet expertise">Cabinet d'expertise (comptable, juridique, etc.)</option>
+                            <option value="Institution">Institution / Association</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Décrivez brièvement votre situation actuelle *</label>
+                        <textarea id="message" name="message" placeholder="Exemple : Nous avons un site web et des réseaux sociaux, mais nous avons l'impression de communiquer sans stratégie claire. Nous aimerions comprendre pourquoi notre message ne porte pas..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget communication annuel (optionnel)</label>
+                        <select id="budget" name="budget">
+                            <option value="">-- Optionnel --</option>
+                            <option value="Moins de 50K MAD">Moins de 50 000 MAD</option>
+                            <option value="50K-150K MAD">50 000 – 150 000 MAD</option>
+                            <option value="150K-300K MAD">150 000 – 300 000 MAD</option>
+                            <option value="Plus de 300K MAD">Plus de 300 000 MAD</option>
+                        </select>
+                    </div>
+
+                    <input type="hidden" name="_subject" value="Nouvelle demande : Audit Signature">
+                    <input type="hidden" name="_next" value="https://neybras.com/merci.html">
+
+                    <button type="submit" class="form-submit">Envoyer ma demande →</button>
+
+                    <p class="form-note">Ou contactez-nous via <strong>WhatsApp</strong> : <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20r%C3%A9server%20l%27Audit%20Signature." style="color: var(--color-gold);">+212 6 95 19 95 59</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>Neybras by Dalal Fahmi</h5>
+                <p style="opacity: 0.8; line-height: 1.7; font-size: 0.92rem;">Stratégie éditoriale & digitale pour clubs sportifs, PME et cabinets au Maroc.</p>
+            </div>
+            <div class="footer-section">
+                <h5>Navigation</h5>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#methodology">Méthode</a></li>
+                    <li><a href="index.html#offres">Offres</a></li>
+                    <li><a href="index.html#about">À propos</a></li>
+                    <li><a href="#contact">Réserver l'Audit</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Écosystème Neybras</h5>
+                <ul>
+                    <li><a href="https://www.neybras-family.com/" target="_blank">Neybras Family</a></li>
+                    <li><a href="https://www.neybras-magazine.com/" target="_blank">Neybras Magazine</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Contact direct</h5>
+                <ul>
+                    <li><a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a></li>
+                    <li><a href="https://wa.me/212695199559">WhatsApp : +212 6 95 19 95 59</a></li>
+                    <li><a href="https://www.linkedin.com/in/dalal-fahmi/" target="_blank">LinkedIn</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="yr"></span> Neybras by Dalal Fahmi — Tous droits réservés. Casablanca, Maroc.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('yr').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
