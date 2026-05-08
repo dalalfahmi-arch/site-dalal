@@ -1020,9 +1020,18 @@ a.topbar__info:hover { color: #C5A36A; }
 .about-point h4 {
   font-family: var(--font-heading);
   font-size: 1rem; font-weight: 700;
-  color: var(--color-dark); margin-bottom: 0.3rem;
+  color: var(--color-dark); margin-bottom: 0.4rem;
 }
-.about-point p { font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.7; }
+.about-point p { font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.75; }
+.about-point__context {
+  display: block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
 
 
 /* ══════════════════════════════════════════════════════════
