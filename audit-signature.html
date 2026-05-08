@@ -718,6 +718,75 @@
             font-size: 0.9rem;
         }
 
+        /* ── OUTCOMES GRID ── */
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0;
+            margin-top: 3rem;
+            border: 1px solid rgba(197, 163, 106, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .outcome-item {
+            padding: 2.75rem 3rem;
+            border-right: 1px solid rgba(197, 163, 106, 0.15);
+            border-bottom: 1px solid rgba(197, 163, 106, 0.15);
+            transition: background 0.3s ease;
+        }
+        .outcome-item:nth-child(even) { border-right: none; }
+        .outcome-item:nth-child(3),
+        .outcome-item:nth-child(4) { border-bottom: none; }
+        .outcome-item:hover { background: rgba(197, 163, 106, 0.04); }
+        .outcome-num {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--color-gold);
+            letter-spacing: 0.12em;
+            display: block;
+            margin-bottom: 1.25rem;
+        }
+        .outcome-item h3 {
+            font-family: var(--font-display);
+            font-size: clamp(1.35rem, 2vw, 1.6rem);
+            color: var(--color-abyss);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        .outcome-item p {
+            color: var(--color-anthracite);
+            line-height: 1.78;
+            font-size: 0.97rem;
+        }
+
+        /* ── FLOATING WHATSAPP ── */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 9999;
+            width: 58px;
+            height: 58px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 18px rgba(37, 211, 102, 0.45);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            background: #1da851;
+            transform: scale(1.08);
+            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.55);
+        }
+        .whatsapp-float i {
+            font-size: 1.65rem;
+            color: #fff;
+        }
+
         /* ── HERO TENSION PHRASE ── */
         .hero-tension {
             font-family: var(--font-display);
@@ -851,6 +920,11 @@
             .comparison-table { font-size: 0.85rem; }
             .comparison-table th, .comparison-table td { padding: 1rem; }
             .deliverable { padding: 2.5rem 1.75rem; }
+            .outcomes-grid { grid-template-columns: 1fr; }
+            .outcome-item { border-right: none !important; }
+            .outcome-item:last-child { border-bottom: none; }
+            .quote-break { padding: 2.5rem 1.5rem; }
+            .whatsapp-float { bottom: 1.25rem; right: 1.25rem; width: 52px; height: 52px; }
         }
     </style>
 </head>
@@ -944,25 +1018,29 @@
     <!-- CONTENU -->
     <section class="content-section">
         <div class="container">
-            <h2 class="section-title">Ce que l'audit révèle réellement</h2>
-            <p class="section-subtitle">Un diagnostic complet de votre présence, de votre discours et de la perception réelle de votre organisation.</p>
+            <h2 class="section-title">Ce que vous gagnez réellement</h2>
+            <p class="section-subtitle">Les dirigeants n'achètent pas un rapport. Ils achètent de la clarté, une vision et la capacité de prendre de meilleures décisions pour leur organisation.</p>
 
-            <div class="content-grid">
-                <div class="content-item">
-                    <h3>Priorités immédiates à corriger</h3>
-                    <p>Quels éléments fragilisent aujourd'hui votre crédibilité — sur vos canaux numériques, vos supports de communication, votre discours public. Ce qui freine sans que vous en ayez nécessairement conscience.</p>
+            <div class="outcomes-grid">
+                <div class="outcome-item">
+                    <span class="outcome-num">01 — CLARTÉ</span>
+                    <h3>Comprendre enfin vos blocages</h3>
+                    <p>Vous identifiez précisément pourquoi votre communication ne produit pas les résultats attendus. Les freins sont nommés, analysés, hiérarchisés — pas seulement listés. Vous arrêtez de corriger les mauvaises choses.</p>
                 </div>
-                <div class="content-item">
-                    <h3>Positionnement perçu par votre audience réelle</h3>
-                    <p>Comment votre organisation est-elle lue, interprétée, mémorisée ? L'écart entre ce que vous pensez communiquer et ce que vos interlocuteurs retiennent est souvent la première source de blocage stratégique.</p>
+                <div class="outcome-item">
+                    <span class="outcome-num">02 — PERCEPTION</span>
+                    <h3>Voir comment vous êtes réellement perçu</h3>
+                    <p>Vous mesurez l'écart entre ce que vous pensez communiquer et ce que vos audiences retiennent. Cette lecture nette — souvent la première qu'une organisation obtient — change profondément la façon de se positionner.</p>
                 </div>
-                <div class="content-item">
-                    <h3>Axes de crédibilité et de visibilité inexploités</h3>
-                    <p>Les territoires éditoriaux et stratégiques que vous pourriez occuper pour renforcer votre autorité. Ce que vos concurrents ne font pas encore — et qui vous permettrait de vous distinguer durablement.</p>
+                <div class="outcome-item">
+                    <span class="outcome-num">03 — VISION</span>
+                    <h3>Avoir une direction stratégique précise</h3>
+                    <p>Vous savez où concentrer vos efforts, quels axes renforcer en priorité, quelles incohérences corriger en premier. Une vision claire là où il n'y avait que des intuitions — et des ressources gaspillées.</p>
                 </div>
-                <div class="content-item">
-                    <h3>Analyse des incohérences de communication</h3>
-                    <p>Les décalages entre vos différents supports, vos prises de parole, vos audiences francophones et arabophones. Une cohérence éditoriale fragile affaiblit la perception même des organisations les plus compétentes.</p>
+                <div class="outcome-item">
+                    <span class="outcome-num">04 — ACTION</span>
+                    <h3>Repartir avec un plan que vous pouvez mettre en œuvre</h3>
+                    <p>Pas un document théorique. Un plan d'action séquencé, priorisé, adapté à votre réalité et à vos ressources. Applicable dès la semaine suivante, par vos équipes — ou avec un accompagnement si vous le souhaitez.</p>
                 </div>
             </div>
 
@@ -972,14 +1050,14 @@
             </div>
 
             <div class="deliverable">
-                <h3>CE QUE VOUS OBTENEZ</h3>
-                <h4>Un plan d'action stratégique concret et immédiatement actionnable</h4>
-                <p>À l'issue de l'audit, vous disposez d'une lecture nette de votre situation et d'une feuille de route priorisée :</p>
+                <h3>CE QUE VOUS EMPORTEZ</h3>
+                <h4>Une lecture nette de votre situation — et un premier plan d'action stratégique</h4>
+                <p>À l'issue de l'audit, vous disposez d'un document de référence complet et d'une session de travail dédiée :</p>
                 <ul>
-                    <li>Analyse complète de votre empreinte actuelle — forces, failles, opportunités</li>
-                    <li>Priorités d'action classées par impact et faisabilité</li>
-                    <li>Axes de différenciation stratégique adaptés à votre secteur</li>
-                    <li>Plan d'action éditorial concret sur 6 mois</li>
+                    <li>Diagnostic de votre positionnement actuel — forces, failles, angles morts</li>
+                    <li>Analyse des incohérences de communication et de leur impact perçu</li>
+                    <li>Axes de différenciation stratégique inexploités dans votre secteur</li>
+                    <li>Plan d'action séquencé et priorisé, immédiatement opérationnel</li>
                     <li>Session de restitution stratégique de 90 minutes en direct</li>
                 </ul>
             </div>
@@ -1199,7 +1277,7 @@
                     </li>
                     <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
                         <span style="color: var(--color-gold); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;">→</span>
-                        <span><strong>2 sites web</strong> éditoriaux opérationnels (Ghost CMS)</span>
+                        <span><strong>2 sites web</strong> éditoriaux opérationnels</span>
                     </li>
                     <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
                         <span style="color: var(--color-gold); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;">→</span>
@@ -1404,6 +1482,11 @@
             <p>&copy; <span id="yr"></span> Neybras by Dalal Fahmi — Tous droits réservés. Casablanca, Maroc.</p>
         </div>
     </footer>
+
+    <!-- BOUTON FLOTTANT WHATSAPP -->
+    <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20l%27Audit%20Signature." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter par WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script>
         document.getElementById('yr').textContent = new Date().getFullYear();
