@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="L'Audit Signature Neybras : diagnostic stratégique exclusif pour clubs sportifs, PME et cabinets d'experts au Maroc. De la visibilité à l'autorité. 3,500 MAD HT.">
+    <meta name="description" content="L'Audit Signature Neybras : diagnostic stratégique sur-mesure pour clubs sportifs, PME et cabinets d'experts au Maroc. Clarté de positionnement, cohérence éditoriale, crédibilité construite.">
     <title>L'Audit Signature — Neybras by Dalal Fahmi</title>
 
     <!-- Fonts -->
@@ -718,6 +718,123 @@
             font-size: 0.9rem;
         }
 
+        /* ── HERO TENSION PHRASE ── */
+        .hero-tension {
+            font-family: var(--font-display);
+            font-size: clamp(1.7rem, 3.8vw, 3rem);
+            font-weight: 300;
+            line-height: 1.2;
+            color: rgba(240, 237, 230, 0.45);
+            margin-bottom: 2.75rem;
+            letter-spacing: -0.02em;
+            max-width: 740px;
+        }
+        .hero-tension em {
+            font-style: italic;
+            color: rgba(197, 163, 106, 0.85);
+        }
+
+        /* ── MICRO-MESSAGE BREAK ── */
+        .quote-break {
+            padding: 4rem 3rem;
+            text-align: center;
+            background: var(--color-white);
+            border-top: 1px solid rgba(197, 163, 106, 0.15);
+            border-bottom: 1px solid rgba(197, 163, 106, 0.15);
+        }
+        .quote-break blockquote {
+            font-family: var(--font-display);
+            font-size: clamp(1.25rem, 2.5vw, 1.85rem);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--color-abyss);
+            max-width: 820px;
+            margin: 0 auto;
+            line-height: 1.45;
+        }
+        .quote-break blockquote cite {
+            display: block;
+            font-family: var(--font-mono);
+            font-style: normal;
+            font-size: 0.78rem;
+            color: var(--color-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 1.5rem;
+        }
+
+        /* ── AUTHORITY PHRASE ── */
+        .authority-phrase {
+            text-align: center;
+            padding: 3rem 2.5rem;
+            margin: 3.5rem 0;
+            background: var(--color-ivory);
+            border-radius: 8px;
+            border-top: 3px solid var(--color-gold);
+        }
+        .authority-phrase p {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+            font-weight: 600;
+            color: var(--color-abyss);
+            margin-bottom: 0.85rem;
+            line-height: 1.25;
+        }
+        .authority-phrase span {
+            font-size: 1.05rem;
+            color: #555;
+            line-height: 1.75;
+            max-width: 680px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* ── PRICING REWRITE ── */
+        .pricing-philosophy {
+            background: rgba(255, 255, 255, 0.06);
+            border-left: 3px solid var(--color-gold);
+            padding: 1.5rem 2rem;
+            margin: 2.5rem 0;
+            text-align: left;
+            border-radius: 0 6px 6px 0;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: rgba(240, 237, 230, 0.85);
+        }
+        .pricing-includes {
+            margin: 2.5rem 0;
+            text-align: left;
+        }
+        .pricing-includes-label {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--color-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 1.25rem;
+        }
+        .pricing-includes ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 0.8rem;
+        }
+        .pricing-includes ul li {
+            display: flex;
+            gap: 0.85rem;
+            align-items: flex-start;
+            font-size: 1rem;
+            line-height: 1.55;
+            color: rgba(240, 237, 230, 0.88);
+        }
+        .pricing-includes ul li i {
+            color: var(--color-gold);
+            margin-top: 0.3rem;
+            font-size: 0.78rem;
+            flex-shrink: 0;
+        }
+
         /* ── RESPONSIVE ── */
         @media (max-width: 768px) {
             nav { padding: 1rem 1.5rem; }
@@ -751,7 +868,7 @@
                 <li><a href="index.html#methodology">Méthode</a></li>
                 <li><a href="index.html#offres">Offres</a></li>
                 <li><a href="index.html#about">À propos</a></li>
-                <li><a href="#contact" class="nav-cta">Réserver l'Audit</a></li>
+                <li><a href="#contact" class="nav-cta">Demander un échange</a></li>
             </ul>
         </div>
     </nav>
@@ -759,35 +876,21 @@
     <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-label">L'Audit qui change tout</div>
-            <h1>Votre communication manque de <strong>structure stratégique</strong> ?</h1>
-            <p class="hero-subtitle">Découvrez l'Audit Signature : un diagnostic manuel et sur-mesure pour clubs sportifs, PME et cabinets qui veulent enfin être perçus à la hauteur de leur expertise.</p>
-
-            <div style="background: rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px; margin: 2rem 0 3rem; border-left: 4px solid var(--color-gold); max-width: 680px;">
-                <p style="font-size: 1.05rem; margin-bottom: 1.25rem; color: var(--color-ivory); font-weight: 500;">Contrairement à un audit automatisé ou standardisé, chaque Audit Signature est réalisé manuellement et inclut :</p>
-                <ul style="list-style: none; padding: 0; display: grid; gap: 0.6rem;">
-                    <li style="padding-left: 1.75rem; position: relative; color: rgba(240,237,230,0.9);">
-                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 0.25rem; color: var(--color-gold); font-size: 0.82rem;"></i>
-                        Analyse stratégique approfondie
-                    </li>
-                    <li style="padding-left: 1.75rem; position: relative; color: rgba(240,237,230,0.9);">
-                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 0.25rem; color: var(--color-gold); font-size: 0.82rem;"></i>
-                        Benchmarking sectoriel (Maroc & international)
-                    </li>
-                    <li style="padding-left: 1.75rem; position: relative; color: rgba(240,237,230,0.9);">
-                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 0.25rem; color: var(--color-gold); font-size: 0.82rem;"></i>
-                        Lecture éditoriale bilingue (français & arabe)
-                    </li>
-                    <li style="padding-left: 1.75rem; position: relative; color: rgba(240,237,230,0.9);">
-                        <i class="fa-solid fa-check" style="position: absolute; left: 0; top: 0.25rem; color: var(--color-gold); font-size: 0.82rem;"></i>
-                        Restitution personnalisée (90 min en direct)
-                    </li>
-                </ul>
+            <div class="hero-tension">
+                La visibilité seule<br>ne crée pas la crédibilité.<br>
+                <em>Une communication non structurée affaiblit même les organisations les plus compétentes.</em>
             </div>
 
-            <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20r%C3%A9server%20l%27Audit%20Signature." class="hero-cta">
-                <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem;"></i>
-                Réserver mon Audit Stratégique →
+            <div class="hero-label">Diagnostic Stratégique Exclusif</div>
+            <h1>L'<strong>Audit Signature</strong></h1>
+
+            <p class="hero-subtitle">Beaucoup de clubs, PME et cabinets publient régulièrement sans réellement renforcer leur crédibilité, attirer des opportunités ou structurer leur image. L'Audit Signature identifie précisément ce qui fragilise votre positionnement, brouille votre message et empêche votre communication de produire un impact concret.</p>
+
+            <a href="#contact" class="hero-cta">
+                Planifier un premier échange stratégique <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem;"></i>
+            </a>
+            <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20l%27Audit%20Signature." style="display: inline-block; margin-left: 1.5rem; color: rgba(240,237,230,0.7); text-decoration: none; font-size: 0.92rem; font-weight: 500; vertical-align: middle; border-bottom: 1px solid rgba(197,163,106,0.35); padding-bottom: 2px; transition: color 0.3s ease;">
+                <i class="fa-brands fa-whatsapp" style="color: var(--color-gold); margin-right: 0.4rem;"></i>Échanger par WhatsApp
             </a>
         </div>
     </section>
@@ -828,41 +931,56 @@
         </div>
     </section>
 
+    <!-- MICRO-MESSAGE -->
+    <div class="quote-break">
+        <div class="container">
+            <blockquote>
+                "Le problème n'est pas toujours le contenu. Il est souvent structurel."
+                <cite>— Communiquer davantage ne construit pas l'autorité. La cohérence le fait.</cite>
+            </blockquote>
+        </div>
+    </div>
+
     <!-- CONTENU -->
     <section class="content-section">
         <div class="container">
-            <h2 class="section-title">Une lecture sans complaisance de votre écosystème</h2>
-            <p class="section-subtitle">L'Audit Signature est un diagnostic à 360° de votre présence, votre discours et votre positionnement.</p>
+            <h2 class="section-title">Ce que l'audit révèle réellement</h2>
+            <p class="section-subtitle">Un diagnostic complet de votre présence, de votre discours et de la perception réelle de votre organisation.</p>
 
             <div class="content-grid">
                 <div class="content-item">
-                    <h3>1. Audit de l'Empreinte Numérique</h3>
-                    <p>Analyse critique de vos canaux actuels : site web, réseaux sociaux, supports de communication. Nous évaluons ce qui fonctionne, ce qui freine, et ce qui vous différencie (ou non) de vos concurrents directs.</p>
+                    <h3>Priorités immédiates à corriger</h3>
+                    <p>Quels éléments fragilisent aujourd'hui votre crédibilité — sur vos canaux numériques, vos supports de communication, votre discours public. Ce qui freine sans que vous en ayez nécessairement conscience.</p>
                 </div>
                 <div class="content-item">
-                    <h3>2. Diagnostic de Résonance Éditoriale</h3>
-                    <p>Cohérence de votre discours en français et en arabe. Votre message porte-t-il dans les deux langues ? Parlez-vous à vos audiences cibles avec le ton, le registre et les codes qui créent la confiance ?</p>
+                    <h3>Positionnement perçu par votre audience réelle</h3>
+                    <p>Comment votre organisation est-elle lue, interprétée, mémorisée ? L'écart entre ce que vous pensez communiquer et ce que vos interlocuteurs retiennent est souvent la première source de blocage stratégique.</p>
                 </div>
                 <div class="content-item">
-                    <h3>3. Analyse de Positionnement Sectoriel</h3>
-                    <p>Benchmarking face aux standards du luxe et de l'excellence. Où vous situez-vous par rapport aux acteurs de référence de votre secteur — au Maroc et à l'international ?</p>
+                    <h3>Axes de crédibilité et de visibilité inexploités</h3>
+                    <p>Les territoires éditoriaux et stratégiques que vous pourriez occuper pour renforcer votre autorité. Ce que vos concurrents ne font pas encore — et qui vous permettrait de vous distinguer durablement.</p>
                 </div>
                 <div class="content-item">
-                    <h3>4. Cartographie des Territoires d'Influence</h3>
-                    <p>Identification des espaces éditoriaux, thématiques et narratifs que vous pourriez occuper pour asseoir votre autorité et vous distinguer durablement.</p>
+                    <h3>Analyse des incohérences de communication</h3>
+                    <p>Les décalages entre vos différents supports, vos prises de parole, vos audiences francophones et arabophones. Une cohérence éditoriale fragile affaiblit la perception même des organisations les plus compétentes.</p>
                 </div>
             </div>
 
+            <div class="authority-phrase">
+                <p>Un bon contenu ne suffit pas.</p>
+                <span>Une communication efficace repose sur une structure claire, un positionnement cohérent et une ligne éditoriale maîtrisée. C'est ce que l'Audit Signature permet de construire.</span>
+            </div>
+
             <div class="deliverable">
-                <h3>LE LIVRABLE</h3>
-                <h4>Votre Roadmap de Positionnement d'Élite</h4>
-                <p>Un rapport stratégique complet et actionnable de 15 à 25 pages comprenant :</p>
+                <h3>CE QUE VOUS OBTENEZ</h3>
+                <h4>Un plan d'action stratégique concret et immédiatement actionnable</h4>
+                <p>À l'issue de l'audit, vous disposez d'une lecture nette de votre situation et d'une feuille de route priorisée :</p>
                 <ul>
-                    <li>Diagnostic de votre empreinte actuelle (forces, faiblesses, opportunités)</li>
-                    <li>Recommandations priorisées par impact et faisabilité</li>
-                    <li>Plan d'action éditorial et digital sur 6 mois</li>
-                    <li>Exemples concrets de contenus différenciants adaptés à votre secteur</li>
-                    <li>Grille d'évaluation pour mesurer vos progrès</li>
+                    <li>Analyse complète de votre empreinte actuelle — forces, failles, opportunités</li>
+                    <li>Priorités d'action classées par impact et faisabilité</li>
+                    <li>Axes de différenciation stratégique adaptés à votre secteur</li>
+                    <li>Plan d'action éditorial concret sur 6 mois</li>
+                    <li>Session de restitution stratégique de 90 minutes en direct</li>
                 </ul>
             </div>
         </div>
@@ -909,6 +1027,16 @@
             </p>
         </div>
     </section>
+
+    <!-- MICRO-MESSAGE 2 -->
+    <div class="quote-break" style="background: #F0EDE6;">
+        <div class="container">
+            <blockquote>
+                "La crédibilité se construit par cohérence, pas uniquement par visibilité."
+                <cite>— Une communication stratégique clarifie la perception avant de chercher l'audience.</cite>
+            </blockquote>
+        </div>
+    </div>
 
     <!-- COMPARATIF -->
     <section class="comparatif-section">
@@ -1090,32 +1218,31 @@
         </div>
     </section>
 
-    <!-- TARIFS -->
+    <!-- ENGAGEMENT -->
     <section class="pricing-section">
         <div class="container">
             <div class="pricing-box">
-                <h3>Prêt à structurer votre influence ?</h3>
-                <p>L'Audit Signature est le premier pas vers une présence digitale et éditoriale qui travaille pour vous — pas contre vous.</p>
-                <p>Vous ne cherchez pas plus de visibilité. Vous cherchez la <strong>bonne visibilité</strong> : celle qui construit l'autorité, attire les bons clients et positionne votre organisation comme référence dans votre secteur.</p>
+                <h3>Une mission construite autour de vos enjeux</h3>
 
-                <div class="pricing-details">
-                    <div class="pricing-detail">
-                        <strong>Diagnostic découverte</strong>
-                        <span>Gratuit 30 min</span>
-                    </div>
-                    <div class="pricing-detail">
-                        <strong>Audit stratégique premium</strong>
-                        <span>3 500 MAD</span>
-                    </div>
-                    <div class="pricing-detail">
-                        <strong>Accompagnement mensuel</strong>
-                        <span>à partir de 6 000 MAD/mois</span>
-                    </div>
+                <p>L'Audit Signature n'est pas une prestation standardisée. C'est un diagnostic stratégique sur-mesure, construit selon les objectifs, les problématiques et le niveau de maturité de votre organisation.</p>
+
+                <div class="pricing-philosophy">
+                    Chaque organisation possède des enjeux de communication distincts. Les modalités d'accompagnement sont définies après un premier échange stratégique, afin d'adapter la mission au contexte spécifique du client — et non l'inverse.
                 </div>
 
-                <a href="#contact" class="pricing-cta">Réserver mon Audit Signature →</a>
+                <div class="pricing-includes">
+                    <span class="pricing-includes-label">L'audit comprend</span>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Diagnostic stratégique complet et sur-mesure</li>
+                        <li><i class="fa-solid fa-check"></i>Analyse éditoriale bilingue (français &amp; arabe)</li>
+                        <li><i class="fa-solid fa-check"></i>Plan d'action stratégique concret et priorisé</li>
+                        <li><i class="fa-solid fa-check"></i>Session de restitution de 90 minutes en direct</li>
+                    </ul>
+                </div>
 
-                <p class="pricing-note">L'Audit Signature inclut : Roadmap de Positionnement d'Élite (15–25 pages) + Session de restitution stratégique (90 min)</p>
+                <a href="#contact" class="pricing-cta">Planifier un premier échange stratégique →</a>
+
+                <p class="pricing-note">Ou directement par WhatsApp : <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20l%27Audit%20Signature." style="color: var(--color-gold);">+212 6 95 19 95 59</a></p>
             </div>
         </div>
     </section>
@@ -1151,8 +1278,12 @@
                     <p>Non. Si votre communication se fait uniquement en français, l'audit se concentre sur cette langue. L'analyse bilingue est activée uniquement si vous communiquez déjà (ou prévoyez de communiquer) en arabe auprès de vos audiences.</p>
                 </div>
                 <div class="faq-item">
+                    <h4>Comment sont définies les modalités d'accompagnement ?</h4>
+                    <p>Chaque organisation possède des enjeux, une maturité de communication et des objectifs distincts. Les modalités ne sont jamais standardisées — elles sont définies à l'issue d'un premier échange stratégique afin d'adapter la mission à votre contexte spécifique. L'objectif est de proposer un accompagnement cohérent avec vos ambitions, pas un catalogue de prestations.</p>
+                </div>
+                <div class="faq-item">
                     <h4>Que se passe-t-il après la restitution de l'audit ?</h4>
-                    <p>Vous repartez avec votre Roadmap et pouvez l'implémenter en interne. Si vous souhaitez un accompagnement, trois options s'offrent à vous : <strong>Structuration Éditoriale</strong> (construction de votre ligne éditoriale complète), <strong>Accompagnement de Positionnement</strong> (pilotage mensuel), ou des missions ponctuelles sur-mesure.</p>
+                    <p>Vous repartez avec un plan d'action concret que vous pouvez implémenter en interne. Si vous souhaitez poursuivre l'accompagnement, plusieurs formes de collaboration sont possibles selon vos besoins : structuration éditoriale, accompagnement stratégique mensuel, ou missions ponctuelles. Tout cela se définit en fonction de votre situation réelle.</p>
                 </div>
             </div>
         </div>
@@ -1163,8 +1294,8 @@
         <div class="container">
             <div class="form-container">
                 <div class="form-intro">
-                    <h3>Réserver votre Audit Signature</h3>
-                    <p>Remplissez ce formulaire ou contactez-nous directement par WhatsApp. Réponse sous 24h.</p>
+                    <h3>Planifier un premier échange</h3>
+                    <p>Décrivez brièvement votre situation. Nous reviendrons vers vous sous 24h pour définir ensemble les contours d'un accompagnement adapté.</p>
                 </div>
 
                 <form class="contact-form" action="https://formspree.io/f/mgoppdpg" method="POST">
@@ -1227,9 +1358,9 @@
                     <input type="hidden" name="_subject" value="Nouvelle demande : Audit Signature">
                     <input type="hidden" name="_next" value="https://neybras.com/merci.html">
 
-                    <button type="submit" class="form-submit">Envoyer ma demande →</button>
+                    <button type="submit" class="form-submit">Envoyer →</button>
 
-                    <p class="form-note">Ou contactez-nous via <strong>WhatsApp</strong> : <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20r%C3%A9server%20l%27Audit%20Signature." style="color: var(--color-gold);">+212 6 95 19 95 59</a></p>
+                    <p class="form-note">Ou directement via <strong>WhatsApp</strong> : <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20l%27Audit%20Signature." style="color: var(--color-gold);">+212 6 95 19 95 59</a></p>
                 </form>
             </div>
         </div>
@@ -1249,7 +1380,7 @@
                     <li><a href="index.html#methodology">Méthode</a></li>
                     <li><a href="index.html#offres">Offres</a></li>
                     <li><a href="index.html#about">À propos</a></li>
-                    <li><a href="#contact">Réserver l'Audit</a></li>
+                    <li><a href="#contact">Demander un échange</a></li>
                 </ul>
             </div>
             <div class="footer-section">

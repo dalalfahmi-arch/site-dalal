@@ -878,6 +878,53 @@ a.topbar__info:hover { color: #C5A36A; }
 .nav-link--audit { color: #C5A36A !important; font-weight: 600 !important; }
 .nav-link--audit:hover { opacity: 0.75; }
 
+/* Intro stratégique de l'offre Audit */
+.offre-intro-strategic {
+  font-size: 0.93rem;
+  line-height: 1.75;
+  color: var(--color-mid);
+  margin-bottom: 1.2rem;
+}
+
+/* Phrase d'autorité dans le bloc offre */
+.offre-authority-phrase {
+  border-left: 3px solid var(--color-accent);
+  padding: 0.85rem 1.1rem;
+  margin: 1.25rem 0;
+  background: #F9F7F2;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  line-height: 1.65;
+}
+.offre-authority-phrase span {
+  display: block;
+  font-weight: 400;
+  color: var(--color-mid);
+  font-size: 0.88rem;
+  margin-top: 0.3rem;
+}
+
+/* Phrase de vision au-dessus des points À propos */
+.about-vision-phrase {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+}
+.about-vision-phrase span {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(0.88rem, 1.4vw, 1rem);
+  color: var(--color-mid);
+  margin-top: 0.45rem;
+}
+
 
 /* ══════════════════════════════════════════════════════════
    SECTION À PROPOS
