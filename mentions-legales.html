@@ -4,192 +4,451 @@
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH86P6F1DQ"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NH86P6F1DQ');</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mentions légales — Neybras by Dalal Fahmi</title>
-  <meta name="description" content="Mentions légales de la plateforme Dalal Fahmi — Stratégie digitale & éditoriale, éditée par Neybras Publishing, Casablanca, Maroc." />
+  <meta name="description" content="Mentions légales du site Neybras by Dalal Fahmi — éditeur, hébergement, propriété intellectuelle, données personnelles et cookies." />
   <meta name="robots" content="noindex, follow" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+
   <style>
+    /* ─── EN-TÊTE PAGE ─── */
     .legal-hero {
       background: var(--color-primary);
-      padding: 7rem 0 3.5rem;
+      padding: 5rem 0 3rem;
+      margin-top: 70px; /* compense navbar fixe */
     }
+    .legal-breadcrumb {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 1.25rem;
+    }
+    .legal-breadcrumb a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .legal-breadcrumb a:hover { color: var(--color-accent); }
+    .legal-breadcrumb span { margin: 0 0.45rem; }
     .legal-hero__label {
-      font-size: 0.75rem;
+      display: block;
+      font-size: 0.72rem;
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--color-accent);
-      display: block;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.7rem;
     }
     .legal-hero__title {
       font-family: var(--font-heading);
-      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-size: clamp(1.85rem, 3.5vw, 2.7rem);
       font-weight: 700;
       color: #fff;
+      margin: 0 0 0.4rem;
+    }
+    .legal-hero__sub {
+      color: rgba(255,255,255,0.48);
+      font-size: 0.88rem;
       margin: 0;
     }
-    .legal-body {
-      background: var(--color-bg);
-      padding: 5rem 0 6rem;
-    }
-    .legal-block {
-      margin-bottom: 3rem;
-      padding-bottom: 3rem;
-      border-bottom: 1px solid var(--color-border);
-    }
-    .legal-block:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    .legal-block__title {
-      font-family: var(--font-heading);
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--color-primary);
-      margin-bottom: 1.25rem;
-      padding-left: 1rem;
-      border-left: 3px solid var(--color-accent);
-    }
-    .legal-block__text {
-      font-size: 0.95rem;
-      color: var(--color-text);
-      line-height: 1.85;
-      margin: 0;
-    }
-    .legal-block__text + .legal-block__text {
-      margin-top: 0.75rem;
-    }
-    .legal-back {
-      font-size: 0.85rem;
-      color: var(--color-accent);
-      text-decoration: none;
+    .legal-update {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      transition: opacity 0.2s;
+      gap: 0.4rem;
+      background: rgba(197,163,106,.13);
+      color: var(--color-accent);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: .07em;
+      padding: 0.3rem 0.9rem;
+      border-radius: 20px;
+      margin-top: 1.25rem;
     }
-    .legal-back:hover { opacity: 0.75; color: var(--color-accent); }
+
+    /* ─── CORPS ─── */
+    .legal-body {
+      padding: 3.5rem 0 5.5rem;
+      background: var(--color-bg-alt, #f7f6f3);
+    }
+
+    /* ─── CARTES SECTIONS ─── */
+    .legal-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 2rem 2.25rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 2px 14px rgba(26,35,50,.05);
+      border-left: 3px solid var(--color-accent);
+    }
+    .legal-card__num {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 0.5rem;
+      opacity: .85;
+    }
+    .legal-card h2 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: .9rem;
+    }
+    .legal-card p,
+    .legal-card li {
+      font-size: 0.93rem;
+      line-height: 1.82;
+      color: #4c5568;
+      margin-bottom: 0.55rem;
+    }
+    .legal-card p:last-child { margin-bottom: 0; }
+    .legal-card ul {
+      padding-left: 1.15rem;
+      margin-bottom: .5rem;
+    }
+    .legal-card li { margin-bottom: 0.3rem; }
+    .legal-card a {
+      color: var(--color-accent);
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .legal-card a:hover { text-decoration: underline; }
+    .legal-card strong { color: var(--color-primary); font-weight: 600; }
+    .legal-card code {
+      background: rgba(197,163,106,.1);
+      color: var(--color-accent);
+      font-size: .83rem;
+      padding: .1rem .4rem;
+      border-radius: 4px;
+    }
+    .legal-card .legal-note {
+      margin-top: 1.15rem;
+      padding-top: 1.15rem;
+      border-top: 1px solid rgba(197,163,106,.18);
+      font-size: .83rem;
+      color: #8b92a0;
+      font-style: italic;
+      margin-bottom: 0;
+    }
   </style>
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav id="mainNav" class="navbar navbar-expand-lg" style="position: relative; top: 0;">
+<!-- ─── WHATSAPP FLOTTANT ─── -->
+<a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20prendre%20un%20premier%20%C3%A9change%20sur%20ma%20strat%C3%A9gie%20%C3%A9ditoriale."
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- ─── TOP BAR ─── -->
+<div class="topbar d-none d-lg-block">
+  <div class="container d-flex align-items-center justify-content-between">
+    <span class="topbar__msg">
+      <i class="fa-solid fa-pen-nib me-2"></i>Cabinets, PME et professions du conseil — je structure votre autorité éditoriale.
+      <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20prendre%20un%20premier%20%C3%A9change." target="_blank" rel="noopener" class="topbar__cta-link">Prendre un premier échange →</a>
+    </span>
+    <div class="topbar__contact d-flex align-items-center gap-4">
+      <a href="mailto:dalal.fahmi@neybras.com" class="topbar__info">
+        <i class="fa-solid fa-envelope me-1"></i>dalal.fahmi@neybras.com
+      </a>
+      <span class="topbar__info">
+        <i class="fa-solid fa-location-dot me-1"></i>Casablanca · Bouskoura
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- ─── NAVIGATION ─── -->
+<nav id="mainNav" class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand" href="index.html">
       <span class="brand-name">Neybras</span>
       <span class="brand-sub">by Dalal Fahmi</span>
     </a>
-    <a href="index.html" class="legal-back ms-auto">
-      <i class="fa-solid fa-arrow-left"></i> Retour au site
-    </a>
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#methodology">Méthode</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#offres">Offres</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#about">À propos</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-nav-cta btn-nav-cta--accent" href="index.html#diagnostic">
+            <i class="fa-solid fa-comments me-2"></i>Premier échange
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
-
-<!-- HERO MENTIONS LÉGALES -->
+<!-- ─── EN-TÊTE ─── -->
 <div class="legal-hero">
   <div class="container">
-    <span class="legal-hero__label">Information légale</span>
+    <nav class="legal-breadcrumb" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a>
+      <span aria-hidden="true">›</span>
+      <span>Mentions légales</span>
+    </nav>
+    <span class="legal-hero__label"><i class="fa-solid fa-scale-balanced me-2"></i>Informations légales</span>
     <h1 class="legal-hero__title">Mentions légales</h1>
+    <p class="legal-hero__sub">Conformément aux obligations légales applicables au Royaume du Maroc.</p>
+    <span class="legal-update">
+      <i class="fa-regular fa-calendar"></i>Dernière mise à jour : juin 2026
+    </span>
   </div>
 </div>
 
-
-<!-- CONTENU -->
-<section class="legal-body">
+<!-- ─── CONTENU ─── -->
+<div class="legal-body">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-8">
+      <div class="col-lg-9 col-xl-8">
 
-        <div class="legal-block">
-          <h2 class="legal-block__title">Éditeur de la plateforme</h2>
-          <p class="legal-block__text">
-            La plateforme digitale Dalal Fahmi — Stratégie digitale & éditoriale est éditée par Neybras Publishing, société à responsabilité limitée à associé unique (SARLAU), immatriculée au Registre du Commerce de Casablanca.
+        <!-- 01 Éditeur -->
+        <div class="legal-card">
+          <span class="legal-card__num">01 — Éditeur du site</span>
+          <h2>Éditeur du site</h2>
+          <p>Ce site est édité par :</p>
+          <ul>
+            <li><strong>Entité :</strong> Neybras by Dalal Fahmi</li>
+            <li><strong>Statut :</strong> Activité de conseil indépendante en stratégie éditoriale &amp; digitale</li>
+            <li><strong>Responsable :</strong> Dalal Fahmi</li>
+            <li><strong>Siège :</strong> Capital A, Bureau 9, Bouskoura — Casablanca, Maroc</li>
+            <li><strong>Email :</strong> <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a></li>
+            <li><strong>WhatsApp :</strong> <a href="https://wa.me/212695199559" target="_blank" rel="noopener">+212 695 199 559</a></li>
+          </ul>
+        </div>
+
+        <!-- 02 Direction de publication -->
+        <div class="legal-card">
+          <span class="legal-card__num">02 — Direction de la publication</span>
+          <h2>Direction de la publication</h2>
+          <p>
+            La directrice de la publication est <strong>Dalal Fahmi</strong>, consultante en stratégie éditoriale &amp; digitale,
+            fondatrice et directrice éditoriale de <em>Neybras Magazine</em> (B2B — droit, finance, gouvernance)
+            et <em>Neybras Family</em> (B2C premium).
           </p>
-          <p class="legal-block__text">
-            Siège social : Capital A, Bureau n°9, Bouskoura, Casablanca, Maroc.
-          </p>
-          <p class="legal-block__text">
-            Directrice de Publication : Dalal Fahmi.
-          </p>
-          <p class="legal-block__text">
-            Contact : <a href="mailto:dalal.fahmi@neybras.com" style="color: var(--color-accent);">dalal.fahmi@neybras.com</a>
+          <p>
+            Toute demande relative au contenu éditorial du site peut être adressée à :
+            <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a>
           </p>
         </div>
 
-        <div class="legal-block">
-          <h2 class="legal-block__title">Propriété intellectuelle</h2>
-          <p class="legal-block__text">
-            L'ensemble des contenus publiés sur ce site — incluant les articles, analyses stratégiques, photographies de la consultante, infographies et éléments graphiques — sont la propriété exclusive de Neybras Publishing et de Dalal Fahmi. Ils sont protégés par les dispositions du droit d'auteur marocain et international.
-          </p>
-          <p class="legal-block__text">
-            Toute reproduction, représentation ou diffusion, même partielle, est strictement interdite sans une autorisation écrite préalable de la direction de la publication.
-          </p>
-        </div>
-
-        <div class="legal-block">
-          <h2 class="legal-block__title">Données personnelles</h2>
-          <p class="legal-block__text">
-            Dans le cadre de son activité de conseil, Dalal Fahmi peut être amenée à collecter des données via le formulaire de diagnostic stratégique ou l'inscription à la newsletter. Ces données sont utilisées dans le but exclusif de répondre à vos demandes de services ou d'envoyer des publications éditoriales.
-          </p>
-          <p class="legal-block__text">
-            Conformément à la loi en vigueur, ces informations ne sont ni vendues ni cédées à des tiers. Vous disposez d'un droit d'accès et de suppression de vos données à tout moment.
+        <!-- 03 Hébergement -->
+        <div class="legal-card">
+          <span class="legal-card__num">03 — Hébergement</span>
+          <h2>Hébergement</h2>
+          <p>Ce site est hébergé par :</p>
+          <ul>
+            <li><strong>Société :</strong> Vercel Inc.</li>
+            <li><strong>Adresse :</strong> 340 Pine Street, Suite 701, San Francisco, CA 94104 — États-Unis</li>
+            <li><strong>Site :</strong> <a href="https://vercel.com" target="_blank" rel="noopener">vercel.com</a></li>
+          </ul>
+          <p>
+            Le code source du site est versionné sur <strong>GitHub</strong> (Microsoft Corporation, San Francisco, CA)
+            et déployé automatiquement sur Vercel à chaque mise à jour de la branche principale.
           </p>
         </div>
 
-        <div class="legal-block">
-          <h2 class="legal-block__title">Cookies</h2>
-          <p class="legal-block__text">
-            Ce site utilise exclusivement des cookies techniques nécessaires à son bon fonctionnement et à l'analyse de l'audience de la plateforme. Aucun cookie publicitaire tiers n'est utilisé pour suivre votre navigation à des fins commerciales.
+        <!-- 04 Propriété intellectuelle -->
+        <div class="legal-card">
+          <span class="legal-card__num">04 — Propriété intellectuelle</span>
+          <h2>Propriété intellectuelle</h2>
+          <p>
+            L'ensemble des contenus du site — textes, structure éditoriale, visuels, éléments graphiques, logotypes,
+            photographies de la consultante, témoignages publiés avec accord exprès de leurs auteurs —
+            est la propriété exclusive de <strong>Dalal Fahmi / Neybras</strong>, sauf mention contraire.
+          </p>
+          <p>
+            Toute reproduction, représentation, modification, publication ou adaptation, partielle ou totale,
+            par quelque procédé que ce soit, est interdite sans <strong>autorisation écrite préalable</strong>
+            de la directrice de la publication.
+          </p>
+          <p>
+            Toute citation ou référence à ces contenus doit mentionner la source
+            (<em>Neybras by Dalal Fahmi — neybras.com</em>).
           </p>
         </div>
 
-        <div class="legal-block">
-          <h2 class="legal-block__title">Responsabilité</h2>
-          <p class="legal-block__text">
-            Les informations et analyses publiées sur cette plateforme ont un caractère général et informatif relatif aux stratégies de communication et d'édition. Elles ne constituent en aucun cas des conseils juridiques ou financiers personnalisés.
+        <!-- 05 Données personnelles -->
+        <div class="legal-card">
+          <span class="legal-card__num">05 — Données personnelles</span>
+          <h2>Données personnelles</h2>
+          <p>
+            Ce site collecte des données personnelles via le formulaire de contact
+            (nom, email, organisation, secteur, message). Ces données sont traitées conformément à :
           </p>
-          <p class="legal-block__text">
-            Neybras Publishing et Dalal Fahmi ne sauraient être tenus responsables de l'interprétation ou de l'utilisation faite de ces informations par les utilisateurs.
+          <ul>
+            <li>La <strong>loi marocaine n° 09-08</strong> relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel ;</li>
+            <li>Le <strong>Règlement Général sur la Protection des Données (RGPD)</strong> — Règlement UE 2016/679.</li>
+          </ul>
+          <p><strong>Finalités :</strong> répondre aux demandes de premier échange ou d'information ; assurer le suivi d'une mission de conseil.</p>
+          <p>
+            Les données collectées ne sont <strong>jamais revendues ni cédées à des tiers</strong>.
+            Elles transitent via <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>
+            (prestataire de traitement de formulaires conforme RGPD) et sont conservées pour la durée
+            strictement nécessaire au traitement de la demande.
+          </p>
+          <p>
+            <strong>Droits des utilisateurs :</strong> accès, rectification, opposition, suppression — à exercer par email à
+            <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a>
           </p>
         </div>
 
-        <div class="legal-block">
-          <h2 class="legal-block__title">Contact</h2>
-          <p class="legal-block__text">
-            Pour toute question relative aux mentions légales ou à l'exercice de vos droits : <a href="mailto:dalal.fahmi@neybras.com" style="color: var(--color-accent);">dalal.fahmi@neybras.com</a>
+        <!-- 06 Cookies -->
+        <div class="legal-card">
+          <span class="legal-card__num">06 — Cookies &amp; traceurs</span>
+          <h2>Cookies &amp; traceurs</h2>
+          <p>Ce site utilise un nombre limité de traceurs :</p>
+          <ul>
+            <li>
+              <strong>Google Analytics 4 (GA4) :</strong> mesure d'audience anonymisée (pages vues, sessions, provenance).
+              Aucune donnée personnelle identifiante n'est stockée.
+              Désactivation possible via <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out</a>.
+            </li>
+            <li>
+              <strong>Préférence de langue (<code>neybras-lang</code>) :</strong> stockée localement (localStorage)
+              pour mémoriser votre choix linguistique (français / arabe). Aucune donnée transmise à un serveur externe.
+            </li>
+            <li>
+              <strong>Google Fonts :</strong> les polices de caractères sont chargées depuis les CDN de Google,
+              ce qui génère un appel réseau vers leurs serveurs.
+            </li>
+            <li>
+              <strong>Bootstrap CDN / Font Awesome CDN :</strong> ressources chargées depuis jsDelivr et Cloudflare — ces fournisseurs peuvent générer un cookie technique de leur côté.
+            </li>
+          </ul>
+          <p><strong>Aucun cookie publicitaire tiers</strong> n'est déposé sur ce site.</p>
+        </div>
+
+        <!-- 07 Limitation de responsabilité -->
+        <div class="legal-card">
+          <span class="legal-card__num">07 — Limitation de responsabilité</span>
+          <h2>Limitation de responsabilité</h2>
+          <p>
+            Les informations publiées sur ce site ont un <strong>caractère général et informatif</strong>.
+            Elles ne constituent pas des conseils professionnels personnalisés
+            (juridiques, financiers, fiscaux ou autres) et n'engagent pas la responsabilité de l'éditrice à ce titre.
+          </p>
+          <p>
+            L'éditrice s'efforce de maintenir les contenus à jour, mais ne garantit pas
+            leur exhaustivité ni leur actualité permanente.
+          </p>
+          <p>
+            Les liens hypertextes renvoyant vers des sites tiers
+            (Neybras Magazine, Neybras Family, LinkedIn, WhatsApp, Formspree…)
+            sont fournis à titre indicatif. Neybras by Dalal Fahmi n'est pas responsable
+            du contenu de ces sites externes.
           </p>
         </div>
 
-        <div class="mt-5">
-          <a href="index.html" class="legal-back">
-            <i class="fa-solid fa-arrow-left"></i> Retour à la plateforme
+        <!-- 08 Contact -->
+        <div class="legal-card">
+          <span class="legal-card__num">08 — Contact</span>
+          <h2>Contact</h2>
+          <p>Pour toute question relative aux présentes mentions légales ou à l'exercice de vos droits :</p>
+          <ul>
+            <li><strong>Email :</strong> <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a></li>
+            <li><strong>WhatsApp :</strong> <a href="https://wa.me/212695199559" target="_blank" rel="noopener">+212 695 199 559</a></li>
+            <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/dalal-fahmi/" target="_blank" rel="noopener">linkedin.com/in/dalal-fahmi</a></li>
+            <li><strong>Adresse postale :</strong> Capital A, Bureau 9, Bouskoura — Casablanca, Maroc</li>
+          </ul>
+          <p class="legal-note">
+            Ces mentions légales ont été rédigées conformément aux dispositions applicables au Maroc.
+            Elles constituent la politique générale de ce site et peuvent être mises à jour à tout moment.
+          </p>
+        </div>
+
+        <!-- CTA retour -->
+        <div class="text-center mt-4 pt-2">
+          <a href="index.html" class="btn btn-accent-hero" style="display:inline-flex;align-items:center;gap:0.6rem;font-size:0.92rem;">
+            <i class="fa-solid fa-arrow-left"></i>Retour à l'accueil
           </a>
         </div>
 
       </div>
     </div>
   </div>
-</section>
+</div>
 
+<!-- ─── FOOTER MEDIA BAR ─── -->
+<div class="footer-media-bar">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center gap-4">
+      <span class="footer-media-label">La preuve par mes médias</span>
+      <span class="footer-media-desc d-none d-lg-inline" style="font-size:0.82rem;opacity:0.75;font-style:italic;">Je ne théorise pas la stratégie éditoriale : je la pratique chaque mois.</span>
+      <a href="https://www.neybras-family.com/" class="footer-media-link" target="_blank" rel="noopener">
+        <i class="fa-solid fa-newspaper me-2"></i>Neybras Family — B2C Premium
+      </a>
+      <span class="footer-media-divider">·</span>
+      <a href="https://www.neybras-magazine.com/" class="footer-media-link" target="_blank" rel="noopener">
+        <i class="fa-solid fa-book-open me-2"></i>Neybras Magazine — B2B Droit · Finance · Gouvernance
+      </a>
+    </div>
+  </div>
+</div>
 
-<!-- FOOTER -->
+<!-- ─── FOOTER ─── -->
 <footer class="site-footer">
   <div class="container">
+    <div class="footer-top">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <span class="brand-name d-block">Neybras</span>
+          <span class="brand-sub d-block mb-2">by Dalal Fahmi</span>
+          <p class="footer-desc">Stratégie éditoriale B2B · Production de contenu d'expertise pour cabinets, institutions et professions du conseil au Maroc.</p>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <h5 class="footer-heading">Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#methodology">Méthode</a></li>
+            <li><a href="index.html#offres">Offres</a></li>
+            <li><a href="index.html#about">À propos</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Médias</h5>
+          <ul class="footer-links">
+            <li><a href="https://www.neybras-family.com/" target="_blank" rel="noopener">Neybras Family</a></li>
+            <li><a href="https://www.neybras-magazine.com/" target="_blank" rel="noopener">Neybras Magazine</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-heading">Contact direct</h5>
+          <p class="footer-contact-info mb-2">
+            <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a>
+          </p>
+          <a href="https://wa.me/212695199559" class="footer-whatsapp-link" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp me-2"></i>WhatsApp
+          </a>
+          <div class="footer-social mt-3">
+            <a href="https://www.linkedin.com/in/dalal-fahmi/" aria-label="LinkedIn Dalal Fahmi" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="footer-bottom">
-      <p>© <span id="currentYear"></span> Neybras by Dalal Fahmi — Tous droits réservés. Casablanca, Maroc.</p>
+      <p>© <span id="currentYear"></span> Neybras by Dalal Fahmi — Stratégie éditoriale B2B | Casablanca, Maroc.</p>
       <div class="footer-bottom-links">
-        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="mentions-legales.html" aria-current="page">Mentions légales</a>
       </div>
     </div>
   </div>
