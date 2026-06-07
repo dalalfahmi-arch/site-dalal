@@ -209,7 +209,7 @@ const i18n = {
 
     'diag-label':  'Première étape',
     'diag-title':  'Premier échange',
-    'diag-sub':    'Beaucoup d\'organisations investissent dans la communication avant d\'avoir une lecture claire de leur situation. Cet échange existe pour corriger cela : 60 minutes pour voir précisément où vous en êtes — et quoi faire ensuite.',
+    'diag-sub':    'Beaucoup d\'organisations investissent dans la communication avant d\'avoir une lecture claire de leur situation. Cet échange existe pour corriger cela : 30 minutes pour voir précisément où vous en êtes — et quoi faire ensuite.',
     'deliv1':      'Un regard direct sur ce qui fragilise votre positionnement éditorial actuel',
     'deliv2':      'L\'identification des priorités à corriger — classées par impact, pas par urgence ressentie',
     'deliv3':      'Un premier cadrage orienté résultats — sans jargon, sans rapport à ranger dans un tiroir',
@@ -228,7 +228,20 @@ const i18n = {
     'testi2-role': 'Avocat au Barreau de Tanger — arbitrage international · Contributeur Neybras',
     'testi3-quote':'« Travailler avec Dalal, c\'est voir son expertise traduite sans être trahie. Elle structure le propos, soigne la cohérence, et donne à un contenu spécialisé une vraie portée auprès des décideurs. »',
     'testi3-name': 'M<sup>e</sup> Amine Lahlou',
-    'testi3-role': 'Avocat au Barreau de Casablanca — arbitrage · Contributeur Neybras'
+    'testi3-role': 'Avocat au Barreau de Casablanca — arbitrage · Contributeur Neybras',
+
+    'faq-label': 'Questions fréquentes',
+    'faq-title': 'Ce que l\'on me demande souvent',
+    'faq1-q':   'Je publie déjà sur LinkedIn — quelle différence ?',
+    'faq1-a':   'Publier entretient une présence ; ça ne construit pas un positionnement. La plupart des cabinets postent régulièrement sans que leurs prospects retiennent quoi que ce soit de précis. Mon travail n\'est pas de vous faire publier plus, mais de faire en sorte que <strong>chaque prise de parole renforce une même idée</strong> — celle qui vous rend identifiable et crédible. La différence n\'est pas la fréquence, c\'est <strong>la cohérence</strong>.',
+    'faq2-q':   'Notre cabinet ne veut pas trop s\'exposer — est-ce compatible ?',
+    'faq2-a':   'Oui, et c\'est même fréquent dans les professions du conseil. Se positionner ne veut pas dire se mettre en avant personnellement ni multiplier les publications. On peut construire une <strong>autorité discrète</strong> : un discours maîtrisé, quelques prises de parole choisies, une cohérence sur vos supports existants. La retenue, bien structurée, est elle-même un signal de sérieux.',
+    'faq3-q':   'Comment se passe le premier échange ?',
+    'faq3-a':   'Un appel en visioconférence d\'environ <strong>30 minutes</strong>, sans engagement. J\'écoute votre situation, je vous dis ce que je vois — clairement, sans rapport théorique — et nous identifions ensemble si une mission a du sens pour vous. Si ce n\'est pas le cas, je vous le dis. Vous repartez de cet échange avec une lecture plus nette de votre situation, que vous travailliez avec moi ensuite ou non.',
+    'faq4-q':   'Pourquoi 7 000 DH pour un audit ?',
+    'faq4-a':   'Parce que ce n\'est pas une check-list automatique. C\'est un diagnostic sur-mesure de votre positionnement, de la cohérence de votre discours et des opportunités que vous n\'exploitez pas — suivi d\'un plan d\'action priorisé et d\'une session de restitution. Le coût d\'un mauvais positionnement (opportunités perdues au profit d\'un concurrent moins bon mais mieux présenté) dépasse largement ce montant. <strong>L\'audit est conçu pour s\'amortir par ce qu\'il vous fait éviter.</strong>',
+    'faq5-q':   'Travaillez-vous aussi en arabe ?',
+    'faq5-a':   'Oui, et à un niveau éditorial réel — pas une traduction approximative. Beaucoup d\'organisations ont une communication française soignée et une communication arabe négligée ; ce décalage envoie un signal de fragilité. Je travaille les deux registres avec <strong>la même exigence</strong>, pour que votre discours reste cohérent quelle que soit la langue de votre interlocuteur.'
   },
 
   ar: {
@@ -322,7 +335,7 @@ const i18n = {
 
     'diag-label':  'الخطوة الأولى',
     'diag-title':  'النقاش الأول',
-    'diag-sub':    'تستثمر كثير من المنظمات في التواصل قبل امتلاك قراءة واضحة لواقعها. هذه الجلسة لتصحيح ذلك: 60 دقيقة لترى بوضوح أين أنت — وما الخطوة التالية المنطقية.',
+    'diag-sub':    'تستثمر كثير من المنظمات في التواصل قبل امتلاك قراءة واضحة لواقعها. هذه الجلسة لتصحيح ذلك: 30 دقيقة لترى بوضوح أين أنت — وما الخطوة التالية المنطقية.',
     'deliv1':      'قراءة واضحة لما يُضعف تموضعك التحريري الحالي',
     'deliv2':      'تحديد الأولويات الواجب معالجتها — مرتّبة حسب الأثر لا الاستعجال',
     'deliv3':      'إطار عمل أولي موجّه نحو النتائج — بلا مصطلحات نظرية، بلا تقارير جاهزة',
@@ -341,7 +354,20 @@ const i18n = {
     'testi2-role': 'محامٍ بهيئة طنجة — التحكيم الدولي · مساهم في مجلة نيبراس',
     'testi3-quote':'«العمل مع دلال يعني أن ترى خبرتك مترجَمة دون أن تُخان. تُنظّم الطرح، وتعتني بالانسجام، وتمنح المحتوى المتخصّص امتداداً حقيقياً لدى صنّاع القرار.»',
     'testi3-name': 'الأستاذ أمين لحلو',
-    'testi3-role': 'محامٍ بهيئة الدار البيضاء — التحكيم · مساهم في مجلة نيبراس'
+    'testi3-role': 'محامٍ بهيئة الدار البيضاء — التحكيم · مساهم في مجلة نيبراس',
+
+    'faq-label': 'أسئلة شائعة',
+    'faq-title': 'ما يُسأل عنه كثيراً',
+    'faq1-q':   'أنشر بالفعل على LinkedIn — فما الفرق؟',
+    'faq1-a':   'النشر يحافظ على حضور، لكنه لا يبني تموضعاً. أغلب المكاتب تنشر بانتظام دون أن يحتفظ عملاؤها المحتملون بأي فكرة واضحة. عملي ليس أن يجعلك تنشر أكثر، بل أن <strong>تُرسّخ كل مشاركة الفكرة نفسها</strong> — تلك التي تجعلك مميَّزاً وذا مصداقية. الفرق ليس في الوتيرة، بل في <strong>الانسجام</strong>.',
+    'faq2-q':   'مكتبنا لا يرغب في الظهور كثيراً — فهل هذا متوافق؟',
+    'faq2-a':   'نعم، بل هذا شائع في مهن الاستشارة. التموضع لا يعني التباهي الشخصي ولا الإكثار من المنشورات. يمكن بناء <strong>سلطة هادئة</strong>: خطاب مُحكَم، مشاركات قليلة ومختارة، وانسجام عبر وسائطك الحالية. التحفّظ، حين يُبنى جيداً، هو في حدّ ذاته إشارة جدّية.',
+    'faq3-q':   'كيف يجري الحديث الأول؟',
+    'faq3-a':   'مكالمة عبر تقنية الفيديو مدّتها حوالي <strong>30 دقيقة</strong>، دون أي التزام. أُنصت إلى وضعك، وأقول لك ما أراه — بوضوح، دون تقرير نظري — ونحدّد معاً إن كانت هناك مهمة ذات معنى بالنسبة إليك. وإن لم تكن كذلك، أقولها لك صراحةً. تخرج من هذا الحديث بقراءة أوضح لوضعك، سواء عملتَ معي بعد ذلك أم لا.',
+    'faq4-q':   'لماذا 7 000 درهم مقابل تشخيص؟',
+    'faq4-a':   'لأنه ليس قائمة تحقّق آلية. إنه تشخيص مُفصَّل لتموضعك، ولانسجام خطابك، وللفرص التي لا تستثمرها — يتبعه خطة عمل مرتّبة حسب الأولوية وجلسة لعرض النتائج. كلفة التموضع الخاطئ — فرصٌ تضيع لصالح منافس أقل كفاءة لكنه أفضل تقديماً — تفوق هذا المبلغ بكثير. <strong>التشخيص مُصمَّم ليغطّي كلفته بما يجنّبك إياه.</strong>',
+    'faq5-q':   'هل تعملين بالعربية أيضاً؟',
+    'faq5-a':   'نعم، وبمستوى تحريري حقيقي — لا ترجمة تقريبية. كثير من المؤسسات لديها تواصل فرنسي مُتقَن وتواصل عربي مُهمَل؛ هذا التفاوت يبعث إشارة هشاشة. أشتغل على المستويين <strong>بالصرامة نفسها</strong>، حتى يبقى خطابك منسجماً مهما كانت لغة مُحاوِرك.'
   }
 };
 
