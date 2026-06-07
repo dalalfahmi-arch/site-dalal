@@ -432,14 +432,16 @@ a.topbar__info:hover { color: #C5A36A; }
   position: absolute;
   inset: 0;
   z-index: 1;
-  /* Gradient: opaque dark on left fading to transparent on right */
-  background: linear-gradient(
-    to right,
-    rgba(14, 21, 32, 0.88) 0%,
-    rgba(14, 21, 32, 0.70) 35%,
-    rgba(14, 21, 32, 0.25) 60%,
-    rgba(14, 21, 32, 0.00) 100%
-  );
+  /* Gradient gauche→droite + radial sombre sur halo blanc haut-droite */
+  background:
+    radial-gradient(ellipse 40% 35% at 82% 12%, rgba(14, 21, 32, 0.72) 0%, transparent 100%),
+    linear-gradient(
+      to right,
+      rgba(14, 21, 32, 0.88) 0%,
+      rgba(14, 21, 32, 0.70) 35%,
+      rgba(14, 21, 32, 0.22) 60%,
+      rgba(14, 21, 32, 0.00) 100%
+    );
 }
 
 .hero-content-wrap {
