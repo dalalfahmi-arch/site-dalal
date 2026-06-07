@@ -435,10 +435,10 @@ a.topbar__info:hover { color: #C5A36A; }
   /* Gradient: opaque dark on left fading to transparent on right */
   background: linear-gradient(
     to right,
-    rgba(14, 21, 32, 0.97) 0%,
-    rgba(14, 21, 32, 0.90) 40%,
-    rgba(14, 21, 32, 0.78) 65%,
-    rgba(14, 21, 32, 0.60) 100%
+    rgba(14, 21, 32, 0.88) 0%,
+    rgba(14, 21, 32, 0.70) 35%,
+    rgba(14, 21, 32, 0.25) 60%,
+    rgba(14, 21, 32, 0.00) 100%
   );
 }
 
