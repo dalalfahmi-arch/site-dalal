@@ -213,7 +213,22 @@ const i18n = {
     'deliv1':      'Un regard direct sur ce qui fragilise votre positionnement éditorial actuel',
     'deliv2':      'L\'identification des priorités à corriger — classées par impact, pas par urgence ressentie',
     'deliv3':      'Un premier cadrage orienté résultats — sans jargon, sans rapport à ranger dans un tiroir',
-    'diag-note':   'Échange offert · Réponse sous 24h · Sans engagement'
+    'diag-note':   'Échange offert · Réponse sous 24h · Sans engagement',
+
+    'media-label': 'La preuve par mes médias',
+    'media-desc':  'Je ne théorise pas la stratégie éditoriale : je la pratique chaque mois.',
+
+    'testi-label': 'Ils ont fait le choix de la clarté',
+    'testi-title': 'Ce qu\'ils disent',
+    'testi1-quote':'« J\'ai eu le plaisir de collaborer avec Dalal pour la 2<sup>e</sup> édition de Neybras sur une thématique assez complexe, la cyber-résilience. Son leadership rédactionnel est remarquable : elle a compris et su mettre en avant mon expertise. Elle ne publie pas un magazine, elle construit une plateforme d\'influence stratégique. »',
+    'testi1-name': 'Youssef El Amrani',
+    'testi1-role': 'Responsable de projet · Recommandation LinkedIn, déc. 2025',
+    'testi2-quote':'« Dalal apporte à un sujet juridique ce qui manque le plus à notre profession : la clarté. Mes analyses en arbitrage international ont trouvé, dans Neybras Magazine, un cadre éditorial à la hauteur de leur exigence. »',
+    'testi2-name': 'M<sup>e</sup> Driss El Harti',
+    'testi2-role': 'Avocat au Barreau de Tanger — arbitrage international · Contributeur Neybras',
+    'testi3-quote':'« Travailler avec Dalal, c\'est voir son expertise traduite sans être trahie. Elle structure le propos, soigne la cohérence, et donne à un contenu spécialisé une vraie portée auprès des décideurs. »',
+    'testi3-name': 'M<sup>e</sup> Amine Lahlou',
+    'testi3-role': 'Avocat au Barreau de Casablanca — arbitrage · Contributeur Neybras'
   },
 
   ar: {
@@ -224,9 +239,9 @@ const i18n = {
     'topbar-msg':  '<i class="fa-solid fa-pen-nib me-2"></i>مكاتب الاستشارة والـPME — أبني مكانتها التحريرية وأرسّخ مصداقيتها.',
     'topbar-cta':  'احجز أول نقاش ←',
 
-    'hero-badge':  'مكاتب الاستشارة · PME · مهن المشورة',
-    'hero-title':  'التأثير لا يُفرض — بل <span class="text-accent">يُبنى بمنهجية</span>.',
-    'hero-lead':   'دلال فهمي — مستشارة في الاستراتيجية التحريرية والـdigital. أساعد مكاتب الاستشارة والـPME على بناء مكانة تعكس خبرتها الحقيقية.',
+    'hero-badge':  'مكاتب · شركات صغرى ومتوسطة · مهن الاستشارة',
+    'hero-title':  'النفوذ لا يُفرَض، بل <span class="text-accent">يُبنى</span>.',
+    'hero-lead':   'دلال فهمي — مستشارة في الاستراتيجية التحريرية والـ digital. أُعيد تموضع المكاتب والشركات الصغرى والمتوسطة لترقى صورتها إلى مستوى خبرتها الحقيقية.',
     'hero-cta1':   '<i class="fa-brands fa-whatsapp me-2"></i>احجز أول نقاش',
     'hero-cta2':   'اكتشف المنهجية',
     'trust-1':     '<i class="fa-solid fa-pen-nib me-2"></i>خبرة تحريرية متراكمة',
@@ -297,7 +312,7 @@ const i18n = {
     'proof-title': 'لماذا تغيّر هذه النظرة كل شيء',
     'proof-sub':   'يمكن لأي شخص أن يُقدّم نفسه مستشاراً في التواصل. ما يُميّز النظرة الاستراتيجية الحقيقية هو ما شكّلها.',
     'stat1-title': 'إدارة تحريرية',
-    'stat1-lbl':   'إدارة منبر إعلامي راقٍ تستلزم مستوى من الاشتراطات لا يبلغه التواصل المؤسسي المعتاد. هذه النظرة — المُشكَّلة بصرامة الطباعة الفاخرة وقيادة التحرير على مدار عقد — هي ما تحصل عليه: لا محتوى عاماً، ولا استراتيجية منسوخة.',
+    'stat1-lbl':   'عقدٌ من الصرامة التحريرية، أُسخّره اليوم لإدارة منصّتين إعلاميتين أسّستُهما بنفسي: مجلة نيبراس (B2B — قانون، مالية، حوكمة) ونيبراس فاميلي (B2C راقية — تعليم، توجيه، تدبير مالي).<br>دليلٌ ملموس: أربعة أعداد ورقية من مجلة نيبراس صدرت منذ أكتوبر 2025، بـ 3000 نسخة لكل عدد توزَّع على صنّاع القرار في المجالين القانوني والمالي. نيبراس فاميلي انطلقت في أبريل 2026.',
     'stat2-title': 'منابر إعلامية أسّستها',
     'stat2-lbl':   'Neybras Magazine (B2B: القانون، المالية، الحوكمة) وNeybras Family (B2C الراقي: التعليم، التوجيه) — منبران فاعلان يُثبتان قدرة حقيقية على هيكلة خط تحريري رفيع وصونه على المدى البعيد.',
     'stat3-title': 'خبرة قطاعية',
@@ -311,7 +326,22 @@ const i18n = {
     'deliv1':      'قراءة واضحة لما يُضعف تموضعك التحريري الحالي',
     'deliv2':      'تحديد الأولويات الواجب معالجتها — مرتّبة حسب الأثر لا الاستعجال',
     'deliv3':      'إطار عمل أولي موجّه نحو النتائج — بلا مصطلحات نظرية، بلا تقارير جاهزة',
-    'diag-note':   'جلسة مجانية · رد خلال 24 ساعة · بدون أي التزام'
+    'diag-note':   'جلسة مجانية · رد خلال 24 ساعة · بدون أي التزام',
+
+    'media-label': 'الدليل من خلال منصّاتي الإعلامية',
+    'media-desc':  'أنا لا أُنظّر للاستراتيجية التحريرية، بل أمارسها شهرياً. مجلة نيبراس (B2B — قانون، مالية، حوكمة) ونيبراس فاميلي (B2C راقية) هما البرهان الملموس على ما أبنيه لعملائي.',
+
+    'testi-label': 'اختاروا الوضوح',
+    'testi-title': 'ما قالوه',
+    'testi1-quote':'«سعدتُ بالتعاون مع دلال في العدد الثاني من نيبراس حول موضوع دقيق ومعقّد، هو المرونة السيبرانية. قيادتها التحريرية لافتة: فهمت خبرتي وأحسنت إبرازها. هي لا تُصدر مجلة، بل تبني منصّة نفوذ استراتيجية. أوصي بها بشدّة.»',
+    'testi1-name': 'يوسف العمراني',
+    'testi1-role': 'مدير مشروع · توصية على LinkedIn، دجنبر 2025',
+    'testi2-quote':'«تمنح دلال للموضوع القانوني ما تفتقر إليه مهنتنا أكثر من غيره: الوضوح. تحليلاتي في التحكيم الدولي وجدت في مجلة نيبراس إطاراً تحريرياً في مستوى صرامتها.»',
+    'testi2-name': 'الأستاذ إدريس الحارثي',
+    'testi2-role': 'محامٍ بهيئة طنجة — التحكيم الدولي · مساهم في مجلة نيبراس',
+    'testi3-quote':'«العمل مع دلال يعني أن ترى خبرتك مترجَمة دون أن تُخان. تُنظّم الطرح، وتعتني بالانسجام، وتمنح المحتوى المتخصّص امتداداً حقيقياً لدى صنّاع القرار.»',
+    'testi3-name': 'الأستاذ أمين لحلو',
+    'testi3-role': 'محامٍ بهيئة الدار البيضاء — التحكيم · مساهم في مجلة نيبراس'
   }
 };
 
