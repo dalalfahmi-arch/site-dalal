@@ -1394,6 +1394,25 @@ body.lang-ar {
   [dir="rtl"] #navbarNav { direction: rtl; text-align: right; }
 }
 
+/* RTL — Section Regards & page article */
+[dir="rtl"] .regard-card {
+  border-left: none;
+  border-right: 4px solid var(--color-accent);
+}
+[dir="rtl"] .article-cta-box {
+  border-left: none;
+  border-right: 4px solid var(--color-accent);
+}
+[dir="rtl"] .article-content h2 {
+  text-align: right;
+}
+[dir="rtl"] .article-breadcrumb {
+  direction: rtl;
+}
+[dir="rtl"] .article-tag {
+  display: inline-block;
+}
+
 
 /* ══════════════════════════════════════════════════════════
    LIEN DÉCOUVERTE — Audit Signature
