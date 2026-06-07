@@ -1402,3 +1402,82 @@ body.lang-ar {
 .btn-link-discover:hover i {
   transform: translateX(3px);
 }
+
+
+/* ══════════════════════════════════════════════════════════
+   PRIX DES OFFRES
+══════════════════════════════════════════════════════════ */
+.offre-price {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  background: var(--color-accent-light);
+  border: 1px solid rgba(197,163,106,0.35);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 1rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.01em;
+}
+.offre-price--devis {
+  color: var(--color-mid);
+  background: var(--color-primary-light);
+  border-color: var(--color-border);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   BLOC PREUVES — Exemples de contenu produit
+══════════════════════════════════════════════════════════ */
+.mt-6 { margin-top: 5rem !important; }
+
+.proof-example-card {
+  border: 1.5px dashed var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-bg-alt);
+  transition: var(--transition);
+  height: 100%;
+}
+.proof-example-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-card);
+}
+.proof-example-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  gap: 1rem;
+  color: var(--color-mid);
+}
+.proof-example-placeholder i {
+  font-size: 2rem;
+  color: var(--color-accent);
+  opacity: 0.7;
+}
+.proof-example-placeholder p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+.proof-example-placeholder strong {
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.proof-example-caption {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--color-accent);
+  opacity: 0.85;
+  margin-top: auto;
+}
