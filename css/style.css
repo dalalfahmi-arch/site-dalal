@@ -1295,11 +1295,12 @@ a.topbar__info:hover { color: #C5A36A; }
 .lang-btn {
   background: transparent;
   border: none;
-  padding: 0.3rem 0.65rem;
+  padding: 0.3rem 0.75rem;
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+  opacity: 0.55;
   cursor: pointer;
   transition: all 0.2s;
   font-family: var(--font-body);
@@ -1308,10 +1309,12 @@ a.topbar__info:hover { color: #C5A36A; }
 .lang-btn.active {
   background: var(--color-accent);
   color: var(--color-primary);
+  opacity: 1;
 }
 .lang-btn:hover:not(.active) {
-  background: rgba(197,163,106,0.12);
+  background: rgba(197,163,106,0.10);
   color: var(--color-accent);
+  opacity: 1;
 }
 
 
