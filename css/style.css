@@ -1481,3 +1481,20 @@ body.lang-ar {
   opacity: 0.85;
   margin-top: auto;
 }
+
+
+/* ══════════════════════════════════════════════════════════
+   PORTRAIT HERO — Photo Dalal dans le hero
+══════════════════════════════════════════════════════════ */
+.hero-portrait {
+  width: 100%;
+  max-width: 420px;
+  height: 560px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 220px 220px 0 0;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  border: 3px solid rgba(197,163,106,0.4);
+  display: block;
+  margin-bottom: 0;
+}
