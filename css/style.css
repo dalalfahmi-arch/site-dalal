@@ -1486,6 +1486,125 @@ body.lang-ar {
 
 
 /* ══════════════════════════════════════════════════════════
+   TÉMOIGNAGES (section preuve — index)
+══════════════════════════════════════════════════════════ */
+.testi-card {
+  background: #fff;
+  border-radius: var(--radius-card);
+  border-left: 3px solid var(--color-accent);
+  padding: 2rem 1.75rem 1.75rem;
+  box-shadow: 0 4px 20px rgba(26, 35, 50, 0.06);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: var(--transition);
+}
+.testi-card:hover {
+  box-shadow: 0 8px 32px rgba(26, 35, 50, 0.12);
+  transform: translateY(-3px);
+}
+.testi-stars {
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+.testi-quote {
+  font-size: 0.97rem;
+  line-height: 1.72;
+  color: var(--color-anthracite);
+  font-style: italic;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(197, 163, 106, 0.2);
+}
+.testi-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: var(--font-heading);
+  letter-spacing: 0.04em;
+}
+.testi-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.testi-role {
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  font-style: normal;
+}
+
+/* ══════════════════════════════════════════════════════════
+   FAQ ACCORDION
+══════════════════════════════════════════════════════════ */
+.faq-section {
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-card);
+  padding: 2.5rem 2rem;
+  margin-top: 4rem;
+}
+.faq-section .section-label {
+  margin-bottom: 0.5rem;
+}
+.faq-section .section-title {
+  font-size: 1.45rem;
+  margin-bottom: 2rem;
+}
+.accordion-item {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(197, 163, 106, 0.22);
+}
+.accordion-item:last-child {
+  border-bottom: none;
+}
+.accordion-button {
+  background: transparent;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1.2rem 0;
+  box-shadow: none !important;
+  border: none;
+}
+.accordion-button:not(.collapsed) {
+  background: transparent;
+  color: var(--color-accent);
+}
+.accordion-button::after {
+  filter: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23C5A36A'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-body {
+  color: var(--color-mid);
+  font-size: 0.96rem;
+  line-height: 1.75;
+  padding: 0 0 1.25rem 0;
+}
+.accordion-body strong {
+  color: var(--color-primary);
+}
+
+/* ══════════════════════════════════════════════════════════
    PORTRAIT HERO — Photo Dalal dans le hero
 ══════════════════════════════════════════════════════════ */
 .hero-portrait {
