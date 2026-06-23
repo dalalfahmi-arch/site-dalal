@@ -381,41 +381,78 @@ a.topbar__info:hover { color: var(--gold); }
 /* ══════════════════════════════════════════════════════════
    1. HERO
 ══════════════════════════════════════════════════════════ */
+/* ─── Layout grille deux colonnes ─── */
 .s-hero {
-  background: #1A2332 url('../images/hero-navy.jpg') center right / cover no-repeat;
-  padding-top: 155px;
-  padding-bottom: 7rem;
-  min-height: 92vh;
+  background: #0C264B;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 88vh;
+  max-height: 900px;
+  padding-top: 106px; /* topbar 36 + navbar 70 */
   overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.s-hero::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: linear-gradient(to right,
-    rgba(26,35,50,0.97) 0%,
-    rgba(26,35,50,0.90) 35%,
-    rgba(26,35,50,0.45) 65%,
-    rgba(26,35,50,0.08) 100%);
-  z-index: 0;
-}
-.s-hero .container { position: relative; z-index: 1; }
-@media (max-width: 991.98px) {
-  .s-hero {
-    padding-top: 6.5rem; padding-bottom: 4rem;
-    min-height: 70vh;
-    background-position: 70% center;
-  }
-  .s-hero::before {
-    background: linear-gradient(to right,
-      rgba(26,35,50,0.97) 0%,
-      rgba(26,35,50,0.90) 50%,
-      rgba(26,35,50,0.70) 100%);
-  }
 }
 
+/* ─── Colonne texte (gauche — aplat navy uni) ─── */
+.s-hero__left {
+  display: flex;
+  align-items: center;
+  padding: 3rem 2rem 3rem 5vw;
+}
+.s-hero__text-inner {
+  max-width: 540px;
+  margin-left: auto;
+  padding-right: 1.5rem;
+}
+
+/* ─── Colonne visuelle (droite) ─── */
+.s-hero__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3vw 0 1rem;
+  overflow: visible;
+}
+
+/* ─── Arche portrait ─── */
+.s-hero__arch-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  height: 620px;
+  flex-shrink: 0;
+}
+.s-hero__arch-wrap > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 230px 230px 0 0;
+  display: block;
+  border: 3px solid rgba(197,163,106,0.45);
+}
+
+/* ─── Badge "Fondatrice — Neybras Magazine" ─── */
+.s-hero__badge {
+  position: absolute;
+  bottom: 24px;
+  left: -24px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 12px;
+  padding: 0.85rem 1.25rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+  border: 1px solid rgba(197,163,106,0.25);
+  backdrop-filter: blur(8px);
+  min-width: 180px;
+}
+.s-hero__badge-label {
+  display: block; font-size: 0.62rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 0.2rem;
+}
+.s-hero__badge-link { font-size: 0.82rem; font-weight: 700; color: var(--gold); }
+.s-hero__badge-link:hover { color: var(--ink); }
+
+/* ─── Typographie ─── */
 .s-hero__surtitle {
   font-family: var(--font-sans);
   font-size: 0.72rem; font-weight: 700;
@@ -432,7 +469,6 @@ a.topbar__info:hover { color: var(--gold); }
 .s-hero__lead {
   font-size: 1.05rem; color: rgba(255,255,255,0.75);
   line-height: 1.82; margin-bottom: 2.5rem;
-  max-width: 500px;
 }
 .s-hero__actions {
   display: flex; flex-wrap: wrap;
@@ -444,42 +480,31 @@ a.topbar__info:hover { color: var(--gold); }
 }
 .s-hero .btn-ghost-ink:hover {
   background: rgba(255,255,255,0.10);
-  color: #fff;
-  border-color: rgba(255,255,255,0.55);
+  color: #fff; border-color: rgba(255,255,255,0.55);
 }
-.s-hero__visual { display: flex; justify-content: flex-end; align-items: flex-end; }
 
-.s-hero__portrait-wrap { position: relative; display: inline-block; }
-.s-hero__portrait-wrap img {
-  width: 100%; max-width: 420px; height: 560px;
-  object-fit: cover; object-position: center top;
-  border-radius: 220px 220px 0 0;
-  box-shadow: 0 28px 80px rgba(0,0,0,0.45);
-  border: 3px solid rgba(197,163,106,0.55);
+/* ─── Tablet 768–991px ─── */
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .s-hero { padding-top: 5rem; }
+  .s-hero__left { padding: 2rem 1.5rem 2rem 3vw; }
+  .s-hero__right { padding: 0 1.5rem 0 0.5rem; }
+  .s-hero__arch-wrap { max-width: 360px; height: 480px; }
 }
-.s-hero__media-proof {
-  position: absolute; bottom: 1.5rem; left: -2rem;
-  background: rgba(255,255,255,0.95); border-radius: 12px;
-  padding: 0.85rem 1.25rem;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.28);
-  border: 1px solid rgba(197,163,106,0.3);
-  backdrop-filter: blur(8px);
-}
-.s-hero__proof-label {
-  display: block; font-size: 0.62rem; font-weight: 700;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--muted); margin-bottom: 0.2rem;
-}
-.s-hero__proof-link { font-size: 0.82rem; font-weight: 700; color: var(--gold); }
-.s-hero__proof-link:hover { color: var(--ink); }
 
-@media (max-width: 991.98px) {
-  .s-hero__visual { justify-content: center; margin-top: 3rem; }
-  .s-hero__portrait-wrap img { max-width: 300px; height: 400px; }
-  .s-hero__media-proof { left: -0.5rem; }
-  .s-hero__lead { max-width: 100%; }
-}
-@media (max-width: 575.98px) {
+/* ─── Mobile < 768px — colonne unique, fond navy uni ─── */
+@media (max-width: 767.98px) {
+  .s-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    max-height: none;
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+  }
+  .s-hero__left { padding: 2rem 1.5rem 1.5rem; order: 1; }
+  .s-hero__text-inner { max-width: 100%; margin: 0; padding: 0; }
+  .s-hero__right { order: 2; padding: 0 1.5rem 2rem; justify-content: center; }
+  .s-hero__arch-wrap { max-width: 320px; height: 427px; }
+  .s-hero__badge { left: 0; }
   .s-hero__actions { flex-direction: column; }
   .s-hero__actions a { width: 100%; text-align: center; justify-content: center; }
 }
