@@ -383,7 +383,7 @@ a.topbar__info:hover { color: var(--gold); }
 ══════════════════════════════════════════════════════════ */
 /* ─── Hero plein écran — fond photo HD ─── */
 .s-hero {
-  background: #0C264B url('../images/hero-desk.jpg.png') center right / cover no-repeat;
+  background: #0C264B url('../images/Hero.png') 62% center / cover no-repeat;
   display: flex;
   align-items: center;
   min-height: 88vh;
