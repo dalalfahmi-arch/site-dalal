@@ -382,7 +382,7 @@ a.topbar__info:hover { color: var(--gold); }
    1. HERO
 ══════════════════════════════════════════════════════════ */
 .s-hero {
-  background: #1A2332 url('../images/hero-dark-grid.jpg') center center / cover no-repeat;
+  background: #1A2332 url('../images/hero-navy.jpg') center right / cover no-repeat;
   padding-top: 155px; /* topbar 36 + navbar ~70 + breathing */
   padding-bottom: 5.5rem;
   overflow: hidden;
