@@ -383,19 +383,38 @@ a.topbar__info:hover { color: var(--gold); }
 ══════════════════════════════════════════════════════════ */
 .s-hero {
   background: #1A2332 url('../images/hero-navy.jpg') center right / cover no-repeat;
-  padding-top: 155px; /* topbar 36 + navbar ~70 + breathing */
-  padding-bottom: 5.5rem;
+  padding-top: 155px;
+  padding-bottom: 7rem;
+  min-height: 92vh;
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .s-hero::before {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(26,35,50,0.93) 0%, rgba(26,35,50,0.72) 60%, rgba(26,35,50,0.52) 100%);
+  background: linear-gradient(to right,
+    rgba(26,35,50,0.97) 0%,
+    rgba(26,35,50,0.90) 35%,
+    rgba(26,35,50,0.45) 65%,
+    rgba(26,35,50,0.08) 100%);
   z-index: 0;
 }
 .s-hero .container { position: relative; z-index: 1; }
-@media (max-width: 991.98px) { .s-hero { padding-top: 6.5rem; padding-bottom: 3.5rem; } }
+@media (max-width: 991.98px) {
+  .s-hero {
+    padding-top: 6.5rem; padding-bottom: 4rem;
+    min-height: 70vh;
+    background-position: 70% center;
+  }
+  .s-hero::before {
+    background: linear-gradient(to right,
+      rgba(26,35,50,0.97) 0%,
+      rgba(26,35,50,0.90) 50%,
+      rgba(26,35,50,0.70) 100%);
+  }
+}
 
 .s-hero__surtitle {
   font-family: var(--font-sans);
