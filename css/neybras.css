@@ -320,3 +320,48 @@ ul { margin: 0; padding: 0; list-style: none; }
 [dir="rtl"] .offer-card__list li { padding-left: 0; padding-right: 1.4rem; }
 [dir="rtl"] .offer-card__list li::before { left: auto; right: 0; }
 [dir="rtl"] .offer-card__badge { left: auto; right: 1.9rem; }
+
+/* === Ajouts conversion : confiance, preuves, option site ================ */
+
+/* Bande de confiance (chiffres réels) */
+.trust-bar { background: var(--ivoire); border-top: 1px solid var(--filet); border-bottom: 1px solid var(--filet); }
+.trust-bar .container { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: .5rem 1rem; padding-block: 1.4rem; }
+.trust-item { display: inline-flex; align-items: baseline; gap: .45rem; }
+.trust-item b { font-family: var(--font-titre); font-weight: 400; font-size: 1.45rem; color: var(--nuit); }
+.trust-item span { font-size: .92rem; color: var(--pierre); }
+.trust-dot { color: var(--bordeaux); font-weight: 700; }
+
+/* Preuve par la stature (contributeurs) */
+.experts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+.expert-card { background: var(--blanc); border: 1px solid var(--filet); border-radius: var(--radius-card); padding: 1.5rem 1.2rem; text-align: center; }
+.expert-card img { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; margin: 0 auto .9rem; }
+.expert-card__ph { width: 88px; height: 88px; border-radius: 50%; margin: 0 auto .9rem; background: var(--ivoire); border: 1px solid var(--filet); }
+.expert-card__name { display: block; font-weight: 600; color: var(--nuit); }
+.expert-card__role { display: block; font-size: .85rem; color: var(--pierre); margin-top: .25rem; }
+.experts__sub { text-align: center; margin-top: 1.8rem; color: var(--pierre); font-size: .95rem; }
+
+/* Preuve par la profondeur (sujets) */
+.topics { max-width: 800px; margin-inline: auto; }
+.topic { display: flex; gap: .85rem; align-items: flex-start; padding: 1.05rem 0; border-bottom: 1px solid var(--filet); }
+.topic svg { width: 1.15em; height: 1.15em; color: var(--bordeaux); flex: none; margin-top: .35em; }
+.topic span { font-family: var(--font-titre); font-size: 1.12rem; color: var(--nuit); }
+.topics__cta { text-align: center; margin-top: 2rem; }
+
+/* Option site + micro-preuve */
+.site-option { margin-top: 1.6rem; background: var(--ivoire-clair); border: 1px dashed var(--bordeaux); border-radius: var(--radius-card); padding: 1.7rem 1.9rem; }
+.site-option__price { font-family: var(--font-titre); font-size: 1.25rem; color: var(--nuit); margin: 0 0 .9rem; }
+.site-option__price b { color: var(--bordeaux); font-weight: 400; }
+.site-option ul { display: grid; gap: .5rem; }
+.site-option li { position: relative; padding-left: 1.4rem; font-size: .95rem; }
+.site-option li::before { content: '→'; position: absolute; left: 0; color: var(--bordeaux); }
+.micro-proof { margin-top: 1.8rem; text-align: center; }
+.micro-proof p { font-family: var(--font-titre); font-style: italic; color: var(--nuit); font-size: 1.15rem; margin: 0; }
+.micro-proof cite { font-style: normal; font-family: var(--font-courant); font-size: .85rem; color: var(--pierre); }
+
+/* Badge « Commencer ici » (audit) — distinct du badge phare */
+.offer-card__badge--start { background: var(--ivoire); color: var(--bordeaux); border: 1px solid var(--bordeaux); }
+
+@media (max-width: 960px) { .experts { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .experts { grid-template-columns: 1fr; } }
+[dir="rtl"] .topic span { } [dir="rtl"] .topic svg { transform: scaleX(-1); }
+[dir="rtl"] .site-option li { padding-left: 0; padding-right: 1.4rem; } [dir="rtl"] .site-option li::before { left: auto; right: 0; content: '←'; }
