@@ -286,7 +286,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   .cards-3, .offers, .methode-grid, .pillars, .quotes { grid-template-columns: repeat(2, 1fr); }
   .methode-grid { gap: 1.8rem 1.5rem; }
 }
-@media (max-width: 820px) {
+@media (max-width: 1000px) {
   .nav__menu {
     position: fixed; inset: 72px 0 auto 0; flex-direction: column; align-items: stretch;
     background: var(--ivoire); border-bottom: 1px solid var(--filet);
@@ -365,3 +365,32 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 600px) { .experts { grid-template-columns: 1fr; } }
 [dir="rtl"] .topic span { } [dir="rtl"] .topic svg { transform: scaleX(-1); }
 [dir="rtl"] .site-option li { padding-left: 0; padding-right: 1.4rem; } [dir="rtl"] .site-option li::before { left: auto; right: 0; content: '←'; }
+
+/* === Itération « signatures » : bande qualitative, pont, FAQ ============= */
+
+/* Bande de confiance — version sans chiffre */
+.trust-line { font-size: .92rem; color: var(--nuit); font-weight: 500; }
+
+/* Pont vers la page Signatures */
+.bridge { background: var(--ivoire-clair); border-top: 1px solid var(--filet); border-bottom: 1px solid var(--filet); text-align: center; }
+.bridge .container { padding-block: clamp(2.2rem, 4.5vw, 3rem); }
+.bridge p { font-family: var(--font-titre); font-size: clamp(1.2rem, 2.2vw, 1.6rem); color: var(--nuit); max-width: 34ch; margin: 0 auto 1rem; }
+.bridge a { display: inline-flex; align-items: center; gap: .4rem; color: var(--bordeaux); font-weight: 600; }
+.bridge a:hover { color: var(--bordeaux-hover); }
+.bridge svg { width: 1.05em; height: 1.05em; }
+
+/* FAQ — accordéon natif <details> (accessible, sans JS) */
+.faq { max-width: 760px; margin-inline: auto; }
+.faq__item { border-bottom: 1px solid var(--filet); }
+.faq__item summary { cursor: pointer; list-style: none; padding: 1.25rem 2.2rem 1.25rem 0; position: relative; font-family: var(--font-titre); font-size: 1.18rem; color: var(--nuit); }
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after { content: '+'; position: absolute; right: .2rem; top: 1.15rem; color: var(--bordeaux); font-size: 1.5rem; line-height: 1; }
+.faq__item[open] summary::after { content: '\2013'; }
+.faq__item summary:focus-visible { outline: 2px solid var(--bordeaux); outline-offset: 3px; }
+.faq__item p { margin: 0 0 1.3rem; color: var(--graphite); font-size: 1rem; max-width: 64ch; }
+
+/* Signatures — grille 2 profils + pastille initiales */
+.experts--two { grid-template-columns: repeat(2, minmax(0, 300px)); justify-content: center; }
+.expert-card__ph { display: flex; align-items: center; justify-content: center; color: var(--pierre); font-family: var(--font-courant); font-weight: 600; font-size: 1.4rem; letter-spacing: .04em; }
+@media (max-width: 600px) { .experts--two { grid-template-columns: 1fr; } }
+[dir="rtl"] .faq__item summary { padding: 1.25rem 0 1.25rem 2.2rem; } [dir="rtl"] .faq__item summary::after { right: auto; left: .2rem; }
