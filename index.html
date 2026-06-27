@@ -3,485 +3,419 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neybras · Dalal Fahmi — Autorité éditoriale pour cabinets juridiques &amp; institutions financières</title>
-  <meta name="description" content="Dalal Fahmi — Fondatrice de Neybras Magazine. Je structure l'autorité numérique des cabinets juridiques et des institutions financières au Maroc." />
-  <link rel="alternate" hreflang="fr" href="index.html" />
-  <link rel="alternate" hreflang="ar" href="index-ar.html" />
+  <title>Neybras · Dalal Fahmi — Conseil en stratégie éditoriale | Cabinets juridiques &amp; institutions financières au Maroc</title>
+  <meta name="description" content="Conseil en stratégie éditoriale pour cabinets juridiques et institutions financières au Maroc. Je structure votre autorité pour que votre image soit à la hauteur de votre expertise. Diagnostic de 30 min, sans engagement." />
+  <link rel="canonical" href="https://neybras.com/" />
+  <link rel="alternate" hreflang="fr" href="https://neybras.com/" />
+  <link rel="alternate" hreflang="ar" href="https://neybras.com/index-ar.html" />
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Neybras · Dalal Fahmi — Conseil en stratégie éditoriale" />
+  <meta property="og:description" content="Je structure l'autorité des cabinets juridiques et des institutions financières au Maroc. L'influence ne se décrète pas, elle se structure." />
+  <meta property="og:url" content="https://neybras.com/" />
+  <meta property="og:image" content="https://neybras.com/images/dalal-pro.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts : Fraunces (titres) + Inter (courant). Swap Canela = une variable CSS (--font-titre). -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/neybras.css" />
 
+  <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH86P6F1DQ"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NH86P6F1DQ');</script>
+
+  <!-- Données structurées -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Dalal Fahmi",
+        "jobTitle": "Consultante en stratégie éditoriale",
+        "url": "https://neybras.com/",
+        "image": "https://neybras.com/images/dalal-pro.webp",
+        "sameAs": ["https://www.linkedin.com/in/dalal-fahmi/", "https://www.neybras-magazine.com/"],
+        "worksFor": { "@type": "Organization", "name": "Neybras Magazine", "url": "https://www.neybras-magazine.com/" }
+      },
+      {
+        "@type": "ProfessionalService",
+        "name": "Neybras by Dalal Fahmi",
+        "description": "Conseil en stratégie éditoriale B2B, bilingue français/arabe, pour cabinets juridiques et institutions financières.",
+        "url": "https://neybras.com/",
+        "image": "https://neybras.com/images/dalal-pro.webp",
+        "email": "dalal.fahmi@neybras.com",
+        "founder": { "@type": "Person", "name": "Dalal Fahmi" },
+        "areaServed": { "@type": "Country", "name": "Maroc" },
+        "knowsLanguage": ["fr", "ar"],
+        "address": { "@type": "PostalAddress", "addressLocality": "Casablanca", "addressRegion": "Bouskoura", "addressCountry": "MA" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-<!-- ─── WHATSAPP FLOTTANT ─── -->
-<a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20prendre%20un%20premier%20%C3%A9change%20sur%20ma%20strat%C3%A9gie%20%C3%A9ditoriale."
-   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+<a class="skip-link" href="#hero">Aller au contenu</a>
 
-<!-- ─── TOPBAR ─── -->
-<div class="topbar d-none d-lg-block">
-  <div class="container d-flex align-items-center justify-content-between">
-    <span class="topbar__msg" data-i18n="topbar-msg">
-      <i class="fa-solid fa-pen-nib me-2"></i>Cabinets juridiques &amp; institutions financières — je structure votre autorité éditoriale.
-    </span>
-    <div class="topbar__contact d-flex align-items-center gap-4">
-      <a href="mailto:dalal.fahmi@neybras.com" class="topbar__info"><i class="fa-solid fa-envelope me-1"></i>dalal.fahmi@neybras.com</a>
-      <span class="topbar__info"><i class="fa-solid fa-location-dot me-1"></i>Casablanca · Bouskoura</span>
-    </div>
-  </div>
-</div>
-
-<!-- ─── NAVBAR ─── -->
-<nav id="mainNav" class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="#hero">
-      <span class="brand-name">Neybras</span>
-      <span class="brand-sub">by Dalal Fahmi</span>
+<!-- ═══ HEADER ═══════════════════════════════════════════════════════════ -->
+<header class="site-header" id="top">
+  <div class="container nav">
+    <a class="brand" href="#hero" aria-label="Neybras by Dalal Fahmi — accueil">
+      <span class="brand__name">NEYBRAS</span>
+      <span class="brand__sub">by Dalal Fahmi</span>
+      <span class="brand__base">Conseil en stratégie éditoriale</span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
-      <span class="navbar-toggler-icon"></span>
+
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-        <li class="nav-item"><a class="nav-link" href="#offres"    data-i18n="nav-offers">Offres</a></li>
-        <li class="nav-item"><a class="nav-link" href="#methode"   data-i18n="nav-method">Méthode</a></li>
-        <li class="nav-item"><a class="nav-link" href="#apropos"   data-i18n="nav-about">À propos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#regards"   data-i18n="nav-regards">Regards</a></li>
-        <li class="nav-item ms-lg-3">
-          <a class="btn btn-nav-cta btn-nav-cta--accent" href="#contact">
-            <i class="fa-solid fa-comments me-2"></i><span data-i18n="nav-contact">Premier échange</span>
-          </a>
-        </li>
-        <li class="nav-item ms-lg-2 d-flex align-items-center">
-          <div class="lang-toggle" role="group" aria-label="Langue">
-            <button class="lang-btn active" data-lang="fr" onclick="switchLang('fr')">FR</button>
-            <button class="lang-btn" data-lang="ar" onclick="switchLang('ar')">AR</button>
-          </div>
-        </li>
-      </ul>
+
+    <div class="nav__menu" id="navMenu">
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="#methode">Méthode</a>
+        <a href="#offres">Offres</a>
+        <a href="#apropos">À propos</a>
+        <a href="#temoignages">Témoignages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--bordeaux" href="#contact" data-cta="header-diagnostic">Diagnostiquer ma visibilité</a>
+        <div class="lang" role="group" aria-label="Langue">
+          <button class="is-active" type="button" aria-pressed="true">FR</button>
+          <button type="button" aria-pressed="false" onclick="location.href='index-ar.html'">AR</button>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
+</header>
 
+<main>
 
-<!-- ══════════════════════════════════════════
-     1. HERO
-══════════════════════════════════════════ -->
-<section id="hero" class="s-hero">
-  <div class="s-hero__left" data-aos="fade-up">
-    <div class="s-hero__text-inner">
-      <p class="s-hero__surtitle" data-i18n="hero-surtitle">Cabinets juridiques · Institutions financières · Maroc</p>
-      <h1 class="s-hero__title" data-i18n="hero-title">L'influence ne se décrète pas, elle se <em>structure</em>.</h1>
-      <p class="s-hero__lead" data-i18n="hero-lead">Dalal Fahmi — Fondatrice de Neybras Magazine. Je structure l'autorité numérique des cabinets juridiques et des institutions financières, pour qu'elle soit enfin à la hauteur de leur expertise.</p>
-      <div class="s-hero__actions">
-        <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20prendre%20un%20premier%20%C3%A9change."
-           class="btn-primary-gold" target="_blank" rel="noopener" data-i18n="hero-cta1">
-          <i class="fa-brands fa-whatsapp me-2"></i>Prendre un premier échange
+<!-- ═══ 1. HERO ══════════════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="container hero__grid">
+    <div class="hero__text reveal">
+      <p class="eyebrow">Cabinets juridiques · Institutions financières · Maroc</p>
+      <h1 class="hero__title">L'influence ne se décrète pas, elle se <em>structure</em>.</h1>
+      <p class="hero__lead">Vos concurrents moins compétents captent les mandats qui devraient vous revenir — parce qu'ils sont mieux perçus, pas meilleurs. Je rends votre autorité aussi visible que votre expertise est réelle.</p>
+      <div class="hero__actions">
+        <a class="btn btn--bordeaux" target="_blank" rel="noopener" data-cta="hero-whatsapp"
+           href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20diagnostiquer%20ma%20visibilit%C3%A9.">
+          Diagnostiquer ma visibilité — 30 min, sans engagement
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="#methode" class="btn-ghost-ink" data-i18n="hero-cta2">Découvrir l'approche</a>
+        <a class="btn btn--outline-nuit" href="#methode" data-cta="hero-methode">Voir comment je procède</a>
       </div>
+    </div>
+    <div class="hero__media reveal">
+      <img src="images/dalal-pro.webp" width="900" height="1125"
+           alt="Dalal Fahmi, consultante en stratégie éditoriale et fondatrice de Neybras Magazine" />
     </div>
   </div>
 </section>
 
-
-<!-- ══════════════════════════════════════════
-     2. TROIS SIGNAUX D'ALERTE
-══════════════════════════════════════════ -->
-<section id="signaux" class="s-signaux">
+<!-- ═══ 2. SIGNAUX D'ALERTE ══════════════════════════════════════════════ -->
+<section class="section section--blanc" id="signaux">
   <div class="container">
-    <div class="s-header" data-aos="fade-up">
-      <p class="s-eyebrow" data-i18n="sig-label">Reconnaissez-vous cette situation ?</p>
-      <h2 class="s-title" data-i18n="sig-title">Trois signaux d'alerte</h2>
+    <div class="section-head reveal">
+      <p class="eyebrow">Reconnaissez-vous cette situation ?</p>
+      <h2 class="section-title">Trois signaux d'alerte</h2>
     </div>
-    <div class="row g-4 mt-3">
-
-      <div class="col-md-4" data-aos="fade-up">
-        <div class="sig-card">
-          <span class="sig-card__num">01</span>
-          <h3 class="sig-card__title" data-i18n="sig1-title">Visibilité sans Influence</h3>
-          <p class="sig-card__body" data-i18n="sig1-body">Votre cabinet publie régulièrement. Mais vos prospects qualifiés ne vous identifient pas comme la référence — parce qu'un positionnement flou ne convainc pas, même quand il est visible.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
-        <div class="sig-card">
-          <span class="sig-card__num">02</span>
-          <h3 class="sig-card__title" data-i18n="sig2-title">L'Écart de Stature</h3>
-          <p class="sig-card__body" data-i18n="sig2-body">Votre expertise est réelle. Votre image ne la reflète pas encore. Ce décalage coûte des mandats — silencieusement, chaque semaine.</p>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="160">
-        <div class="sig-card">
-          <span class="sig-card__num">03</span>
-          <h3 class="sig-card__title" data-i18n="sig3-title">La Dispersion de Discours</h3>
-          <p class="sig-card__body" data-i18n="sig3-body">Chaque support parle de vous différemment. Un message morcelé ne s'imprime pas dans la mémoire de vos interlocuteurs.</p>
-        </div>
-      </div>
-
+    <div class="cards-3">
+      <article class="signal-card reveal">
+        <span class="signal-card__num">01</span>
+        <h3>Visibilité sans influence</h3>
+        <p>Votre cabinet publie régulièrement. Mais vos prospects qualifiés ne vous identifient pas comme la référence — un positionnement flou ne convainc pas, même visible.</p>
+      </article>
+      <article class="signal-card reveal">
+        <span class="signal-card__num">02</span>
+        <h3>L'écart de stature</h3>
+        <p>Votre expertise est réelle. Votre image ne la reflète pas encore. Ce décalage coûte des mandats — silencieusement, chaque semaine.</p>
+      </article>
+      <article class="signal-card reveal">
+        <span class="signal-card__num">03</span>
+        <h3>La dispersion du discours</h3>
+        <p>Chaque support parle de vous différemment. Un message morcelé ne s'imprime pas dans la mémoire de vos interlocuteurs.</p>
+      </article>
     </div>
-    <p class="sig-close" data-aos="fade-up" data-i18n="sig-close">Le problème n'est pas l'effort. C'est <strong>l'absence d'architecture stratégique.</strong></p>
   </div>
 </section>
 
-
-<!-- ══════════════════════════════════════════
-     3. OFFRES + PRIX
-══════════════════════════════════════════ -->
-<section id="offres" class="s-offres">
+<!-- Bascule — coût de l'inaction -->
+<section class="bascule">
   <div class="container">
-    <div class="s-header text-center" data-aos="fade-up">
-      <p class="s-eyebrow" data-i18n="off-label">Ce que je propose</p>
-      <h2 class="s-title" data-i18n="off-title">Trois niveaux d'accompagnement</h2>
+    <p class="reveal">Le problème n'est pas votre effort, ni votre expertise. C'est qu'aucune architecture ne les rend visibles. Et chaque mois sans elle, <em>un mandat part chez un concurrent que vous valez largement.</em></p>
+  </div>
+</section>
+
+<!-- ═══ 3. OFFRES ════════════════════════════════════════════════════════ -->
+<section class="section section--ivoire" id="offres">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <p class="eyebrow">Ce que je propose</p>
+      <h2 class="section-title">Trois niveaux d'accompagnement</h2>
     </div>
-    <div class="row g-4 mt-3 align-items-stretch">
+    <div class="offers">
 
-      <!-- Carte 1 — Audit -->
-      <div class="col-lg-4" data-aos="fade-up">
-        <div class="price-card">
-          <div class="price-card__price">
-            <span class="price-card__from" data-i18n="off1-from">À partir de</span>
-            <span class="price-card__amount"><bdi>7 000 DH</bdi></span>
-            <span class="price-card__meta" data-i18n="off1-meta">Séance unique</span>
-          </div>
-          <h3 class="price-card__title" data-i18n="off1-title">Audit Stratégique Éditorial</h3>
-          <p class="price-card__promise" data-i18n="off1-promise">Un diagnostic sans filtre de votre positionnement, et un plan d'action hiérarchisé.</p>
-          <ul class="price-card__list">
-            <li data-i18n="off1-p1">Diagnostic de positionnement</li>
-            <li data-i18n="off1-p2">Cartographie des écarts</li>
-            <li data-i18n="off1-p3">Feuille de route priorisée</li>
-          </ul>
-          <a href="audit-signature.html" class="price-card__cta" data-i18n="off1-cta">Demander mon audit</a>
-        </div>
-      </div>
+      <article class="offer-card reveal">
+        <span class="offer-card__from">À partir de</span>
+        <span class="offer-card__amount">7 000 DH</span>
+        <span class="offer-card__meta">Séance unique</span>
+        <h3>Audit stratégique éditorial</h3>
+        <p class="offer-card__promise">En une séance, sachez exactement pourquoi votre visibilité ne convertit pas — et quoi corriger en priorité.</p>
+        <ul class="offer-card__list">
+          <li>Diagnostic de positionnement</li>
+          <li>Cartographie des écarts</li>
+          <li>Feuille de route priorisée</li>
+        </ul>
+        <a class="btn btn--bordeaux" href="#contact" data-cta="offer-audit">Réserver mon audit</a>
+        <a class="offer-card__more" href="audit-signature.html" data-cta="offer-audit-details">Détails de l'audit →</a>
+      </article>
 
-      <!-- Carte 2 — Structuration (featured) -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="80">
-        <div class="price-card price-card--featured">
-          <span class="price-card__badge" data-i18n="off2-badge">Le plus demandé</span>
-          <div class="price-card__price">
-            <span class="price-card__from" data-i18n="off2-from">À partir de</span>
-            <span class="price-card__amount"><bdi>18 000 DH</bdi></span>
-            <span class="price-card__meta" data-i18n="off2-meta">Projet cadré</span>
-          </div>
-          <h3 class="price-card__title" data-i18n="off2-title">Structuration Éditoriale</h3>
-          <p class="price-card__promise" data-i18n="off2-promise">L'architecture complète de votre communication : positionnement, ligne éditoriale, formats et calendrier.</p>
-          <ul class="price-card__list">
-            <li data-i18n="off2-p1">Ligne éditoriale cadrée</li>
-            <li data-i18n="off2-p2">Formats opérationnels</li>
-            <li data-i18n="off2-p3">Calendrier priorisé</li>
-            <li data-i18n="off2-p4">Création du site web</li>
-          </ul>
-          <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20prendre%20un%20premier%20%C3%A9change."
-             class="price-card__cta" target="_blank" rel="noopener" data-i18n="off2-cta">Prendre un premier échange</a>
-        </div>
-      </div>
+      <article class="offer-card offer-card--featured reveal">
+        <span class="offer-card__badge">Le plus demandé</span>
+        <span class="offer-card__from">À partir de</span>
+        <span class="offer-card__amount">18 000 DH</span>
+        <span class="offer-card__meta">Projet cadré</span>
+        <h3>Structuration éditoriale</h3>
+        <p class="offer-card__promise">L'architecture complète qui fait de vous la référence de votre secteur : positionnement, message, formats, calendrier — et le site qui les porte.</p>
+        <ul class="offer-card__list">
+          <li>Ligne éditoriale cadrée</li>
+          <li>Formats opérationnels</li>
+          <li>Calendrier priorisé</li>
+          <li>Création du site</li>
+        </ul>
+        <a class="btn btn--bordeaux" href="#contact" data-cta="offer-structuration">Diagnostiquer ma visibilité</a>
+      </article>
 
-      <!-- Carte 3 — Accompagnement -->
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="160">
-        <div class="price-card">
-          <div class="price-card__price">
-            <span class="price-card__amount"><bdi>5 000 DH</bdi></span>
-            <span class="price-card__meta" data-i18n="off3-meta">Mensuel reconductible</span>
-          </div>
-          <h3 class="price-card__title" data-i18n="off3-title">Accompagnement Mensuel</h3>
-          <p class="price-card__promise" data-i18n="off3-promise">Le pilotage continu de votre autorité éditoriale, mois après mois.</p>
-          <ul class="price-card__list">
-            <li data-i18n="off3-p1">Pilotage du positionnement</li>
-            <li data-i18n="off3-p2">Production supervisée</li>
-            <li data-i18n="off3-p3">Messages calibrés FR/AR</li>
-          </ul>
-          <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20prendre%20un%20premier%20%C3%A9change."
-             class="price-card__cta" target="_blank" rel="noopener" data-i18n="off3-cta">Prendre un premier échange</a>
-        </div>
-      </div>
+      <article class="offer-card reveal">
+        <span class="offer-card__amount">5 000 DH / mois</span>
+        <span class="offer-card__meta">Mensuel reconductible</span>
+        <h3>Accompagnement mensuel</h3>
+        <p class="offer-card__promise">Votre autorité pilotée mois après mois, pour qu'elle se construise pendant que vous plaidez.</p>
+        <ul class="offer-card__list">
+          <li>Pilotage du positionnement</li>
+          <li>Production supervisée</li>
+          <li>Messages calibrés FR/AR</li>
+        </ul>
+        <a class="btn btn--bordeaux" href="#contact" data-cta="offer-accompagnement">Diagnostiquer ma visibilité</a>
+      </article>
 
     </div>
   </div>
 </section>
 
-
-<!-- ══════════════════════════════════════════
-     4. MÉTHODE EN 4 TEMPS
-══════════════════════════════════════════ -->
-<section id="methode" class="s-methode">
+<!-- ═══ 4. MÉTHODE ═══════════════════════════════════════════════════════ -->
+<section class="section section--blanc" id="methode">
   <div class="container">
-    <div class="s-header text-center" data-aos="fade-up">
-      <p class="s-eyebrow" data-i18n="meth-label">Comment ça se passe</p>
-      <h2 class="s-title" data-i18n="meth-title">Méthode en 4 temps</h2>
+    <div class="section-head section-head--center reveal">
+      <p class="eyebrow">Comment ça se passe</p>
+      <h2 class="section-title">Méthode en 4 temps</h2>
     </div>
-    <div class="meth-strip" data-aos="fade-up" data-aos-delay="80">
-
-      <div class="meth-step">
-        <span class="meth-step__num">01</span>
-        <div class="meth-step__content">
-          <h3 class="meth-step__title" data-i18n="step1-title">Diagnostic</h3>
-          <p class="meth-step__body" data-i18n="step1-body">Lecture précise de votre position, vos angles morts et vos leviers prioritaires.</p>
-        </div>
+    <div class="methode-grid">
+      <div class="method-step reveal">
+        <span class="method-step__num">01</span>
+        <h3>Diagnostic</h3>
+        <p>Lecture précise de votre position, vos angles morts et vos leviers prioritaires.</p>
       </div>
-
-      <div class="meth-step">
-        <span class="meth-step__num">02</span>
-        <div class="meth-step__content">
-          <h3 class="meth-step__title" data-i18n="step2-title">Architecture</h3>
-          <p class="meth-step__body" data-i18n="step2-body">Positionnement, message central, ligne éditoriale. Le socle qui donne du sens à chaque prise de parole.</p>
-        </div>
+      <div class="method-step reveal">
+        <span class="method-step__num">02</span>
+        <h3>Architecture</h3>
+        <p>Positionnement, message central, ligne éditoriale. Le socle qui donne du sens à chaque prise de parole.</p>
       </div>
-
-      <div class="meth-step">
-        <span class="meth-step__num">03</span>
-        <div class="meth-step__content">
-          <h3 class="meth-step__title" data-i18n="step3-title">Déploiement</h3>
-          <p class="meth-step__body" data-i18n="step3-body">Activation de votre système éditorial sur vos canaux prioritaires, avec cohérence et régularité.</p>
-        </div>
+      <div class="method-step reveal">
+        <span class="method-step__num">03</span>
+        <h3>Déploiement</h3>
+        <p>Activation de votre système éditorial sur vos canaux prioritaires, avec cohérence et régularité.</p>
       </div>
-
-      <div class="meth-step">
-        <span class="meth-step__num">04</span>
-        <div class="meth-step__content">
-          <h3 class="meth-step__title" data-i18n="step4-title">Optimisation</h3>
-          <p class="meth-step__body" data-i18n="step4-body">Analyse mensuelle, ajustement des axes. La stratégie évolue avec vous et votre marché.</p>
-        </div>
+      <div class="method-step reveal">
+        <span class="method-step__num">04</span>
+        <h3>Optimisation</h3>
+        <p>Analyse mensuelle, ajustement des axes. La stratégie évolue avec vous et votre marché.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 5. À PROPOS ══════════════════════════════════════════════════════ -->
+<section class="section section--ivoire" id="apropos">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">Pourquoi ce regard</p>
+      <h2 class="about__title">Je ne fais pas de la communication. Je construis de l'autorité.</h2>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal">
+        <h4>L'œil de l'éditrice</h4>
+        <p>Fondatrice de Neybras Magazine — média B2B des décideurs juridiques et financiers en Afrique francophone. Je sais ce qui retient l'attention d'un lecteur expert, et ce qui la perd au premier paragraphe.</p>
+      </div>
+      <div class="pillar reveal">
+        <h4>Ancrage terrain Maroc</h4>
+        <p>Codes institutionnels locaux, audiences bilingues, secteurs en mutation rapide. Une stratégie efficace ici doit être pensée pour ici.</p>
+      </div>
+      <div class="pillar reveal">
+        <h4>Cohérence biculturelle FR / AR</h4>
+        <p>Une autorité forte se construit sur la continuité du discours, quelle que soit la langue. Rares sont ceux qui maîtrisent les deux registres à haut niveau éditorial.</p>
+      </div>
+    </div>
+    <a class="about__link" href="https://www.neybras-magazine.com/" target="_blank" rel="noopener">
+      Fondatrice — Neybras Magazine
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ═══ 6. TÉMOIGNAGES ═══════════════════════════════════════════════════ -->
+<section class="section section--blanc" id="temoignages">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <p class="eyebrow">Preuve</p>
+      <h2 class="section-title">Ils ont rendu leur expertise enfin visible</h2>
+    </div>
+    <div class="quotes">
+
+      <blockquote class="quote reveal">
+        <p class="quote__text">« J'ai eu le plaisir de collaborer avec Dalal pour la 2<sup>e</sup> édition de Neybras sur une thématique assez complexe, la cyber-résilience. Son leadership rédactionnel est remarquable : elle a compris et su mettre en avant mon expertise. Elle ne publie pas un magazine, elle construit une plateforme d'influence stratégique. »</p>
+        <footer class="quote__author">
+          <span class="avatar" aria-hidden="true">YA</span>
+          <span>
+            <cite>Youssef El Amrani</cite>
+            <span class="quote__role">Responsable de projet · Recommandation LinkedIn, déc. 2025</span>
+          </span>
+        </footer>
+      </blockquote>
+
+      <blockquote class="quote reveal">
+        <p class="quote__text">« Dalal apporte à un sujet juridique ce qui manque le plus à notre profession : la clarté. Mes analyses en arbitrage international ont trouvé, dans Neybras Magazine, un cadre éditorial à la hauteur de leur exigence. »</p>
+        <footer class="quote__author">
+          <span class="avatar"><img src="images/Me%20Driss%20El%20Harti.png" alt="Me Driss El Harti" loading="lazy" /></span>
+          <span>
+            <cite>M<sup>e</sup> Driss El Harti</cite>
+            <span class="quote__role">Avocat au Barreau de Tanger — arbitrage international · Contributeur Neybras</span>
+          </span>
+        </footer>
+      </blockquote>
+
+      <blockquote class="quote reveal">
+        <p class="quote__text">« Travailler avec Dalal, c'est voir son expertise traduite sans être trahie. Elle structure le propos, soigne la cohérence, et donne à un contenu spécialisé une vraie portée auprès des décideurs. »</p>
+        <footer class="quote__author">
+          <span class="avatar" aria-hidden="true">AL</span>
+          <span>
+            <cite>M<sup>e</sup> Amine Lahlou</cite>
+            <span class="quote__role">Avocat au Barreau de Casablanca — arbitrage · Contributeur Neybras</span>
+          </span>
+        </footer>
+      </blockquote>
 
     </div>
   </div>
 </section>
 
-
-<!-- ══════════════════════════════════════════
-     5. À PROPOS
-══════════════════════════════════════════ -->
-<section id="apropos" class="s-about">
-  <div class="container">
-    <div class="row align-items-center g-5">
-
-      <div class="col-lg-5" data-aos="fade-up">
-        <div class="s-about__portrait-wrap">
-          <img src="images/dalal-pro.webp" alt="Dalal Fahmi — Fondatrice de Neybras Magazine" loading="lazy" />
-          <div class="s-about__media-badge">
-            <span class="s-about__media-label">Fondatrice</span>
-            <a href="https://www.neybras-magazine.com/" class="s-about__media-link" target="_blank" rel="noopener">Neybras Magazine →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 offset-lg-1" data-aos="fade-up" data-aos-delay="100">
-        <p class="s-eyebrow" data-i18n="about-label">Pourquoi ce regard</p>
-        <h2 class="s-title" data-i18n="about-title">L'expertise au service des experts</h2>
-
-        <div class="s-about__points">
-
-          <div class="s-about__point">
-            <h4 class="s-about__point-title" data-i18n="abt1-title">L'œil de l'éditrice</h4>
-            <p class="s-about__point-desc" data-i18n="abt1-desc">Fondatrice de Neybras Magazine — média B2B des décideurs juridiques et financiers en Afrique francophone. Je sais ce qui retient l'attention d'un lecteur expert, et ce qui la perd au premier paragraphe.</p>
-          </div>
-
-          <div class="s-about__point">
-            <h4 class="s-about__point-title" data-i18n="abt2-title">Ancrage terrain Maroc</h4>
-            <p class="s-about__point-desc" data-i18n="abt2-desc">Codes institutionnels locaux, audiences bilingues, secteurs en mutation rapide. Une stratégie efficace ici doit être pensée pour ici.</p>
-          </div>
-
-          <div class="s-about__point">
-            <h4 class="s-about__point-title" data-i18n="abt3-title">Cohérence biculturelle FR / AR</h4>
-            <p class="s-about__point-desc" data-i18n="abt3-desc">Une autorité forte se construit sur la continuité du discours, quelle que soit la langue. Rares sont ceux qui maîtrisent les deux registres à haut niveau éditorial.</p>
-          </div>
-
-        </div>
-      </div>
-
+<!-- ═══ 7. REGARDS ═══════════════════════════════════════════════════════ -->
+<section class="section section--ivoire" id="regards">
+  <div class="container regard">
+    <div class="section-head section-head--center reveal">
+      <p class="eyebrow">Regards</p>
     </div>
+    <a class="regard-card reveal" href="regards/cabinets-invisibles.html" data-cta="regard-article">
+      <div class="regard-card__meta">
+        <span class="regard-card__tag">Positionnement</span>
+        <span class="regard-card__read">5 min de lecture</span>
+      </div>
+      <h3 class="regard-card__title">Pourquoi les cabinets compétents restent invisibles</h3>
+      <p class="regard-card__excerpt">L'expertise ne suffit pas si elle n'est pas perçue. Pourquoi les meilleurs cabinets passent inaperçus — et comment l'écart entre ce que vous valez et ce qui est perçu coûte des mandats.</p>
+      <span class="regard-card__cta">Lire l'analyse
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
   </div>
 </section>
 
-
-<!-- ══════════════════════════════════════════
-     6. REGARDS / TÉMOIGNAGES
-══════════════════════════════════════════ -->
-<section id="regards" class="s-regards">
-  <div class="container">
-
-    <!-- Témoignages -->
-    <div class="s-header" data-aos="fade-up">
-      <p class="s-eyebrow" data-i18n="testi-label">Ils ont fait le choix de la clarté</p>
-      <h2 class="s-title" data-i18n="testi-title">Ce qu'ils disent</h2>
-    </div>
-
-    <div class="row g-4 mt-3">
-
-      <div class="col-md-4" data-aos="fade-up">
-        <blockquote class="testi-q">
-          <p data-i18n="testi1-quote">« J'ai eu le plaisir de collaborer avec Dalal pour la 2<sup>e</sup> édition de Neybras sur une thématique assez complexe, la cyber-résilience. Son leadership rédactionnel est remarquable : elle a compris et su mettre en avant mon expertise. Elle ne publie pas un magazine, elle construit une plateforme d'influence stratégique. »</p>
-          <footer>
-            <div class="testi-q__avatar">YA</div>
-            <div>
-              <cite data-i18n="testi1-name">Youssef El Amrani</cite>
-              <span data-i18n="testi1-role">Responsable de projet · Recommandation LinkedIn, déc. 2025</span>
-            </div>
-          </footer>
-        </blockquote>
-      </div>
-
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
-        <blockquote class="testi-q">
-          <p data-i18n="testi2-quote">« Dalal apporte à un sujet juridique ce qui manque le plus à notre profession : la clarté. Mes analyses en arbitrage international ont trouvé, dans Neybras Magazine, un cadre éditorial à la hauteur de leur exigence. »</p>
-          <footer>
-            <div class="testi-q__avatar">
-              <img src="images/Me Driss El Harti.png" alt="Me Driss El Harti" />
-            </div>
-            <div>
-              <cite data-i18n="testi2-name">M<sup>e</sup> Driss El Harti</cite>
-              <span data-i18n="testi2-role">Avocat au Barreau de Tanger — arbitrage international · Contributeur Neybras</span>
-            </div>
-          </footer>
-        </blockquote>
-      </div>
-
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="160">
-        <blockquote class="testi-q">
-          <p data-i18n="testi3-quote">« Travailler avec Dalal, c'est voir son expertise traduite sans être trahie. Elle structure le propos, soigne la cohérence, et donne à un contenu spécialisé une vraie portée auprès des décideurs. »</p>
-          <footer>
-            <div class="testi-q__avatar">AL</div>
-            <div>
-              <cite data-i18n="testi3-name">M<sup>e</sup> Amine Lahlou</cite>
-              <span data-i18n="testi3-role">Avocat au Barreau de Casablanca — arbitrage · Contributeur Neybras</span>
-            </div>
-          </footer>
-        </blockquote>
-      </div>
-
-    </div>
-
-    <!-- Article Regards -->
-    <div class="row justify-content-center mt-6" data-aos="fade-up">
-      <div class="col-lg-8 col-xl-7">
-        <p class="s-eyebrow text-center mb-4">Regards</p>
-        <a href="regards/cabinets-invisibles.html" class="regard-card">
-          <div class="regard-card__meta">
-            <span class="regard-card__tag">Positionnement</span>
-            <span class="regard-card__read">5 min de lecture</span>
-          </div>
-          <h3 class="regard-card__title">Pourquoi les cabinets compétents restent invisibles</h3>
-          <p class="regard-card__excerpt">L'expertise ne suffit pas si elle n'est pas perçue. Pourquoi les meilleurs cabinets passent inaperçus — et comment l'écart entre ce que vous valez et ce qui est perçu coûte des mandats.</p>
-          <span class="regard-card__cta">Lire l'analyse <i class="fa-solid fa-arrow-right ms-2"></i></span>
+<!-- ═══ 8. CONTACT ═══════════════════════════════════════════════════════ -->
+<section class="section contact" id="contact">
+  <div class="container contact__inner">
+    <div class="reveal">
+      <p class="eyebrow">Première étape</p>
+      <h2 class="section-title" style="margin-inline:auto;">Prenons 30 minutes.</h2>
+      <p class="contact__body">En un appel, je vous dis précisément ce que je vois dans votre positionnement actuel — et si une mission a du sens. Sans engagement, sans argumentaire de vente. Si je ne peux pas vous aider, je vous le dis.</p>
+      <div class="contact__actions">
+        <a class="btn btn--bordeaux" target="_blank" rel="noopener" data-cta="contact-whatsapp"
+           href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20diagnostiquer%20ma%20visibilit%C3%A9.">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.8-1.9-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 .6.3 1.1.5 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+          WhatsApp
         </a>
+        <a class="btn btn--outline-nuit" href="mailto:dalal.fahmi@neybras.com" data-cta="contact-email">dalal.fahmi@neybras.com</a>
       </div>
+      <p class="contact__note">Réponse sous 24h · Sans engagement · Visio ou téléphone</p>
+      <p class="contact__loc">Casablanca · Bouskoura</p>
     </div>
-
   </div>
 </section>
 
+</main>
 
-<!-- ══════════════════════════════════════════
-     7. PREMIER ÉCHANGE
-══════════════════════════════════════════ -->
-<section id="contact" class="s-contact">
+<!-- ═══ BANDE PREUVE MÉDIAS ══════════════════════════════════════════════ -->
+<div class="proof-bar">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-xl-6 text-center" data-aos="fade-up">
-        <p class="s-eyebrow" data-i18n="cta-label">Première étape</p>
-        <h2 class="s-title" data-i18n="cta-title">Prenons un premier échange</h2>
-        <p class="s-contact__body" data-i18n="cta-body">Un appel de 30 minutes, sans engagement. Je vous dis ce que je vois — et nous identifions ensemble si une mission a du sens.</p>
-        <div class="s-contact__actions">
-          <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20prendre%20un%20premier%20%C3%A9change."
-             class="btn-primary-gold" target="_blank" rel="noopener">
-            <i class="fa-brands fa-whatsapp me-2"></i>WhatsApp
-          </a>
-          <a href="mailto:dalal.fahmi@neybras.com" class="btn-ghost-ink">
-            <i class="fa-solid fa-envelope me-2"></i>dalal.fahmi@neybras.com
-          </a>
-        </div>
-        <p class="s-contact__note" data-i18n="cta-note">Réponse sous 24h · Sans engagement · Visio ou téléphone</p>
-        <p class="s-contact__location">Casablanca · Bouskoura</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ─── FOOTER MEDIA BAR ─── -->
-<div class="footer-media-bar">
-  <div class="container text-center">
-    <div class="footer-media-bar__top">
-      <span class="footer-media-label" data-i18n="media-label">La preuve par mes médias</span>
-      <span class="footer-media-desc" data-i18n="media-desc" style="font-size:0.82rem;opacity:0.72;font-style:italic;">Je ne théorise pas la stratégie éditoriale : je la pratique chaque mois.</span>
-    </div>
-    <div class="footer-media-bar__links">
-      <a href="https://www.neybras-family.com/" class="footer-media-link" target="_blank" rel="noopener">
-        <i class="fa-solid fa-newspaper me-2"></i>Neybras Family — B2C Premium
-      </a>
-      <span class="footer-media-divider">·</span>
-      <a href="https://www.neybras-magazine.com/" class="footer-media-link" target="_blank" rel="noopener">
-        <i class="fa-solid fa-book-open me-2"></i>Neybras Magazine — B2B Droit · Finance · Gouvernance
-      </a>
+    <span class="proof-bar__label">La preuve par mes médias</span>
+    <div class="proof-bar__links">
+      <a href="https://www.neybras-magazine.com/" target="_blank" rel="noopener">Neybras Magazine — B2B Droit · Finance · Gouvernance</a>
+      <a href="https://www.neybras-family.com/" target="_blank" rel="noopener">Neybras Family — B2C Premium</a>
     </div>
   </div>
 </div>
 
-<!-- ─── FOOTER ─── -->
+<!-- ═══ FOOTER ═══════════════════════════════════════════════════════════ -->
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-top">
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <span class="brand-name d-block">Neybras</span>
-          <span class="brand-sub d-block mb-2">by Dalal Fahmi</span>
-          <p class="footer-desc">Stratégie éditoriale B2B · Contenu d'expertise bilingue français/arabe pour cabinets juridiques et institutions financières.</p>
-        </div>
-        <div class="col-6 col-lg-2 offset-lg-1">
-          <h5 class="footer-heading">Navigation</h5>
-          <ul class="footer-links">
-            <li><a href="#offres">Offres</a></li>
-            <li><a href="#methode">Méthode</a></li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#regards">Regards</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-2">
-          <h5 class="footer-heading">Médias</h5>
-          <ul class="footer-links">
-            <li><a href="https://www.neybras-family.com/" target="_blank" rel="noopener">Neybras Family</a></li>
-            <li><a href="https://www.neybras-magazine.com/" target="_blank" rel="noopener">Neybras Magazine</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3">
-          <h5 class="footer-heading">Contact direct</h5>
-          <p class="footer-contact-info mb-2">
-            <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a>
-          </p>
-          <a href="https://wa.me/212695199559" class="footer-whatsapp-link" target="_blank" rel="noopener">
-            <i class="fa-brands fa-whatsapp me-2"></i>WhatsApp
+    <div class="footer-grid">
+      <div>
+        <span class="brand__name" style="font-size:1.2rem;">NEYBRAS</span>
+        <span class="brand__sub" style="display:block;">by Dalal Fahmi</span>
+        <p class="footer-desc">Conseil en stratégie éditoriale B2B, bilingue français/arabe, pour cabinets juridiques et institutions financières.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <a href="#methode">Méthode</a>
+        <a href="#offres">Offres</a>
+        <a href="#apropos">À propos</a>
+        <a href="#temoignages">Témoignages</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Mes médias</h5>
+        <a href="https://www.neybras-magazine.com/" target="_blank" rel="noopener">Neybras Magazine</a>
+        <a href="https://www.neybras-family.com/" target="_blank" rel="noopener">Neybras Family</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a>
+        <a href="https://wa.me/212695199559" target="_blank" rel="noopener">WhatsApp</a>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/dalal-fahmi/" target="_blank" rel="noopener" aria-label="LinkedIn de Dalal Fahmi">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21H19v-5.4c0-1.3 0-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H11z"/></svg>
           </a>
-          <div class="footer-social mt-3">
-            <a href="https://www.linkedin.com/in/dalal-fahmi/" aria-label="LinkedIn Dalal Fahmi" target="_blank" rel="noopener">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-          </div>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="currentYear"></span> Neybras by Dalal Fahmi — Stratégie éditoriale | Casablanca, Maroc.</p>
-      <div class="footer-bottom-links">
-        <a href="mentions-legales.html">Mentions légales</a>
-      </div>
+      <p>© <span id="year"></span> Neybras by Dalal Fahmi — Stratégie éditoriale · Casablanca, Maroc.</p>
+      <div><a href="mentions-legales.html">Mentions légales</a></div>
     </div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="js/main.js"></script>
+<!-- WhatsApp flottant -->
+<a class="wa-float" target="_blank" rel="noopener" aria-label="Contacter Dalal sur WhatsApp" data-cta="float-whatsapp"
+   href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20diagnostiquer%20ma%20visibilit%C3%A9.">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.8-1.9-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 .6.3 1.1.5 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+</a>
+
+<script src="js/neybras.js" defer></script>
 </body>
 </html>
