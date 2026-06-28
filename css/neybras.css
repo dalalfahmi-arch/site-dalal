@@ -397,3 +397,17 @@ ul { margin: 0; padding: 0; list-style: none; }
 .expert-card__ph { display: flex; align-items: center; justify-content: center; color: var(--pierre); font-family: var(--font-courant); font-weight: 600; font-size: 1.4rem; letter-spacing: .04em; }
 @media (max-width: 600px) { .experts--two { grid-template-columns: 1fr; } }
 [dir="rtl"] .faq__item summary { padding: 1.25rem 0 1.25rem 2.2rem; } [dir="rtl"] .faq__item summary::after { right: auto; left: .2rem; }
+
+/* === Signatures (3 profils, liens-articles) + Mentions légales ========== */
+.experts--three { grid-template-columns: repeat(3, minmax(0, 260px)); justify-content: center; }
+@media (max-width: 700px) { .experts--three { grid-template-columns: repeat(2, minmax(0, 240px)); } }
+@media (max-width: 480px) { .experts--three { grid-template-columns: minmax(0, 280px); } }
+
+a.topic { text-decoration: none; transition: border-color .2s var(--ease); }
+a.topic:hover { border-bottom-color: var(--bordeaux); }
+a.topic:hover .topic__title { color: var(--bordeaux); }
+.topic .topic__author { font-family: var(--font-courant); font-size: .85rem; color: var(--pierre); }
+
+.legal h2 { font-size: 1.3rem; margin: 2rem 0 .6rem; padding-top: 1.7rem; border-top: 1px solid var(--filet); }
+.legal h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.legal p { color: var(--graphite); line-height: 1.8; }
