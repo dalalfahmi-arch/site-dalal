@@ -8,9 +8,7 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://neybras.com/regards/cabinets-invisibles.html" />
   <link rel="alternate" hreflang="fr" href="https://neybras.com/regards/cabinets-invisibles.html" />
-  <link rel="alternate" hreflang="ar" href="https://neybras.com/regards/cabinets-invisibles-ar.html" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Pourquoi les cabinets compétents restent invisibles | Neybras" />
   <meta property="og:description" content="L'expertise ne suffit pas si elle n'est pas perçue. Pourquoi les meilleurs cabinets passent inaperçus — et comment y remédier." />
   <meta property="og:type" content="article" />
@@ -18,256 +16,192 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/neybras-home.css" />
+  <link rel="stylesheet" href="../css/neybras-article.css" />
 
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH86P6F1DQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-NH86P6F1DQ');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NH86P6F1DQ');</script>
 </head>
 <body>
 
-<!-- ─── WHATSAPP FLOTTANT ─── -->
-<a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20prendre%20un%20premier%20%C3%A9change%20sur%20ma%20strat%C3%A9gie%20%C3%A9ditoriale."
-   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+<a class="skip-link" href="#article">Aller au contenu</a>
 
-<!-- ─── TOP BAR ─── -->
-<div class="topbar d-none d-lg-block">
-  <div class="container d-flex align-items-center justify-content-between">
-    <span class="topbar__msg">
-      <i class="fa-solid fa-pen-nib me-2"></i>Cabinets, PME et professions du conseil — je structure votre autorité éditoriale.
-      <a href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20prendre%20un%20premier%20%C3%A9change." target="_blank" rel="noopener" class="topbar__cta-link">Prendre un premier échange →</a>
-    </span>
-    <div class="topbar__contact d-flex align-items-center gap-4">
-      <a href="mailto:dalal.fahmi@neybras.com" class="topbar__info">
-        <i class="fa-solid fa-envelope me-1"></i>dalal.fahmi@neybras.com
-      </a>
-      <span class="topbar__info">
-        <i class="fa-solid fa-location-dot me-1"></i>Casablanca · Bouskoura
-      </span>
-    </div>
-  </div>
-</div>
-
-<!-- ─── NAVIGATION ─── -->
-<nav id="mainNav" class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="../index.html">
-      <span class="brand-name">Neybras</span>
-      <span class="brand-sub">by Dalal Fahmi</span>
+<!-- ═══ HEADER (commun) ══════════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html" aria-label="Neybras by Dalal Fahmi — accueil">
+      <span class="brand__name">NEYBRAS</span>
+      <span class="brand__sub">by Dalal Fahmi</span>
+      <span class="brand__base">Conseil en stratégie éditoriale</span>
     </a>
-    <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
-      <span class="navbar-toggler-icon"></span>
+
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-        <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="../index.html#methodology">Méthode</a></li>
-        <li class="nav-item"><a class="nav-link" href="../index.html#offres">Offres</a></li>
-        <li class="nav-item"><a class="nav-link" href="../index.html#about">À propos</a></li>
-        <li class="nav-item"><a class="nav-link active" href="../index.html#regards">Regards</a></li>
-        <li class="nav-item ms-lg-3">
-          <a class="btn btn-nav-cta btn-nav-cta--accent" href="../index.html#diagnostic">
-            <i class="fa-solid fa-comments me-2"></i>Premier échange
-          </a>
-        </li>
-        <li class="nav-item ms-lg-2 d-flex align-items-center">
-          <div class="lang-toggle" role="group" aria-label="Langue">
-            <button class="lang-btn active" onclick="window.location='cabinets-invisibles.html'">FR</button>
-            <button class="lang-btn" onclick="window.location='cabinets-invisibles-ar.html'">AR</button>
-          </div>
-        </li>
-      </ul>
+
+    <div class="nav__menu" id="navMenu">
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="../index.html#methode">Méthode</a>
+        <a href="../index.html#offres">Offres</a>
+        <a href="../signatures.html">Signatures</a>
+        <a href="../index.html#apropos">À propos</a>
+        <a href="../index.html#temoignages">Témoignages</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--bordeaux" href="../audit-signature.html" data-cta="article-header-cta">Diagnostiquer ma visibilité</a>
+      </div>
     </div>
   </div>
-</nav>
+</header>
 
-<!-- ─── HERO ARTICLE ─── -->
+<main id="article">
+
+<!-- ═══ HERO ARTICLE ═════════════════════════════════════════════════════ -->
 <div class="article-hero">
   <div class="container">
     <nav class="article-breadcrumb" aria-label="Fil d'Ariane">
-      <a href="../index.html">Accueil</a>
-      <span aria-hidden="true"> › </span>
-      <a href="../index.html#regards">Regards</a>
-      <span aria-hidden="true"> › </span>
+      <a href="../index.html">Accueil</a> <span aria-hidden="true">›</span>
+      <a href="../signatures.html">Regards</a> <span aria-hidden="true">›</span>
       <span>Cabinets invisibles</span>
     </nav>
     <span class="article-tag">Positionnement</span>
-    <h1 class="article-hero__title">Pourquoi les cabinets compétents<br>restent invisibles</h1>
+    <h1 class="article-hero__title reveal">Pourquoi les cabinets compétents restent invisibles</h1>
     <p class="article-hero__meta">
-      <i class="fa-regular fa-clock me-2"></i>5 minutes de lecture
-      &nbsp;·&nbsp;
-      <i class="fa-regular fa-user me-2"></i>Dalal Fahmi
+      <span>5 minutes de lecture</span><span class="sep">·</span><span>Dalal Fahmi</span>
     </p>
   </div>
 </div>
 
-<!-- ─── CORPS DE L'ARTICLE ─── -->
+<!-- ═══ CORPS DE L'ARTICLE ═══════════════════════════════════════════════ -->
 <div class="article-body">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-xl-7">
+    <article class="article-content reveal">
 
-        <div class="article-content">
+      <p>Il existe une injustice silencieuse dans les professions du conseil. Les cabinets les plus rigoureux, ceux dont l'expertise est réelle et durement acquise, ne sont pas toujours ceux que l'on remarque. Et inversement : des structures au niveau moyen occupent l'espace, captent l'attention, décrochent les mandats — non pas parce qu'elles sont meilleures, mais parce qu'elles sont mieux perçues.</p>
 
-          <p>Il existe une injustice silencieuse dans les professions du conseil. Les cabinets les plus rigoureux, ceux dont l'expertise est réelle et durement acquise, ne sont pas toujours ceux que l'on remarque. Et inversement : des structures au niveau moyen occupent l'espace, captent l'attention, décrochent les mandats — non pas parce qu'elles sont meilleures, mais parce qu'elles sont mieux perçues.</p>
+      <p>Ce décalage n'a rien d'anecdotique. C'est l'un des facteurs les plus coûteux, et les plus sous-estimés, du développement d'un cabinet.</p>
 
-          <p>Ce décalage n'a rien d'anecdotique. C'est l'un des facteurs les plus coûteux, et les plus sous-estimés, du développement d'un cabinet.</p>
+      <h2>La compétence ne se voit pas toute seule</h2>
 
-          <h2>La compétence ne se voit pas toute seule</h2>
+      <p>On aime croire que la qualité finit par s'imposer. Que le travail bien fait parle de lui-même. Dans un monde où l'information est rare et l'attention abondante, ce serait vrai. Mais nous vivons l'inverse : l'attention est rare, l'information surabondante.</p>
 
-          <p>On aime croire que la qualité finit par s'imposer. Que le travail bien fait parle de lui-même. Dans un monde où l'information est rare et l'attention abondante, ce serait vrai. Mais nous vivons l'inverse : l'attention est rare, l'information surabondante.</p>
+      <p>Un prospect ne mesure pas votre expertise en lisant vos conclusions ou en auditant vos dossiers. Il se forge une opinion en quelques minutes, à partir de signaux : votre site, votre manière de parler de ce que vous faites, la cohérence entre vos différents supports, la clarté de votre positionnement. Si ces signaux sont flous, désordonnés ou en-dessous de votre niveau réel, votre compétence reste invisible — quelle que soit sa profondeur.</p>
 
-          <p>Un prospect ne mesure pas votre expertise en lisant vos conclusions ou en auditant vos dossiers. Il se forge une opinion en quelques minutes, à partir de signaux : votre site, votre manière de parler de ce que vous faites, la cohérence entre vos différents supports, la clarté de votre positionnement. Si ces signaux sont flous, désordonnés ou en-dessous de votre niveau réel, votre compétence reste invisible — quelle que soit sa profondeur.</p>
+      <p>Autrement dit : <strong>votre prospect ne juge pas ce que vous valez. Il juge ce qu'il perçoit.</strong> Et l'écart entre les deux est précisément là où se perdent les opportunités.</p>
 
-          <p>Autrement dit : <strong>votre prospect ne juge pas ce que vous valez. Il juge ce qu'il perçoit.</strong> Et l'écart entre les deux est précisément là où se perdent les opportunités.</p>
+      <h2>Trois raisons pour lesquelles l'expertise reste cachée</h2>
 
-          <h2>Trois raisons pour lesquelles l'expertise reste cachée</h2>
+      <h3>1. Un discours qui change selon le support</h3>
 
-          <h3>1. Un discours qui change selon le support</h3>
+      <p>Beaucoup de cabinets ont un site qui dit une chose, des profils LinkedIn qui en disent une autre, et une plaquette commerciale qui en raconte une troisième. Chaque support a été produit à un moment différent, dans un état d'esprit différent. Le résultat n'est pas faux — il est dispersé. Et un message dispersé ne s'imprime pas dans la mémoire. Le prospect ne retient rien de précis, donc rien du tout.</p>
 
-          <p>Beaucoup de cabinets ont un site qui dit une chose, des profils LinkedIn qui en disent une autre, et une plaquette commerciale qui en raconte une troisième. Chaque support a été produit à un moment différent, dans un état d'esprit différent. Le résultat n'est pas faux — il est dispersé. Et un message dispersé ne s'imprime pas dans la mémoire. Le prospect ne retient rien de précis, donc rien du tout.</p>
+      <h3>2. Un positionnement implicite</h3>
 
-          <h3>2. Un positionnement implicite</h3>
+      <p>« Nous accompagnons nos clients avec rigueur et proximité. » Cette phrase, ou une variante, figure sur la quasi-totalité des sites de cabinets. Elle est vraie. Elle est aussi parfaitement interchangeable. Quand votre positionnement pourrait être celui de n'importe quel concurrent, vous n'avez pas de positionnement — vous avez une description. Et une description ne différencie pas.</p>
 
-          <p>« Nous accompagnons nos clients avec rigueur et proximité. » Cette phrase, ou une variante, figure sur la quasi-totalité des sites de cabinets. Elle est vraie. Elle est aussi parfaitement interchangeable. Quand votre positionnement pourrait être celui de n'importe quel concurrent, vous n'avez pas de positionnement — vous avez une description. Et une description ne différencie pas.</p>
+      <h3>3. La confusion entre activité et visibilité</h3>
 
-          <h3>3. La confusion entre activité et visibilité</h3>
+      <p>Publier régulièrement donne le sentiment d'exister. Les indicateurs de présence progressent, l'agenda éditorial tourne, on « fait de la com ». Mais l'activité n'est pas la visibilité, et la visibilité n'est pas l'autorité. On peut être très actif et rester parfaitement oubliable — parce que l'effort, sans architecture, produit du bruit, pas du positionnement.</p>
 
-          <p>Publier régulièrement donne le sentiment d'exister. Les indicateurs de présence progressent, l'agenda éditorial tourne, on « fait de la com ». Mais l'activité n'est pas la visibilité, et la visibilité n'est pas l'autorité. On peut être très actif et rester parfaitement oubliable — parce que l'effort, sans architecture, produit du bruit, pas du positionnement.</p>
+      <h2>Ce que coûte vraiment l'invisibilité</h2>
 
-          <h2>Ce que coûte vraiment l'invisibilité</h2>
+      <p>Le coût n'apparaît jamais sur une facture, ce qui le rend difficile à voir. Il prend la forme de mandats qui vous échappent au profit d'un concurrent perçu comme plus structuré — même quand il l'est moins. De prospects qualifiés qui ne vous contactent pas parce qu'ils ne vous ont pas identifié comme la référence sur leur sujet. De temps et de budget investis dans une communication qui entretient une présence sans jamais construire une stature.</p>
 
-          <p>Le coût n'apparaît jamais sur une facture, ce qui le rend difficile à voir. Il prend la forme de mandats qui vous échappent au profit d'un concurrent perçu comme plus structuré — même quand il l'est moins. De prospects qualifiés qui ne vous contactent pas parce qu'ils ne vous ont pas identifié comme la référence sur leur sujet. De temps et de budget investis dans une communication qui entretient une présence sans jamais construire une stature.</p>
+      <p>C'est un coût d'opportunité. Et les coûts d'opportunité sont les plus dangereux, précisément parce qu'on ne les ressent pas. On ne sait pas ce qu'on n'a pas obtenu.</p>
 
-          <p>C'est un coût d'opportunité. Et les coûts d'opportunité sont les plus dangereux, précisément parce qu'on ne les ressent pas. On ne sait pas ce qu'on n'a pas obtenu.</p>
+      <h2>La visibilité ne se décrète pas, elle se structure</h2>
 
-          <h2>La visibilité ne se décrète pas, elle se structure</h2>
+      <p>La bonne nouvelle, c'est que ce problème n'est presque jamais un problème de compétence. C'est un problème d'architecture. Et une architecture, ça se construit.</p>
 
-          <p>La bonne nouvelle, c'est que ce problème n'est presque jamais un problème de compétence. C'est un problème d'architecture. Et une architecture, ça se construit.</p>
+      <p>Cela commence par trancher trois choses, dans l'ordre :</p>
 
-          <p>Cela commence par trancher trois choses, dans l'ordre :</p>
+      <p><strong>Le positionnement</strong> — quel territoire occupez-vous que les autres n'occupent pas ? Sur quels sujets êtes-vous légitime à parler avant tout le monde ? Tant que cette réponse n'est pas nette, tout ce qui suit reste flou.</p>
 
-          <p><strong>Le positionnement</strong> — quel territoire occupez-vous que les autres n'occupent pas ? Sur quels sujets êtes-vous légitime à parler avant tout le monde ? Tant que cette réponse n'est pas nette, tout ce qui suit reste flou.</p>
+      <p><strong>La cohérence</strong> — une fois le positionnement clair, chaque support, chaque prise de parole, chaque langue doit renforcer la même idée. Non pas répéter, mais converger. C'est la répétition cohérente qui imprime un nom dans une mémoire.</p>
 
-          <p><strong>La cohérence</strong> — une fois le positionnement clair, chaque support, chaque prise de parole, chaque langue doit renforcer la même idée. Non pas répéter, mais converger. C'est la répétition cohérente qui imprime un nom dans une mémoire.</p>
+      <p><strong>La régularité maîtrisée</strong> — pas « publier beaucoup », mais publier juste : quelques prises de parole choisies qui consolident votre position, plutôt qu'un flux qui la dilue.</p>
 
-          <p><strong>La régularité maîtrisée</strong> — pas « publier beaucoup », mais publier juste : quelques prises de parole choisies qui consolident votre position, plutôt qu'un flux qui la dilue.</p>
+      <p>Ce n'est pas une question de volume. C'est une question de structure. Un cabinet qui parle moins mais avec une ligne claire devient identifiable. Un cabinet qui parle beaucoup sans ligne reste invisible, quelle que soit la qualité de ce qu'il produit.</p>
 
-          <p>Ce n'est pas une question de volume. C'est une question de structure. Un cabinet qui parle moins mais avec une ligne claire devient identifiable. Un cabinet qui parle beaucoup sans ligne reste invisible, quelle que soit la qualité de ce qu'il produit.</p>
+      <h2>Le point de départ : voir clairement où vous en êtes</h2>
 
-          <h2>Le point de départ : voir clairement où vous en êtes</h2>
+      <p>Avant de produire le moindre contenu, avant de refaire un site ou de relancer une page, il faut un diagnostic honnête : qu'est-ce que votre communication dit réellement de vous aujourd'hui ? Quel écart sépare ce que vous êtes de ce qui est perçu ? Quelles incohérences travaillent contre vous sans que vous le sachiez ?</p>
 
-          <p>Avant de produire le moindre contenu, avant de refaire un site ou de relancer une page, il faut un diagnostic honnête : qu'est-ce que votre communication dit réellement de vous aujourd'hui ? Quel écart sépare ce que vous êtes de ce qui est perçu ? Quelles incohérences travaillent contre vous sans que vous le sachiez ?</p>
+      <p>C'est exactement ce que permet un audit de positionnement : nommer les freins, mesurer l'écart, et définir par quoi commencer. Pas pour communiquer davantage — pour communiquer juste.</p>
 
-          <p>C'est exactement ce que permet un audit de positionnement : nommer les freins, mesurer l'écart, et définir par quoi commencer. Pas pour communiquer davantage — pour communiquer juste.</p>
+      <p>Votre expertise mérite d'être vue à sa vraie hauteur. Ça ne se décrète pas. Ça se structure.</p>
 
-          <p>Votre expertise mérite d'être vue à sa vraie hauteur. Ça ne se décrète pas. Ça se structure.</p>
+      <hr>
 
-          <hr>
-
-          <div class="article-cta-box">
-            <p>Vous reconnaissez votre cabinet dans ce décalage ? Un premier échange de 30 minutes, sans engagement, permet d'en avoir le cœur net.</p>
-            <a href="../audit-signature.html">
-              <i class="fa-solid fa-comments"></i>Planifier un premier échange →
-            </a>
-          </div>
-
-        </div><!-- .article-content -->
+      <div class="article-cta-box">
+        <p>Vous reconnaissez votre cabinet dans ce décalage ? Un premier échange de 30 minutes, sans engagement, permet d'en avoir le cœur net.</p>
+        <a href="../audit-signature.html" data-cta="article-cta">Planifier un premier échange →</a>
       </div>
+
+    </article>
+  </div>
+</div>
+
+</main>
+
+<!-- ═══ BANDE PREUVE MÉDIAS ══════════════════════════════════════════════ -->
+<div class="proof-bar">
+  <div class="container">
+    <span class="proof-bar__label">La preuve par mes médias</span>
+    <div class="proof-bar__links">
+      <a href="https://www.neybras-magazine.com/" target="_blank" rel="noopener">Neybras Magazine — B2B Droit · Finance · Gouvernance</a>
+      <a href="https://www.neybras-family.com/" target="_blank" rel="noopener">Neybras Family — B2C Premium</a>
     </div>
   </div>
 </div>
 
-<!-- ─── FOOTER MEDIA BAR ─── -->
-<div class="footer-media-bar">
-  <div class="container text-center">
-    <div class="footer-media-bar__top">
-      <span class="footer-media-label">La preuve par mes médias</span>
-      <span class="footer-media-desc" style="font-size:0.82rem;opacity:0.72;font-style:italic;">Je ne théorise pas la stratégie éditoriale : je la pratique chaque mois.</span>
-    </div>
-    <div class="footer-media-bar__links">
-      <a href="https://www.neybras-family.com/" class="footer-media-link" target="_blank" rel="noopener">
-        <i class="fa-solid fa-newspaper me-2"></i>Neybras Family — B2C Premium
-      </a>
-      <span class="footer-media-divider">·</span>
-      <a href="https://www.neybras-magazine.com/" class="footer-media-link" target="_blank" rel="noopener">
-        <i class="fa-solid fa-book-open me-2"></i>Neybras Magazine — B2B Droit · Finance · Gouvernance
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- ─── FOOTER ─── -->
+<!-- ═══ FOOTER (commun) ══════════════════════════════════════════════════ -->
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-top">
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <span class="brand-name d-block">Neybras</span>
-          <span class="brand-sub d-block mb-2">by Dalal Fahmi</span>
-          <p class="footer-desc">Stratégie éditoriale B2B · Contenu d'expertise bilingue français/arabe pour cabinets, PME et professions du conseil.</p>
-        </div>
-        <div class="col-6 col-lg-2 offset-lg-1">
-          <h5 class="footer-heading">Navigation</h5>
-          <ul class="footer-links">
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="../index.html#methodology">Méthode</a></li>
-            <li><a href="../index.html#offres">Offres</a></li>
-            <li><a href="../index.html#about">À propos</a></li>
-            <li><a href="../index.html#regards">Regards</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-2">
-          <h5 class="footer-heading">Médias</h5>
-          <ul class="footer-links">
-            <li><a href="https://www.neybras-family.com/" target="_blank" rel="noopener">Neybras Family</a></li>
-            <li><a href="https://www.neybras-magazine.com/" target="_blank" rel="noopener">Neybras Magazine</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3">
-          <h5 class="footer-heading">Contact direct</h5>
-          <p class="footer-contact-info mb-2">
-            <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a>
-          </p>
-          <a href="https://wa.me/212695199559" class="footer-whatsapp-link" target="_blank" rel="noopener">
-            <i class="fa-brands fa-whatsapp me-2"></i>WhatsApp
+    <div class="footer-grid">
+      <div>
+        <span class="brand__name" style="font-size:1.3rem; font-family:var(--font-titre); letter-spacing:.12em;">NEYBRAS</span>
+        <span class="brand__sub" style="display:block; color:#E8B7BF; font-weight:600; font-size:.8rem;">by Dalal Fahmi</span>
+        <p class="footer-desc">Conseil en stratégie éditoriale B2B, bilingue français/arabe, pour cabinets juridiques et institutions financières.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <a href="../index.html#methode">Méthode</a>
+        <a href="../index.html#offres">Offres</a>
+        <a href="../signatures.html">Signatures</a>
+        <a href="../index.html#apropos">À propos</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Mes médias</h5>
+        <a href="https://www.neybras-magazine.com/" target="_blank" rel="noopener">Neybras Magazine</a>
+        <a href="https://www.neybras-family.com/" target="_blank" rel="noopener">Neybras Family</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a>
+        <a href="https://wa.me/212695199559" target="_blank" rel="noopener">WhatsApp</a>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/dalal-fahmi/" target="_blank" rel="noopener" aria-label="LinkedIn de Dalal Fahmi">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21H19v-5.4c0-1.3 0-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H11z"/></svg>
           </a>
-          <div class="footer-social mt-3">
-            <a href="https://www.linkedin.com/in/dalal-fahmi/" aria-label="LinkedIn Dalal Fahmi" target="_blank" rel="noopener">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-          </div>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="currentYear"></span> Neybras by Dalal Fahmi — Stratégie éditoriale B2B | Casablanca, Maroc.</p>
-      <div class="footer-bottom-links">
-        <a href="../mentions-legales.html">Mentions légales</a>
-      </div>
+      <p>© <span id="year"></span> Neybras by Dalal Fahmi — Stratégie éditoriale · Casablanca, Maroc.</p>
+      <div><a href="../mentions-legales.html">Mentions légales</a></div>
     </div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.getElementById('currentYear').textContent = new Date().getFullYear();
-  // Navbar scroll
-  window.addEventListener('scroll', () => {
-    document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 40);
-  });
-</script>
+<a class="wa-float" target="_blank" rel="noopener" aria-label="Contacter Dalal sur WhatsApp" data-cta="float-whatsapp"
+   href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20prendre%20un%20premier%20%C3%A9change%20sur%20ma%20strat%C3%A9gie%20%C3%A9ditoriale.">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.8-1.9-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 .6.3 1.1.5 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+</a>
+
+<script src="../js/neybras.js" defer></script>
 </body>
 </html>
