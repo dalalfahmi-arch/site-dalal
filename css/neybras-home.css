@@ -134,7 +134,7 @@ em { font-style: italic; color: var(--bordeaux); }
 .nav { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 76px; }
 .brand { display: flex; flex-direction: row; align-items: center; gap: .6rem; line-height: 1.05; color: var(--nuit); }
 .brand:hover { color: var(--nuit); }
-.brand__logo { height: 42px; width: auto; display: block; flex-shrink: 0; }
+.brand__logo { height: 46px; width: 46px; display: block; flex-shrink: 0; border-radius: 50%; box-shadow: 0 0 0 1.5px var(--filet), 0 2px 8px rgba(15,34,56,.18); }
 .brand__text { display: flex; flex-direction: column; }
 .brand__name { font-family: var(--font-titre); font-size: 1.5rem; letter-spacing: .12em; }
 .brand__sub { font-size: .72rem; color: var(--bordeaux); font-weight: 600; letter-spacing: .04em; }
