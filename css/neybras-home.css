@@ -411,7 +411,7 @@ em { font-style: italic; color: var(--bordeaux); }
 .contact .eyebrow { color: #E8B7BF; justify-content: center; }
 .contact .eyebrow::before { background: #E8B7BF; }
 .contact .section-title { color: #fff; margin-inline: auto; }
-.contact__body { font-size: 1.12rem; color: rgba(255,255,255,0.82); margin-bottom: 2rem; }
+.contact__body { font-size: 1.12rem; line-height: 1.9; color: rgba(255,255,255,0.82); margin-bottom: 2rem; }
 .contact__actions { display: flex; flex-wrap: wrap; gap: .9rem; justify-content: center; margin-bottom: 1.4rem; }
 .contact__note { font-size: .9rem; color: rgba(255,255,255,0.62); margin-bottom: .2rem; }
 .contact__loc { font-size: .85rem; color: rgba(255,255,255,0.5); margin: 0; }
