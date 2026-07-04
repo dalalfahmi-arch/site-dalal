@@ -236,6 +236,9 @@ em { font-style: italic; color: var(--bordeaux); }
 
 /* --- Grilles de cartes ------------------------------------------------- */
 .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.cards-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 760px; margin-inline: auto; }
+.cards-2 .pillar { text-align: center; }
+.cards-2 .about__link { margin-top: 1rem; justify-content: center; }
 
 .signal-card {
   position: relative; background: var(--blanc); border: 1px solid var(--filet);
@@ -523,7 +526,7 @@ em { font-style: italic; color: var(--bordeaux); }
   .hero__media { justify-self: start; }
   .hero__media img { width: min(320px, 70%); }
   .intro__grid { grid-template-columns: 1fr; }
-  .cards-3, .offers, .quotes { grid-template-columns: 1fr; }
+  .cards-3, .cards-2, .offers, .quotes { grid-template-columns: 1fr; }
   .methode-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
   .methode-grid::before { display: none; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
