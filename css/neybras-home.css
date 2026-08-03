@@ -193,7 +193,7 @@ em { font-style: italic; color: var(--bordeaux); }
 .hero__media img {
   position: relative; z-index: 2;
   width: min(420px, 100%); border-radius: var(--radius);
-  box-shadow: var(--shadow-lg); object-fit: cover; aspect-ratio: 4/5;
+  box-shadow: var(--shadow-lg); object-fit: cover; object-position: 66% 50%; aspect-ratio: 4/5;
 }
 .hero__media::before {
   content: ""; position: absolute; z-index: 1;
