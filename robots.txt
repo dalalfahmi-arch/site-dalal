@@ -1,0 +1,29 @@
+# -------------------------------------------------------------------------
+# ROBOTS.TXT - NEYBRAS (neybras.com) - CONSEIL EN STRATÉGIE ÉDITORIALE
+# -------------------------------------------------------------------------
+
+User-agent: GPTBot
+Allow: /
+Disallow: /mentions-legales.html
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /mentions-legales.html
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /mentions-legales.html
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /mentions-legales.html
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /mentions-legales.html
+
+User-agent: *
+Allow: /
+Disallow: /mentions-legales.html
+
+Sitemap: https://neybras.com/sitemap.xml
