@@ -226,6 +226,9 @@ em { font-style: italic; color: var(--bordeaux); }
 .about__link svg { width: 1.05em; height: 1.05em; transition: transform .2s var(--ease); }
 .about__link:hover svg { transform: translateX(4px); }
 
+.about__text { margin-top: clamp(2.4rem, 5vw, 3.6rem); max-width: 62ch; }
+.about__text h3 { font-size: clamp(1.3rem, 2.4vw, 1.7rem); margin-bottom: 1rem; }
+.about__text .section-intro { max-width: none; margin-bottom: 1rem; }
 .pillars { display: grid; gap: 1.4rem; }
 .pillar {
   background: var(--blanc); border: 1px solid var(--filet); border-radius: var(--radius-sm);
