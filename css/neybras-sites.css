@@ -17,7 +17,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .bascule a:focus-visible { outline-color: #E8B7BF; }
 
 /* --- Contrastes : textes secondaires de la feuille de base --------------- */
-.offer-card__from, .offer-card__meta, .quote__role, .brand__base,
+.offer-card__from, .offer-card__meta, .brand__base,
 .hero__assurance, .topic__author, .expert-card__role, .muted { color: var(--texte-doux); }
 .offer-card--featured .offer-card__from, .offer-card--featured .offer-card__meta { color: rgba(255,255,255,0.78); }
 
@@ -170,5 +170,4 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .credibilite__text { max-width: 62ch; }
 .credibilite .section-title { max-width: none; font-size: clamp(1.6rem, 3.2vw, 2.2rem); }
 .credibilite p:last-child { margin-bottom: 0; }
-.quotes-title { text-align: center; font-size: clamp(1.25rem, 2.4vw, 1.6rem); margin-bottom: 1.6rem; }
 @media (max-width: 760px) { .credibilite { grid-template-columns: 1fr; } }
