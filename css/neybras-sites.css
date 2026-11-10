@@ -145,3 +145,18 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .footer-col .footer-h { font-family: var(--font-courant); font-size: .76rem; text-transform: uppercase; letter-spacing: .16em; color: #E8B7BF; margin: 0 0 1rem; }
 /* Signatures : la grille d'experts passe en une colonne sur mobile (débordement horizontal sinon) */
 @media (max-width: 980px) { .experts--three { grid-template-columns: 1fr; } }
+
+/* Modalités de paiement en bloc (titre, puis une ligne par versement ou jalon) */
+.pay { margin: .2rem 0 1.2rem; text-align: left; }
+.pay__title { display: block; color: var(--nuit); font-size: .95rem; margin-bottom: .3rem; }
+.pay__line { display: block; font-size: .92rem; padding: .25rem 0; border-top: 1px solid var(--filet); }
+.offer-card--featured .pay__title { color: #fff; }
+.offer-card--featured .pay__line { border-top-color: rgba(255,255,255,0.18); }
+.offer-card[id="offre"] .pay { max-width: 460px; margin-inline: auto; }
+
+/* Illustration conceptuelle (hero Cabinet Vitrine) : abstraite, sans contenu réel */
+.concept { margin: 0; justify-self: center; width: min(460px, 100%); }
+.concept svg { width: 100%; height: auto; display: block; }
+.concept figcaption { font-size: .82rem; color: var(--texte-doux); text-align: center; margin-top: .6rem; font-style: italic; }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin-top: 1rem; }
+.chips li { font-size: .82rem; font-weight: 600; color: var(--nuit); background: var(--creme); border: 1px solid var(--filet); border-radius: 999px; padding: .3rem .8rem; }
