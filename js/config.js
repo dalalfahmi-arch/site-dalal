@@ -20,7 +20,7 @@ window.NEYBRAS_CONFIG = {
     vitrine: {
       name: 'Cabinet Vitrine',
       price: { mad: 8500, eur: 800, xof: 525000 },
-      delivery: '3 semaines',
+      delivery: '10 jours après validation du cahier des charges',
       paymentTitle: 'Paiement en deux fois',
       payments: [
         { label: 'à la commande', mad: 4250, eur: 400, xof: 262500 },
