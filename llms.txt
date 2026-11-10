@@ -21,14 +21,14 @@ Information et expertise, jamais démarchage ni promesse de résultat. Le client
 ## Pages
 
 - [Accueil](https://neybras.com/): présentation, offres, preuves, questions fréquentes
-- [Sites web pour avocats](https://neybras.com/sites-web-avocats.html): offres de sites web pour le droit
-- [Cabinet Vitrine](https://neybras.com/cabinet-vitrine.html)
-- [Cabinet Autorité](https://neybras.com/cabinet-autorite.html)
-- [Sérénité Numérique](https://neybras.com/serenite-numerique.html)
-- [Brief de projet](https://neybras.com/brief-projet.html): brief et demande de devis
-- [Audit stratégique éditorial](https://neybras.com/audit-signature.html): détail de l'offre d'audit
-- [Signatures](https://neybras.com/signatures.html): contributeurs publiés dans Neybras Magazine
-- [Cabinets invisibles](https://neybras.com/regards/cabinets-invisibles.html): article
+- [Sites web pour avocats](https://neybras.com/sites-web-avocats): offres de sites web pour le droit
+- [Cabinet Vitrine](https://neybras.com/cabinet-vitrine)
+- [Cabinet Autorité](https://neybras.com/cabinet-autorite)
+- [Sérénité Numérique](https://neybras.com/serenite-numerique)
+- [Brief de projet](https://neybras.com/brief-projet): brief et demande de devis
+- [Audit stratégique éditorial](https://neybras.com/audit-signature): détail de l'offre d'audit
+- [Signatures](https://neybras.com/signatures): contributeurs publiés dans Neybras Magazine
+- [Cabinets invisibles](https://neybras.com/regards/cabinets-invisibles): article
 - [Plan du site](https://neybras.com/sitemap.xml)
 
 ## Liens
