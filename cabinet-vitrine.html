@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>/* URLs propres : /page.html -> /page (sans entrée d'historique). Le canonical couvre le référencement. */if(/\.html$/.test(location.pathname)){location.replace(location.pathname.replace(/(^|\/)index\.html$/,'/').replace(/\.html$/,'')+location.search+location.hash);}</script>
   <title>Cabinet Vitrine — Site web pour avocats | Neybras</title>
   <meta name="description" content="Cabinet Vitrine : un site web premium d'une page pour installer la confiance. Design sur-mesure, responsive, formulaire de contact sécurisé, WhatsApp Business. Prix fixe." />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="images/Neybras-circle.png" />
   <link rel="apple-touch-icon" href="images/Neybras-circle.png" />
-  <link rel="canonical" href="https://neybras.com/cabinet-vitrine.html" />
-  <link rel="alternate" hreflang="fr" href="https://neybras.com/cabinet-vitrine.html" />
+  <link rel="canonical" href="https://neybras.com/cabinet-vitrine" />
+  <link rel="alternate" hreflang="fr" href="https://neybras.com/cabinet-vitrine" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -17,7 +18,7 @@
   <meta property="og:site_name" content="Neybras" />
   <meta property="og:title" content="Cabinet Vitrine — Site web pour avocats | Neybras" />
   <meta property="og:description" content="Cabinet Vitrine : un site web premium d'une page pour installer la confiance. Design sur-mesure, responsive, formulaire de contact sécurisé, WhatsApp Business. Prix fixe." />
-  <meta property="og:url" content="https://neybras.com/cabinet-vitrine.html" />
+  <meta property="og:url" content="https://neybras.com/cabinet-vitrine" />
   <meta property="og:image" content="https://neybras.com/images/Neybras.png" />
   <meta name="twitter:card" content="summary" />
 
@@ -38,7 +39,7 @@
     "@type": "Service",
     "name": "Cabinet Vitrine",
     "description": "Site web premium d'une page pour les avocats et acteurs du droit.",
-    "url": "https://neybras.com/cabinet-vitrine.html",
+    "url": "https://neybras.com/cabinet-vitrine",
     "serviceType": "Conception de site web pour avocats et acteurs du droit",
     "provider": {
       "@id": "https://neybras.com/#organization",
@@ -56,7 +57,7 @@
     ],
     "offers": {
       "@type": "Offer",
-      "url": "https://neybras.com/cabinet-vitrine.html",
+      "url": "https://neybras.com/cabinet-vitrine",
       "priceCurrency": "MAD",
       "availability": "https://schema.org/InStock",
       "price": 8500
@@ -69,7 +70,7 @@
 
 <header class="site-header" id="top">
   <div class="container nav">
-    <a class="brand" href="index.html">
+    <a class="brand" href="/">
       <img class="brand__logo" src="images/neybras-logo-96.png" alt="" width="46" height="46">
       <span class="brand__text">
         <span class="brand__name">NEYBR<span class="brand__accent">A</span>S</span>
@@ -83,11 +84,11 @@
 
     <div class="nav__menu" id="navMenu">
       <nav class="nav__links" aria-label="Navigation principale">
-        <a href="sites-web-avocats.html">Sites web</a>
-        <a href="index.html#offres">Offres</a>
-        <a href="index.html#conseil">Conseil éditorial</a>
-        <a href="signatures.html">Signatures</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="/sites-web-avocats">Sites web</a>
+        <a href="/#offres">Offres</a>
+        <a href="/#conseil">Conseil éditorial</a>
+        <a href="/signatures">Signatures</a>
+        <a href="/#contact">Contact</a>
       </nav>
       <div class="nav__actions">
         <a class="btn btn--bordeaux" href="https://wa.me/212695199559?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes." target="_blank" rel="noopener" data-cta="header-demo">Réserver une démonstration</a>
@@ -190,7 +191,7 @@
         <h2 style="font-size:1.6rem">Cabinet Vitrine</h2>
         <span class="price price--lg" data-price="vitrine"><span class="price__main">8 500 DH</span><span class="price__alt">800 € / 525 000 F CFA</span></span>
         <div class="offer-card__pay pay" data-pay-block="vitrine"><strong class="pay__title">Paiement en deux fois</strong><span class="pay__line">4 250 DH · 400 € · 262 500 F CFA à la commande</span><span class="pay__line">4 250 DH · 400 € · 262 500 F CFA à la livraison</span></div>
-        <a class="btn btn--bordeaux btn--block" href="brief-projet.html?offre=vitrine" data-cta="vitrine-lancer">Lancer mon projet</a>
+        <a class="btn btn--bordeaux btn--block" href="/brief-projet?offre=vitrine" data-cta="vitrine-lancer">Lancer mon projet</a>
         <p class="offer-card__pay" style="margin:.9rem 0 0"><em data-text="vitrine.microcopy">Offre Cabinet Vitrine : 8 500 DH. Paiement en deux fois : 4 250 DH à la commande, 4 250 DH à la livraison.</em></p>
       </div>
   </div>
@@ -204,7 +205,7 @@
       <p class="contact__body">Réservez une démonstration de 30 minutes ou envoyez-nous votre brief. Nous vous répondons sous 24 heures ouvrées.</p>
       <div class="contact__actions">
         <a class="btn btn--light" target="_blank" rel="noopener" data-cta="contact-demo" href="https://wa.me/212695199559?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes.">Réserver une démonstration</a>
-        <a class="btn btn--ghost-light" href="brief-projet.html?offre=vitrine" data-cta="contact-brief">Remplir le brief projet</a>
+        <a class="btn btn--ghost-light" href="/brief-projet?offre=vitrine" data-cta="contact-brief">Remplir le brief projet</a>
         <a class="btn btn--ghost-light" target="_blank" rel="noopener" data-cta="contact-whatsapp" href="https://wa.me/212695199559">Contacter Neybras sur WhatsApp</a>
       </div>
       <p class="contact__note">Réponse sous 24 heures ouvrées · Sans engagement</p>
@@ -223,12 +224,12 @@
       </div>
       <div class="footer-col">
         <p class="footer-h">Navigation</p>
-        <a href="sites-web-avocats.html">Sites web pour avocats</a>
-        <a href="cabinet-vitrine.html">Cabinet Vitrine</a>
-        <a href="cabinet-autorite.html">Cabinet Autorité</a>
-        <a href="serenite-numerique.html">Sérénité Numérique</a>
-        <a href="index.html#conseil">Conseil éditorial</a>
-        <a href="signatures.html">Signatures</a>
+        <a href="/sites-web-avocats">Sites web pour avocats</a>
+        <a href="/cabinet-vitrine">Cabinet Vitrine</a>
+        <a href="/cabinet-autorite">Cabinet Autorité</a>
+        <a href="/serenite-numerique">Sérénité Numérique</a>
+        <a href="/#conseil">Conseil éditorial</a>
+        <a href="/signatures">Signatures</a>
       </div>
       <div class="footer-col">
         <p class="footer-h">Médias</p>
@@ -239,12 +240,12 @@
         <p class="footer-h">Contact</p>
         <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a>
         <a href="https://wa.me/212695199559" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="brief-projet.html">Brief de projet</a>
+        <a href="/brief-projet">Brief de projet</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>© <span id="year"></span> Neybras — Casablanca, Maroc.</p>
-      <div><a href="mentions-legales.html">Mentions légales</a></div>
+      <div><a href="/mentions-legales">Mentions légales</a></div>
     </div>
   </div>
 </footer>
