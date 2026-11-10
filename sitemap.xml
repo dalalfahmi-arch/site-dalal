@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://neybras.com/</loc>
-    <lastmod>2026-09-30</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://neybras.com/signatures.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://neybras.com/audit-signature.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://neybras.com/regards/cabinets-invisibles.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <priority>0.6</priority>
-  </url>
+  <url><loc>https://neybras.com/</loc><lastmod>2026-11-10</lastmod><priority>1.0</priority></url>
+  <url><loc>https://neybras.com/sites-web-avocats.html</loc><lastmod>2026-11-10</lastmod><priority>0.9</priority></url>
+  <url><loc>https://neybras.com/cabinet-vitrine.html</loc><lastmod>2026-11-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neybras.com/cabinet-autorite.html</loc><lastmod>2026-11-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neybras.com/serenite-numerique.html</loc><lastmod>2026-11-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neybras.com/brief-projet.html</loc><lastmod>2026-11-10</lastmod><priority>0.7</priority></url>
+  <url><loc>https://neybras.com/audit-signature.html</loc><lastmod>2026-11-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neybras.com/signatures.html</loc><lastmod>2026-11-10</lastmod><priority>0.8</priority></url>
+  <url><loc>https://neybras.com/regards/cabinets-invisibles.html</loc><lastmod>2026-11-10</lastmod><priority>0.6</priority></url>
 </urlset>
