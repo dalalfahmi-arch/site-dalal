@@ -18,7 +18,7 @@ window.NEYBRAS_CONFIG = {
   offers: {
     /* ── Sites web — prix fixes, sans « à partir de » ── */
     vitrine: {
-      name: 'Cabinet Vitrine',
+      name: 'Site Vitrine',
       price: { mad: 8500, eur: 800, xof: 525000 },
       delivery: '10 jours après validation du cahier des charges',
       paymentTitle: 'Paiement en deux fois',
@@ -27,10 +27,10 @@ window.NEYBRAS_CONFIG = {
         { label: 'à la livraison', mad: 4250, eur: 400, xof: 262500 }
       ],
       /* Le prix total précède toujours le montant du premier versement. */
-      microcopy: 'Offre Cabinet Vitrine : {total}. Paiement en deux fois : {p0} à la commande, {p1} à la livraison.'
+      microcopy: 'Offre Site Vitrine : {total}. Paiement en deux fois : {p0} à la commande, {p1} à la livraison.'
     },
     autorite: {
-      name: 'Cabinet Autorité',
+      name: 'Site Autorité',
       price: { mad: 19500, eur: 1800, xof: 1200000 },
       paymentTitle: 'Paiement en trois étapes',
       /* Trois jalons, sans pourcentages ni montants (non arrêtés commercialement). */
@@ -45,7 +45,7 @@ window.NEYBRAS_CONFIG = {
       name: 'Sérénité Numérique',
       price: { mad: 500, eur: 50, xof: 33000 },
       period: 'par mois',
-      microcopy: "Un mois offert avec l'offre Cabinet Vitrine. Puis {total} par mois, sans engagement."
+      microcopy: "Un mois offert avec l'offre Site Vitrine. Puis {total} par mois, sans engagement."
     },
 
     /* ── Conseil éditorial & autorité — offre complémentaire, tarifs « à partir de » ── */
