@@ -81,3 +81,19 @@
     });
   });
 })();
+
+/* Menu déroulant « Ils nous font confiance » : clic, clavier (Échap) et clic extérieur */
+(function () {
+  var btn = document.querySelector('.nav__dropbtn');
+  var sub = document.getElementById('menuConfiance');
+  if (!btn || !sub) { return; }
+  function set(open) {
+    sub.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  btn.addEventListener('click', function (e) { e.stopPropagation(); set(!sub.classList.contains('is-open')); });
+  document.addEventListener('click', function (e) { if (!sub.contains(e.target)) { set(false); } });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && sub.classList.contains('is-open')) { set(false); btn.focus(); }
+  });
+})();
