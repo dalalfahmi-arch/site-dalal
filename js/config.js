@@ -24,16 +24,22 @@ window.NEYBRAS_CONFIG = {
       name: 'Cabinet Vitrine',
       price: { mad: 8500, eur: 800, xof: 525000 },
       delivery: '3 semaines',
+      /* Paiement en deux fois : 50 % / 50 % */
       payments: [
-        { label: 'à la commande', mad: 4250 },
-        { label: 'à la livraison', mad: 4250 }
-      ]
+        { label: 'à la commande', mad: 4250, eur: 400, xof: 262500 },
+        { label: 'à la livraison', mad: 4250, eur: 400, xof: 262500 }
+      ],
+      paymentIntro: 'Paiement en deux fois (50 % / 50 %)',
+      /* {p0} = premier versement, en DH */
+      microcopy: "Lancez votre projet aujourd'hui pour {p0}. Solde à la livraison."
     },
     autorite: {
       name: 'Cabinet Autorité',
       price: { mad: 19500, eur: 1800, xof: 1200000 },
       /* Trois étapes de règlement ; les montants par étape ne sont pas arrêtés. */
-      steps: ['à la commande', 'à la validation du prototype', 'à la mise en ligne']
+      steps: ['commande', 'validation du prototype', 'mise en ligne'],
+      paymentIntro: 'Paiement en trois étapes',
+      microcopy: 'Échéancier détaillé communiqué dans la proposition.'
     },
     serenite: {
       name: 'Sérénité Numérique',
