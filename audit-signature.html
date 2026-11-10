@@ -39,14 +39,24 @@
       "name": "Neybras",
       "url": "https://neybras.com/"
     },
-    "areaServed": { "@type": "Country", "name": "Maroc" },
-    "availableLanguage": ["fr", "ar"],
+    "areaServed": {
+      "@type": "Country",
+      "name": "Maroc"
+    },
+    "availableLanguage": [
+      "fr",
+      "ar"
+    ],
     "offers": {
       "@type": "Offer",
       "url": "https://neybras.com/audit-signature.html",
       "priceCurrency": "MAD",
-      "priceSpecification": { "@type": "PriceSpecification", "minPrice": 7000, "priceCurrency": "MAD" },
-      "description": "À partir de 7 000 DH ; modalités définies après un premier échange stratégique."
+      "availability": "https://schema.org/InStock",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "minPrice": 7000,
+        "priceCurrency": "MAD"
+      }
     }
   }
   </script>
@@ -410,7 +420,7 @@
   <div class="container">
     <div class="pricing-box reveal">
       <h3>Une mission construite autour de vos enjeux</h3>
-      <p class="pricing-box__price" data-price="audit"></p>
+      <p class="pricing-box__price" data-price="audit"><span class="price__from">À partir de</span><span class="price__main">7 000 DH</span></p>
       <p>L'Audit Stratégique Éditorial n'est pas une prestation standardisée. C'est un diagnostic stratégique sur-mesure, construit selon les objectifs, les problématiques et le niveau de maturité de votre organisation.</p>
       <div class="pricing-philosophy">Chaque organisation possède des enjeux de communication distincts. Les modalités d'accompagnement sont définies après un premier échange stratégique, afin d'adapter la mission au contexte spécifique du client — et non l'inverse.</div>
       <div class="pricing-includes">
@@ -605,6 +615,7 @@
 </a>
 
 <script src="js/config.js"></script>
+<script src="js/prices.js"></script>
 <script src="js/neybras.js" defer></script>
 </body>
 </html>
