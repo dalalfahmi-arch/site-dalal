@@ -20,6 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/neybras-home.css" />
+  <link rel="stylesheet" href="../css/neybras-sites.css" />
   <link rel="stylesheet" href="../css/neybras-article.css" />
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH86P6F1DQ"></script>
@@ -30,12 +31,14 @@
 <a class="skip-link" href="#article">Aller au contenu</a>
 
 <!-- ═══ HEADER (commun) ══════════════════════════════════════════════════ -->
-<header class="site-header">
+<header class="site-header" id="top">
   <div class="container nav">
-    <a class="brand" href="../index.html" aria-label="Neybras by Dalal Fahmi — accueil">
-      <span class="brand__name">NEYBRAS</span>
-      <span class="brand__sub">by Dalal Fahmi</span>
-      <span class="brand__base">Conseil en stratégie éditoriale</span>
+    <a class="brand" href="../index.html" aria-label="Neybras — accueil">
+      <img class="brand__logo" src="../images/Neybras-circle.png" alt="" width="46" height="46">
+      <span class="brand__text">
+        <span class="brand__name">NEYBR<span class="brand__accent">A</span>S</span>
+        <span class="brand__base">Sites web &amp; stratégie éditoriale</span>
+      </span>
     </a>
 
     <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
@@ -44,15 +47,14 @@
 
     <div class="nav__menu" id="navMenu">
       <nav class="nav__links" aria-label="Navigation principale">
-        <a href="../index.html#methode">Méthode</a>
+        <a href="../sites-web-avocats.html">Sites web</a>
         <a href="../index.html#offres">Offres</a>
+        <a href="../index.html#conseil">Conseil éditorial</a>
         <a href="../signatures.html">Signatures</a>
-        <a href="../index.html#apropos">À propos</a>
-        <a href="../index.html#temoignages">Témoignages</a>
         <a href="../index.html#contact">Contact</a>
       </nav>
       <div class="nav__actions">
-        <a class="btn btn--bordeaux" href="../audit-signature.html" data-cta="article-header-cta">Diagnostiquer ma visibilité</a>
+        <a class="btn btn--bordeaux" href="https://wa.me/212695199559?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes." target="_blank" rel="noopener" data-cta="header-demo">Réserver une démonstration</a>
       </div>
     </div>
   </div>
@@ -71,7 +73,7 @@
     <span class="article-tag">Positionnement</span>
     <h1 class="article-hero__title reveal">Pourquoi les cabinets compétents restent invisibles</h1>
     <p class="article-hero__meta">
-      <span>5 minutes de lecture</span><span class="sep">·</span><span>Dalal Fahmi</span>
+      <span>5 minutes de lecture</span><span class="sep">·</span><span>Neybras</span>
     </p>
   </div>
 </div>
@@ -151,7 +153,7 @@
 <!-- ═══ BANDE PREUVE MÉDIAS ══════════════════════════════════════════════ -->
 <div class="proof-bar">
   <div class="container">
-    <span class="proof-bar__label">La preuve par mes médias</span>
+    <span class="proof-bar__label">La preuve par les médias Neybras</span>
     <div class="proof-bar__links">
       <a href="https://www.neybras-magazine.com/" target="_blank" rel="noopener">Neybras Magazine — B2B Droit · Finance · Gouvernance</a>
       <a href="https://www.neybras-family.com/" target="_blank" rel="noopener">Neybras Family — B2C Premium</a>
@@ -165,19 +167,19 @@
     <div class="footer-grid">
       <div>
         <span class="brand__name" style="font-size:1.3rem; font-family:var(--font-titre); letter-spacing:.12em;">NEYBRAS</span>
-        <span class="brand__sub" style="display:block; color:#E8B7BF; font-weight:600; font-size:.8rem;">by Dalal Fahmi</span>
-        <p class="footer-desc">Conseil en stratégie éditoriale B2B, bilingue français/arabe, pour cabinets juridiques et institutions financières.</p>
+        <p class="footer-desc">Sites web premium pour les cabinets d'avocats et les acteurs du droit. Conseil éditorial en complément.</p>
       </div>
       <div class="footer-col">
         <h5>Navigation</h5>
-        <a href="../index.html#methode">Méthode</a>
-        <a href="../index.html#offres">Offres</a>
+        <a href="../sites-web-avocats.html">Sites web pour avocats</a>
+        <a href="../cabinet-vitrine.html">Cabinet Vitrine</a>
+        <a href="../cabinet-autorite.html">Cabinet Autorité</a>
+        <a href="../serenite-numerique.html">Sérénité Numérique</a>
+        <a href="../index.html#conseil">Conseil éditorial</a>
         <a href="../signatures.html">Signatures</a>
-        <a href="../index.html#apropos">À propos</a>
-        <a href="../index.html#contact">Contact</a>
       </div>
       <div class="footer-col">
-        <h5>Mes médias</h5>
+        <h5>Médias</h5>
         <a href="https://www.neybras-magazine.com/" target="_blank" rel="noopener">Neybras Magazine</a>
         <a href="https://www.neybras-family.com/" target="_blank" rel="noopener">Neybras Family</a>
       </div>
@@ -185,25 +187,22 @@
         <h5>Contact</h5>
         <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a>
         <a href="https://wa.me/212695199559" target="_blank" rel="noopener">WhatsApp</a>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/dalal-fahmi/" target="_blank" rel="noopener" aria-label="LinkedIn de Dalal Fahmi">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21H19v-5.4c0-1.3 0-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H11z"/></svg>
-          </a>
-        </div>
+        <a href="../brief-projet.html">Brief de projet</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="year"></span> Neybras by Dalal Fahmi — Stratégie éditoriale · Casablanca, Maroc.</p>
+      <p>© <span id="year"></span> Neybras — Casablanca, Maroc.</p>
       <div><a href="../mentions-legales.html">Mentions légales</a></div>
     </div>
   </div>
 </footer>
 
-<a class="wa-float" target="_blank" rel="noopener" aria-label="Contacter Dalal sur WhatsApp" data-cta="float-whatsapp"
-   href="https://wa.me/212695199559?text=Bonjour%20Dalal%2C%20je%20souhaite%20prendre%20un%20premier%20%C3%A9change%20sur%20ma%20strat%C3%A9gie%20%C3%A9ditoriale.">
+<a class="wa-float" target="_blank" rel="noopener" aria-label="Contacter Neybras sur WhatsApp" data-cta="float-whatsapp"
+   href="https://wa.me/212695199559?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes.">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.8-1.9-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 .6.3 1.1.5 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
 </a>
 
+<script src="../js/config.js"></script>
 <script src="../js/neybras.js" defer></script>
 </body>
 </html>
