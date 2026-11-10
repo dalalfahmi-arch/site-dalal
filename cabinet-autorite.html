@@ -53,7 +53,14 @@
     "availableLanguage": [
       "fr",
       "ar"
-    ]
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://neybras.com/cabinet-autorite.html",
+      "priceCurrency": "MAD",
+      "availability": "https://schema.org/InStock",
+      "price": 19500
+    }
   }
   </script>
 </head>
@@ -130,10 +137,10 @@
   <div class="container">
       <div class="offer-card reveal" id="offre" style="max-width:640px;margin-inline:auto;text-align:center">
         <h2 style="font-size:1.6rem">Cabinet Autorité</h2>
-        <span class="price price--lg" data-price="autorite"><noscript>Tarifs et modalités communiqués sur demande.</noscript></span>
-        <p class="offer-card__pay" data-pay="autorite" data-all><noscript>Tarifs et modalités communiqués sur demande.</noscript></p>
+        <span class="price price--lg" data-price="autorite"><span class="price__main">19 500 DH</span><span class="price__alt">1 800 € / 1 200 000 F CFA</span></span>
+        <div class="offer-card__pay pay" data-pay-block="autorite"><strong class="pay__title">Paiement en trois étapes</strong><span class="pay__line">À la commande — cadrage et lancement.</span><span class="pay__line">À la validation du prototype — validation du design.</span><span class="pay__line">À la mise en ligne — livraison finale.</span></div>
         <a class="btn btn--bordeaux btn--block" href="brief-projet.html?offre=autorite&amp;demande=devis" data-cta="autorite-proposition">Demander une proposition</a>
-        <p class="offer-card__pay" style="margin:.9rem 0 0"><em data-text="autorite.microcopy"><noscript>Tarifs et modalités communiqués sur demande.</noscript></em></p>
+        <p class="offer-card__pay" style="margin:.9rem 0 0"><em data-text="autorite.microcopy">Échéancier détaillé communiqué dans la proposition.</em></p>
       </div>
   </div>
 </section>
@@ -212,8 +219,8 @@
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.8-1.9-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 .6.3 1.1.5 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
 </a>
 
-<noscript><p style="text-align:center;padding:1rem;">Les tarifs s'affichent avec JavaScript activé. Sans JavaScript, écrivez-nous : dalal.fahmi@neybras.com.</p></noscript>
 <script src="js/config.js"></script>
+<script src="js/prices.js"></script>
 <script src="js/neybras.js" defer></script>
 </body>
 </html>
