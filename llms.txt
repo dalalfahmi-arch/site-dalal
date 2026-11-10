@@ -4,7 +4,7 @@
 
 ## Offres de sites web (prix fixes, en DH, puis € et F CFA)
 
-- Cabinet Vitrine : 8 500 DH / 800 € / 525 000 F CFA. One-page premium (5 sections maximum), design sur-mesure, maquette validée, charte du cabinet intégrée, responsive, formulaire de contact sécurisé, bouton WhatsApp Business, optimisation technique de base, livraison estimée à 3 semaines. Paiement en 2 fois : 4 250 DH à la commande, 4 250 DH à la livraison.
+- Cabinet Vitrine : 8 500 DH / 800 € / 525 000 F CFA. One-page premium (5 sections maximum), design sur-mesure, maquette validée, charte du cabinet intégrée, responsive, formulaire de contact sécurisé, bouton WhatsApp Business, optimisation technique de base, livraison estimée à 10 jours après validation du cahier des charges. Paiement en 2 fois : 4 250 DH à la commande, 4 250 DH à la livraison.
 - Cabinet Autorité : 19 500 DH / 1 800 € / 1 200 000 F CFA. Multi-pages (jusqu'à 7), design entièrement sur-mesure, architecture éditoriale, rédaction stratégique des contenus, français et arabe si besoin, référencement par spécialité et zone géographique, blog et actualités juridiques, prise de rendez-vous intégrée, formulaire avancé, option de paiement des honoraires, maintenance et évolutions. Paiement en 3 étapes : commande, validation du prototype, mise en ligne.
 - Sérénité Numérique (maintenance) : 500 DH / 50 € / 33 000 F CFA par mois. Sécurité et mises à jour, sauvegardes et restauration, performance et disponibilité, support et petites modifications, hébergement inclus.
 
