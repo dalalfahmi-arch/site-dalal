@@ -4,26 +4,26 @@
 
 User-agent: GPTBot
 Allow: /
-Disallow: /mentions-legales.html
+Disallow: /mentions-legales
 
 User-agent: ChatGPT-User
 Allow: /
-Disallow: /mentions-legales.html
+Disallow: /mentions-legales
 
 User-agent: ClaudeBot
 Allow: /
-Disallow: /mentions-legales.html
+Disallow: /mentions-legales
 
 User-agent: PerplexityBot
 Allow: /
-Disallow: /mentions-legales.html
+Disallow: /mentions-legales
 
 User-agent: Google-Extended
 Allow: /
-Disallow: /mentions-legales.html
+Disallow: /mentions-legales
 
 User-agent: *
 Allow: /
-Disallow: /mentions-legales.html
+Disallow: /mentions-legales
 
 Sitemap: https://neybras.com/sitemap.xml
