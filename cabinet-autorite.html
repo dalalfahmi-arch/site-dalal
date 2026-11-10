@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>/* URLs propres : /page.html -> /page (sans entrée d'historique). Le canonical couvre le référencement. */if(/\.html$/.test(location.pathname)){location.replace(location.pathname.replace(/(^|\/)index\.html$/,'/').replace(/\.html$/,'')+location.search+location.hash);}</script>
   <title>Cabinet Autorité — Site web pour avocats | Neybras</title>
   <meta name="description" content="Cabinet Autorité : plateforme web multi-pages pour cabinets d'avocats (jusqu'à sept pages), design sur-mesure, rédaction stratégique, français et arabe. Prix fixe." />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="images/Neybras-circle.png" />
   <link rel="apple-touch-icon" href="images/Neybras-circle.png" />
-  <link rel="canonical" href="https://neybras.com/cabinet-autorite.html" />
-  <link rel="alternate" hreflang="fr" href="https://neybras.com/cabinet-autorite.html" />
+  <link rel="canonical" href="https://neybras.com/cabinet-autorite" />
+  <link rel="alternate" hreflang="fr" href="https://neybras.com/cabinet-autorite" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -17,7 +18,7 @@
   <meta property="og:site_name" content="Neybras" />
   <meta property="og:title" content="Cabinet Autorité — Site web pour avocats | Neybras" />
   <meta property="og:description" content="Cabinet Autorité : plateforme web multi-pages pour cabinets d'avocats (jusqu'à sept pages), design sur-mesure, rédaction stratégique, français et arabe. Prix fixe." />
-  <meta property="og:url" content="https://neybras.com/cabinet-autorite.html" />
+  <meta property="og:url" content="https://neybras.com/cabinet-autorite" />
   <meta property="og:image" content="https://neybras.com/images/Neybras.png" />
   <meta name="twitter:card" content="summary" />
 
@@ -38,7 +39,7 @@
     "@type": "Service",
     "name": "Cabinet Autorité",
     "description": "Plateforme web multi-pages pour les cabinets d'avocats et acteurs du droit.",
-    "url": "https://neybras.com/cabinet-autorite.html",
+    "url": "https://neybras.com/cabinet-autorite",
     "serviceType": "Conception de site web pour avocats et acteurs du droit",
     "provider": {
       "@id": "https://neybras.com/#organization",
@@ -56,7 +57,7 @@
     ],
     "offers": {
       "@type": "Offer",
-      "url": "https://neybras.com/cabinet-autorite.html",
+      "url": "https://neybras.com/cabinet-autorite",
       "priceCurrency": "MAD",
       "availability": "https://schema.org/InStock",
       "price": 19500
@@ -69,7 +70,7 @@
 
 <header class="site-header" id="top">
   <div class="container nav">
-    <a class="brand" href="index.html">
+    <a class="brand" href="/">
       <img class="brand__logo" src="images/neybras-logo-96.png" alt="" width="46" height="46">
       <span class="brand__text">
         <span class="brand__name">NEYBR<span class="brand__accent">A</span>S</span>
@@ -83,11 +84,11 @@
 
     <div class="nav__menu" id="navMenu">
       <nav class="nav__links" aria-label="Navigation principale">
-        <a href="sites-web-avocats.html">Sites web</a>
-        <a href="index.html#offres">Offres</a>
-        <a href="index.html#conseil">Conseil éditorial</a>
-        <a href="signatures.html">Signatures</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="/sites-web-avocats">Sites web</a>
+        <a href="/#offres">Offres</a>
+        <a href="/#conseil">Conseil éditorial</a>
+        <a href="/signatures">Signatures</a>
+        <a href="/#contact">Contact</a>
       </nav>
       <div class="nav__actions">
         <a class="btn btn--bordeaux" href="https://wa.me/212695199559?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes." target="_blank" rel="noopener" data-cta="header-demo">Réserver une démonstration</a>
@@ -127,7 +128,7 @@
         <li>Prise de rendez-vous synchronisée.</li>
         <li>Formulaire de contact avancé.</li>
         <li>Option de paiement des honoraires.</li>
-        <li>Maintenance et évolutions via l'offre <a href="serenite-numerique.html">Sérénité Numérique</a>.</li>
+        <li>Maintenance et évolutions via l'offre <a href="/serenite-numerique">Sérénité Numérique</a>.</li>
       </ul>
     </div>
   </div>
@@ -139,7 +140,7 @@
         <h2 style="font-size:1.6rem">Cabinet Autorité</h2>
         <span class="price price--lg" data-price="autorite"><span class="price__main">19 500 DH</span><span class="price__alt">1 800 € / 1 200 000 F CFA</span></span>
         <div class="offer-card__pay pay" data-pay-block="autorite"><strong class="pay__title">Paiement en trois étapes</strong><span class="pay__line">À la commande — cadrage et lancement.</span><span class="pay__line">À la validation du prototype — validation du design.</span><span class="pay__line">À la mise en ligne — livraison finale.</span></div>
-        <a class="btn btn--bordeaux btn--block" href="brief-projet.html?offre=autorite&amp;demande=devis" data-cta="autorite-proposition">Demander une proposition</a>
+        <a class="btn btn--bordeaux btn--block" href="/brief-projet?offre=autorite&amp;demande=devis" data-cta="autorite-proposition">Demander une proposition</a>
         <p class="offer-card__pay" style="margin:.9rem 0 0"><em data-text="autorite.microcopy">Échéancier détaillé communiqué dans la proposition.</em></p>
       </div>
   </div>
@@ -169,7 +170,7 @@
       <p class="contact__body">Réservez une démonstration de 30 minutes ou envoyez-nous votre brief. Nous vous répondons sous 24 heures ouvrées.</p>
       <div class="contact__actions">
         <a class="btn btn--light" target="_blank" rel="noopener" data-cta="contact-demo" href="https://wa.me/212695199559?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes.">Réserver une démonstration</a>
-        <a class="btn btn--ghost-light" href="brief-projet.html?offre=autorite&amp;demande=devis" data-cta="contact-brief">Remplir le brief projet</a>
+        <a class="btn btn--ghost-light" href="/brief-projet?offre=autorite&amp;demande=devis" data-cta="contact-brief">Remplir le brief projet</a>
         <a class="btn btn--ghost-light" target="_blank" rel="noopener" data-cta="contact-whatsapp" href="https://wa.me/212695199559">Contacter Neybras sur WhatsApp</a>
       </div>
       <p class="contact__note">Réponse sous 24 heures ouvrées · Sans engagement</p>
@@ -188,12 +189,12 @@
       </div>
       <div class="footer-col">
         <p class="footer-h">Navigation</p>
-        <a href="sites-web-avocats.html">Sites web pour avocats</a>
-        <a href="cabinet-vitrine.html">Cabinet Vitrine</a>
-        <a href="cabinet-autorite.html">Cabinet Autorité</a>
-        <a href="serenite-numerique.html">Sérénité Numérique</a>
-        <a href="index.html#conseil">Conseil éditorial</a>
-        <a href="signatures.html">Signatures</a>
+        <a href="/sites-web-avocats">Sites web pour avocats</a>
+        <a href="/cabinet-vitrine">Cabinet Vitrine</a>
+        <a href="/cabinet-autorite">Cabinet Autorité</a>
+        <a href="/serenite-numerique">Sérénité Numérique</a>
+        <a href="/#conseil">Conseil éditorial</a>
+        <a href="/signatures">Signatures</a>
       </div>
       <div class="footer-col">
         <p class="footer-h">Médias</p>
@@ -204,12 +205,12 @@
         <p class="footer-h">Contact</p>
         <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a>
         <a href="https://wa.me/212695199559" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="brief-projet.html">Brief de projet</a>
+        <a href="/brief-projet">Brief de projet</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>© <span id="year"></span> Neybras — Casablanca, Maroc.</p>
-      <div><a href="mentions-legales.html">Mentions légales</a></div>
+      <div><a href="/mentions-legales">Mentions légales</a></div>
     </div>
   </div>
 </footer>
