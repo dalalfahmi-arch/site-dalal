@@ -23,6 +23,29 @@
       var o = CFG.offers[el.getAttribute('data-price')];
       if (o) { el.innerHTML = priceHTML(o); }
     });
+    /* Modalités de paiement : phrase composée depuis la config (data-all = DH, € et F CFA) */
+    function payments(o, all) {
+      var f = function (p) {
+        return all ? CFG.currencies.filter(function (c) { return p[c.key]; }).map(function (c) { return money(p[c.key], c); }).join(' · ')
+                   : money(p.mad, CFG.currencies[0]);
+      };
+      if (o.payments) {
+        return o.paymentIntro + ' : ' + o.payments.map(function (p) { return f(p) + ' ' + p.label; }).join(', ') + '.';
+      }
+      return o.paymentIntro + ' : ' + o.steps.join(', ') + '.';
+    }
+    document.querySelectorAll('[data-pay]').forEach(function (el) {
+      var o = CFG.offers[el.getAttribute('data-pay')];
+      if (o) { el.textContent = payments(o, el.hasAttribute('data-all')); }
+    });
+    document.querySelectorAll('[data-text]').forEach(function (el) {
+      var parts = el.getAttribute('data-text').split('.');
+      var o = CFG.offers[parts[0]];
+      var t = o && o[parts[1]];
+      if (typeof t === 'string') {
+        el.textContent = t.replace('{p0}', o.payments ? money(o.payments[0].mad, CFG.currencies[0]) : '');
+      }
+    });
     document.querySelectorAll('[data-money]').forEach(function (el) {
       var node = CFG.offers;
       el.getAttribute('data-money').split('.').forEach(function (k) { node = node && node[k]; });
