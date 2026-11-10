@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>/* URLs propres : /page.html -> /page (sans entrée d'historique). Le canonical couvre le référencement. */if(/\.html$/.test(location.pathname)){location.replace(location.pathname.replace(/(^|\/)index\.html$/,'/').replace(/\.html$/,'')+location.search+location.hash);}</script>
-  <title>Cabinet Autorité — Site web pour avocats | Neybras</title>
-  <meta name="description" content="Cabinet Autorité : plateforme web multi-pages pour cabinets d'avocats (jusqu'à sept pages), design sur-mesure, rédaction stratégique, français et arabe. Prix fixe." />
+  <title>Site Autorité — Site web pour avocats | Neybras</title>
+  <meta name="description" content="Site Autorité : plateforme web multi-pages pour cabinets d'avocats (jusqu'à sept pages), design sur-mesure, rédaction stratégique, français et arabe. Prix fixe." />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="images/Neybras-circle.png" />
   <link rel="apple-touch-icon" href="images/Neybras-circle.png" />
@@ -16,8 +16,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:site_name" content="Neybras" />
-  <meta property="og:title" content="Cabinet Autorité — Site web pour avocats | Neybras" />
-  <meta property="og:description" content="Cabinet Autorité : plateforme web multi-pages pour cabinets d'avocats (jusqu'à sept pages), design sur-mesure, rédaction stratégique, français et arabe. Prix fixe." />
+  <meta property="og:title" content="Site Autorité — Site web pour avocats | Neybras" />
+  <meta property="og:description" content="Site Autorité : plateforme web multi-pages pour cabinets d'avocats (jusqu'à sept pages), design sur-mesure, rédaction stratégique, français et arabe. Prix fixe." />
   <meta property="og:url" content="https://neybras.com/cabinet-autorite" />
   <meta property="og:image" content="https://neybras.com/images/Neybras.png" />
   <meta name="twitter:card" content="summary" />
@@ -37,7 +37,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Cabinet Autorité",
+    "name": "Site Autorité",
     "description": "Plateforme web multi-pages pour les cabinets d'avocats et acteurs du droit.",
     "url": "https://neybras.com/cabinet-autorite",
     "serviceType": "Conception de site web pour avocats et acteurs du droit",
@@ -88,6 +88,12 @@
         <a href="/#offres">Offres</a>
         <a href="/#conseil">Conseil éditorial</a>
         <a href="/signatures">Signatures</a>
+        <div class="nav__dropdown">
+          <button type="button" class="nav__dropbtn" aria-expanded="false" aria-controls="menuConfiance">Ils nous font confiance <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="nav__submenu" id="menuConfiance">
+            <li><a href="https://neybras-magazine.com/" target="_blank" rel="noopener" data-cta="menu_confiance_magazine">Neybras Magazine</a></li>
+          </ul>
+        </div>
         <a href="/#contact">Contact</a>
       </nav>
       <div class="nav__actions">
@@ -105,7 +111,7 @@
       <h1 class="hero__title">Une plateforme web à la hauteur de votre expertise.</h1>
       <p class="hero__lead">Pour les cabinets qui souhaitent présenter leurs associés, leurs expertises et leur actualité avec clarté, cohérence et autorité.</p>
       <div class="hero__actions">
-        <a class="btn btn--bordeaux" href="#offre" data-cta="autorite-offre">Découvrir l'offre Cabinet Autorité</a>
+        <a class="btn btn--bordeaux" href="#offre" data-cta="autorite-offre">Découvrir l'offre Site Autorité</a>
         <a class="btn btn--outline-nuit" target="_blank" rel="noopener" href="https://wa.me/212789256744?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes." data-cta="autorite-demo">Réserver une démonstration — 30 minutes</a>
       </div>
     </div>
@@ -137,7 +143,7 @@
 <section class="section section--ivoire">
   <div class="container">
       <div class="offer-card reveal" id="offre" style="max-width:640px;margin-inline:auto;text-align:center">
-        <h2 style="font-size:1.6rem">Cabinet Autorité</h2>
+        <h2 style="font-size:1.6rem">Site Autorité</h2>
         <span class="price price--lg" data-price="autorite"><span class="price__main">19 500 DH</span><span class="price__alt">1 800 € / 1 200 000 F CFA</span></span>
         <div class="offer-card__pay pay" data-pay-block="autorite"><strong class="pay__title">Paiement en trois étapes</strong><span class="pay__line">À la commande — cadrage et lancement.</span><span class="pay__line">À la validation du prototype — validation du design.</span><span class="pay__line">À la mise en ligne — livraison finale.</span></div>
         <a class="btn btn--bordeaux btn--block" href="/brief-projet?offre=autorite&amp;demande=devis" data-cta="autorite-proposition">Demander une proposition</a>
@@ -190,8 +196,8 @@
       <div class="footer-col">
         <p class="footer-h">Navigation</p>
         <a href="/sites-web-avocats">Sites web pour avocats</a>
-        <a href="/cabinet-vitrine">Cabinet Vitrine</a>
-        <a href="/cabinet-autorite">Cabinet Autorité</a>
+        <a href="/cabinet-vitrine">Site Vitrine</a>
+        <a href="/cabinet-autorite">Site Autorité</a>
         <a href="/serenite-numerique">Sérénité Numérique</a>
         <a href="/#conseil">Conseil éditorial</a>
         <a href="/signatures">Signatures</a>
