@@ -1,31 +1,33 @@
-# Neybras · Dalal Fahmi
+# Neybras
 
-> Neybras est le cabinet de conseil en stratégie éditoriale et digitale de Dalal Fahmi, fondatrice et directrice de la publication de Neybras Magazine. Il accompagne, au Maroc, les cabinets juridiques, les institutions financières et les PME à forte expertise, en français et en arabe, pour que leur image reflète la réalité de leur savoir-faire.
+> Neybras conçoit les sites web des cabinets d'avocats et des acteurs du droit qui veulent transformer leur expertise en autorité visible. Plateformes web premium, sobres, sécurisées et respectueuses des usages déontologiques de la profession. Neybras est adossé à Neybras Magazine et propose, en complément, du conseil éditorial.
 
-## Qui
+## Offres de sites web (prix fixes, en DH, puis € et F CFA)
 
-- Dalal Fahmi, consultante en stratégie éditoriale, basée à Casablanca (Maroc)
-- Fondatrice de deux médias : Neybras Magazine (B2B, décideurs juridiques et financiers en Afrique francophone) et Neybras Family (B2C premium, familles marocaines)
-- Langues de travail : français et arabe
-- Cadre déontologique : information et expertise, jamais démarchage ni promesse de résultat ; le client valide tout ce qui est publié en son nom ; le travail ne porte jamais sur des dossiers confidentiels
+- Cabinet Vitrine : 8 500 DH / 800 € / 525 000 F CFA. One-page premium (5 sections maximum), design sur-mesure, maquette validée, charte du cabinet intégrée, responsive, formulaire de contact sécurisé, bouton WhatsApp Business, optimisation technique de base, livraison estimée à 3 semaines. Paiement en 2 fois : 4 250 DH à la commande, 4 250 DH à la livraison.
+- Cabinet Autorité : 19 500 DH / 1 800 € / 1 200 000 F CFA. Multi-pages (jusqu'à 7), design entièrement sur-mesure, architecture éditoriale, rédaction stratégique des contenus, français et arabe si besoin, référencement par spécialité et zone géographique, blog et actualités juridiques, prise de rendez-vous intégrée, formulaire avancé, option de paiement des honoraires, maintenance et évolutions. Paiement en 3 étapes : commande, validation du prototype, mise en ligne.
+- Sérénité Numérique (maintenance) : 500 DH / 50 € / 33 000 F CFA par mois. Sécurité et mises à jour, sauvegardes et restauration, performance et disponibilité, support et petites modifications, hébergement inclus.
 
-## Offres
+## Conseil éditorial (offre complémentaire)
 
 - Audit stratégique éditorial (à partir de 7 000 DH) : diagnostic complet, cartographie des écarts, feuille de route de 6 mois
 - Structuration éditoriale (à partir de 18 000 DH, projet de 4 à 6 semaines) : positionnement, message central, ligne éditoriale, formats, calendrier de 6 mois, charte éditoriale, brief créatif pour le site
 - Accompagnement mensuel (à partir de 5 000 DH par mois, reconductible) : pilotage, production supervisée, messages calibrés en français et en arabe
-- Option site web vitrine (+ 8 000 DH) : one-page réalisée à partir du brief de la structuration
-- Premier échange : diagnostic de 30 minutes, sans engagement, réponse sous 24 h
 
-## Méthode
+## Cadre déontologique
 
-Diagnostic, architecture, déploiement, optimisation (rapport trimestriel de positionnement).
+Information et expertise, jamais démarchage ni promesse de résultat. Le client valide tout ce qui est publié en son nom. Aucun dossier confidentiel n'apparaît sur les sites. La conformité finale relève du cabinet, au regard des usages de son barreau ou de son Ordre.
 
 ## Pages
 
-- [Accueil](https://neybras.com/): présentation, offres, méthode, questions fréquentes
-- [Signatures](https://neybras.com/signatures.html): contributeurs publiés dans Neybras Magazine
+- [Accueil](https://neybras.com/): présentation, offres, preuves, questions fréquentes
+- [Sites web pour avocats](https://neybras.com/sites-web-avocats.html): offres de sites web pour le droit
+- [Cabinet Vitrine](https://neybras.com/cabinet-vitrine.html)
+- [Cabinet Autorité](https://neybras.com/cabinet-autorite.html)
+- [Sérénité Numérique](https://neybras.com/serenite-numerique.html)
+- [Brief de projet](https://neybras.com/brief-projet.html): brief et demande de devis
 - [Audit stratégique éditorial](https://neybras.com/audit-signature.html): détail de l'offre d'audit
+- [Signatures](https://neybras.com/signatures.html): contributeurs publiés dans Neybras Magazine
 - [Cabinets invisibles](https://neybras.com/regards/cabinets-invisibles.html): article
 - [Plan du site](https://neybras.com/sitemap.xml)
 
@@ -33,9 +35,9 @@ Diagnostic, architecture, déploiement, optimisation (rapport trimestriel de pos
 
 - [Neybras Magazine](https://neybras-magazine.com/)
 - [Neybras Family](https://neybras-family.com/)
-- [LinkedIn de Dalal Fahmi](https://www.linkedin.com/in/dalal-fahmi/)
 
 ## Contact
 
-- dalal.fahmi@neybras.com
+- Démonstration de 30 minutes, sans engagement, réponse sous 24 h
 - WhatsApp : https://wa.me/212695199559
+- Casablanca, Maroc
