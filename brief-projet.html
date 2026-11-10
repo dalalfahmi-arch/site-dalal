@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>/* URLs propres : /page.html -> /page (sans entrée d'historique). Le canonical couvre le référencement. */if(/\.html$/.test(location.pathname)){location.replace(location.pathname.replace(/(^|\/)index\.html$/,'/').replace(/\.html$/,'')+location.search+location.hash);}</script>
   <title>Brief de projet — Neybras</title>
   <meta name="description" content="Présentez votre cabinet et votre projet de site web : offre visée, délai souhaité. Neybras vous répond sous 24 heures." />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="images/Neybras-circle.png" />
   <link rel="apple-touch-icon" href="images/Neybras-circle.png" />
-  <link rel="canonical" href="https://neybras.com/brief-projet.html" />
-  <link rel="alternate" hreflang="fr" href="https://neybras.com/brief-projet.html" />
+  <link rel="canonical" href="https://neybras.com/brief-projet" />
+  <link rel="alternate" hreflang="fr" href="https://neybras.com/brief-projet" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -17,7 +18,7 @@
   <meta property="og:site_name" content="Neybras" />
   <meta property="og:title" content="Brief de projet — Neybras" />
   <meta property="og:description" content="Présentez votre cabinet et votre projet de site web : offre visée, délai souhaité. Neybras vous répond sous 24 heures." />
-  <meta property="og:url" content="https://neybras.com/brief-projet.html" />
+  <meta property="og:url" content="https://neybras.com/brief-projet" />
   <meta property="og:image" content="https://neybras.com/images/Neybras.png" />
   <meta name="twitter:card" content="summary" />
 
@@ -39,7 +40,7 @@
 
 <header class="site-header" id="top">
   <div class="container nav">
-    <a class="brand" href="index.html">
+    <a class="brand" href="/">
       <img class="brand__logo" src="images/neybras-logo-96.png" alt="" width="46" height="46">
       <span class="brand__text">
         <span class="brand__name">NEYBR<span class="brand__accent">A</span>S</span>
@@ -53,11 +54,11 @@
 
     <div class="nav__menu" id="navMenu">
       <nav class="nav__links" aria-label="Navigation principale">
-        <a href="sites-web-avocats.html">Sites web</a>
-        <a href="index.html#offres">Offres</a>
-        <a href="index.html#conseil">Conseil éditorial</a>
-        <a href="signatures.html">Signatures</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="/sites-web-avocats">Sites web</a>
+        <a href="/#offres">Offres</a>
+        <a href="/#conseil">Conseil éditorial</a>
+        <a href="/signatures">Signatures</a>
+        <a href="/#contact">Contact</a>
       </nav>
       <div class="nav__actions">
         <a class="btn btn--bordeaux" href="https://wa.me/212695199559?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes." target="_blank" rel="noopener" data-cta="header-demo">Réserver une démonstration</a>
@@ -144,10 +145,10 @@
       </div>
       <div class="hp" aria-hidden="true"><label>Ne pas remplir <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
       <input type="hidden" name="_subject" value="Nouveau brief — site web">
-      <input type="hidden" name="_next" value="https://neybras.com/merci.html">
+      <input type="hidden" name="_next" value="https://neybras.com/merci">
       <label class="consent" for="consent">
         <input type="checkbox" id="consent" name="consentement" value="oui" required>
-        <span>J'accepte que ces informations soient utilisées pour répondre à ma demande, conformément aux <a href="mentions-legales.html">mentions légales</a>.</span>
+        <span>J'accepte que ces informations soient utilisées pour répondre à ma demande, conformément aux <a href="/mentions-legales">mentions légales</a>.</span>
       </label>
       <button type="submit" class="btn btn--bordeaux btn--block" data-cta="brief-submit">Envoyer le brief</button>
       <p class="form-note-sites">Les champs marqués d'un astérisque sont obligatoires. Vous préférez écrire ? <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a> ou <a href="https://wa.me/212695199559?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes." target="_blank" rel="noopener">WhatsApp</a>.</p>
@@ -165,12 +166,12 @@
       </div>
       <div class="footer-col">
         <p class="footer-h">Navigation</p>
-        <a href="sites-web-avocats.html">Sites web pour avocats</a>
-        <a href="cabinet-vitrine.html">Cabinet Vitrine</a>
-        <a href="cabinet-autorite.html">Cabinet Autorité</a>
-        <a href="serenite-numerique.html">Sérénité Numérique</a>
-        <a href="index.html#conseil">Conseil éditorial</a>
-        <a href="signatures.html">Signatures</a>
+        <a href="/sites-web-avocats">Sites web pour avocats</a>
+        <a href="/cabinet-vitrine">Cabinet Vitrine</a>
+        <a href="/cabinet-autorite">Cabinet Autorité</a>
+        <a href="/serenite-numerique">Sérénité Numérique</a>
+        <a href="/#conseil">Conseil éditorial</a>
+        <a href="/signatures">Signatures</a>
       </div>
       <div class="footer-col">
         <p class="footer-h">Médias</p>
@@ -181,12 +182,12 @@
         <p class="footer-h">Contact</p>
         <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a>
         <a href="https://wa.me/212695199559" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="brief-projet.html">Brief de projet</a>
+        <a href="/brief-projet">Brief de projet</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>© <span id="year"></span> Neybras — Casablanca, Maroc.</p>
-      <div><a href="mentions-legales.html">Mentions légales</a></div>
+      <div><a href="/mentions-legales">Mentions légales</a></div>
     </div>
   </div>
 </footer>
