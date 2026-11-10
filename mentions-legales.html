@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>/* URLs propres : /page.html -> /page (sans entrée d'historique). Le canonical couvre le référencement. */if(/\.html$/.test(location.pathname)){location.replace(location.pathname.replace(/(^|\/)index\.html$/,'/').replace(/\.html$/,'')+location.search+location.hash);}</script>
   <title>Mentions légales — Neybras by Dalal Fahmi</title>
   <meta name="description" content="Mentions légales du site Neybras by Dalal Fahmi — éditeur, propriété intellectuelle, données personnelles, droit applicable." />
   <meta name="robots" content="noindex, follow" />
   <link rel="icon" type="image/png" href="images/Neybras-circle.png" />
   <link rel="apple-touch-icon" href="images/Neybras-circle.png" />
-  <link rel="canonical" href="https://neybras.com/mentions-legales.html" />
+  <link rel="canonical" href="https://neybras.com/mentions-legales" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,7 @@
 <!-- ═══ HEADER (identique à la home) ═════════════════════════════════════ -->
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="index.html" aria-label="Neybras by Dalal Fahmi — accueil">
+    <a class="brand" href="/" aria-label="Neybras by Dalal Fahmi — accueil">
       <span class="brand__name">NEYBRAS</span>
       <span class="brand__sub">by Dalal Fahmi</span>
       <span class="brand__base">Conseil en stratégie éditoriale &amp; digitale</span>
@@ -37,12 +38,12 @@
 
     <div class="nav__menu" id="navMenu">
       <nav class="nav__links" aria-label="Navigation principale">
-        <a href="index.html#methode">Méthode</a>
-        <a href="index.html#offres">Offres</a>
-        <a href="signatures.html">Signatures</a>
-        <a href="index.html#apropos">À propos</a>
-        <a href="index.html#temoignages">Témoignages</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="/#methode">Méthode</a>
+        <a href="/#offres">Offres</a>
+        <a href="/signatures">Signatures</a>
+        <a href="/#apropos">À propos</a>
+        <a href="/#temoignages">Témoignages</a>
+        <a href="/#contact">Contact</a>
       </nav>
       <div class="nav__actions">
         <a class="btn btn--bordeaux" target="_blank" rel="noopener" data-cta="header-diagnostic"
@@ -80,7 +81,7 @@
       <p>Le présent site est régi par le droit marocain.</p>
     </div>
 
-    <p style="margin-top:2.4rem;"><a href="index.html">← Retour à l'accueil</a></p>
+    <p style="margin-top:2.4rem;"><a href="/">← Retour à l'accueil</a></p>
   </div>
 </section>
 </main>
@@ -96,12 +97,12 @@
       </div>
       <div class="footer-col">
         <h5>Navigation</h5>
-        <a href="index.html#methode">Méthode</a>
-        <a href="index.html#offres">Offres</a>
-        <a href="signatures.html">Signatures</a>
-        <a href="index.html#apropos">À propos</a>
-        <a href="index.html#temoignages">Témoignages</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="/#methode">Méthode</a>
+        <a href="/#offres">Offres</a>
+        <a href="/signatures">Signatures</a>
+        <a href="/#apropos">À propos</a>
+        <a href="/#temoignages">Témoignages</a>
+        <a href="/#contact">Contact</a>
       </div>
       <div class="footer-col">
         <h5>Mes médias</h5>
@@ -121,7 +122,7 @@
     </div>
     <div class="footer-bottom">
       <p>© <span id="year"></span> Neybras by Dalal Fahmi — Stratégie éditoriale &amp; digitale · Casablanca, Maroc.</p>
-      <div><a href="mentions-legales.html">Mentions légales</a></div>
+      <div><a href="/mentions-legales">Mentions légales</a></div>
     </div>
   </div>
 </footer>
