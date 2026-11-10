@@ -190,12 +190,15 @@ const i18n = {
     /* témoignages */
     'testi-label':  'Ils ont fait le choix de la clarté',
     'testi-title':  'Ce qu\'ils disent',
+    /* TODO : remplacer "Dalal" par "Neybras" après accord de l'auteur (propos de tiers, mot pour mot). */
     'testi1-quote': '« J\'ai eu le plaisir de collaborer avec Dalal pour la 2<sup>e</sup> édition de Neybras sur une thématique assez complexe, la cyber-résilience. Son leadership rédactionnel est remarquable : elle a compris et su mettre en avant mon expertise. Elle ne publie pas un magazine, elle construit une plateforme d\'influence stratégique. »',
     'testi1-name':  'Youssef El Amrani',
     'testi1-role':  'Responsable de projet · Recommandation LinkedIn, déc. 2025',
+    /* TODO : remplacer "Dalal" par "Neybras" après accord de l'auteur (propos de tiers, mot pour mot). */
     'testi2-quote': '« Dalal apporte à un sujet juridique ce qui manque le plus à notre profession : la clarté. Mes analyses en arbitrage international ont trouvé, dans Neybras Magazine, un cadre éditorial à la hauteur de leur exigence. »',
     'testi2-name':  'M<sup>e</sup> Driss El Harti',
     'testi2-role':  'Avocat au Barreau de Tanger — arbitrage international · Contributeur Neybras',
+    /* TODO : remplacer "Dalal" par "Neybras" après accord de l'auteur (propos de tiers, mot pour mot). */
     'testi3-quote': '« Travailler avec Dalal, c\'est voir son expertise traduite sans être trahie. Elle structure le propos, soigne la cohérence, et donne à un contenu spécialisé une vraie portée auprès des décideurs. »',
     'testi3-name':  'M<sup>e</sup> Amine Lahlou',
     'testi3-role':  'Avocat au Barreau de Casablanca — arbitrage · Contributeur Neybras',
@@ -298,12 +301,15 @@ const i18n = {
     /* témoignages */
     'testi-label':  'اختاروا الوضوح',
     'testi-title':  'ما قالوه',
+    /* TODO : remplacer « دلال » par « Neybras » (version arabe) après accord de l'auteur (propos de tiers, mot pour mot). */
     'testi1-quote': '«سعدتُ بالتعاون مع دلال في العدد الثاني من نيبراس حول موضوع دقيق ومعقّد، هو المرونة السيبرانية. قيادتها التحريرية لافتة: فهمت خبرتي وأحسنت إبرازها. هي لا تُصدر مجلة، بل تبني منصّة نفوذ استراتيجية.»',
     'testi1-name':  'يوسف العمراني',
     'testi1-role':  'مدير مشروع · توصية على LinkedIn، دجنبر 2025',
+    /* TODO : remplacer « دلال » par « Neybras » (version arabe) après accord de l'auteur (propos de tiers, mot pour mot). */
     'testi2-quote': '«تمنح دلال للموضوع القانوني ما تفتقر إليه مهنتنا أكثر من غيره: الوضوح. تحليلاتي في التحكيم الدولي وجدت في مجلة نيبراس إطاراً تحريرياً في مستوى صرامتها.»',
     'testi2-name':  'الأستاذ إدريس الحارثي',
     'testi2-role':  'محامٍ بهيئة طنجة — التحكيم الدولي · مساهم في مجلة نيبراس',
+    /* TODO : remplacer « دلال » par « Neybras » (version arabe) après accord de l'auteur (propos de tiers, mot pour mot). */
     'testi3-quote': '«العمل مع دلال يعني أن ترى خبرتك مترجَمة دون أن تُخان. تُنظّم الطرح، وتعتني بالانسجام، وتمنح المحتوى المتخصّص امتداداً حقيقياً لدى صانعي القرار.»',
     'testi3-name':  'الأستاذ أمين لحلو',
     'testi3-role':  'محامٍ بهيئة الدار البيضاء — التحكيم · مساهم في مجلة نيبراس',
