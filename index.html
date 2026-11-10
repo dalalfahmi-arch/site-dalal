@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>/* URLs propres : /page.html -> /page (sans entrée d'historique). Le canonical couvre le référencement. */if(/\.html$/.test(location.pathname)){location.replace(location.pathname.replace(/(^|\/)index\.html$/,'/').replace(/\.html$/,'')+location.search+location.hash);}</script>
   <title>Neybras — Sites web pour cabinets d'avocats et acteurs du droit</title>
   <meta name="description" content="Neybras conçoit des plateformes web premium, sobres et sécurisées pour les avocats, cabinets et professionnels du droit. Cabinet Vitrine, Cabinet Autorité, Sérénité Numérique." />
   <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -137,7 +138,7 @@
 
 <header class="site-header" id="top">
   <div class="container nav">
-    <a class="brand" href="index.html">
+    <a class="brand" href="/">
       <img class="brand__logo" src="images/neybras-logo-96.png" alt="" width="46" height="46">
       <span class="brand__text">
         <span class="brand__name">NEYBR<span class="brand__accent">A</span>S</span>
@@ -151,11 +152,11 @@
 
     <div class="nav__menu" id="navMenu">
       <nav class="nav__links" aria-label="Navigation principale">
-        <a href="sites-web-avocats.html">Sites web</a>
-        <a href="index.html#offres">Offres</a>
-        <a href="index.html#conseil">Conseil éditorial</a>
-        <a href="signatures.html">Signatures</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="/sites-web-avocats">Sites web</a>
+        <a href="/#offres">Offres</a>
+        <a href="/#conseil">Conseil éditorial</a>
+        <a href="/signatures">Signatures</a>
+        <a href="/#contact">Contact</a>
       </nav>
       <div class="nav__actions">
         <a class="btn btn--bordeaux" href="https://wa.me/212695199559?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes." target="_blank" rel="noopener" data-cta="header-demo">Réserver une démonstration</a>
@@ -312,8 +313,8 @@
           <li>Livraison estimée : 3 semaines</li>
         </ul>
         <p class="offer-card__pay" data-pay="vitrine">Paiement en deux fois : 4 250 DH à la commande, 4 250 DH à la livraison.</p>
-        <a class="btn btn--bordeaux btn--block" href="brief-projet.html?offre=vitrine" data-cta="offer-vitrine">Lancer mon projet</a>
-        <a class="offer-card__more" href="cabinet-vitrine.html" data-cta="offer-vitrine-details">Détails de l'offre →</a>
+        <a class="btn btn--bordeaux btn--block" href="/brief-projet?offre=vitrine" data-cta="offer-vitrine">Lancer mon projet</a>
+        <a class="offer-card__more" href="/cabinet-vitrine" data-cta="offer-vitrine-details">Détails de l'offre →</a>
       </article>
       <article class="offer-card offer-card--featured reveal">
         <span class="offer-card__badge">Présence complète</span>
@@ -334,8 +335,8 @@
           <li>Maintenance et évolutions</li>
         </ul>
         <p class="offer-card__pay" data-pay="autorite">Paiement en trois étapes : commande, validation du prototype, mise en ligne.</p>
-        <a class="btn btn--light btn--block" href="brief-projet.html?offre=autorite&amp;demande=devis" data-cta="offer-autorite">Demander une proposition</a>
-        <a class="offer-card__more" style="color:#E8B7BF" href="cabinet-autorite.html" data-cta="offer-autorite-details">Détails de l'offre →</a>
+        <a class="btn btn--light btn--block" href="/brief-projet?offre=autorite&amp;demande=devis" data-cta="offer-autorite">Demander une proposition</a>
+        <a class="offer-card__more" style="color:#E8B7BF" href="/cabinet-autorite" data-cta="offer-autorite-details">Détails de l'offre →</a>
       </article>
     </div>
   </div>
@@ -409,7 +410,7 @@
         <p class="eyebrow">Maintenance</p>
         <h2 class="section-title">Sérénité Numérique</h2>
         <p class="section-intro">Un site professionnel doit rester sûr, rapide et à jour. Neybras s'en charge, pour que le cabinet se concentre sur ses dossiers.</p>
-        <a class="about__link" href="serenite-numerique.html" data-cta="serenite-details">Voir le détail <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="about__link" href="/serenite-numerique" data-cta="serenite-details">Voir le détail <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
       <div class="offer-card">
         <h3>Sérénité Numérique</h3>
@@ -424,7 +425,7 @@
           <li>Jusqu'à une heure de modifications mensuelles</li>
           <li>Support prioritaire par WhatsApp ou e-mail</li>
         </ul>
-        <a class="btn btn--bordeaux btn--block" href="brief-projet.html?offre=serenite" data-cta="offer-serenite">Demander Sérénité Numérique</a>
+        <a class="btn btn--bordeaux btn--block" href="/brief-projet?offre=serenite" data-cta="offer-serenite">Demander Sérénité Numérique</a>
       </div>
     </div>
   </div>
@@ -442,7 +443,7 @@
       <h3 style="font-size:1.4rem">Aller plus loin : conseil éditorial &amp; autorité</h3>
       <p>Votre site pose les fondations de votre présence en ligne. Pour construire un positionnement durable, clarifier votre discours et asseoir votre autorité, Neybras propose également un audit stratégique, une structuration éditoriale et un accompagnement mensuel.</p>
       <div class="hero__actions" style="justify-content:center;margin-bottom:0">
-        <a class="btn btn--outline-nuit" href="audit-signature.html" data-cta="conseil-decouvrir-audit">Découvrir l'audit stratégique</a>
+        <a class="btn btn--outline-nuit" href="/audit-signature" data-cta="conseil-decouvrir-audit">Découvrir l'audit stratégique</a>
         <a class="btn btn--outline-nuit" href="#accompagnement" data-cta="conseil-decouvrir-accompagnement">Découvrir l'accompagnement</a>
       </div>
     </div>
@@ -456,7 +457,7 @@
           <li>Cartographie des écarts</li>
           <li>Feuille de route de 6 mois</li>
         </ul>
-        <a class="btn btn--outline-nuit btn--block" href="audit-signature.html" data-cta="conseil-audit">Voir l'audit</a>
+        <a class="btn btn--outline-nuit btn--block" href="/audit-signature" data-cta="conseil-audit">Voir l'audit</a>
       </article>
       <article class="offer-card offer-card--complement reveal">
         <h3>Structuration éditoriale</h3>
@@ -469,7 +470,7 @@
           <li>Calendrier de 6 mois, charte éditoriale</li>
           <li>Brief créatif pour votre site</li>
         </ul>
-        <a class="btn btn--outline-nuit btn--block" href="brief-projet.html?offre=structuration&amp;demande=devis" data-cta="conseil-structuration">Demander une proposition</a>
+        <a class="btn btn--outline-nuit btn--block" href="/brief-projet?offre=structuration&amp;demande=devis" data-cta="conseil-structuration">Demander une proposition</a>
       </article>
       <article class="offer-card offer-card--complement reveal" id="accompagnement">
         <h3>Accompagnement mensuel</h3>
@@ -481,12 +482,12 @@
           <li>Production supervisée</li>
           <li>Messages calibrés en français et en arabe</li>
         </ul>
-        <a class="btn btn--outline-nuit btn--block" href="brief-projet.html?offre=accompagnement&amp;demande=devis" data-cta="conseil-accompagnement">Demander une proposition</a>
+        <a class="btn btn--outline-nuit btn--block" href="/brief-projet?offre=accompagnement&amp;demande=devis" data-cta="conseil-accompagnement">Demander une proposition</a>
       </article>
     </div>
     <div class="deonto reveal" style="margin-top:2rem">
       <h3>Besoin d'un site web ?</h3>
-      <p style="margin:0">Découvrez nos offres dédiées à la création de sites pour avocats et acteurs du droit. <a href="sites-web-avocats.html" data-cta="conseil-voir-sites"><strong>Voir les offres de sites →</strong></a></p>
+      <p style="margin:0">Découvrez nos offres dédiées à la création de sites pour avocats et acteurs du droit. <a href="/sites-web-avocats" data-cta="conseil-voir-sites"><strong>Voir les offres de sites →</strong></a></p>
     </div>
   </div>
 </section>
@@ -543,12 +544,12 @@
         <p class="path__text">Un échange en visio ou par téléphone pour voir comment le site peut servir votre cabinet. Sans engagement.</p>
         <span class="path__cta">Réserver par WhatsApp →</span>
       </a>
-      <a class="path" href="brief-projet.html" data-cta="path-brief">
+      <a class="path" href="/brief-projet" data-cta="path-brief">
         <span class="path__title">Brief de projet</span>
         <p class="path__text">Présentez votre cabinet et votre projet en quelques champs. Nous revenons vers vous sous 24 h.</p>
         <span class="path__cta">Remplir le brief →</span>
       </a>
-      <a class="path" href="brief-projet.html?demande=devis" data-cta="path-devis">
+      <a class="path" href="/brief-projet?demande=devis" data-cta="path-devis">
         <span class="path__title">Demande de devis</span>
         <p class="path__text">Vous savez déjà ce qu'il vous faut : indiquez l'offre visée et le délai souhaité.</p>
         <span class="path__cta">Demander un devis →</span>
@@ -574,12 +575,12 @@
       </div>
       <div class="footer-col">
         <p class="footer-h">Navigation</p>
-        <a href="sites-web-avocats.html">Sites web pour avocats</a>
-        <a href="cabinet-vitrine.html">Cabinet Vitrine</a>
-        <a href="cabinet-autorite.html">Cabinet Autorité</a>
-        <a href="serenite-numerique.html">Sérénité Numérique</a>
-        <a href="index.html#conseil">Conseil éditorial</a>
-        <a href="signatures.html">Signatures</a>
+        <a href="/sites-web-avocats">Sites web pour avocats</a>
+        <a href="/cabinet-vitrine">Cabinet Vitrine</a>
+        <a href="/cabinet-autorite">Cabinet Autorité</a>
+        <a href="/serenite-numerique">Sérénité Numérique</a>
+        <a href="/#conseil">Conseil éditorial</a>
+        <a href="/signatures">Signatures</a>
       </div>
       <div class="footer-col">
         <p class="footer-h">Médias</p>
@@ -590,12 +591,12 @@
         <p class="footer-h">Contact</p>
         <a href="mailto:dalal.fahmi@neybras.com">dalal.fahmi@neybras.com</a>
         <a href="https://wa.me/212695199559" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="brief-projet.html">Brief de projet</a>
+        <a href="/brief-projet">Brief de projet</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>© <span id="year"></span> Neybras — Casablanca, Maroc.</p>
-      <div><a href="mentions-legales.html">Mentions légales</a></div>
+      <div><a href="/mentions-legales">Mentions légales</a></div>
     </div>
   </div>
 </footer>
