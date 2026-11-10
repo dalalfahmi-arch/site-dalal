@@ -53,7 +53,14 @@
     "availableLanguage": [
       "fr",
       "ar"
-    ]
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://neybras.com/cabinet-vitrine.html",
+      "priceCurrency": "MAD",
+      "availability": "https://schema.org/InStock",
+      "price": 8500
+    }
   }
   </script>
 </head>
@@ -91,17 +98,39 @@
 
 <main id="main">
 <section class="hero page-hero" id="hero">
-  <div class="container">
-    <div class="hero__text" style="max-width:48rem">
+  <div class="container hero__grid">
+    <div class="hero__text">
       <p class="eyebrow">Sites web pour avocats</p>
       <h1 class="hero__title">Un site web premium pour installer la confiance.</h1>
       <p class="hero__lead">Neybras conçoit des sites web sobres, rapides et professionnels pour les avocats et acteurs du droit. Une présence digitale claire, qui met en valeur votre expertise et facilite le premier contact.</p>
-      <!-- TODO (preuve à fournir) : VISUEL — mockup desktop et mobile à insérer ici UNIQUEMENT s'il s'agit d'une vraie maquette de démonstration, légendée comme telle (jamais présentée comme un site livré). -->
       <div class="hero__actions">
         <a class="btn btn--bordeaux" target="_blank" rel="noopener" href="https://wa.me/212695199559?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes." data-cta="vitrine-demo">Réserver une démonstration — 30 minutes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <a class="btn btn--outline-nuit" href="#offre" data-cta="vitrine-offre">Découvrir l'offre Cabinet Vitrine</a>
       </div>
     </div>
+    <!-- TODO (preuve à fournir) : remplacer cette illustration abstraite par une vraie maquette de démonstration (desktop + mobile),
+         légendée « Aperçu conceptuel — maquette de démonstration ». Ne jamais la présenter comme une réalisation client. -->
+    <figure class="concept">
+      <svg viewBox="0 0 420 300" role="img" aria-label="Illustration abstraite d'une page web sur ordinateur et sur mobile, sans contenu réel">
+        <rect x="8" y="8" width="300" height="200" rx="10" style="fill:var(--blanc);stroke:var(--filet-fort)" stroke-width="2"/>
+        <rect x="8" y="8" width="300" height="26" rx="10" style="fill:var(--creme)"/>
+        <circle cx="26" cy="21" r="4" style="fill:var(--pierre)"/><circle cx="40" cy="21" r="4" style="fill:var(--pierre)"/><circle cx="54" cy="21" r="4" style="fill:var(--pierre)"/>
+        <rect x="28" y="56" width="120" height="14" rx="3" style="fill:var(--nuit)"/>
+        <rect x="28" y="80" width="190" height="7" rx="3" style="fill:var(--filet-fort)"/>
+        <rect x="28" y="94" width="160" height="7" rx="3" style="fill:var(--filet-fort)"/>
+        <rect x="28" y="116" width="84" height="22" rx="4" style="fill:var(--bordeaux)"/>
+        <rect x="28" y="156" width="80" height="34" rx="4" style="fill:var(--creme)"/><rect x="118" y="156" width="80" height="34" rx="4" style="fill:var(--creme)"/><rect x="208" y="156" width="80" height="34" rx="4" style="fill:var(--creme)"/>
+        <rect x="256" y="64" width="150" height="228" rx="18" style="fill:var(--blanc);stroke:var(--filet-fort)" stroke-width="2"/>
+        <rect x="270" y="90" width="70" height="12" rx="3" style="fill:var(--nuit)"/>
+        <rect x="270" y="112" width="118" height="6" rx="3" style="fill:var(--filet-fort)"/><rect x="270" y="124" width="100" height="6" rx="3" style="fill:var(--filet-fort)"/>
+        <rect x="270" y="144" width="72" height="20" rx="4" style="fill:var(--bordeaux)"/>
+        <rect x="270" y="184" width="118" height="30" rx="4" style="fill:var(--creme)"/><rect x="270" y="222" width="118" height="30" rx="4" style="fill:var(--creme)"/>
+      </svg>
+      <figcaption>Aperçu conceptuel — maquette de démonstration</figcaption>
+      <ul class="chips" aria-label="Points clés de l'offre">
+        <li>Responsive</li><li>Connexion HTTPS</li><li>Chargement rapide</li><li>Design premium</li>
+      </ul>
+    </figure>
   </div>
 </section>
 
@@ -159,10 +188,10 @@
   <div class="container">
       <div class="offer-card reveal" id="offre" style="max-width:640px;margin-inline:auto;text-align:center">
         <h2 style="font-size:1.6rem">Cabinet Vitrine</h2>
-        <span class="price price--lg" data-price="vitrine"><noscript>Tarifs et modalités communiqués sur demande.</noscript></span>
-        <p class="offer-card__pay" data-pay="vitrine" data-all><noscript>Tarifs et modalités communiqués sur demande.</noscript></p>
+        <span class="price price--lg" data-price="vitrine"><span class="price__main">8 500 DH</span><span class="price__alt">800 € / 525 000 F CFA</span></span>
+        <div class="offer-card__pay pay" data-pay-block="vitrine"><strong class="pay__title">Paiement en deux fois</strong><span class="pay__line">4 250 DH · 400 € · 262 500 F CFA à la commande</span><span class="pay__line">4 250 DH · 400 € · 262 500 F CFA à la livraison</span></div>
         <a class="btn btn--bordeaux btn--block" href="brief-projet.html?offre=vitrine" data-cta="vitrine-lancer">Lancer mon projet</a>
-        <p class="offer-card__pay" style="margin:.9rem 0 0"><em data-text="vitrine.microcopy"><noscript>Tarifs et modalités communiqués sur demande.</noscript></em></p>
+        <p class="offer-card__pay" style="margin:.9rem 0 0"><em data-text="vitrine.microcopy">Offre Cabinet Vitrine : 8 500 DH. Paiement en deux fois : 4 250 DH à la commande, 4 250 DH à la livraison.</em></p>
       </div>
   </div>
 </section>
@@ -225,8 +254,8 @@
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.8-1.9-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-2c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 .6.3 1.1.5 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
 </a>
 
-<noscript><p style="text-align:center;padding:1rem;">Les tarifs s'affichent avec JavaScript activé. Sans JavaScript, écrivez-nous : dalal.fahmi@neybras.com.</p></noscript>
 <script src="js/config.js"></script>
+<script src="js/prices.js"></script>
 <script src="js/neybras.js" defer></script>
 </body>
 </html>
