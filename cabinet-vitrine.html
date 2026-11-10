@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>/* URLs propres : /page.html -> /page (sans entrée d'historique). Le canonical couvre le référencement. */if(/\.html$/.test(location.pathname)){location.replace(location.pathname.replace(/(^|\/)index\.html$/,'/').replace(/\.html$/,'')+location.search+location.hash);}</script>
-  <title>Cabinet Vitrine — Site web pour avocats | Neybras</title>
-  <meta name="description" content="Cabinet Vitrine : un site web premium d'une page pour installer la confiance. Design sur-mesure, responsive, formulaire de contact sécurisé, WhatsApp Business. Prix fixe." />
+  <title>Site Vitrine — Site web pour avocats | Neybras</title>
+  <meta name="description" content="Site Vitrine : un site web premium d'une page pour installer la confiance. Design sur-mesure, responsive, formulaire de contact sécurisé, WhatsApp Business. Prix fixe." />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="images/Neybras-circle.png" />
   <link rel="apple-touch-icon" href="images/Neybras-circle.png" />
@@ -16,8 +16,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:site_name" content="Neybras" />
-  <meta property="og:title" content="Cabinet Vitrine — Site web pour avocats | Neybras" />
-  <meta property="og:description" content="Cabinet Vitrine : un site web premium d'une page pour installer la confiance. Design sur-mesure, responsive, formulaire de contact sécurisé, WhatsApp Business. Prix fixe." />
+  <meta property="og:title" content="Site Vitrine — Site web pour avocats | Neybras" />
+  <meta property="og:description" content="Site Vitrine : un site web premium d'une page pour installer la confiance. Design sur-mesure, responsive, formulaire de contact sécurisé, WhatsApp Business. Prix fixe." />
   <meta property="og:url" content="https://neybras.com/cabinet-vitrine" />
   <meta property="og:image" content="https://neybras.com/images/Neybras.png" />
   <meta name="twitter:card" content="summary" />
@@ -37,7 +37,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Cabinet Vitrine",
+    "name": "Site Vitrine",
     "description": "Site web premium d'une page pour les avocats et acteurs du droit.",
     "url": "https://neybras.com/cabinet-vitrine",
     "serviceType": "Conception de site web pour avocats et acteurs du droit",
@@ -88,6 +88,12 @@
         <a href="/#offres">Offres</a>
         <a href="/#conseil">Conseil éditorial</a>
         <a href="/signatures">Signatures</a>
+        <div class="nav__dropdown">
+          <button type="button" class="nav__dropbtn" aria-expanded="false" aria-controls="menuConfiance">Ils nous font confiance <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="nav__submenu" id="menuConfiance">
+            <li><a href="https://neybras-magazine.com/" target="_blank" rel="noopener" data-cta="menu_confiance_magazine">Neybras Magazine</a></li>
+          </ul>
+        </div>
         <a href="/#contact">Contact</a>
       </nav>
       <div class="nav__actions">
@@ -106,7 +112,7 @@
       <p class="hero__lead">Neybras conçoit des sites web sobres, rapides et professionnels pour les avocats et acteurs du droit. Une présence digitale claire, qui met en valeur votre expertise et facilite le premier contact.</p>
       <div class="hero__actions">
         <a class="btn btn--bordeaux" target="_blank" rel="noopener" href="https://wa.me/212789256744?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes." data-cta="vitrine-demo">Réserver une démonstration — 30 minutes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="btn btn--outline-nuit" href="#offre" data-cta="vitrine-offre">Découvrir l'offre Cabinet Vitrine</a>
+        <a class="btn btn--outline-nuit" href="#offre" data-cta="vitrine-offre">Découvrir l'offre Site Vitrine</a>
       </div>
     </div>
     <!-- TODO (preuve à fournir) : remplacer cette illustration abstraite par une vraie maquette de démonstration (desktop + mobile),
@@ -153,7 +159,7 @@
     <div class="split">
       <div class="reveal">
         <h2 class="section-title">Votre cabinet, présenté avec clarté.</h2>
-        <p class="section-intro">L'offre <strong>Cabinet Vitrine</strong> comprend un one-page premium, structuré en cinq sections.</p>
+        <p class="section-intro">L'offre <strong>Site Vitrine</strong> comprend un one-page premium, structuré en cinq sections.</p>
       </div>
       <ol class="steps reveal">
         <li><strong>Accueil et identité</strong>Présentation du cabinet, de sa mission et de son positionnement.</li>
@@ -188,11 +194,11 @@
 <section class="section section--ivoire">
   <div class="container">
       <div class="offer-card reveal" id="offre" style="max-width:640px;margin-inline:auto;text-align:center">
-        <h2 style="font-size:1.6rem">Cabinet Vitrine</h2>
+        <h2 style="font-size:1.6rem">Site Vitrine</h2>
         <span class="price price--lg" data-price="vitrine"><span class="price__main">8 500 DH</span><span class="price__alt">800 € / 525 000 F CFA</span></span>
         <div class="offer-card__pay pay" data-pay-block="vitrine"><strong class="pay__title">Paiement en deux fois</strong><span class="pay__line">4 250 DH · 400 € · 262 500 F CFA à la commande</span><span class="pay__line">4 250 DH · 400 € · 262 500 F CFA à la livraison</span></div>
         <a class="btn btn--bordeaux btn--block" href="/brief-projet?offre=vitrine" data-cta="vitrine-lancer">Lancer mon projet</a>
-        <p class="offer-card__pay" style="margin:.9rem 0 0"><em data-text="vitrine.microcopy">Offre Cabinet Vitrine : 8 500 DH. Paiement en deux fois : 4 250 DH à la commande, 4 250 DH à la livraison.</em></p>
+        <p class="offer-card__pay" style="margin:.9rem 0 0"><em data-text="vitrine.microcopy">Offre Site Vitrine : 8 500 DH. Paiement en deux fois : 4 250 DH à la commande, 4 250 DH à la livraison.</em></p>
       </div>
   </div>
 </section>
@@ -225,8 +231,8 @@
       <div class="footer-col">
         <p class="footer-h">Navigation</p>
         <a href="/sites-web-avocats">Sites web pour avocats</a>
-        <a href="/cabinet-vitrine">Cabinet Vitrine</a>
-        <a href="/cabinet-autorite">Cabinet Autorité</a>
+        <a href="/cabinet-vitrine">Site Vitrine</a>
+        <a href="/cabinet-autorite">Site Autorité</a>
         <a href="/serenite-numerique">Sérénité Numérique</a>
         <a href="/#conseil">Conseil éditorial</a>
         <a href="/signatures">Signatures</a>
