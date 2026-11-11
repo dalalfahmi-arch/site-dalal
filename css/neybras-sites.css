@@ -212,7 +212,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 /* --- Offres : précisions et tableau comparatif -------------------------- */
 .offer-card__ideal { font-size: .9rem; margin: 0 0 .8rem; }
 .offer-card--featured .offer-card__ideal { color: rgba(255,255,255,0.85); }
-.compare { max-width: 1040px; margin: 5.5rem auto 0; }
+.compare { max-width: 1040px; margin: clamp(4.5rem, 9vw, 8rem) auto calc(var(--pad-section) * -0.5); }
 .compare h3 { text-align: center; margin-bottom: 1.2rem; }
 .compare__wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .compare__table { width: 100%; border-collapse: collapse; font-size: .94rem; background: var(--blanc); }
