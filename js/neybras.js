@@ -97,3 +97,26 @@
     if (e.key === 'Escape' && sub.classList.contains('is-open')) { set(false); btn.focus(); }
   });
 })();
+
+/* URLs propres : jamais de #ancre visible dans la barre d'adresse */
+(function () {
+  'use strict';
+  /* Anciens liens partagés (neybras.com/#contact, /#offres) -> pages dédiées */
+  var legacy = { '#contact': '/contact', '#offres': '/offres' };
+  if ((location.pathname === '/' || location.pathname === '/index') && legacy[location.hash]) {
+    location.replace(legacy[location.hash] + location.search);
+    return;
+  }
+  /* Liens d'ancre internes : défilement sans écrire le # dans l'URL */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a || a.getAttribute('href').length < 2) { return; }
+    var target = document.getElementById(a.getAttribute('href').slice(1));
+    if (!target) { return; }
+    e.preventDefault();
+    target.scrollIntoView();
+    if (!target.hasAttribute('tabindex')) { target.setAttribute('tabindex', '-1'); }
+    target.focus({ preventScroll: true });
+    if (location.hash) { history.replaceState(null, '', location.pathname + location.search); }
+  });
+})();
