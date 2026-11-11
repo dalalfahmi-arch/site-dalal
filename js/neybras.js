@@ -120,3 +120,19 @@
     if (location.hash) { history.replaceState(null, '', location.pathname + location.search); }
   });
 })();
+
+/* Aperçus de la page Modèles : panneau « aperçu complet » replié par défaut (visible sans JS) */
+(function () {
+  'use strict';
+  document.querySelectorAll('[data-toggle]').forEach(function (btn) {
+    var panel = document.getElementById(btn.getAttribute('data-toggle'));
+    if (!panel) { return; }
+    var closed = btn.textContent, open = btn.getAttribute('data-open-label') || "Réduire l'aperçu";
+    panel.hidden = true; btn.setAttribute('aria-expanded', 'false');
+    btn.addEventListener('click', function () {
+      var show = panel.hidden; panel.hidden = !show;
+      btn.setAttribute('aria-expanded', show ? 'true' : 'false');
+      btn.textContent = show ? open : closed;
+    });
+  });
+})();

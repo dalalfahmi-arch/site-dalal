@@ -5,6 +5,7 @@
      contenu de secours si js/config.js ou js/prices.js ne se charge pas.
    Gabarits :
      data-price="cle"      prix complet (DH, puis € et F CFA)
+     data-price-inline="cle" prix en une ligne (DH / F CFA), pour un libellé
      data-pay="cle"        modalités sur une ligne
      data-pay-block="cle"  modalités en bloc : titre puis une ligne par versement ou jalon
      data-text="cle.champ" libellé de la config (ex. microcopy), jetons {total} {p0} {p1}
@@ -33,6 +34,10 @@
     return (o.from ? '<span class="price__from">À partir de</span>' : '') +
       '<span class="price__main">' + mad(o.price.mad) + per(o) + '</span>' +
       (alt ? '<span class="price__alt">' + alt + '</span>' : '');
+  }
+
+  function priceInline(key) {
+    return allCur(CFG.offers[key].price, ' / ');
   }
 
   function payCompact(key) {
@@ -80,6 +85,9 @@
     document.querySelectorAll('[data-price]').forEach(function (el) {
       if (CFG.offers[el.getAttribute('data-price')]) { el.innerHTML = priceHTML(el.getAttribute('data-price')); }
     });
+    document.querySelectorAll('[data-price-inline]').forEach(function (el) {
+      if (CFG.offers[el.getAttribute('data-price-inline')]) { el.textContent = priceInline(el.getAttribute('data-price-inline')); }
+    });
     document.querySelectorAll('[data-pay]').forEach(function (el) {
       if (CFG.offers[el.getAttribute('data-pay')]) { el.textContent = payCompact(el.getAttribute('data-pay')); }
     });
@@ -108,5 +116,5 @@
     });
   }
 
-  return { priceHTML: priceHTML, payCompact: payCompact, payBlock: payBlock, text: text, ldOffer: ldOffer, money: mad };
+  return { priceInline: priceInline, priceHTML: priceHTML, payCompact: payCompact, payBlock: payBlock, text: text, ldOffer: ldOffer, money: mad };
 });
