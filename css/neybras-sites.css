@@ -212,11 +212,14 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 /* --- Offres : précisions et tableau comparatif -------------------------- */
 .offer-card__ideal { font-size: .9rem; margin: 0 0 .8rem; }
 .offer-card--featured .offer-card__ideal { color: rgba(255,255,255,0.85); }
-.compare { max-width: 1040px; margin: 3rem auto 0; }
+.compare { max-width: 1040px; margin: 5.5rem auto 0; }
 .compare h3 { text-align: center; margin-bottom: 1.2rem; }
 .compare__wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .compare__table { width: 100%; border-collapse: collapse; font-size: .94rem; background: var(--blanc); }
 .compare__table th, .compare__table td { padding: .85rem 1rem; border: 1px solid var(--filet); text-align: left; vertical-align: top; }
 .compare__table thead th { background: var(--nuit); color: #fff; font-weight: 600; }
 .compare__table tbody th { font-weight: 600; color: var(--nuit); background: var(--creme); white-space: nowrap; }
-.compare__table td:nth-child(3), .compare__table thead th:nth-child(3) { box-shadow: inset 0 0 0 2px var(--bordeaux); }
+/* Colonne « Offre Vitrine » (la plus choisie) mise en couleur */
+.compare__table thead th:nth-child(3) { background: var(--bordeaux); border-color: var(--bordeaux); }
+.compare__table td:nth-child(3) { background: rgba(110, 35, 50, 0.09); border-left: 2px solid var(--bordeaux); border-right: 2px solid var(--bordeaux); font-weight: 600; color: var(--nuit); }
+.compare__table tbody tr:last-child td:nth-child(3) { border-bottom: 2px solid var(--bordeaux); }
