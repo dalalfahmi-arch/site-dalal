@@ -8,44 +8,54 @@ window.NEYBRAS_CONFIG = {
   brand: 'Neybras',
   site: 'https://neybras.com',
 
-  /* Ordre d'affichage : DH d'abord, puis € et F CFA. */
+  /* Ordre d'affichage : DH d'abord, puis F CFA (XOF/XAF). */
   currencies: [
     { key: 'mad', label: 'DH',    iso: 'MAD' },
-    { key: 'eur', label: '€',     iso: 'EUR' },
     { key: 'xof', label: 'F CFA', iso: 'XOF' }
   ],
 
   offers: {
     /* ── Sites web — prix fixes, sans « à partir de » ── */
-    vitrine: {
-      name: 'Site Vitrine',
-      price: { mad: 8500, eur: 800, xof: 525000 },
-      delivery: '10 jours après validation du cahier des charges',
+    essentiel: {
+      name: 'Site Essentiel',
+      price: { mad: 5500, xof: 350000 },
+      deliveryLine: 'Livraison : 7 jours ouvrés après réception de vos éléments.',
       paymentTitle: 'Paiement en deux fois',
       payments: [
-        { label: 'à la commande', mad: 4250, eur: 400, xof: 262500 },
-        { label: 'à la livraison', mad: 4250, eur: 400, xof: 262500 }
+        { label: 'à la commande', mad: 2750, xof: 175000 },
+        { label: 'à la livraison', mad: 2750, xof: 175000 }
       ],
-      /* Le prix total précède toujours le montant du premier versement. */
-      microcopy: 'Offre Site Vitrine : {total}. Paiement en deux fois : {p0} à la commande, {p1} à la livraison.'
+      microcopy: 'Offre Site Essentiel : {total}. Paiement en deux fois : {p0} à la commande, {p1} à la livraison.'
+    },
+    vitrine: {
+      name: 'Site Vitrine',
+      price: { mad: 11500, xof: 750000 },
+      /* Option bilingue : Français / Arabe ou Français / Anglais (incluse dans le Site Autorité). */
+      multilingue: { mad: 2500, xof: 160000 },
+      deliveryLine: 'Livraison : 15 jours ouvrés.',
+      paymentTitle: 'Paiement en trois fois',
+      payments: [
+        { label: 'à la commande (40 %)', mad: 4600, xof: 300000 },
+        { label: 'à la validation de la maquette (30 %)', mad: 3450, xof: 225000 },
+        { label: 'à la mise en ligne (30 %)', mad: 3450, xof: 225000 }
+      ],
+      microcopy: 'Offre Site Vitrine : {total}. Paiement en trois fois : 40 % à la commande, 30 % à la validation de la maquette, 30 % à la mise en ligne.'
     },
     autorite: {
       name: 'Site Autorité',
-      price: { mad: 19500, eur: 1800, xof: 1200000 },
-      paymentTitle: 'Paiement en trois étapes',
-      /* Trois jalons, sans pourcentages ni montants (non arrêtés commercialement). */
+      price: { mad: 19500, xof: 1250000 },
+      deliveryLine: 'Livraison : 3 à 4 semaines.',
+      paymentTitle: 'Paiement étalé sur 3 ou 4 échéances',
       steps: [
-        { label: 'à la commande',                line: 'À la commande — cadrage et lancement.' },
-        { label: 'à la validation du prototype', line: 'À la validation du prototype — validation du design.' },
-        { label: 'à la mise en ligne',           line: 'À la mise en ligne — livraison finale.' }
+        { label: 'selon le calendrier de production', line: 'Selon le calendrier de production.' }
       ],
       microcopy: 'Échéancier détaillé communiqué dans la proposition.'
     },
     serenite: {
       name: 'Sérénité Numérique',
-      price: { mad: 500, eur: 50, xof: 33000 },
+      price: { mad: 450, xof: 30000 },
       period: 'par mois',
-      microcopy: "Un mois offert avec l'offre Site Vitrine. Puis {total} par mois, sans engagement."
+      microcopy: '{total} par mois, sans engagement après la première année.'
     },
 
     /* ── Conseil éditorial & autorité — offre complémentaire, tarifs « à partir de » ── */
