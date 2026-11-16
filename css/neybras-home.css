@@ -670,8 +670,8 @@ p, li { text-wrap: pretty; }
 .offer-card__badge { position: relative; top: auto; left: auto; align-self: flex-start; max-width: 100%; margin: -2.35rem 0 .7rem; }
 @media (max-width: 559px) { .offer-card__badge { left: auto; margin-top: -2.05rem; } }
 
-/* --- Offres (mobile) : repli des puces au-delà de la 4e --------------------- */
-.offer-card__list.is-folded li:nth-child(n+5) { display: none; }
+/* --- Offres (mobile) : repli des puces au-delà de la 3e --------------------- */
+.offer-card__list.is-folded li:nth-child(n+4) { display: none; }
 .offer-card__toggle {
   align-self: flex-start; background: none; border: 0; padding: .4rem 0; margin: -.4rem 0 .9rem;
   font: inherit; font-size: .9375rem; font-weight: 600; color: var(--bordeaux); cursor: pointer;
