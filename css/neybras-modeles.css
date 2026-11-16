@@ -1,21 +1,23 @@
-/* Neybras — page « Modèles de conception » (/modeles)
-   Sobriété institutionnelle : ivoire #FAFAFA, encre #111827, bronze #B45309 / #92400E.
+/* Neybras — page « Aperçus » (/apercus)
+   Habillage aligné sur l'accueil (jetons de neybras-home.css : ivoire, nuit, bronze, Fraunces).
+   Les maquettes de cabinets fictifs (.m-site, cadres de navigateur) gardent leur style propre.
    Tout est circonscrit à .modeles : le reste du site n'est pas affecté. */
 
 .modeles {
-  --m-bg: #FAFAFA;
-  --m-ink: #111827;
-  --m-soft: #4B5563;
-  --m-gold: #B45309;
-  --m-gold-d: #92400E;
-  --m-line: #E7E2D9;
-  --m-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --m-bg: var(--ivoire);
+  --m-ink: var(--nuit);
+  --m-soft: var(--texte-doux);
+  --m-gold: var(--bronze);
+  --m-gold-d: var(--bronze);
+  --m-line: var(--filet-fort);
+  --m-titre: var(--font-titre);   /* page : Fraunces, comme l'accueil */
+  --m-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;  /* maquettes fictives uniquement */
   --m-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   background: var(--m-bg);
   color: var(--m-ink);
   font-family: var(--m-sans);
 }
-.modeles h1, .modeles h2, .modeles h3 { font-family: var(--m-serif); font-weight: 500; color: var(--m-ink); letter-spacing: 0; }
+.modeles h1, .modeles h2, .modeles h3 { font-family: var(--m-titre); font-weight: 400; color: var(--m-ink); letter-spacing: 0; }
 .modeles p { color: var(--m-soft); }
 .modeles a:not(.m-btn) { color: var(--m-gold-d); }
 
@@ -26,23 +28,23 @@
   border: 1px solid var(--m-ink); text-decoration: none;
   transition: background .2s ease, color .2s ease, border-color .2s ease;
 }
-.m-btn--primary { background: var(--m-ink); color: #fff; }
-.m-btn--primary:hover { background: var(--m-gold-d); border-color: var(--m-gold-d); color: #fff; }
+.m-btn--primary { background: var(--m-ink); color: var(--ivoire); }
+.m-btn--primary:hover { background: var(--nuit-2); border-color: var(--nuit-2); box-shadow: 0 0 0 1px var(--champagne); color: var(--ivoire); }
 .m-btn--ghost { background: transparent; color: var(--m-ink); }
 .m-btn--ghost:hover { border-color: var(--m-gold-d); color: var(--m-gold-d); }
 
 /* --- Hero ---------------------------------------------------------------- */
 .m-hero { padding: clamp(4rem, 9vw, 7rem) 0 clamp(2.5rem, 5vw, 4rem); text-align: center; border-bottom: 1px solid var(--m-line); }
 .m-kicker {
-  display: inline-block; font: 600 .74rem/1 var(--m-sans); letter-spacing: .22em; text-transform: uppercase;
-  color: var(--m-gold); margin-bottom: 1.4rem;
+  display: inline-block; font: 600 .78125rem/1 var(--m-sans); letter-spacing: .22em; text-transform: uppercase;
+  color: var(--m-gold); margin-bottom: 1.1rem;
 }
-.m-hero h1 { font-size: clamp(2rem, 4.6vw, 3.3rem); line-height: 1.14; max-width: 22ch; margin: 0 auto 1.4rem; }
+.m-hero h1 { font-size: clamp(2.3rem, 5vw, 3.5rem); line-height: 1.05; max-width: 22ch; margin: 0 auto 1.4rem; }
 .m-hero__lead { max-width: 60ch; margin: 0 auto 2.4rem; font-size: 1.06rem; line-height: 1.7; }
 .m-filters { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; }
 .m-filters a {
   font: 500 .86rem/1 var(--m-sans); color: var(--m-ink) !important; text-decoration: none;
-  padding: .7rem 1.1rem; border: 1px solid var(--m-line); border-radius: 999px; background: #fff;
+  padding: .7rem 1.1rem; border: 1px solid var(--m-line); border-radius: 999px; background: var(--blanc);
   transition: border-color .2s ease, color .2s ease;
 }
 .m-filters a:hover { border-color: var(--m-gold); color: var(--m-gold-d) !important; }
@@ -53,20 +55,20 @@
 .m-model { padding: clamp(3.5rem, 7vw, 6rem) 0; border-bottom: 1px solid var(--m-line); scroll-margin-top: 90px; }
 .m-model__grid { display: grid; grid-template-columns: 1.08fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
 .m-model--alt .m-model__visual { order: 2; }
-.m-model__num { font: 600 .74rem/1 var(--m-sans); letter-spacing: .22em; text-transform: uppercase; color: var(--m-gold); }
-.m-model h2 { font-size: clamp(1.55rem, 3vw, 2.15rem); line-height: 1.2; margin: .8rem 0 .3rem; }
+.m-model__num { font: 600 .78125rem/1 var(--m-sans); letter-spacing: .22em; text-transform: uppercase; color: var(--m-gold); }
+.m-model h2 { font-size: clamp(1.75rem, 2.8vw, 2.5rem); line-height: 1.14; margin: .8rem 0 .3rem; }
 .m-model__zone { font-size: .92rem; color: var(--m-soft); margin: 0 0 1.2rem; }
 .m-badge {
-  display: inline-block; font: 600 .7rem/1.5 var(--m-sans); letter-spacing: .08em; text-transform: uppercase;
+  display: inline-block; font: 600 .75rem/1.5 var(--m-sans); letter-spacing: .08em; text-transform: uppercase;
   color: var(--m-gold-d); border: 1px solid var(--m-gold); padding: .45rem .8rem; border-radius: 2px; margin-bottom: 1.4rem;
 }
 .m-fictif { font: 600 .98rem/1.4 var(--m-sans); color: var(--m-ink); margin: 0 0 .9rem; }
 .m-fictif small { display: block; font-weight: 400; font-size: .76rem; letter-spacing: .06em; text-transform: uppercase; color: var(--m-soft); margin-bottom: .2rem; }
 .m-accroche {
-  font: italic 400 1.08rem/1.65 var(--m-serif); color: var(--m-ink); margin: 0 0 1.5rem;
+  font: italic 400 1.08rem/1.65 var(--m-titre); color: var(--m-ink); margin: 0 0 1.5rem;
   padding-left: 1.1rem; border-left: 2px solid var(--m-gold);
 }
-.m-spec h3 { font: 600 .74rem/1 var(--m-sans); letter-spacing: .16em; text-transform: uppercase; color: var(--m-gold-d); margin: 1.4rem 0 .6rem; }
+.m-spec h3 { font: 600 .78125rem/1 var(--m-sans); letter-spacing: .16em; text-transform: uppercase; color: var(--m-gold-d); margin: 1.4rem 0 .6rem; }
 .m-spec ul { margin: 0; padding: 0; list-style: none; }
 .m-spec li { position: relative; padding: .28rem 0 .28rem 1.1rem; font-size: .94rem; line-height: 1.55; color: var(--m-ink); }
 .m-spec li::before { content: ""; position: absolute; left: 0; top: .85em; width: .5rem; height: 1px; background: var(--m-gold); }
@@ -74,12 +76,12 @@
 
 /* --- Cadre navigateur et aperçu ----------------------------------------- */
 .m-browser {
-  border: 1px solid #D8D3C8; border-radius: 10px; overflow: hidden; background: #fff;
-  box-shadow: 0 24px 50px -28px rgba(17, 24, 39, .38), 0 2px 6px rgba(17, 24, 39, .06);
+  border: 1px solid var(--filet-fort); border-radius: 10px; overflow: hidden; background: var(--blanc);
+  box-shadow: 0 24px 50px -28px rgba(11, 19, 29, .38), 0 2px 6px rgba(11, 19, 29, .06);
 }
-.m-browser__bar { display: flex; align-items: center; gap: .4rem; padding: .6rem .8rem; background: #F1EEE8; border-bottom: 1px solid #E2DDD3; }
-.m-browser__bar span { width: .62rem; height: .62rem; border-radius: 50%; background: #CFC9BD; }
-.m-browser__bar em { margin-left: .6rem; flex: 1; font: normal 400 .7rem/1 var(--m-sans); color: #6B7280; background: #fff; border: 1px solid #E2DDD3; border-radius: 999px; padding: .38rem .8rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.m-browser__bar { display: flex; align-items: center; gap: .4rem; padding: .6rem .8rem; background: var(--creme); border-bottom: 1px solid var(--filet); }
+.m-browser__bar span { width: .62rem; height: .62rem; border-radius: 50%; background: var(--filet-fort); }
+.m-browser__bar em { margin-left: .6rem; flex: 1; font: normal 400 .7rem/1 var(--m-sans); color: var(--pierre); background: var(--blanc); border: 1px solid var(--filet); border-radius: 999px; padding: .38rem .8rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .m-site { background: var(--s-bg); color: var(--s-ink); font-family: var(--m-sans); }
 .m-site__nav { display: flex; align-items: center; gap: .9rem; padding: .9rem 1.2rem; border-bottom: 1px solid var(--s-line); font-size: .66rem; }
@@ -97,7 +99,7 @@
 .m-figcap { margin-top: .9rem; font-size: .76rem; color: var(--m-soft); text-align: center; }
 
 /* --- Aperçu complet (panneau déplié) ----------------------------------- */
-.m-full { margin-top: 2.2rem; padding: 1.8rem; background: #fff; border: 1px solid var(--m-line); border-left: 3px solid var(--m-gold); }
+.m-full { margin-top: 2.2rem; padding: 1.8rem; background: var(--blanc); border: 1px solid var(--m-line); border-left: 3px solid var(--m-gold); }
 .m-full[hidden] { display: none; }
 .m-full h3 { font-size: 1.15rem; margin: 0 0 .9rem; }
 .m-full__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
@@ -106,8 +108,8 @@
 
 /* --- Encart de réassurance --------------------------------------------- */
 .m-assurance { padding: clamp(3.5rem, 7vw, 6rem) 0; text-align: center; }
-.m-assurance__box { max-width: 760px; margin: 0 auto; padding: clamp(2rem, 4vw, 3rem); background: #fff; border-top: 2px solid var(--m-gold); border-bottom: 1px solid var(--m-line); }
-.m-assurance h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 1rem; }
+.m-assurance__box { max-width: 760px; margin: 0 auto; padding: clamp(2rem, 4vw, 3rem); background: var(--blanc); border-top: 2px solid var(--m-gold); border-bottom: 1px solid var(--m-line); }
+.m-assurance h2 { font-size: clamp(1.75rem, 2.8vw, 2.5rem); margin: 0 0 1rem; }
 .m-assurance p { font-size: 1.02rem; line-height: 1.75; margin: 0; }
 
 @media (max-width: 900px) {
@@ -125,3 +127,9 @@
 .modeles .contact p { color: rgba(243,242,237,0.82); }
 .modeles .contact a.btn--ghost-light { color: #fff; }
 .modeles .contact a.btn--light { color: var(--nuit); }
+
+/* Fonds alternés (aucune paire de sections consécutives de même fond) */
+.modeles #modele-01, .modeles #modele-03 { background: var(--blanc); }
+.modeles #modele-02 { background: var(--creme); }
+.modeles .m-full { background: var(--ivoire); }
+.modeles #modele-02 .m-full { background: var(--blanc); }
