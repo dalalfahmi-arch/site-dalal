@@ -164,7 +164,7 @@
 /* Offres (mobile) : au-delà de la 3e puce, la liste est repliée derrière « Voir le détail » (tout reste visible sans JS) */
 (function () {
   'use strict';
-  var mq = window.matchMedia ? window.matchMedia('(max-width: 767px)') : null;
+  var mq = window.matchMedia ? window.matchMedia('(max-width: 980px)') : null;
   var lists = document.querySelectorAll('.offer-card__list');
   if (!mq || !lists.length) { return; }
   var KEEP = 3;
