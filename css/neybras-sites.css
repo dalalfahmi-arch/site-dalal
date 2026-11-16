@@ -6,15 +6,16 @@
    (contrastes, focus clavier).
    ========================================================================== */
 
-:root { --texte-doux: #55555E; }  /* texte secondaire : 7,4:1 sur ivoire (pierre #8D8D93 : 3,2:1) */
+:root { --texte-doux: #4A4E57; }  /* texte secondaire : 7,4:1 sur ivoire (pierre #6B6E75 : 3,2:1) */
 
 /* --- Accessibilité : focus clavier visible ------------------------------ */
 a:focus-visible, button:focus-visible, summary:focus-visible,
 input:focus-visible, select:focus-visible, textarea:focus-visible {
   outline: 3px solid var(--bordeaux); outline-offset: 3px; border-radius: 4px;
 }
+.btn:focus-visible { outline: 2px solid var(--champagne-riche); outline-offset: 2px; }
 .contact a:focus-visible, .site-footer a:focus-visible, .offer-card--featured a:focus-visible,
-.bascule a:focus-visible { outline-color: #E8B7BF; }
+.bascule a:focus-visible, .section--nuit a:focus-visible { outline-color: #D4C4B4; }
 
 /* --- Contrastes : textes secondaires de la feuille de base --------------- */
 .offer-card__from, .offer-card__meta, .brand__base,
@@ -36,10 +37,10 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   justify-self: center; width: min(420px, 100%);
   background: var(--nuit); color: rgba(255,255,255,0.88);
   border-radius: var(--radius); padding: 2.2rem 2rem; box-shadow: var(--shadow-lg);
-  border-top: 4px solid var(--bordeaux);
+  border-top: 4px solid var(--champagne);
 }
 .hero__panel h2 { color: #fff; font-size: 1.3rem; margin-bottom: 1.2rem; }
-.hero__panel li { padding: .8rem 0; border-top: 1px solid rgba(255,255,255,0.14); font-size: .98rem; }
+.hero__panel li { padding: .8rem 0; border-top: 1px solid rgba(177,163,134,0.25); font-size: .98rem; }
 .hero__panel li strong { display: block; color: #fff; font-family: var(--font-titre); font-weight: 400; font-size: 1.12rem; }
 .hero__lead { max-width: 36rem; }
 .hero__actions .btn { text-align: center; }
@@ -66,7 +67,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 
 /* --- Cadre déontologique -------------------------------------------------- */
 .deonto {
-  background: var(--blanc); border: 1px solid var(--filet); border-left: 4px solid var(--bordeaux);
+  background: var(--blanc); border: 1px solid var(--filet); border-left: 4px solid var(--champagne-riche);
   border-radius: var(--radius-sm); padding: 1.8rem 2rem; box-shadow: var(--shadow-sm);
 }
 .deonto h3 { font-size: 1.3rem; }
@@ -94,10 +95,10 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-sm);
   color: rgba(255,255,255,0.86); transition: background .2s var(--ease), border-color .2s var(--ease);
 }
-.path:hover { background: rgba(255,255,255,0.12); border-color: #E8B7BF; color: #fff; }
+.path:hover { background: rgba(255,255,255,0.12); border-color: #D4C4B4; color: #fff; }
 .path__title { font-family: var(--font-titre); font-size: 1.2rem; color: #fff; }
 .path__text { font-size: .94rem; margin: 0; }
-.path__cta { margin-top: auto; font-weight: 600; color: #E8B7BF; font-size: .92rem; padding-top: .6rem; }
+.path__cta { margin-top: auto; font-weight: 600; color: #D4C4B4; font-size: .92rem; padding-top: .6rem; }
 .contact__inner--wide { max-width: 980px; }
 
 /* --- Bloc Magazine (preuve) ----------------------------------------------- */
@@ -138,7 +139,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .pillar h3 { font-size: 1.2rem; margin-bottom: .4rem; }
 /* Liens dans le texte : soulignés (distinction autre que la couleur) */
 .form-note-sites a, .consent a, .faq__item p a, .section-intro a { text-decoration: underline; text-underline-offset: 2px; }
-.footer-col .footer-h { font-family: var(--font-courant); font-size: .76rem; text-transform: uppercase; letter-spacing: .16em; color: #E8B7BF; margin: 0 0 1rem; }
+.footer-col .footer-h { font-family: var(--font-courant); font-size: .76rem; text-transform: uppercase; letter-spacing: .16em; color: #D4C4B4; margin: 0 0 1rem; }
 /* Signatures : la grille d'experts passe en une colonne sur mobile (débordement horizontal sinon) */
 @media (max-width: 980px) { .experts--three { grid-template-columns: 1fr; } }
 
