@@ -160,3 +160,33 @@
   }
   update();
 })();
+
+/* Offres (mobile) : au-delà de la 4e puce, la liste est repliée derrière « Voir le détail » (tout reste visible sans JS) */
+(function () {
+  'use strict';
+  var mq = window.matchMedia ? window.matchMedia('(max-width: 767px)') : null;
+  var lists = document.querySelectorAll('.offer-card__list');
+  if (!mq || !lists.length) { return; }
+  var KEEP = 4;
+  lists.forEach(function (ul, i) {
+    if (ul.children.length <= KEEP) { return; }
+    if (!ul.id) { ul.id = 'offer-list-' + i; }
+    var btn = document.createElement('button');
+    btn.type = 'button'; btn.className = 'offer-card__toggle';
+    btn.setAttribute('aria-controls', ul.id); btn.hidden = true;
+    ul.parentNode.insertBefore(btn, ul.nextSibling);
+    function label() {
+      var folded = ul.classList.contains('is-folded');
+      btn.textContent = folded ? 'Voir le détail' : 'Réduire';
+      btn.setAttribute('aria-expanded', folded ? 'false' : 'true');
+    }
+    btn.addEventListener('click', function () { ul.classList.toggle('is-folded'); label(); });
+    function apply() {
+      if (mq.matches) { ul.classList.add('is-folded'); btn.hidden = false; }
+      else { ul.classList.remove('is-folded'); btn.hidden = true; }
+      label();
+    }
+    apply();
+    if (mq.addEventListener) { mq.addEventListener('change', apply); } else if (mq.addListener) { mq.addListener(apply); }
+  });
+})();
