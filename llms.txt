@@ -2,17 +2,18 @@
 
 > Neybras conçoit les sites web des cabinets d'avocats et des acteurs du droit qui veulent transformer leur expertise en autorité visible. Plateformes web premium, sobres, sécurisées et respectueuses des usages déontologiques de la profession. Neybras est adossé à Neybras Magazine et propose, en complément, du conseil éditorial.
 
-## Offres de sites web (prix fixes, en DH, puis € et F CFA)
+## Offres de sites web (prix fixes, en DH puis en F CFA)
 
-- Site Vitrine : 8 500 DH / 800 € / 525 000 F CFA. One-page premium (5 sections maximum), design sur-mesure, maquette validée, charte du cabinet intégrée, responsive, formulaire de contact sécurisé, bouton WhatsApp Business, optimisation technique de base, livraison estimée à 10 jours après validation du cahier des charges. Paiement en 2 fois : 4 250 DH à la commande, 4 250 DH à la livraison.
-- Site Autorité : 19 500 DH / 1 800 € / 1 200 000 F CFA. Multi-pages (jusqu'à 7), design entièrement sur-mesure, architecture éditoriale, rédaction stratégique des contenus, français et arabe si besoin, référencement par spécialité et zone géographique, blog et actualités juridiques, prise de rendez-vous intégrée, formulaire avancé, option de paiement des honoraires, maintenance et évolutions. Paiement en 3 étapes : commande, validation du prototype, mise en ligne.
-- Sérénité Numérique (maintenance) : 500 DH / 50 € / 33 000 F CFA par mois. Sécurité et mises à jour, sauvegardes et restauration, performance et disponibilité, support et petites modifications, hébergement inclus.
+- Site Essentiel : 5 500 DH / 350 000 F CFA. Carte de visite digitale sobre, site « one-page » (jusqu'à 4 sections) : présentation, domaines d'intervention, parcours et contact. Formulaire de contact protégé, bouton WhatsApp Business, mentions obligatoires du Barreau et politique de confidentialité (loi 09-08). Livraison : 7 jours ouvrés après réception des éléments. Paiement en deux fois : 2 750 DH à la commande, 2 750 DH à la livraison.
+- Site Vitrine : 11 500 DH / 750 000 F CFA. Site multi-pages (jusqu'à 5 pages), rédaction assistée incluse (entretien de 45 minutes avec un rédacteur juridique de Neybras), référencement local, fiche Google Business Profile. Option multilingue : 2 500 DH / 160 000 F CFA. Livraison : 15 jours ouvrés. Paiement en trois fois : 4 600 DH à la commande (40 %), 3 450 DH à la validation de la maquette (30 %), 3 450 DH à la mise en ligne (30 %).
+- Site Autorité : 19 500 DH / 1 250 000 F CFA. Architecture complète sur mesure (jusqu'à 10 pages), fiches par associé, pages par pôle d'expertise, bilingue natif inclus, espace publications et actualités, prise de rendez-vous automatisée, bonus Neybras Magazine. Livraison : 3 à 4 semaines. Paiement étalé sur 3 ou 4 échéances selon le calendrier de production.
+- Sérénité Numérique (maintenance, optionnelle) : 450 DH / 30 000 F CFA par mois. Hébergement haute sécurité et certificat SSL, sauvegardes automatiques hebdomadaires et mises à jour de sécurité, jusqu'à 1 heure de modifications par mois, support prioritaire par WhatsApp.
 
-## Conseil éditorial (offre complémentaire)
+## Conseil éditorial (offre complémentaire, tarifs « à partir de »)
 
-- Audit stratégique éditorial (à partir de 7 000 DH) : diagnostic complet, cartographie des écarts, feuille de route de 6 mois
-- Structuration éditoriale (à partir de 18 000 DH, projet de 4 à 6 semaines) : positionnement, message central, ligne éditoriale, formats, calendrier de 6 mois, charte éditoriale, brief créatif pour le site
-- Accompagnement mensuel (à partir de 5 000 DH par mois, reconductible) : pilotage, production supervisée, messages calibrés en français et en arabe
+- Audit stratégique éditorial : à partir de 7 000 DH
+- Structuration éditoriale : à partir de 18 000 DH
+- Accompagnement mensuel : à partir de 5 000 DH par mois
 
 ## Cadre déontologique
 
@@ -22,12 +23,15 @@ Information et expertise, jamais démarchage ni promesse de résultat. Le client
 
 - [Accueil](https://neybras.com/): présentation, offres, preuves, questions fréquentes
 - [Sites web pour avocats](https://neybras.com/sites-web-avocats): offres de sites web pour le droit
+- [Offres](https://neybras.com/offres): tarifs et modalités
+- [Site Essentiel](https://neybras.com/cabinet-essentiel)
 - [Site Vitrine](https://neybras.com/cabinet-vitrine)
 - [Site Autorité](https://neybras.com/cabinet-autorite)
 - [Sérénité Numérique](https://neybras.com/serenite-numerique)
+- [Aperçus](https://neybras.com/apercus): maquettes de démonstration de cabinets fictifs
+- [Questions fréquentes](https://neybras.com/faq)
 - [Brief de projet](https://neybras.com/brief-projet): brief et demande de devis
-- [Audit stratégique éditorial](https://neybras.com/audit-signature): détail de l'offre d'audit
-- [Signatures](https://neybras.com/signatures): contributeurs publiés dans Neybras Magazine
+- [Contact](https://neybras.com/contact)
 - [Cabinets invisibles](https://neybras.com/regards/cabinets-invisibles): article
 - [Plan du site](https://neybras.com/sitemap.xml)
 
