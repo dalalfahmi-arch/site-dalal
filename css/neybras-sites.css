@@ -235,7 +235,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .compare tfoot .btn { padding: .8rem .9rem; font-size: .875rem; white-space: nowrap; }
 .compare__note { text-align: center; font-size: .875rem; color: var(--texte-doux); margin: 1.4rem 0 0; }
 .compare-cards { display: none; }
-@media (max-width: 719px) {
+@media (max-width: 859px) {
   .compare-wrap { display: none; }
   .compare-cards { display: grid; gap: 1.1rem; }
 }
