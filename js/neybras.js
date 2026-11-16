@@ -161,13 +161,13 @@
   update();
 })();
 
-/* Offres (mobile) : au-delà de la 4e puce, la liste est repliée derrière « Voir le détail » (tout reste visible sans JS) */
+/* Offres (mobile) : au-delà de la 3e puce, la liste est repliée derrière « Voir le détail » (tout reste visible sans JS) */
 (function () {
   'use strict';
   var mq = window.matchMedia ? window.matchMedia('(max-width: 767px)') : null;
   var lists = document.querySelectorAll('.offer-card__list');
   if (!mq || !lists.length) { return; }
-  var KEEP = 4;
+  var KEEP = 3;
   lists.forEach(function (ul, i) {
     if (ul.children.length <= KEEP) { return; }
     if (!ul.id) { ul.id = 'offer-list-' + i; }
