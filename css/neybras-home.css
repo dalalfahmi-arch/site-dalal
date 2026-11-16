@@ -679,3 +679,5 @@ p, li { text-wrap: pretty; }
 }
 .offer-card__toggle[hidden] { display: none; }
 .section--nuit .offer-card__toggle { color: var(--bronze-clair); }
+
+.offer-card--featured .offer-card__toggle { color: var(--bronze-clair); }
