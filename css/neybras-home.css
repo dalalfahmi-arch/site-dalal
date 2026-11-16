@@ -428,7 +428,7 @@ em { font-style: italic; color: var(--bordeaux); }
 .site-footer { background: var(--nuit); color: rgba(255,255,255,0.74); padding-block: clamp(3rem, 6vw, 4.5rem) 2rem; }
 .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: 2rem; margin-bottom: 2.5rem; }
 .site-footer .brand__name { color: #fff; }
-.site-footer .brand__accent, .site-footer .brand__sub { color: var(--bronze-clair); }
+.site-footer .brand__sub { color: var(--bronze-clair); }
 .footer-desc { font-size: .92rem; color: rgba(255,255,255,0.6); margin-top: .8rem; max-width: 32ch; }
 .footer-col h5 { font-family: var(--font-courant); font-size: .76rem; text-transform: uppercase; letter-spacing: .16em; color: #D4C4B4; margin-bottom: 1rem; }
 .footer-col a { display: block; color: rgba(255,255,255,0.74); font-size: .94rem; padding: .25rem 0; }
@@ -590,3 +590,8 @@ em { font-style: italic; color: var(--bordeaux); }
 }
 .section--nuit .offer-card--featured .offer-card__badge { background: var(--champagne); color: var(--nuit); }
 .section--nuit .offer-card--featured .btn--light { background: var(--bronze-clair); }
+
+/* --- Logo : marque « N » (carré fendu en diagonale) + mot-symbole uni ---- */
+.brand__logo { width: auto; height: 36px; border-radius: 0; box-shadow: none; }
+.brand__accent { color: inherit; }
+.brand { gap: .75rem; }
