@@ -169,7 +169,7 @@
   if (!mq || !lists.length) { return; }
   var KEEP = 3;
   lists.forEach(function (ul, i) {
-    if (ul.children.length <= KEEP) { return; }
+    if (ul.hasAttribute('data-no-fold') || ul.children.length <= KEEP) { return; }
     if (!ul.id) { ul.id = 'offer-list-' + i; }
     var btn = document.createElement('button');
     btn.type = 'button'; btn.className = 'offer-card__toggle';

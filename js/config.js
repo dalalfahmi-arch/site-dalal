@@ -51,11 +51,29 @@ window.NEYBRAS_CONFIG = {
       ],
       microcopy: 'Échéancier détaillé communiqué dans la proposition.'
     },
+    /* Sérénité Numérique : abonnement en trois formules. La clé « serenite » sert aux
+       cartes d'aperçu (prix d'entrée) ; les trois autres alimentent la page dédiée. */
     serenite: {
       name: 'Sérénité Numérique',
-      price: { mad: 450, xof: 30000 },
+      from: true,
+      price: { mad: 750, xof: 45000 },
       period: 'par mois',
-      microcopy: '{total} par mois, sans engagement après la première année.'
+      microcopy: 'À partir de {total} par mois, sans engagement après la première année.'
+    },
+    serenite_essentielle: {
+      name: 'Sérénité Essentielle',
+      price: { mad: 750, xof: 45000 },
+      period: 'par mois'
+    },
+    serenite_autorite: {
+      name: 'Sérénité Autorité',
+      price: { mad: 1500, xof: 90000 },
+      period: 'par mois'
+    },
+    serenite_visibilite: {
+      name: 'Autorité & Visibilité',
+      price: { mad: 3500, xof: 210000 },
+      period: 'par mois'
     },
 
     /* ── Conseil éditorial & autorité — offre complémentaire, tarifs « à partir de » ── */

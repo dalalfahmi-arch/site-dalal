@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>/* URLs propres : /page.html -> /page (sans entrée d'historique). Le canonical couvre le référencement. */if(/\.html$/.test(location.pathname)){location.replace(location.pathname.replace(/(^|\/)index\.html$/,'/').replace(/\.html$/,'')+location.search+location.hash);}</script>
-  <title>Sérénité Numérique | Maintenance de site pour avocats | Neybras</title>
-  <meta name="description" content="Sérénité Numérique : la maintenance, la sécurité et le bon fonctionnement de votre site de cabinet. Hébergement, sauvegardes, mises à jour et support. Sans engagement." />
+  <title>Sérénité Numérique : l'abonnement de confiance | Neybras</title>
+  <meta name="description" content="Sérénité Numérique : trois formules d'abonnement pour garder votre site de cabinet sûr, à jour et crédible, à partir de 750 DH par mois. Hébergement, sauvegardes, support." />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <meta name="theme-color" content="#F3F2ED" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
@@ -18,8 +18,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:site_name" content="Neybras" />
-  <meta property="og:title" content="Sérénité Numérique | Maintenance de site pour avocats | Neybras" />
-  <meta property="og:description" content="Sérénité Numérique : la maintenance, la sécurité et le bon fonctionnement de votre site de cabinet. Hébergement, sauvegardes, mises à jour et support. Sans engagement." />
+  <meta property="og:title" content="Sérénité Numérique : l'abonnement de confiance | Neybras" />
+  <meta property="og:description" content="Sérénité Numérique : trois formules d'abonnement pour garder votre site de cabinet sûr, à jour et crédible, à partir de 750 DH par mois. Hébergement, sauvegardes, support." />
   <meta property="og:url" content="https://neybras.com/serenite-numerique" />
   <meta property="og:image" content="https://neybras.com/images/og-neybras.png" />
   <meta property="og:image:width" content="1200" />
@@ -68,7 +68,11 @@
       "url": "https://neybras.com/serenite-numerique",
       "priceCurrency": "MAD",
       "availability": "https://schema.org/InStock",
-      "price": 450
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "minPrice": 750,
+        "priceCurrency": "MAD"
+      }
     }
   }
   </script>
@@ -115,37 +119,101 @@
 <section class="hero page-hero" id="hero">
   <div class="container">
     <div class="hero__text" style="max-width:48rem">
-      <p class="eyebrow">Maintenance</p>
-      <h1 class="hero__title">La tranquillité technique de votre site.</h1>
-      <p class="hero__lead">Neybras assure la maintenance, la sécurité et le bon fonctionnement de votre plateforme, afin que vous puissiez vous concentrer sur votre pratique.</p>
+      <p class="eyebrow">Abonnement</p>
+      <h1 class="hero__title">Sérénité Numérique : l'abonnement de confiance</h1>
+      <p class="hero__lead">Votre site reste sûr, à jour et crédible. Neybras s'occupe de la technique et, selon la formule, de votre visibilité éditoriale, pour que vous gardiez l'esprit libre pour votre pratique.</p>
       <div class="hero__actions">
-        <a class="btn btn--bordeaux" href="/brief-projet?offre=serenite" data-cta="serenite-hero">Ajouter la maintenance à mon projet <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn--bordeaux" href="#formules" data-cta="serenite-hero">Choisir ma formule</a>
         <a class="btn btn--outline-nuit" target="_blank" rel="noopener" href="https://wa.me/212789256744?text=Bonjour%20Neybras%2C%20je%20souhaite%20r%C3%A9server%20une%20d%C3%A9monstration%20de%2030%20minutes." data-cta="serenite-demo">Démonstration de 30 minutes</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section--blanc">
+<section class="section section--blanc" id="formules">
   <div class="container">
-    <div class="split">
-      <div class="reveal">
-        <h2 class="section-title">Ce qui est inclus</h2>
-        <ul class="checklist">
-          <li>Hébergement haute sécurité et certificat SSL (HTTPS).</li>
-          <li>Sauvegardes automatiques hebdomadaires et mises à jour de sécurité.</li>
-          <li>Jusqu'à 1 heure de modifications par mois (ajout d'un collaborateur, mise à jour d'un article, changement d'adresse).</li>
-          <li>Support prioritaire direct par WhatsApp.</li>
-        </ul>
-      </div>
-      <div class="offer-card reveal" id="offre" style="text-align:center">
-        <h2 style="font-size:1.6rem">Sérénité Numérique</h2>
-        <span class="price price--lg" data-price="serenite"><span class="price__main">450 DH / mois</span><span class="price__alt">30 000 F CFA / mois</span></span>
-        <p class="offer-card__pay">Sans engagement.</p>
-        <a class="btn btn--bordeaux btn--block" href="/brief-projet?offre=serenite" data-cta="serenite-ajouter">Ajouter la maintenance à mon projet</a>
-        <p class="offer-card__pay" style="margin:.9rem 0 0"><em data-text="serenite.microcopy">450 DH par mois, sans engagement après la première année.</em></p>
-      </div>
+    <div class="section-head section-head--center reveal">
+      <p class="eyebrow">Trois formules</p>
+      <h2 class="section-title">Choisissez votre niveau de sérénité</h2>
+      <p class="section-intro">Toutes les formules incluent l'hébergement sécurisé, les sauvegardes et le support. Les suivantes ajoutent du suivi, du contenu et de la visibilité.</p>
     </div>
+
+    <div class="compare-wrap reveal">
+      <table class="compare">
+        <caption class="sr-only">Comparatif des trois formules Sérénité Numérique</caption>
+        <thead>
+          <tr>
+            <td></td>
+            <th scope="col"><span class="compare__name">Sérénité Essentielle</span><span class="price" data-price="serenite_essentielle"><span class="price__main">750 DH / mois</span><span class="price__alt">45 000 F CFA / mois</span></span></th>
+            <th scope="col" class="is-featured"><span class="compare__badge">Recommandée</span><span class="compare__name">Sérénité Autorité</span><span class="price" data-price="serenite_autorite"><span class="price__main">1 500 DH / mois</span><span class="price__alt">90 000 F CFA / mois</span></span></th>
+            <th scope="col"><span class="compare__name">Autorité &amp; Visibilité</span><span class="price" data-price="serenite_visibilite"><span class="price__main">3 500 DH / mois</span><span class="price__alt">210 000 F CFA / mois</span></span></th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr><th scope="row">Hébergement sécurisé et certificat SSL</th><td><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td><td class="is-featured"><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td><td><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td></tr>
+        <tr><th scope="row">Sauvegardes automatiques</th><td><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td><td class="is-featured"><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td><td><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td></tr>
+        <tr><th scope="row">Mises à jour de sécurité</th><td><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td><td class="is-featured"><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td><td><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td></tr>
+        <tr><th scope="row">Support prioritaire</th><td><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td><td class="is-featured"><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td><td><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td></tr>
+        <tr><th scope="row">Modifications par mois</th><td>1 h</td><td class="is-featured">2 h</td><td>2 h</td></tr>
+        <tr><th scope="row">Monitoring de disponibilité</th><td><span class="no" aria-hidden="true"></span><span class="sr-only">Non inclus</span></td><td class="is-featured"><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td><td><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td></tr>
+        <tr><th scope="row">Contenus par mois</th><td><span class="no" aria-hidden="true"></span><span class="sr-only">Non inclus</span></td><td class="is-featured">1</td><td>2</td></tr>
+        <tr><th scope="row">Reporting</th><td><span class="no" aria-hidden="true"></span><span class="sr-only">Non inclus</span></td><td class="is-featured">Trimestriel</td><td>Mensuel</td></tr>
+        <tr><th scope="row">Référencement (SEO)</th><td><span class="no" aria-hidden="true"></span><span class="sr-only">Non inclus</span></td><td class="is-featured"><span class="no" aria-hidden="true"></span><span class="sr-only">Non inclus</span></td><td><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td></tr>
+        <tr><th scope="row">Veille</th><td><span class="no" aria-hidden="true"></span><span class="sr-only">Non inclus</span></td><td class="is-featured"><span class="no" aria-hidden="true"></span><span class="sr-only">Non inclus</span></td><td><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td></tr>
+        <tr><th scope="row">LinkedIn</th><td><span class="no" aria-hidden="true"></span><span class="sr-only">Non inclus</span></td><td class="is-featured"><span class="no" aria-hidden="true"></span><span class="sr-only">Non inclus</span></td><td><span class="yes" aria-hidden="true">✓</span><span class="sr-only">Inclus</span></td></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td><a class="btn btn--bordeaux" href="/brief-projet?offre=serenite&amp;formule=essentielle" data-cta="serenite-essentielle">Choisir cette formule</a></td>
+            <td class="is-featured"><a class="btn btn--bordeaux" href="/brief-projet?offre=serenite&amp;formule=autorite" data-cta="serenite-autorite">Choisir cette formule</a></td>
+            <td><a class="btn btn--bordeaux" href="/brief-projet?offre=serenite&amp;formule=visibilite" data-cta="serenite-visibilite">Choisir cette formule</a></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div class="compare-cards">
+      <article class="offer-card reveal">
+        <h3>Sérénité Essentielle</h3>
+        <span class="price" data-price="serenite_essentielle"><span class="price__main">750 DH / mois</span><span class="price__alt">45 000 F CFA / mois</span></span>
+        <ul class="offer-card__list" data-no-fold>
+          <li>Hébergement sécurisé et certificat SSL</li>
+          <li>Sauvegardes automatiques et mises à jour de sécurité</li>
+          <li>Support prioritaire</li>
+          <li>1 h de modifications par mois</li>
+        </ul>
+        <a class="btn btn--bordeaux" href="/brief-projet?offre=serenite&amp;formule=essentielle" data-cta="serenite-essentielle">Choisir cette formule</a>
+      </article>
+      <article class="offer-card offer-card--featured reveal">
+        <span class="offer-card__badge">Recommandée</span>
+        <h3>Sérénité Autorité</h3>
+        <span class="price" data-price="serenite_autorite"><span class="price__main">1 500 DH / mois</span><span class="price__alt">90 000 F CFA / mois</span></span>
+        <p class="offer-card__ideal"><strong>Tout l'Essentielle, plus :</strong></p>
+        <ul class="offer-card__list" data-no-fold>
+          <li>Monitoring de disponibilité</li>
+          <li>2 h de modifications par mois</li>
+          <li>1 contenu par mois</li>
+          <li>Reporting trimestriel</li>
+        </ul>
+        <a class="btn btn--light" href="/brief-projet?offre=serenite&amp;formule=autorite" data-cta="serenite-autorite">Choisir cette formule</a>
+      </article>
+      <article class="offer-card reveal">
+        <h3>Autorité &amp; Visibilité</h3>
+        <span class="price" data-price="serenite_visibilite"><span class="price__main">3 500 DH / mois</span><span class="price__alt">210 000 F CFA / mois</span></span>
+        <p class="offer-card__ideal"><strong>Tout l'Autorité, plus :</strong></p>
+        <ul class="offer-card__list" data-no-fold>
+          <li>2 contenus par mois</li>
+          <li>Référencement (SEO)</li>
+          <li>Veille</li>
+          <li>LinkedIn</li>
+          <li>Reporting mensuel</li>
+        </ul>
+        <a class="btn btn--bordeaux" href="/brief-projet?offre=serenite&amp;formule=visibilite" data-cta="serenite-visibilite">Choisir cette formule</a>
+      </article>
+    </div>
+
+    <p class="compare__note">Prix par mois, en dirhams (DH) et en francs CFA. Abonnement sans engagement après la première année.</p>
   </div>
 </section>
 
