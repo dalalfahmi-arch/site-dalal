@@ -120,3 +120,8 @@
   .m-site__poles { grid-template-columns: 1fr; }
   .m-actions .m-btn { width: 100%; }
 }
+
+/* Bande contact sombre : lisibilité (les règles .modeles p / a ne doivent pas y descendre) */
+.modeles .contact p { color: rgba(243,242,237,0.82); }
+.modeles .contact a.btn--ghost-light { color: #fff; }
+.modeles .contact a.btn--light { color: var(--nuit); }

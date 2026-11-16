@@ -7,16 +7,16 @@
 /* --- Tokens ------------------------------------------------------------- */
 :root {
   /* Palette (exacte — direction validée) */
-  --nuit:           #0F2238;  /* titres, footer, bandes, bouton secondaire */
-  --bordeaux:       #6E2332;  /* ACCENT : mot « structure », CTA, numéros, filets */
-  --bordeaux-hover: #561A27;
-  --ivoire:         #F6F2EA;  /* fond hero + sections « repos » */
-  --ivoire-clair:   #FBF8F2;  /* cartes sur fond ivoire */
-  --pierre:         #8D8D93;  /* texte secondaire */
-  --graphite:       #1C1C22;  /* texte courant */
+  --nuit:           #0B131D;  /* titres, footer, bandes, bouton secondaire */
+  --bordeaux:       #6B5E42;  /* ACCENT : mot « structure », CTA, numéros, filets */
+  --bordeaux-hover: #564B35;
+  --ivoire:         #F3F2ED;  /* fond hero + sections « repos » */
+  --ivoire-clair:   #FFFFFF;  /* cartes sur fond ivoire */
+  --pierre:         #6B6E75;  /* texte secondaire */
+  --graphite:       #141C27;  /* texte courant */
   --blanc:          #FFFFFF;  /* fond cartes */
-  --creme:          #EDE7DC;  /* fond derrière le portrait */
-  --filet:          rgba(15,34,56,0.10);
+  --creme:          #EBE6DF;  /* fond derrière le portrait */
+  --filet:          rgba(11,19,29,0.10);
 
   /* Typographie — POINT DE SWAP unique vers Canela.
      Pour passer à Canela : ajouter le @font-face ci-dessous (licence) puis
@@ -106,7 +106,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* --- Header / Nav ------------------------------------------------------ */
 .site-header {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(246,242,234,.85); backdrop-filter: saturate(1.1) blur(8px);
+  background: rgba(243,242,237,.85); backdrop-filter: saturate(1.1) blur(8px);
   border-bottom: 1px solid transparent;
   transition: background .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease);
 }
@@ -144,7 +144,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero__media::after {
   content: ''; position: absolute; inset: 0; pointer-events: none;
   /* voile léger : la photo se fond dans l'ivoire seulement par le bord gauche, sans délaver Dalal */
-  background: linear-gradient(to right, var(--ivoire) 0%, rgba(246,242,234,0) 30%);
+  background: linear-gradient(to right, var(--ivoire) 0%, rgba(243,242,237,0) 30%);
 }
 
 /* --- Signaux d'alerte -------------------------------------------------- */
@@ -164,7 +164,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .bascule p { font-family: var(--font-titre); font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.5; max-width: 60ch; margin: 0 auto; text-align: center; color: #fff; }
 .bascule__soft { display: block; color: rgba(255,255,255,.7); }
 .bascule__punch { display: block; margin-top: .7em; color: #fff; }
-.bascule em { font-style: normal; color: #fff; box-shadow: inset 0 -.5em 0 rgba(110,35,50,.55); }
+.bascule em { font-style: normal; color: #fff; box-shadow: inset 0 -.5em 0 rgba(107,94,66,.55); }
 
 /* --- Offres ------------------------------------------------------------ */
 .offers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: stretch; }
@@ -294,14 +294,14 @@ ul { margin: 0; padding: 0; list-style: none; }
     position: fixed; inset: 72px 0 auto 0; flex-direction: column; align-items: stretch;
     background: var(--ivoire); border-bottom: 1px solid var(--filet);
     padding: 1.2rem var(--pad-x) 1.8rem; gap: 1.1rem;
-    transform: translateY(-130%); transition: transform .3s var(--ease); box-shadow: 0 12px 24px rgba(15,34,56,.08);
+    transform: translateY(-130%); transition: transform .3s var(--ease); box-shadow: 0 12px 24px rgba(11,19,29,.08);
   }
   .nav__menu.is-open { transform: translateY(0); }
   .nav__links { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .burger { display: inline-flex; }
   .hero__grid { grid-template-columns: 1fr; min-height: 0; }
   .hero__media { order: -1; min-height: 320px; max-height: 46vh; }
-  .hero__media::after { background: linear-gradient(to top, var(--ivoire) 0%, rgba(246,242,234,0) 55%); }
+  .hero__media::after { background: linear-gradient(to top, var(--ivoire) 0%, rgba(243,242,237,0) 55%); }
 }
 @media (max-width: 600px) {
   :root { --pad-section: 3.25rem; }
@@ -317,7 +317,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 [dir="rtl"] .offer-card__from, [dir="rtl"] .proof-bar__label, [dir="rtl"] .footer-col h5,
 [dir="rtl"] .contact__loc, [dir="rtl"] .regard-card__tag { letter-spacing: normal; } /* le tracking latin casse l'arabe */
 [dir="rtl"] .hero__grid { direction: rtl; }
-[dir="rtl"] .hero__media::after { background: linear-gradient(to left, var(--ivoire) 0%, rgba(246,242,234,.45) 26%, rgba(246,242,234,0) 58%); }
+[dir="rtl"] .hero__media::after { background: linear-gradient(to left, var(--ivoire) 0%, rgba(243,242,237,.45) 26%, rgba(243,242,237,0) 58%); }
 [dir="rtl"] .signal-card { border-top: 3px solid var(--bordeaux); }
 [dir="rtl"] .pillar { border-left: 0; border-right: 2px solid var(--bordeaux); padding-left: 0; padding-right: 1.1rem; }
 [dir="rtl"] .offer-card__list li { padding-left: 0; padding-right: 1.4rem; }
