@@ -35,7 +35,7 @@
   --radius-btn:  6px;
   --maxw:        1180px;
   --pad-x:       clamp(1.15rem, 4vw, 2.2rem);
-  --pad-section: clamp(4.5rem, 9vw, 8rem);
+  --pad-section: clamp(3.5rem, 6vw, 5.5rem);
   --ease:        cubic-bezier(.22,.61,.36,1);
   --shadow-sm:   0 6px 20px rgba(11,19,29,0.06);
   --shadow-md:   0 18px 50px rgba(11,19,29,0.12);
@@ -75,7 +75,7 @@ em { font-style: italic; color: var(--bordeaux); }
 .eyebrow {
   display: inline-flex; align-items: center; gap: .6rem;
   font-family: var(--font-courant);
-  font-size: .72rem; font-weight: 600;
+  font-size: .78125rem; font-weight: 600;
   text-transform: uppercase; letter-spacing: .22em;
   color: var(--bordeaux); margin: 0 0 1.1rem;
 }
@@ -85,7 +85,7 @@ em { font-style: italic; color: var(--bordeaux); }
 .section-head { margin-bottom: clamp(2.4rem, 5vw, 3.6rem); max-width: 60ch; }
 .section-head--center { text-align: center; margin-inline: auto; }
 .section-head--center .eyebrow { justify-content: center; }
-.section-title { font-size: clamp(1.9rem, 4vw, 2.9rem); max-width: 24ch; }
+.section-title { font-size: clamp(1.75rem, 2.8vw, 2.5rem); max-width: 24ch; }
 .section-head--center .section-title { margin-inline: auto; }
 .section-intro { font-size: 1.12rem; color: var(--graphite); max-width: 56ch; }
 .section-head--center .section-intro { margin-inline: auto; }
@@ -145,7 +145,7 @@ em { font-style: italic; color: var(--bordeaux); }
 .brand__name { font-family: var(--font-titre); font-size: 1.5rem; letter-spacing: .12em; }
 .brand__accent { color: var(--bordeaux); }
 .brand__sub { font-size: .72rem; color: var(--bordeaux); font-weight: 600; letter-spacing: .04em; }
-.brand__base { font-size: .66rem; color: var(--pierre); text-transform: uppercase; letter-spacing: .18em; margin-top: 2px; }
+.brand__base { font-size: .6875rem; color: var(--pierre); text-transform: uppercase; letter-spacing: .18em; margin-top: 2px; }
 
 .nav__menu { display: flex; align-items: center; gap: 2rem; }
 .nav__links { display: flex; align-items: center; gap: 1.7rem; }
@@ -224,7 +224,7 @@ em { font-style: italic; color: var(--bordeaux); }
 
 /* --- Intro / À propos teaser ------------------------------------------- */
 .intro__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
-.intro__title { font-size: clamp(1.8rem, 3.6vw, 2.7rem); }
+.intro__title { font-size: clamp(1.75rem, 2.8vw, 2.5rem); }
 .about__link {
   display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.4rem;
   font-weight: 600; color: var(--bordeaux);
@@ -293,7 +293,7 @@ em { font-style: italic; color: var(--bordeaux); }
 .offer-card--featured .offer-card__list li::before { color: #D4C4B4; }
 .offer-card__badge {
   position: absolute; top: -.85rem; left: 1.8rem;
-  background: var(--bordeaux); color: #fff; font-size: .7rem; font-weight: 700;
+  background: var(--bordeaux); color: #fff; font-size: .75rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: .12em; padding: .4rem .85rem; border-radius: 999px;
 }
 .offer-card__badge--start { background: var(--nuit); }
@@ -419,7 +419,7 @@ em { font-style: italic; color: var(--bordeaux); }
   display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
   gap: .8rem 2rem; padding-block: 1.6rem; text-align: center;
 }
-.proof-bar__label { font-size: .74rem; text-transform: uppercase; letter-spacing: .2em; color: var(--pierre); font-weight: 600; }
+.proof-bar__label { font-size: .78125rem; text-transform: uppercase; letter-spacing: .2em; color: var(--pierre); font-weight: 600; }
 .proof-bar__links { display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; justify-content: center; }
 .proof-bar__links a { font-weight: 600; color: var(--nuit); font-size: .94rem; }
 .proof-bar__links a:hover { color: var(--bordeaux); }
@@ -430,7 +430,7 @@ em { font-style: italic; color: var(--bordeaux); }
 .site-footer .brand__name { color: #fff; }
 .site-footer .brand__sub { color: var(--bronze-clair); }
 .footer-desc { font-size: .92rem; color: rgba(255,255,255,0.6); margin-top: .8rem; max-width: 32ch; }
-.footer-col h5 { font-family: var(--font-courant); font-size: .76rem; text-transform: uppercase; letter-spacing: .16em; color: #D4C4B4; margin-bottom: 1rem; }
+.footer-col h5 { font-family: var(--font-courant); font-size: .78125rem; text-transform: uppercase; letter-spacing: .16em; color: #D4C4B4; margin-bottom: 1rem; }
 .footer-col a { display: block; color: rgba(255,255,255,0.74); font-size: .94rem; padding: .25rem 0; }
 .footer-col a:hover { color: #fff; }
 .footer-social { display: flex; gap: .7rem; margin-top: .8rem; }
@@ -595,3 +595,77 @@ em { font-style: italic; color: var(--bordeaux); }
 .brand__logo { width: auto; height: 36px; border-radius: 0; box-shadow: none; }
 .brand__accent { color: inherit; }
 .brand { gap: .75rem; }
+
+/* ==========================================================================
+   Corrections v2 : échelle typographique, bloc Offres, espacements, en-tête
+   ========================================================================== */
+
+/* --- Typographie : équilibrage des titres, pas d'orphelins ---------------- */
+h1, h2, h3 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+.credibilite .section-title { font-size: clamp(1.75rem, 2.8vw, 2.5rem); }
+
+/* --- Bloc Offres : tailles et espaces réduits ----------------------------- */
+#offres.section { padding-block: clamp(3.5rem, 5vw, 5rem); }
+#offres .section-head { margin-bottom: clamp(1.8rem, 3.5vw, 2.6rem); }
+#offres .section-head .section-title {
+  font-size: clamp(1.6rem, 2.4vw + 0.7rem, 2.25rem); max-width: 34ch !important; margin-bottom: .5em;
+}
+#offres .section-intro { font-size: 1rem; max-width: 60ch; }
+.offer-card { padding: 1.6rem 1.45rem; }
+.offer-card h3 { font-size: 1.25rem; margin-bottom: .35rem; }
+.offer-card__badge, .badge-soft { font-size: .75rem; }
+.offer-card__promise { font-size: .9375rem; line-height: 1.55; margin-bottom: .9rem; }
+.offer-card__ideal { font-size: .90625rem; line-height: 1.55; margin: 0 0 .6rem; }
+.offer-card__list { gap: .375rem; margin-bottom: 1.1rem; }
+.offer-card__list li { font-size: .9375rem; line-height: 1.55; padding-left: 1.35rem; }
+.offer-card__pay { font-size: .90625rem; line-height: 1.5; margin: 0 0 .8rem; }
+.offer-card .price { margin-bottom: .25rem; }
+.offer-card__more { margin-top: .6rem; }
+
+/* --- Sections consécutives / contact et pied de page ---------------------- */
+.contact.section { padding-bottom: 4rem; }
+.site-footer { border-top: 1px solid rgba(177,163,134,0.25); }
+
+/* --- Hero : les deux boutons côte à côte ---------------------------------- */
+.hero__actions { display: flex; flex-wrap: wrap; gap: 12px; }
+@media (max-width: 559px) { .hero__actions { flex-direction: column; } .hero__actions .btn { width: 100%; } }
+
+/* --- En-tête : bouton sur une ligne, liens resserrés ----------------------- */
+.nav__actions .btn { white-space: nowrap; padding: .7rem 1rem; }
+.nav { gap: 1rem; }
+.nav__links { gap: 1.25rem; }
+.brand__base { white-space: nowrap; letter-spacing: .1em; }
+@media (max-width: 479px) { .brand__base { display: none; } }
+
+/* --- Pied de page : bloc logo identique à l'en-tête ------------------------ */
+.brand--footer, .brand--footer:hover { color: #fff; margin-bottom: .2rem; }
+.brand--footer .brand__base { color: rgba(243,242,237,0.7); }
+
+/* --- Bulle WhatsApp (mobile) : discrète, après 600 px de défilement -------- */
+@media (max-width: 767px) {
+  .wa-float { width: 48px; height: 48px; right: 14px; bottom: 14px; opacity: 0; transform: translateY(8px); pointer-events: none; transition: opacity .25s var(--ease), transform .25s var(--ease); }
+  .wa-float svg { width: 26px; height: 26px; }
+  .wa-float.is-visible { opacity: 1; transform: none; pointer-events: auto; }
+  .wa-float.is-visible:hover { transform: scale(1.07); }
+  .site-footer { padding-bottom: 5.5rem; }
+}
+
+/* --- Offres : resserrement complémentaire --------------------------------- */
+.offer-card { padding: 1.5rem 1.35rem 1.4rem; }
+.offer-card__promise { margin-bottom: .7rem; }
+.offer-card__ideal { margin: 0 0 .45rem; }
+.offer-card__list li { line-height: 1.5; }
+.offer-card__pay { margin: 0 0 .6rem; }
+.offer-card .btn { padding-block: .85rem; }
+.offers, .offers--three { gap: 1.25rem; }
+#offres .section-head { margin-bottom: clamp(1.5rem, 3vw, 2.2rem); }
+@media (max-width: 559px) {
+  .offer-card { padding: 1.25rem 1.1rem 1.2rem; }
+  .offers, .offers--three { gap: 1.1rem; }
+  .offer-card__badge { left: 1.1rem; }
+}
+
+/* Badges de carte : dans le flux (une ligne ou deux) pour ne jamais recouvrir le titre */
+.offer-card__badge { position: relative; top: auto; left: auto; align-self: flex-start; max-width: 100%; margin: -2.35rem 0 .7rem; }
+@media (max-width: 559px) { .offer-card__badge { left: auto; margin-top: -2.05rem; } }

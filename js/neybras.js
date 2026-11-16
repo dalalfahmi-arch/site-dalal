@@ -136,3 +136,27 @@
     });
   });
 })();
+
+/* Bulle WhatsApp (mobile) : visible après 600 px de défilement, masquée sur le contact et le pied de page */
+(function () {
+  'use strict';
+  var wa = document.querySelector('.wa-float');
+  if (!wa) { return; }
+  var inFooter = false, ticking = false, seen = {};
+  function update() {
+    ticking = false;
+    wa.classList.toggle('is-visible', window.pageYOffset > 600 && !inFooter);
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+  }, { passive: true });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { seen[e.target.id || 'footer'] = e.isIntersecting; });
+      inFooter = !!(seen.contact || seen.footer);
+      update();
+    });
+    document.querySelectorAll('#contact, .site-footer').forEach(function (el) { io.observe(el); });
+  }
+  update();
+})();
